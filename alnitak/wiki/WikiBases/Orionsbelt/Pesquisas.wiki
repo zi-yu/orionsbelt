@@ -1,0 +1,22 @@
+Dica:Quanto mais cultura, mais rápido serão efectuadas as tuas pesquisas!
+
+As [Pesquisas] permitem evolução tecnológica e representam o nível de vida dos trabalhadores. Existe uma grande quantidade de [Pesquisas] disponíveis, cada uma com o seu objectivo específico. Há [Pesquisas] que tornam disponíveis outras [Pesquisas], novos [Edifícios], novas Unidade.[Unidades] ou novas funcionalidades, como o [Scan] de planetas ou o [Teletransporte].
+
+O tempo de duração de uma pesquisa é influênciado pela cultura do jogador. A cultura do jogador é a sua cultura somada da cultura de todos os seus planetas. Quando uma pesquisa é iniciada, a sua duração é dada pela fórmula:
+
+ Duração = DuraçãoBase - Cultura / 400
+
+O que indica que uma cultura alta pode atenuar significativamente o tempo de duração de uma pesquisa. Por outro lado ter uma cultura negativa pode aumentar drasticamente a duração da pesquisa. Nota que o resultado desta equação, em módulo, nunca é superior a '''15'''.
+
+-----
+
+É preciso ter em muita atenção as CaracterísticasDePlaneta e ter um equilíbrio entre [Edifícios] que geram riqueza (importante para construir Unidade.[Unidades]) e [Edifícios] que geram cultura.
+
+!Árvore de Tecnologias
+	* "TechTree.gif":http://orionsbelt.psantos.net/files/TechTree.gif - Está Incompleto
+
+!Índice de Pesquisas
+
+Ver Pesquisa.[Pesquisas]
+
+:Summary: Informação sobre Pesquisas

@@ -1,0 +1,22 @@
+:Summary: Sabotagens a Planetas
+
+Existem diversos tipos de [Sabotagens] que permitem causar danos diversos a um planeta alvo. Para se poder sabotar determinado alvo é necessária a pesquisa Research.[Espionage] e ter Intrinsic.[spy] disponíveis. Dado tipo de sabotagem tem um custo em Intrinsic.[spy] e demora determinada quantidade de turnos.
+
+Além de Intrinsic.[spy], um planeta também pode ter outro tipo de soldados: os Intrinsic.[marine]. A diferença entre estes é que os Intrinsic.[marine] só defendem e os Intrinsic.[spy] só atacam. Estas unidades consomem mais Intrinsic.[food] que os Intrinsic.[labor] e para as obter é necessário um Building.[Barracks].
+
+!!!Funcionamento das Sabotagens
+
+Quando um planeta de origem inicia uma sabotagem a um planeta alvo, serão enviados para o planeta alvo a quantidade de Intrinsic.[spy] de que a sabotagem escolhida necessita, e a sua viagem demorará alguns turnos. Quando chegarem ocorrerá um combate entre os Intrinsic.[marine] de defesa e os Intrinsic.[spy]. Se os Intrinsic.[spy] ganharem, então a sabotagem terá sucesso. O algoritmo que verifica se uma sabotagem sucede é o seguinte:
+
+ defesa = Comandos + QuantidadeDeQuarteis x 500
+ ataque = Espiões
+ resultado = defesa / ataque
+
+ Se resultado < 2
+	Sucede!
+ Se resultado >= 2 e < 4
+	Resultado Aleatório
+ Se resultado >= 4
+	Falha!
+
+O *Resultado Aleatório* existe para dar alguma incerteza ao resultado. Se o algoritmo chega a essa fase, o atacante tem 20% de probabilidade de ganhar. Em todos os ataques irão morrer alguns Intrinsic.[marine] da defesa e morrerão todos os Intrinsic.[spy] atacantes (é basicamente uma missão suicida).

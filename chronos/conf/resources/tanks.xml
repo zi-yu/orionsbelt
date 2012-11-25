@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<!DOCTYPE resources SYSTEM "conf.dtd">
+<resources>
+
+	<resource type="Tank" value="Bozer">
+		<dependencies>
+			<resource-ref type="Building" value="TankFacility" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="200" />
+			<resource-needed type="mp" value="300" />
+			<resource-needed type="energy" value="150" />
+			<resource-ref type="Building" value="TankFacility" />
+			<duration value="10" quantity="100" />
+		</cost>
+		<attributes>
+			<attribute type="TeletransportationCost" value="350"/>
+		</attributes>
+		<oncomplete/>
+		<battle>			<attack base="300" range="6" maximumDamage="9" minimumDamage="5">				<target type="unit" key="animal" value="50" />				<target type="terrain" key="ice" value="-50" />				<target type="terrain" key="rock" value="50" />
+				<target type="terrain" key="desert" value="50" />
+				<target type="level" key="air" value="50" />			</attack>			<defense base="300" hitPoints="10" canStrikeBack="true">
+				<target type="unit" key="animal" value="20" />				<target type="terrain" key="desert" value="-50" />
+				<target type="level" key="air" value="-100" />				<target type="terrain" key="forest" value="150" />			</defense>
+			<movement cost="2" type="normal" level="ground" />		</battle>
+	</resource>
+	
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" ?>
+<!DOCTYPE resources SYSTEM "conf.dtd">
+<resources>
+
+	<!-- 
+		Recursos Específicos de Planetas 
+	-->
+	
+	<!-- Deserto -->
+	<resource type="Rare" value="elk">
+		<attributes>
+			<attribute type="SpecificTerrain" value="1"/>
+			<attribute type="DefaultRatio" value="50"/>
+			<attribute type="Teletransportable" value="1"/>
+			<attribute type="TeletransportationCost" value="20"/>
+			<attribute type="MarketResource" value="1"/>
+		</attributes>
+	</resource>
+	
+	<!-- Água -->
+	<resource type="Rare" value="hydrogen">
+		<attributes>
+			<attribute type="SpecificTerrain" value="0"/>
+			<attribute type="DefaultRatio" value="50"/>
+			<attribute type="Teletransportable" value="1"/>
+			<attribute type="TeletransportationCost" value="20"/>
+			<attribute type="MarketResource" value="1"/>
+		</attributes>
+	</resource>
+	
+	<!-- Floresta -->
+	<resource type="Rare" value="plastic">
+		<attributes>
+			<attribute type="SpecificTerrain" value="4"/>
+			<attribute type="DefaultRatio" value="50"/>
+			<attribute type="Teletransportable" value="1"/>
+			<attribute type="TeletransportationCost" value="20"/>
+			<attribute type="MarketResource" value="1"/>
+		</attributes>
+	</resource>
+	
+	<!-- Rochoso -->
+	<resource type="Rare" value="titanium">
+		<attributes>
+			<attribute type="SpecificTerrain" value="2"/>
+			<attribute type="DefaultRatio" value="50"/>
+			<attribute type="Teletransportable" value="1"/>
+			<attribute type="TeletransportationCost" value="20"/>
+			<attribute type="MarketResource" value="1"/>
+		</attributes>
+	</resource>
+	
+	<!-- Terrestre -->
+	<resource type="Rare" value="oil">
+		<attributes>
+			<attribute type="SpecificTerrain" value="3"/>
+			<attribute type="DefaultRatio" value="50"/>
+			<attribute type="Teletransportable" value="1"/>
+			<attribute type="TeletransportationCost" value="20"/>
+			<attribute type="MarketResource" value="1"/>
+		</attributes>
+	</resource>
+	
+	<!-- Gêlo -->
+	<resource type="Rare" value="diamond">
+		<attributes>
+			<attribute type="SpecificTerrain" value="5"/>
+			<attribute type="DefaultRatio" value="50"/>
+			<attribute type="Teletransportable" value="1"/>
+			<attribute type="TeletransportationCost" value="20"/>
+			<attribute type="MarketResource" value="1"/>
+		</attributes>
+	</resource>
+	
+	<!--
+		Recursos Genéricos
+	-->
+	
+	<resource type="Rare" value="silver">
+		<attributes>
+			<attribute type="SpecificTerrain" value="-1"/>
+			<attribute type="DefaultRatio" value="50"/>
+			<attribute type="Teletransportable" value="1"/>
+			<attribute type="TeletransportationCost" value="20"/>
+			<attribute type="MarketResource" value="1"/>
+		</attributes>
+	</resource>
+	
+	<resource type="Rare" value="uranium">
+		<attributes>
+			<attribute type="SpecificTerrain" value="-1"/>
+			<attribute type="DefaultRatio" value="50"/>
+			<attribute type="Teletransportable" value="1"/>
+			<attribute type="TeletransportationCost" value="100"/>
+			<attribute type="MarketResource" value="1"/>
+		</attributes>
+	</resource>
+	
+	<resource type="Rare" value="gas">
+		<attributes>
+			<attribute type="SpecificTerrain" value="-1"/>
+			<attribute type="DefaultRatio" value="50"/>
+			<attribute type="Teletransportable" value="1"/>
+			<attribute type="TeletransportationCost" value="20"/>
+			<attribute type="MarketResource" value="1"/>
+		</attributes>
+	</resource>
+	
+</resources>

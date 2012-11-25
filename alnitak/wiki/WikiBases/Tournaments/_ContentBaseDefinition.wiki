@@ -1,0 +1,6 @@
+﻿Description: Orion's Belt Wiki
+Namespace: Tournaments
+Title: Orion's Belt Tournaments
+Description: Orion's Belt Tournaments
+HomePage: HomePage
+Contact:

@@ -1,0 +1,683 @@
+<?xml version="1.0" ?>
+<!DOCTYPE resources SYSTEM "conf.dtd">
+<resources>
+	<resource type="Research" value="AdvancedFlightI" category="fleet" appliesTo="ruler">
+		<dependencies/>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="AdvancedFlightI" />
+			<duration value="100" dependency="culture" function="value"/>
+		</cost>
+		<attributes/>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="10" />
+			<add type="Intrinsic" resource="maxFleets" value="2" />
+		</oncomplete>
+	</resource>
+	
+	<resource type="Research" value="AdvancedFlightII" category="fleet" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="AdvancedFlightI" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="AdvancedFlightII" />
+			<duration value="250" dependency="culture" function="value"/>
+		</cost>
+		<attributes/>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="20" />
+			<add type="Intrinsic" resource="maxFleets" value="2" />
+		</oncomplete>
+
+	</resource>
+	
+	<resource type="Research" value="AdvancedFlightIII" category="fleet" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="AdvancedFlightII" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="AdvancedFlightIII" />
+			<duration value="500" dependency="culture" function="value"/>
+		</cost>
+		<attributes/>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="40" />
+			<add type="Intrinsic" resource="maxFleets" value="5" />
+		</oncomplete>
+	</resource>
+
+	<resource type="Research" value="ShipShields" category="fleet" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="AdvancedFlightII" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="ShipShields" />
+			<duration value="600" dependency="culture" function="value"/>
+		</cost>
+		<attributes/>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="40" />
+		</oncomplete>
+	</resource>
+
+	<resource type="Research" value="ShipFirePower" category="fleet" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="AdvancedFlightII" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="ShipFirePower" />
+			<duration value="600" dependency="culture" function="value"/>
+		</cost>
+		<attributes/>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="40" />
+		</oncomplete>
+	</resource>
+	
+	<!--resource type="Research" value="Cybernetics" category="tech" appliesTo="ruler">
+		<dependencies/>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="Cybernetics" />
+			<duration value="15" dependency="culture" function="value"/>
+		</cost>
+		<attributes/>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="30" />
+		</oncomplete>
+	</resource-->
+	
+	<resource type="Research" value="AdvancedResearchI" category="tech" appliesTo="ruler">
+		<dependencies/>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="AdvancedResearchI" />
+			<duration value="144" dependency="culture" function="value"/>
+		</cost>
+		<attributes/>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="10" />
+		</oncomplete>
+	</resource>
+	
+	<resource type="Research" value="AdvancedResearchII" category="tech" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="AdvancedResearchI" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="AdvancedResearchII" />
+			<duration value="288" dependency="culture" function="value"/>
+		</cost>
+		<attributes/>
+	</resource>
+	
+	<resource type="Research" value="RareResources" category="tech" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="AdvancedResearchI" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="RareResources" />
+			<duration value="300" dependency="culture" function="value"/>
+		</cost>
+		<attributes/>
+	</resource>
+	
+	<resource type="Research" value="PlanetExploration" category="exploration" appliesTo="ruler">
+		<dependencies/>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="PlanetExploration" />
+			<duration value="150" dependency="culture" function="value"/>
+		</cost>
+		<attributes/>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="10" />
+		</oncomplete>
+	</resource>
+	
+	<resource type="Research" value="SectorExploration" category="exploration" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="PlanetExploration" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="SectorExploration" />
+			<duration value="100" dependency="culture" function="value"/>
+		</cost>
+		<attributes/>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="20" />
+		</oncomplete>
+	</resource>
+	
+	<resource type="Research" value="SystemExploration" category="exploration" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="SectorExploration" />
+			<battlesFought value="8" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="SystemExploration" />
+			<duration value="1000"/>
+		</cost>
+		<attributes/>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="30" />
+		</oncomplete>
+	</resource>
+	
+	<resource type="Research" value="GalaxyExploration" category="exploration" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="SystemExploration" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="GalaxyExploration" />
+			<duration value="2500"/>
+		</cost>
+		<attributes/>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="40" />
+		</oncomplete>
+	</resource>
+
+	<!-- Planet Limit -->
+
+	<resource type="Research" value="PlanetLimit5" category="exploration" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="PlanetExploration" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="PlanetLimit5" />
+			<duration value="100" dependency="culture" function="value"/>
+		</cost>
+		<attributes/>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="10" />
+			<add type="Intrinsic" resource="maxPlanets" value="3" />
+		</oncomplete>
+	</resource>
+
+	<resource type="Research" value="PlanetLimit10" category="exploration" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="PlanetLimit5" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="PlanetLimit10" />
+			<duration value="400" dependency="culture" function="value"/>
+		</cost>
+		<attributes/>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="30" />
+			<add type="Intrinsic" resource="maxPlanets" value="5" />
+		</oncomplete>
+	</resource>
+
+	<resource type="Research" value="PlanetLimit15" category="exploration" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="PlanetLimit10" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="PlanetLimit15" />
+			<duration value="1000" dependency="culture" function="value"/>
+		</cost>
+		<attributes/>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="40" />
+			<add type="Intrinsic" resource="maxPlanets" value="5" />
+		</oncomplete>
+	</resource>
+
+	<resource type="Research" value="PlanetLimit20" category="exploration" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="PlanetLimit15" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="PlanetLimit20" />
+			<duration value="2000" />
+		</cost>
+		<attributes/>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="60" />
+			<add type="Intrinsic" resource="maxPlanets" value="5" />
+		</oncomplete>
+	</resource>
+	
+	<!--resource type="Research" value="PlanetLimit35" category="exploration" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="PlanetLimit20" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="PlanetLimit35" />
+			<duration value="150" />
+		</cost>
+		<attributes/>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="560" />
+			<add type="Intrinsic" resource="maxPlanets" value="15" />
+		</oncomplete>
+	</resource-->
+
+	<!-- Queue Limit -->
+
+	<resource type="Research" value="QueueCapacity3" category="tech" appliesTo="ruler">
+		<dependencies>
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="QueueCapacity3" />
+			<duration value="300" />
+		</cost>
+		<attributes/>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="60" />
+			<add type="Intrinsic" resource="queueCapacity" value="1" />
+		</oncomplete>
+	</resource>
+
+	<resource type="Research" value="QueueCapacity5" category="tech" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="QueueCapacity3" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="QueueCapacity5" />
+			<duration value="600" />
+		</cost>
+		<attributes/>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="80" />
+			<add type="Intrinsic" resource="queueCapacity" value="2" />
+		</oncomplete>
+	</resource>
+
+	<!-- Water Exploration -->
+
+	<resource type="Research" value="WaterExplorationI" category="exploration" appliesTo="ruler">
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="WaterExplorationI" />
+			<duration value="60" dependency="culture" function="value"/>
+		</cost>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="18" />
+		</oncomplete>
+	</resource>
+
+	<resource type="Research" value="WaterExplorationII" category="exploration" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="WaterExplorationI" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="WaterExplorationII" />
+			<duration value="100" dependency="culture" function="value"/>
+		</cost>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="28" />
+		</oncomplete>
+	</resource>
+
+	<resource type="Research" value="WaterExplorationIII" category="exploration" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="WaterExplorationII" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="WaterExplorationIII" />
+			<duration value="150" dependency="culture" function="value"/>
+		</cost>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="38" />
+		</oncomplete>
+	</resource>
+
+	<!-- Orbit -->
+
+	<resource type="Research" value="OrbitExploration" category="exploration" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="AdvancedResearchI" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="OrbitExploration" />
+			<duration value="100" dependency="culture" function="value"/>
+		</cost>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="18" />
+		</oncomplete>
+	</resource>
+
+	<!-- Scanning -->
+	<resource type="Research" value="Scanning" category="exploration" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="OrbitExploration" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="Scanning" />
+			<duration value="100" dependency="culture" function="value"/>
+		</cost>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="28" />
+		</oncomplete>
+	</resource>
+
+	<resource type="Research" value="SectorScanning" category="exploration" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="Scanning" />
+			<resource-ref type="Research" value="SectorExploration" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="SectorScanning" />
+			<duration value="100" dependency="culture" function="value"/>
+		</cost>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="38" />
+		</oncomplete>
+	</resource>
+
+	<resource type="Research" value="SystemScanning" category="exploration" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="SectorScanning" />
+			<resource-ref type="Research" value="SystemExploration" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="SystemScanning" />
+			<duration value="500" dependency="culture" function="value"/>
+		</cost>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="48" />
+		</oncomplete>
+	</resource>
+
+	<resource type="Research" value="GalaxyScanning" category="exploration" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="SystemScanning" />
+			<resource-ref type="Research" value="GalaxyExploration" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="GalaxyScanning" />
+			<duration value="1500" dependency="culture" function="value"/>
+		</cost>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="58" />
+		</oncomplete>
+	</resource>
+
+	<resource type="Research" value="ScanLevelI" category="tech" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="Scanning" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="ScanLevelI" />
+			<duration value="100" dependency="culture" function="value"/>
+		</cost>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="33" />
+			<add type="Intrinsic" resource="scanCost" value="300" />
+		</oncomplete>
+	</resource>
+
+	<resource type="Research" value="ScanLevelII" category="tech" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="ScanLevelI" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="ScanLevelII" />
+			<duration value="300" dependency="culture" function="value"/>
+		</cost>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="43" />
+			<add type="Intrinsic" resource="scanCost" value="300" />
+		</oncomplete>
+	</resource>
+
+	<resource type="Research" value="ScanLevelIII" category="tech" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="ScanLevelII" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="ScanLevelIII" />
+			<duration value="600" dependency="culture" function="value"/>
+		</cost>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="103" />
+			<add type="Intrinsic" resource="scanCost" value="400" />
+		</oncomplete>
+	</resource>
+
+	<resource type="Research" value="ScanShieldLevelI" category="tech" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="Scanning" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="ScanShieldLevelI" />
+			<duration value="200" dependency="culture" function="value"/>
+		</cost>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="33" />
+		</oncomplete>
+	</resource>
+
+	<resource type="Research" value="ScanShieldLevelII" category="tech" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="ScanShieldLevelI" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="ScanShieldLevelII" />
+			<duration value="400" dependency="culture" function="value"/>
+		</cost>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="53" />
+		</oncomplete>
+	</resource>
+
+	<resource type="Research" value="ScanShieldLevelIII" category="tech" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="ScanShieldLevelII" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="ScanShieldLevelIII" />
+			<duration value="600" dependency="culture" function="value"/>
+		</cost>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="83" />
+		</oncomplete>
+	</resource>
+
+	<resource type="Research" value="ScanNotificationI" category="tech" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="Scanning" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="ScanNotificationI" />
+			<duration value="100" dependency="culture" function="value"/>
+		</cost>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="33" />
+		</oncomplete>
+	</resource>
+
+	<resource type="Research" value="ScanNotificationII" category="tech" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="ScanNotificationI" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="ScanNotificationII" />
+			<duration value="200" dependency="culture" function="value"/>
+		</cost>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="53" />
+		</oncomplete>
+	</resource>
+
+	<resource type="Research" value="ScanNotificationIII" category="tech" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="ScanNotificationII" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="ScanNotificationIII" />
+			<duration value="3000" dependency="culture" function="value"/>
+		</cost>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="93" />
+		</oncomplete>
+	</resource>
+
+	<!-- General -->
+	
+	<resource type="Research" value="Medicine" category="planet" appliesTo="ruler">
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="Medicine" />
+			<duration value="150" dependency="culture" function="value"/>
+		</cost>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="53" />
+		</oncomplete>
+	</resource>
+	
+	<resource type="Research" value="Commerce" category="planet" appliesTo="ruler">
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="Commerce" />
+			<duration value="250" dependency="culture" function="value"/>
+		</cost>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="33" />
+		</oncomplete>
+	</resource>
+	
+	<resource type="Research" value="Economics" category="planet" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="Commerce" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="Economics" />
+			<duration value="250" dependency="culture" function="value"/>
+		</cost>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="53" />
+		</oncomplete>
+	</resource>
+	
+	<resource type="Research" value="Geology" category="planet" appliesTo="ruler">
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="Geology" />
+			<duration value="180" dependency="culture" function="value"/>
+		</cost>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="37" />
+		</oncomplete>
+	</resource>
+	
+	<resource type="Research" value="GeoPlanet" category="planet" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="Geology" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="GeoPlanet" />
+			<duration value="500" dependency="culture" function="value"/>
+		</cost>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="53" />
+		</oncomplete>
+	</resource>
+
+	<!-- Teletransportation -->
+	<resource type="Research" value="TeletransportationI" category="tech" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="AdvancedResearchI" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="TeletransportationI" />
+			<duration value="100" dependency="culture" function="value"/>
+		</cost>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="53" />
+		</oncomplete>
+	</resource>
+
+	<resource type="Research" value="TeletransportationII" category="tech" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="AdvancedResearchII" />
+			<resource-ref type="Research" value="TeletransportationI" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="TeletransportationII" />
+			<duration value="400" dependency="culture" function="value"/>
+		</cost>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="77" />
+		</oncomplete>
+	</resource>
+
+	<resource type="Research" value="TeletransportationIII" category="tech" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="TeletransportationII" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="TeletransportationIII" />
+			<duration value="800" dependency="culture" function="value"/>
+		</cost>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="177" />
+		</oncomplete>
+	</resource>
+	
+	<resource type="Research" value="Warfare" category="fleet" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="AdvancedResearchI" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="Warfare" />
+			<duration value="200" dependency="culture" function="value"/>
+		</cost>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="170" />
+		</oncomplete>
+	</resource>
+	
+	<resource type="Research" value="Espionage" category="fleet" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="Warfare" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="Espionage" />
+			<duration value="255" dependency="culture" function="value"/>
+		</cost>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="277" />
+		</oncomplete>
+	</resource>
+
+	<resource type="Research" value="Recycling" category="tech" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="PlanetExploration" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="Recycling" />
+			<duration value="150" dependency="culture" function="value"/>
+		</cost>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="377" />
+		</oncomplete>
+	</resource>
+	
+	<!-- Turrets -->
+	<resource type="Research" value="PlanetDefenseI" category="tech" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="AdvancedResearchII" />
+			<resource-ref type="Research" value="AdvancedFlightII" />
+			<resource-ref type="Research" value="ScanShieldLevelII" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="PlanetDefenseI" />
+			<duration value="500" dependency="culture" function="value"/>
+		</cost>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="300" />
+		</oncomplete>
+	</resource>
+	
+	<resource type="Research" value="PlanetDefenseII" category="tech" appliesTo="ruler">
+		<dependencies>
+			<resource-ref type="Research" value="AdvancedFlightIII" />
+			<resource-ref type="Research" value="ScanShieldLevelIII" />
+			<resource-ref type="Research" value="PlanetDefenseI" />
+		</dependencies>
+		<cost allowUndoDuringBuild="true">
+			<disallow-build category="Research" factory="PlanetDefenseII" />
+			<duration value="800" dependency="culture" function="value"/>
+		</cost>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="500" />
+		</oncomplete>
+	</resource>
+
+</resources>

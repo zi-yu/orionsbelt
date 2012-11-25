@@ -1,0 +1,83 @@
+As maravilhas seriam [Edifícios] especiais que ao serem construídos, trariam grandes vantagens para o seu autor, e mais ninguém os poderia construir.
+
+Coloquem aqui entradas com ideias para [Maravilhas] indicando:
+	* Nome do Edifício
+	* Vantagens
+	* Dependências Tenológicas
+	* Outras informações
+
+Assim que chegar às 5 implemento essa funcionalidade. Depois é só ir adicionando Maravilhas que eu adiciono-as ao jogo. Provavelmente as [Maravilhas] darão [Prémios] e [Medalhas].
+
+----
+
+'''Fábrica Universal'''
+
+Vantagens:
+	*Reduz o tempo de produção de todos os edifícios e naves por metade;
+	*Afecta todos os planetas do ruler no mesmo sector.
+
+Dependências:
+	*Fila de espera (5);
+	*Pesquisa nível 2;
+	*O ruler tem que controlar pelo menos 3 planetas;
+	*Apenas um por galáxia.
+
+- [SérgioSantos]
+
+----
+
+'''Lançamento de Sonda de Exploração'''
+
+Comportamento
+	*A Sonda de exploração de 10 em 10 turnos vão enviando informação sobre planetas não conquistados do Universo. O ruler não tem controlo sobre que planetas a sonda está a trabalhar	
+	*A informação recebida pela sonda é guardada num log especial.
+	*A sonda nunca pode ser abatida, nem é detectada pelos adversários.
+	*A informação obtida da sonda é relativa ao momento que sondou e não e feito nenhum update à informação.
+ 
+Vantagens
+	* Possibilidade de identificar se um planeta está conquistado ou não.
+	* Saber as caracteristicas de um planeta.
+
+Dependências
+	*System Exploration
+	*Advanced Flight 3
+	*Sector Exploration
+	*Apenas 1 projecto destes no universo
+Nota
+	* Esta sonda poderá ter um comportamento idêntico à nossa Sonda Voyger que foi lançado no anos 70 e ainda está a viajar pelo espaço para fora do nosso sistema solar.
+
+
+- [esqueleto]
+----
+
+'''Ordenamento de território'''
+
+Vantagens:
+	*Todos os planetas do ruler ganham 3 de espaço em terra e 3 de espaço em água.
+
+Dependências:
+	*Pesquisa nível 2;
+	*15 planetas no mínimo;
+	*Apenas pode ser construído num planeta terrestre;
+	*100000 de cultura no mínimo;
+	*Apenas um por galáxia.
+
+- [SérgioSantos]
+----
+
+'''Rede defensiva'''
+
+Um conjunto de satélites artificiais e escudos energéticos com a função de melhor defender o planeta
+
+Vantagens:
+	*Impede o início de uma batalha no planeta onde foi construída, a não ser que o atacante possua um ou mais crusador na sua armada.
+
+Dependências:
+	*Cibernética;
+	*Pesquisa nível 2;
+	*Voo espacial 2;
+	*Apenas um por sistema.
+
+- [SérgioSantos]
+
+:Summary: Maravilhas do Universo

@@ -1,0 +1,12 @@
+:Display: Tipo de Movimento
+:Summary: Informação sobre Tipo de Movimento
+:Parent: Orionsbelt.MotorDeCombate
+
+Existem 4 tipos de movimento:
+	* *normal*: onde a nave se pode mexer para esquerda ou direita, cima ou baixo;
+	* *diagonal*: onde a nave se pode mexer em qualquer das diagonais;
+	* *front*: onde a nave só se pode mexer na direcção para onde está virada;
+	* *all*: onde a nave se pode mover em qualquer direcção;
+
+Ver também:
+	* Unit.[UnidadesPorTipoDeMovimento]

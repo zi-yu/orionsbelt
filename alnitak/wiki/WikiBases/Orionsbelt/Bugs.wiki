@@ -1,0 +1,5 @@
+Não, obviamente que o jogo não tem Bugs. :-) Contudo pode ter alguns comportamentos inesperados ou fazer coisas que supostamente não devia fazer. Caso seja detectado algum destes casos pedimos que seja registado no nosso repositório de "bugs":http://sourceforge.net/tracker/?atid=623938&group_id=99352&func=browse o mais cedo possível, ou que seja registado no fórum.
+
+Só registando podemos ter a certeza de que os vamos resolver e que não cairá no esquecimento.
+
+:Summary: Como registar Bugs

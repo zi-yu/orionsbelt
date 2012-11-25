@@ -1,0 +1,47 @@
+!!!O que é o Orion's Belt
+
+O Orion's Belt é um jogo ''web-based'' de gestão de recursos espacial. O jogador começa com um planeta que terá de evoluir construindo Building.[Building] e aumentando a sua cultura. A certa altura será possível conquistar outros planetas e entrar em batalhas com outros jogadores. Os novatos, podem ter uma visão do jogo mais detalhada em: PorOndeComecar.
+
+Nota que Orion's Belt é uma constelação constituída por três estrelas. Mais "informação":http://en.wikipedia.org/wiki/Orion_(constellation) na Wikipedia.
+
+!!!O que é que eu obtenho por me registar?
+
+Ao efectuar o "registo":http://orionsbelt.zi-yu.com/regist.aspx será possível aceder à maior parte das secções do site, nomeadamente ao "fórum":http://orionsbelt.zi-yu.com/forum/default.aspx e interagir com a comunidade.
+
+!!!Estou registado, o que tenho de fazer agora para jogar?
+
+Aparecerá no menu uma referência para o registo no jogo. Um utilizador não é necessariamente um jogador. Embora só seja preciso realizar o registo uma vez, é necessária a inscrição como jogador em todas as rondas do jogo.
+
+Poderá acontecer que não haja vagas. Neste caso novas inscrições só estarão disponíveis na próxima ronda.
+
+!!!Em que línguas é que o Orion's Belt estará disponível?
+
+A ''user interface'' do Orion's Belt está disponível em português e em inglês. Contudo o manual, neste momento, só se encontra disponível em português. Após o registo é possível escolher a língua no Perfil.
+
+!!!Irei eu partilhar o meu email com alguém após o registo? Irei eu receber uma quantidade enorme de spam?
+
+Não! Só os administradores é que têm acesso ao mail dos utilizadores. Ocasionalmente poderemos enviar algumas notícias de maior relevo, como a notificação de início de um nova ronda. Prometemos que não divulgaremos os dados dos utilizadores a terceiros.
+
+!!!Quem está por detrás do Orion's Belt?
+
+O Orion's Belt foi criado por dois estudantes, que neste momento estão responsáveis pela administração e evolução do jogo. Para além dos dois administradores, vários elementos da comunidade têm ajudado nos mais diversos campos. Ver a secção "Sobre Nós":http://orionsbelt.zi-yu.com/about.aspx para mais informações.
+
+!!!Quais as funcionalidades que o Orion's Belt possui e como é que funcionam?
+
+Uma explicação de cada uma das mais importantes funcionalidades está abaixo. O "Fórum":http://orionsbelt.zi-yu.com/forum/default.aspx está aberto a dúvidas adicionais.
+
+	* *Gestão de Planetas* - É possível ao jogador a gestão de recursos Intrinsic.[Intrinsic] como Intrinsic.[gold], Intrinsic.[food], ou Intrinsic.[labor]. Para gerir estes recursos o jogador pode construir vários Building.[Building] cada qual com o seu fim específico.
+	* *Construção de Unidades de Combate* - Estão disponíveis diversas Unit.[Unit] de combate que o jogador pode construir para combater por planetas de outros jogadores.
+	* *Teletransporte* - É possível o [TeleTransporte] de recursos Intrinsic.[Intrinsic] e de Unit.[Unit] de combate entre planetas do jogador.
+	* *Scan de Planetas* - Com o edifício Building.[CommsSatellite] será possível realizar [Scans] para obter informações sobre planetas alheios, tais como as suas CaracteristicasDePlaneta ou até mesmo a quantidade de Unit.[Unit] do planeta.
+	* *Movimento de Armadas pelo Universo* - É possível navegar para diversas [Coordenadas] dependendo das Research.[Research] do jogador. O jogador poderá defrontar adversários de outros sistemas ou até mesmo de outras galáxias.
+	* *Combate* - O MotorDeCombate é baseado num jogo de tabuleiro, em que ambos os adversários jogam à vez. Estará em jogo as Unit.[Unit] de ambos, mas mais importante: será a a perícia de cada jogador que marcará a diferença.
+	* *Manual* - Está disponível um "Manual":http://orionsbelt.zi-yu.com/wiki/default.aspx para que todos os jogadores possam conhecer as regras do jogo. Para além do manual há a "referência rápida":http://orionsbelt.zi-yu.com/docs/default.aspx onde os jogadores poderão rapidamente verificar as características dos diversos recursos.
+	* *Fórum* - Com o nosso "fórum":http://orionsbelt.zi-yu.com/forum/default.aspx será possível interagir com o outros jogadores e com os administradores. Desta forma não há desculpas para ficares com dúvidas não esclarecidas!
+	* *Vários temas visuais* - O nosso motor gráfico suporta vários temas visuais. Poderás escolher o teu favorito no Perfil, assim que tiveres o teu registo.
+
+!!!A minha questão não está na FAQ. O que é que eu faço?
+
+O "fórum":http://orionsbelt.zi-yu.com/forum/default.aspx  está disponível para tirar as tuas dúvidas.
+
+:Summary: A nossa FAQ

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<project name="RulesToWiki" default="generate" basedir=".">
+
+	<description>RulesToWiki</description>
+	<property name="debug" value="false" unless="${property::exists('debug')}"/>
+
+
+	<target name="clean" description="remove all binaries">
+		<delete>
+			<fileset basedir="../">
+				<include name="bin/*.dll" />
+				<include name="bin/*.exe" />
+				<include name="bin/*.pdb" />
+				<include name="bin/*.xml" />
+			</fileset>
+		</delete>
+  	</target>
+
+  	<!-- compila o projecto -->
+	<target name="build" description="compiles RulesToWiki.exe">
+
+		<csc target="exe" output="bin/RulesToWiki.exe"
+			debug="${debug}">
+
+			<sources>
+				<include name="*.cs" />
+			</sources>
+			
+			<references>
+				<include name="bin/Chronos.dll" />
+				<include name="bin/Alnitak.dll" />
+				<include name="bin/Language.dll" />
+			</references>
+       	</csc>
+
+  	</target>
+  	
+  	<target name="generate" description="generates the documentation" depends="build">
+
+       	<exec program="bin/RulesToWiki.exe" useruntimeengine="true" failonerror="true"
+       		commandline="../alnitak/engine/Language/pt/ ../rules/ ../alnitak/wiki/WikiBases/" />
+
+  	</target>
+
+</project>

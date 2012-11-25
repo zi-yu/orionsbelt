@@ -1,0 +1,107 @@
+:Display: User Tags
+:Summary: Imagens de Propaganda ao Orion's Belt
+
+!!!Orion's Belt Player
+
+http://orionsbelt.sourceforge.net/tags/OrionsBeltBanner.jpg
+
+Link:
+ <a href="http://orionsbelt.zi-yu.com" title="Orion's Belt">
+	<img alt="Orion's Belt Player" 
+		 src="http://orionsbelt.sourceforge.net/tags/OrionsBeltBanner.jpg" />
+ </a>
+
+phpBB:
+ [url=http://orionsbelt.zi-yu.com]
+	[img]http://orionsbelt.sourceforge.net/tags/OrionsBeltBanner.jpg[/img]
+ [/url]
+
+!!!Orion's Belt Adicted
+
+http://orionsbelt.sourceforge.net/tags/OrionsBeltBanner2.jpg
+
+Link:
+ <a href="http://orionsbelt.zi-yu.com" title="Orion's Belt">
+	<img alt="Orion's Belt Adicted" 
+		 src="http://orionsbelt.sourceforge.net/tags/OrionsBeltBanner2.jpg" />
+ </a>
+
+phpBB:
+ [url=http://orionsbelt.zi-yu.com]
+	[img]http://orionsbelt.sourceforge.net/tags/OrionsBeltBanner2.jpg[/img]
+ [/url]
+
+!!!Doomsday has Arrived
+
+http://orionsbelt.sourceforge.net/tags/doomerBanner.jpg
+
+Link:
+ <a href="http://orionsbelt.zi-yu.com" title="Orion's Belt">
+	<img alt="Doomsday has Arrived!" 
+		 src="http://orionsbelt.sourceforge.net/tags/doomerBanner.jpg" />
+ </a>
+
+phpBB:
+ [url=http://orionsbelt.zi-yu.com]
+	[img]http://orionsbelt.sourceforge.net/tags/doomerBanner.jpg[/img]
+ [/url]
+
+!!!Too Toxic for You
+
+http://orionsbelt.sourceforge.net/tags/toxicBanner.jpg
+
+Link:
+ <a href="http://orionsbelt.zi-yu.com" title="Orion's Belt">
+	<img alt="Too Toxic for You!" 
+		 src="http://orionsbelt.sourceforge.net/tags/toxicBanner.jpg" />
+ </a>
+
+phpBB:
+ [url=http://orionsbelt.zi-yu.com]
+	[img]http://orionsbelt.sourceforge.net/tags/toxicBanner.jpg[/img]
+ [/url]
+
+!!!From the Ashes I will Reborn
+
+http://orionsbelt.sourceforge.net/tags/FenixBanner.jpg
+
+Link:
+ <a href="http://orionsbelt.zi-yu.com" title="Orion's Belt">
+	<img alt="From the Ashes I will Reborn" 
+		 src="http://orionsbelt.sourceforge.net/tags/FenixBanner.jpg" />
+ </a>
+
+phpBB:
+ [url=http://orionsbelt.zi-yu.com]
+	[img]http://orionsbelt.sourceforge.net/tags/FenixBanner.jpg[/img]
+ [/url]
+
+!!!Do you fear Bugs?
+
+http://orionsbelt.sourceforge.net/tags/spiderBanner.jpg
+
+Link:
+ <a href="http://orionsbelt.zi-yu.com" title="Orion's Belt">
+	<img alt="Do you fear Bugs?" 
+		 src="http://orionsbelt.sourceforge.net/tags/spiderBanner.jpg" />
+ </a>
+
+phpBB:
+ [url=http://orionsbelt.zi-yu.com]
+	[img]http://orionsbelt.sourceforge.net/tags/spiderBanner.jpg[/img]
+ [/url]
+
+!!!I can handle Anything!
+
+http://orionsbelt.sourceforge.net/tags/pretorianBanner.jpg
+
+Link:
+ <a href="http://orionsbelt.zi-yu.com" title="Orion's Belt">
+	<img alt="I can handle Anything!" 
+		 src="http://orionsbelt.sourceforge.net/tags/pretorianBanner.jpg" />
+ </a>
+
+phpBB:
+ [url=http://orionsbelt.zi-yu.com]
+	[img]http://orionsbelt.sourceforge.net/tags/pretorianBanner.jpg[/img]
+ [/url]

@@ -1,0 +1,30 @@
+O [Scan] permite obter informações sobre um planeta, dada a sua [Coordenada]. As informações obtidas também variam conforme o nível de [Scan] do autor, e podem ser defendidas se o alvo tiver pesquisas de defesa de scan.
+
+Para realizar um [Scan] é necessário o edifício Building.Satelite. Cada [Scan] é pago em Intrinsic.[energy] e este valor depende do '''Nível de Scan'''.
+
+Se o alvo tiver pesquisas de notificação de scan, pode ser notificado do scan e de quem o efectuou. A realização de scans é uma grande vantagem para quem a utiliza bem, pois é possível obter muitas informações preciosas sobre qualquer planeta.
+
+!!!Tecnologias Relacionadas com o Scan
+
+Existem '''três''' grupos de tecnologias relacionadas com o [Scan]: '''Nível de Scan''', '''Escudo de Scan''' e '''Notificação de Scan'''. Quando é realizado um [Scan], todas estas pesquisas são tidas em conta e dependendo do nível que quem realiza, e de quem é o alvo, o [Scan] pode ter resultados diferentes. Após a realização de um [Scan] o seu autor é informado se o [Scan] foi bem sucedido e se o [Scan] foi interceptado pelo alvo.
+
+Para obter estas informações usam-se as tecnologias acima mencionadas. 
+
+||{!}*Fonte*||{!}*Comparação*||{!}*Alvo*||{!}*Resultado*||
+||Nível de Scan|| > ||Escudo de Scan||O [Scan] tem êxito||
+||Nível de Scan|| < ||Escudo de Scan||O [Scan] falha||
+||Nível de Scan|| = ||Escudo de Scan||O resultado é gerado aleatoriamente||
+||Nível de Scan|| > ||Notificação de Scan||O alvo não é notificado||
+||Nível de Scan|| < ||Notificação de Scan||O alvo é notificado||
+||Nível de Scan|| = ||Notificação de Scan||notificação gerada aleatoriamente||
+
+!!!O que é que um Relatório de Scan contém?
+
+Para que o relatório possa ser visualidado, e necessário que o [Scan] tenha sido bem sucedido (independentemente do alvo ter captado o [Scan] ou não). Dependendo do '''Nível de Scan''' da fonte, diversas informações são disponibilizadas:
+
+	* Research.[ScanLevelI] - São obtidas as características e informações elementares sobre o planeta, como o tipo de terreno, a massa e o seu dono (ou indicação de que está desabitado).
+	* Research.[ScanLevelII] - São obtidos os modificadores do planeta, tal como o seu espaço. Estas informações são importantes pois permitem verificar se o planeta é rico e se vale a pena lutar por ele.
+	* Research.[ScanLevelIII] - Com este nível, o jogador permite ver que Building.[Building] especiais o planeta tem, quantas armadas estão no planeta, e o número total de Unit.[Unit] que se encontram no planeta. Contudo, não é possível saber o tipo destas Unit.[Unit].
+
+
+:Summary: Informação sobre o Scan a Planetas

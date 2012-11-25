@@ -1,0 +1,3 @@
+Permite aceder a este wiki.
+
+:Summary: Descrição da Secção do Wiki

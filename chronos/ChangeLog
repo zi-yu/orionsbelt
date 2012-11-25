@@ -1,0 +1,215 @@
+14-11-2004	Nuno Silva		<pyrus@users.sf.net>
+	* Corrigido mais um bug no motor de Batalha
+
+24-12-2004	Pedro Santos	<pre@users.sf.net>
+
+	* AlteraÁıes diversas
+	* O Messenger j· tem um mÈtodo Send mais pr·tico
+
+18-12-2004	Pedro Santos	<pre@users.sf.net>
+
+	* Adicionada funcionalidade ao planeta para, quando for um Home
+	Planet, ir buscar aos atributos dos recursos Intrinsecos os seus
+	valores por defeito. Ele vai procurar o atributos DefaultRatio e
+	DefaultValue e aplica-o.
+	* N„o È possÌvel os recursos intrinsecos terem modificadores.
+	* Agora o Universo tem uma propriedade Rank que d· um contentor com
+	todos os rulers ordenados por pontuaÁ„o. O Ruler tambÈm tem uma
+	propriedade Rank que indica a sua posiÁ„o.
+
+14-11-2004	Nuno Silva		<pyrus@users.sf.net>
+	
+	* Adicionado a SeriaÁ„o de PlanetInfo
+	* Coordenada Modificada. Agora Cada ruler est· num sector com 3 planetas.
+	* Planeta inicial com caracterÌsticas fixas
+	* Adicionado suporte para conquista de planeta
+	* ResoluÁ„o de Bugs
+	* SeriaÁ„o das mensagens
+	* Corrigidos Bugs dos testes como a adiÁ„o do planeta ao Ruler. Esta adiÁ„o N√O
+	  pode ser feitar atravÈs do ruler.addPlanet() visto ser feito automaticamente quando
+	  se chama o construtor de planeta ou se chama o init.
+	  Outro dos bugs corrigidos foi teste da seriaÁ„o. Era feita uma iteraÁ„o sobre todos os 
+	  planetas do universo, mas como o universo agora tem uma sÈrie de planetas por defeito 
+	  que n pertencem a ng foi adicionado um if(planet.Owner == null ) para ignorar esses planetas.
+	  S„o feitas 2000 e tal instruÁıes mas isso n È problem·tico pq quase nenhuma tem processamento
+	  e mal se nota.
+
+12-12-2004	Pedro Santos	<pre@users.sf.net>
+
+	* Adicionado suporte para mensagens entre entidades do Chronos, que
+	derivem de MessageHandler. Neste momento um ResourceManager j· deriva
+	de MessageHandler
+
+28-11-2004	Pedro Santos	<pre@users.sf.net>
+	
+	* Adicionada a Action DisallowBuild
+
+28-11-2004	Nuno Silva		<pyrus@users.sf.net>
+	* Adicionado um m√©todo √† Interface iBattle : endBattle(int).
+	* Adicionado novo bot√£o √† changeFleets para mover TODAS as naves de uma fleet para outra.
+	
+
+28-11-2004	Pedro Santos	<pre@users.sf.net>
+
+	* Alterado o Motor de serializaÁ„o do Chronos. Agora todo o universo È
+		serializado com um formatter e sÛ onde È que esses dados v„o
+		ser guardados È que È implementado. J· existe o
+		FilePersistence e o BinarySqlPersistence que precisa de 
+		implementaÁ„o.
+
+23-11-2004	Nuno Silva		<pyrus@users.sf.net>
+
+	* Resolvido o bug 1070408 e o bug 1049360
+	* Resolvido o bug 1024235, canAddRuler. A verifica√ß√£o √© feita com base na coordenada.
+	  Se se puder adicionar mais coordenadas, pode-se adicionar o Ruler.
+
+17-11-2004	Pedro Santos	<pre@users.sf.net>
+
+	* Resolvido o bug 1049363.
+
+16-11-2004	Pedro Santos	<pre@users.sf.net>
+
+	* Altera√ß√£o do comportamento da Action ResourceRef. Al√©m de verificar se a ac√ß√£o a
+		factory associada est√° dispon√≠vel, verifica se existe pelo menos 1 item dessa
+		factory constru√≠do.
+	* Adicionados m√©todos de reset que colocam a zero todos os recursos a n√≠vel do ResourceManager
+		e ResourceInfo. Adicionado um teste que verifica que o reset do ResourceManager 
+		n√£o lan√ßa excep√ß√£o.
+
+15-11-2004	Pedro Santos	<pre@users.sf.net>
+
+	* Corrigidos alguns bugs no crescimento da popula√ß√£o. Retirado o recurso laborGrow que
+		era amb√≠guo.
+	* Separados os ficheiros de configura√ß√£o para o m√≥dulo 'rules'
+
+13-11-2004	Pedro Santos	<pre@users.sf.net>
+
+	* Adicionada a Action Restriction que compara dois recursos mediante um termo de compar√ß√£o.
+		Mais sobre a sintaxe no conf.dtd.
+	* Adicionado um teste ao Restriction no ActionTester.
+	* Adicionado um ratio ao Planet para o recurso laborGrow. Este recurso indica a quantidade
+		de labor que vai "nascer" a cada turno e √© adicionado um ratio para ele com base no
+		ratio da comida.
+
+6-11-2004	Nuno Silva		<pyrus@users.sf.net>
+	
+	* Criada a Classe BattleBattle que trata de uma batalha dentro do campo de batalha
+	* Resolu√ß√£o de bugs no rulerBattleInfo (equa√ß√µes que faziam a batalha estavam erradas)
+
+4-11-2004	Nuno Silva		<pyrus@users.sf.net>
+
+	* Integra√ß√£o da Fleet com o turno, Ruler, Planeta e Universo
+	* Integra√ß√£o da batalha no Ruler
+	* Suporte para v√°rias batalhas
+	* pequenas correc√ß√µes de bugs na fleet
+
+29-10-2004	Nuno Silva 		<pyrus@users.sf.net>
+	* Alteradas as fleets, o Universo e o Planet de modo a suportar movimenta√ß√µes
+	* Com as altera√ß√µes tamb√©m come√ßa a ser possivel integrar a l√≥gica de batalha
+
+21-10-2004	Pedro Santos	<pre@users.sf.net>
+
+	* Suporte para as Action's terem um undo que permite anular o seu efeito.
+	* Agora o custo de um recurso √© descontado quando se faz queue. Ao fazer deque
+		√© feito o undo √†s action's de custo respectivas.
+
+14-10-2004	Pedro Santos	<pre@users.sf.net>
+
+	* Preparadas as Action's e os ResultItem's para internacionaliza√ß√£o. Agora t√™m uma propriedade
+		chamada Params que retorna um array de strings com os par√¢metros associados, para que
+		possam ser passados a algo como WriteLine("Some text {0}", action.Params)
+	* Tamb√©m criei #region's em v√°rios ficheiros que encontrei que n√£o as tinham.
+
+17-09-2004	Pedro Santos	<pre@users.sf.net>
+
+	* Preparao do Chronos para integrao com o Alnitak. Alguns bugs
+resolvidos.
+
+05-08-2004	Pedro Santos	<pre@users.sf.net>
+
+	* Implementada a persistncia com MS SQL Server na classe BinarySqlPersistence. Criada tambm a classe
+		de testes, e j passam todos. A QueryString est hard cored na classe Globals e tem de se pensar 
+		melhor nisso. Tambm foi criado o ficheiro ChronosSqlServer.sql que tem o backup da estrutura 
+		base de dados. Estes ficheiros esto em persistence/SqlServer. Esta implementao tem uma performance
+		muito superior s anteriores.
+				
+		--- BinarySqlPersistenceTester ---
+		Alliances: 52 Rulers: 1011 Planets: 1011
+		Save time: 00:00:23.9377969
+		Load time: 00:00:10.8281943
+
+
+05-08-2004	Nuno Silva 		<pyrus@users.sf.net>
+	
+	* Eliminado o ficheiro heavyShip.xml;
+	* Alterado o ficheiro lightship.xml para battleship.xml que representa todas as naves de batalha;
+	* O ficheiro transportShip.xml agora tem as naves de transporte que n entram em batalhas;
+	* Comeo das alteraes dos testes da fleet ( ainda no funcionais );
+
+05-08-2004	Pedro Santos	<pre@users.sf.net>
+
+	* Corrigido um bug no incremento da classe Coordinate, e um bug no teste  persistncia dos planetas.
+		Neste momento o XmlPersistence e o BinaryPersistence passam em todos os testes, mesmo com grandes
+		quantidades de objectos:
+		
+		--- XmlPersistenceTester ---
+		Alliances: 2 Rulers: 1011 Planets: 1011
+		Save time: 00:02:23.9421060
+		Load time: 00:00:44.6889300
+		Size: 4,81 MB in 13146 files
+
+		--- BinaryPersistenceTester ---
+		Alliances: 2 Rulers: 1011 Planets: 1011
+		Save time: 00:02:34.7549520
+		Load time: 00:00:47.3296395
+		Size: 10,2 MB in 13146 files
+
+04-08-2004	Pedro Santos	<pre@users.sf.net>
+
+	* Implementada persistncia com um serializador binrio, na class BinaryPersistence.
+
+02-08-2004	Pedro Santos	<pre@users.sf.net>
+
+	* Redesenhada a arquitectura dos objectos de persistncia. Agora para fazer uma implementao, tem de se
+		derivar de Persistence e implementar os mtodos abstractos de save/load de Infos, sendo que cada
+		entidade do Chronos a ser guardada tem uma Info associada. Desta forma as implementaes tornam-se
+		mais simples, pois tm de se concentrar exactamente nos dados que so para guardar/carregar.
+	* Agora a classe ResourceInfo dispe de trs eventos: OnComplete, OnRemove e OnAvailable, que notificam
+		delegates interessados desses eventos no ResourceInfo especificado.
+	* Criados testes para os eventos OnComplete e OnRemove no ResourceInfoTester que j so passados. Adicionada
+		uma regio  classe Planet( Registered Events) com um mtodo para registar eventos e os mtodos a serem
+		invocados. Neste momento existe um mtodo onBuildShip de exemplo que  chamado no OnComplete do 
+		ResourceInfo relacionado com a categiroa LightShip.
+
+28-07-2004	Pedro Santos	<pre@users.sf.net>
+
+	* Os testes  persistncia j esto amis compostos e o XmlPersistence j os passa todos. Falta ainda
+		implementar testes a coisas relacionadas com fleets/batalhas.	
+
+27-07-2004	Pedro Santos	<pre@users.sf.net>
+
+	* Alterada a gerao de ID's nas classes para o universo. Agora  a instncia de universo que controla todos os IDs (ainda s feito para a Alliance).
+	* Criados testes para a persistncia de Alliance's, Ruler's, Universe's, ResourceManager's, ResourceInfo's e QueueItem's.
+	* Avanada a implementao do XmlPersistence.Load para carregar os planetas. Falta retocar e fazer testes
+
+27-07-2004	Pedro Santos	<pre@users.sf.net>
+
+	* Comeada a implementao do load em XML da parte de recursos de Chronos, Rulers, Planets, Alliances,
+		Universe, entre outras coisas. Ainda no est concluda.
+	* Criados alguns testes  persistncia que qualquer implementao tem de passar. Ainda so poucos,
+		 preciso criar muito mais para que se detectem rapidamente bugs.
+
+26-07-2004	Pedro Santos	<pre@users.sf.net>
+
+	* Comeada a implementao da persistncia do Chronos em XML, j guarda a parte dos Recursos,
+		falta ver como funciona as Fleets, as batalhas, etc. E falta tambm fazer o load! :-)
+
+27-06-2004	Nuno Silva	<pyrus@users.sf.net>
+
+	* Adicionado Interface IBattle (implementado por todas as classes que participam numa batalha)
+	* Criado RulerBattleInfo que possui informaes necessrias sobre a batalha de um jogador
+	* Criado a classe Ship que representa um conjunto de naves num sector da batalha
+
+27-06-2004	Pedro Santos	<pre@users.sf.net>
+
+	* Ficheiro importado para o mdulo.

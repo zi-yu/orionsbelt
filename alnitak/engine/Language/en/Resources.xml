@@ -1,0 +1,1082 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language>
+
+	<label ref="orionsbelt">Orion's Belt</label>
+
+	<!-- GENERAL STUFF -->
+	<label ref="planetas">Planets</label>
+	<label ref="maxPlanets">Max Planets</label>
+	<label ref="maxFleets">Max Fleets</label>
+	<label ref="scanCost">Scan Cost</label>
+	<label ref="mail">Mail</label>
+	<label ref="password">Password</label>
+	<label ref="send">Send</label>
+	<label ref="retype-password">Retype your password</label>
+	<label ref="auto-login">auto login</label>
+	<label ref="login">Login</label>
+	<label ref="logout">Logout</label>
+	<label ref="update">Update</label>
+	<label ref="login-error">Error logging in. Wrong mail or password. </label>
+	<label ref="diferent-passwords">Diferent passwords.</label>
+	<label ref="provide-password">You must provide the password.</label>
+	<label ref="provide-nick">You must provide your nick.</label>
+	<label ref="provide-mail">You must provide tour email.</label>
+	<label ref="bad-mail-format">Bad mail format.</label>
+	<label ref="nick">Nick</label>
+	<label ref="register">Register</label>
+	<label ref="play">Play</label>
+	<label ref="your-home">Your Home</label>
+	<label ref="cancel">Cancel</label>
+	<label ref="ruler_info">Ruler Information</label>
+	<label ref="no_alliance">no alliance</label>
+	<label ref="victories">Victories</label>
+	<label ref="defeats">Defeats</label>
+	<label ref="top_3rulers">Top 3 Rulers</label>
+	<label ref="top_rulers">Top Rulers</label>
+	<label ref="top_rulers_focus">Focus on {0}</label>
+	<label ref="description">Description</label>
+	<label ref="dependencies">Dependencies</label>
+	<label ref="no_rank_avalable">Ruler ranking not available at this time</label>
+	<label ref="onTurn">
+		At this time the turn is being processed, and it may take several minutes.
+	</label>
+	<label ref="tryAgain">Try Again!</label>
+	<label ref="category">Category</label>
+	<label ref="Duration">Duration</label>
+	<label ref="invalid_request">Invalid Request!</label>
+	<label ref="information">Information</label>
+	<label ref="OnlineUsersCount">Online Users</label>
+	<label ref="LatestUsers">Latest Users Online</label>
+	<label ref="irc">#orionsbelt @ PTNet</label>
+	<label ref="LatestRuler">Latest Ruler</label>
+	<label ref="planet_not_protected">Planet without protection!</label>
+	<label ref="help">Help</label>
+	<label ref="batalhas">Battles</label>
+	<label ref="space">Space Needed</label>
+	<label ref="sim">Yes</label>
+	<label ref="nao">No</label>
+	<label ref="online">Online</label>
+	<label ref="realizar">Perform</label>
+	<label ref="points">Points</label>
+	<label ref="IfWin">If You Win</label>
+	<label ref="IfLoose">If You Loose</label>
+	<label ref="False">False</label>
+	<label ref="True">True</label>
+	<label ref="no_news_title">News</label>
+	<label ref="no_news_message">No registered news!</label>
+	<label ref="news_feed">Orion's Belt News Feed</label>
+	<label ref="history">History</label>
+	<label ref="spaceTitle">Space</label>
+	<label ref="RareResources">Rare Resources</label>
+	<label ref="Rare">Rare Resources</label>
+	<label ref="spaceAvailable">Available/Total</label>
+	<label ref="tech">Technology</label>
+	<label ref="planet">Planet</label>
+	<label ref="exploration">Exploration</label>
+	<label ref="fleet">Fleets</label>
+	<label ref="upgrade">Upgrades</label>
+	<label ref="general">General</label>
+	<label ref="loading">Loading.... Please Wait!</label>
+	<label ref="ruler_not_playing">Ruler not playing at the moment!</label>
+	<label ref="pub">Advertising</label>
+	<label ref="user">User</label>
+	<label ref="restrictions_title">Some restrictions were detected!</label>
+	<label ref="restrictions_header">
+		Until you resolve this restrictions you may not be able to perform some actions in the game. More about
+		this in the manual: 
+	</label>
+	<label ref="restrictions_link">Restrictions</label>
+	<label ref="buy">Buy</label>
+	<label ref="sell">Sell</label>
+	<label ref="SellTable">Sell Table</label>
+	<label ref="BuyTable">Buy Table</label>
+	<label ref="Price">Price</label>
+	<label ref="PlanetMoney">Planet Money</label>
+	<label ref="PlanetMarkets">Planet Markets</label>
+	<label ref="Total">Total</label>
+	<label ref="operation">Operation</label>
+	<label ref="ProductionFactor">Production Factor</label>
+	<label ref="FarAwayFromHomeFactor">Far Away From Home Factor</label>	
+	<label ref="screenshots">ScreenShots</label>	
+	<label ref="Turns">Turns</label>
+	<label ref="defenseFleet">Defense Fleet</label>
+	<label ref="TournamentValue">Tournament Value</label>
+	<label ref="QuoteOfTheDay">Quote of the Day</label>
+	<label ref="vacation_restriction">You can't play while on vacation!</label>
+	
+	<!-- LOGIN -->
+	<label ref="login_login">Login</label>
+	<label ref="login_register">Register</label>
+	<label ref="login_logout">Logout</label>
+	<label ref="login_profile">Profile</label>
+	<label ref="login_ruler">Become a Ruler</label>
+	<label ref="login_auto-login">Auto login</label>
+	<label ref="login_becomeRuler">Become a Ruler</label>
+	<label ref="login_has-login">Your're already Logged In.</label>
+	<label ref="login_has-regist">Your're already Registered.</label>
+	<label ref="login_not-login">You have to Login to be able to Logout.</label>
+
+	<!-- LOGOUT -->
+	<label ref="logout_message">
+		&lt;p/&gt;You're Logout. Use the left screen to make login again.&lt;/p&gt;
+		&lt;a href="default.aspx" &gt;back to home page&lt;/a&gt;
+	</label>
+
+	<!-- PROFILE -->
+	<label ref="profile_title">You're Profile</label>
+	<label ref="profile_no-login">You have to &lt;a href=&quot;/login.aspx&quot;&gt;Login&lt;/a&gt; to be able to change your profile.</label>
+	<label ref="profile_provide-nick">You have to provide your nick/mail.</label>
+	<label ref="profile_preferences">Preferences</label>
+	<label ref="profile_language">Language</label>
+	<label ref="profile_skin">Visual Style</label>
+	<label ref="profile_personal-info">Personal Information</label>
+	<label ref="profile_contacts">Contacts</label>
+	<label ref="profile_others">Others</label>
+	<label ref="profile_profile-updated">&lt;b&gt;Profile updated!&lt;/b&gt;</label>
+	<label ref="profile_website">Personal Homepage</label>
+	<label ref="profile_msn">MSN Messenger</label>
+	<label ref="profile_icq">ICQ</label>
+	<label ref="profile_aim">AIM</label>
+	<label ref="profile_jabber">JabberID</label>
+	<label ref="profile_yahoo">Yahoo</label>
+	<label ref="profile_signature">Signature</label>
+	<label ref="profile_avatar">Avatar Url (50x50)</label>
+	<label ref="profile_avatarText">Avatar</label>
+	<label ref="profile_imagesDirText">You can speed up your game by downloading our images pack (&lt;b&gt;&lt;a href='{0}'&gt;zip&lt;/a&gt;&lt;/b&gt;). Once the download is made just specify the directory you unzipped it into the textbox below (ie: C:\OrionsBelt\Images). If you want to use the default url, just leave the below textbox blank. &lt;b&gt;IT ONLY WORKS IN INTERNET EXPLORER!&lt;/b&gt;</label>
+	<label ref="profile_regist">Registered on</label>
+	<label ref="profile_lastLogin">Last Login on</label>
+	
+	<!-- REGISTO -->
+	<label ref="register_title">Register</label>
+	<label ref="register_mail-exists">Mail already registered.</label>
+	<label ref="register_go-login">
+		You are now registered as &lt;b&gt;{0}&lt;/b&gt;.
+		&lt;p/&gt;
+		Access the &lt;a href="login.aspx"&gt;Login&lt;/a&gt; page to change your preferences and play the game!
+	</label>
+	<label ref="register_has-regist">Your already registered.</label>
+	<label ref="profile_player_preferences">Player Settings</label>
+	<label ref="profile_vacation">Vacation Mode</label>
+	<label ref="profile_vacation_warning">If you enter Vacation Mode, you will only be able to activate you accont
+not before the next two days. On the other hand, while in vacation, all your empire will stagnate</label>
+	<label ref="profile_vacation_error">You must stay in Vacation Mode at least {1} turns. Turns in vacation mode: {0}</label>
+	<label ref="profile_regist_notice">
+&lt;p&gt;You can only &lt;b&gt;have &lt;u&gt;one&lt;/u&gt; account&lt;/b&gt;!&lt;/p&gt;
+	&lt;p&gt;More information on &lt;a href="http://orionsbelt.zi-yu.com/wiki/default.aspx/Orionsbelt.Batota"&gt;Cheating&lt;/a&gt;.&lt;/p&gt;
+	</label>
+	
+	<!-- RESET PASSWORD -->
+	<label ref="reset_text">Please enter your email address and we will send you an email containing a temporary password. You can play using this password or you can go to your Profile and change it.</label>
+	<label ref="reset_button">Submit</label>
+	<label ref="reset_done">The new password was successfully sent to the provided email!</label>
+	<label ref="reset_request">I forgot my password!</label>
+	
+	<!-- SECTIONS -->
+	<label ref="section_home">Home</label>
+	<label ref="section_planets">Planets</label>
+	<label ref="section_planet">Planet</label>
+	<label ref="section_faq">FAQ</label>
+	<label ref="section_regist">Register</label>
+	<label ref="section_index">News</label>
+	<label ref="section_profile">Profile</label>
+	<label ref="section_login">Login</label>
+	<label ref="section_logout">Logout</label>
+	<label ref="section_addruler">Add Ruler</label>
+	<label ref="section_battle">Battle</label>
+	<label ref="section_buildings">Buildings</label>
+	<label ref="section_ruler">Ruler</label>
+	<label ref="section_admin">Administration</label>
+	<label ref="section_military">Military</label>
+	<label ref="section_army">Army</label>
+	<label ref="section_fleet">Fleet</label>
+	<label ref="section_mechs">Mechs</label>
+	<label ref="section_orionsbelterror">Error</label>
+	<label ref="section_research">Research</label>
+	<label ref="section_exceptionlog">Exceptions</label>
+	<label ref="section_exception">Exception</label>
+	<label ref="section_tops">Top Players</label>
+	<label ref="section_toprulers">Top Rulers</label>
+	<label ref="section_topranks">Ranking</label>
+	<label ref="section_rankcalculator">Rank Calculator</label>
+	<label ref="section_docs">Quick Ref</label>
+	<label ref="section_userinfo">User Information</label>
+	<label ref="section_topruler">Top</label>
+	<label ref="section_scan">Planet Scan</label>
+	<label ref="section_prizes">Prizes</label>
+	<label ref="section_addnews">Add News</label>
+	<label ref="section_tele">Transferral</label>
+	<label ref="section_scanreport">Report</label>
+	<label ref="section_wiki">Manual</label>
+	<label ref="section_forum">Forum</label>
+	<label ref="section_topics">Topics</label>
+	<label ref="section_topic">Topic</label>
+	<label ref="section_resetpassword">Reset Password</label>
+	<label ref="section_contact">Contact</label>
+	<label ref="section_stats">Stats</label>
+	<label ref="section_media">Media</label>
+	<label ref="section_artwork">Art Work</label>
+	<label ref="section_about">About Us</label>
+	<label ref="section_supports">Who Supports Us</label>
+	<label ref="section_resources">Resources</label>
+	<label ref="section_ships">Ships</label>
+	<label ref="section_forumadmin">Forum Admin</label>
+	<label ref="section_friendlybattle">Friendly Battle</label>
+	<label ref="section_market">Market</label>
+	<label ref="section_battleadmin">Battle</label>
+	<label ref="section_scanoverview">Scan Overview</label>
+	<label ref="section_barracks">Barracks</label>
+	<label ref="section_tournament">Tournament</label>
+	<label ref="section_tadmin">Tournament</label>
+	<label ref="section_shop">Shop</label>
+	<label ref="section_topplanets">Top Planets</label>
+	<label ref="section_alliance">Alliance</label>
+	<label ref="section_allianceinfo">AllianceInfo</label>
+	<label ref="section_topalliances">Top Alliances</label>
+	
+	<!-- Mail -->
+	<label ref="MailFrom">From</label>
+	<label ref="MailTo">To</label>
+	<label ref="Message">Message</label>
+	<label ref="MessageSent">Message Sent</label>
+	<label ref="send_mail">Send Mail</label>
+
+	<!-- ADDRULER -->
+	<label ref="addruler_title">register as a ruler to play the game!!</label>
+	<label ref="addruler_intro">To play, you have to register first. Theres is a player limit per round and, at this time {0}.</label>
+	<label ref="addruler_status-badnews">&lt;b&gt;the game is full&lt;/b&gt;. Sorry, but you will have to wait for the next round</label>
+	<label ref="addruler_status-goodnews">&lt;b&gt;you can register&lt;/b&gt;</label>
+	<label ref="addruler_home-planet">Your planet name: </label>
+	<label ref="addruler_planet-only-text">Your planet name can only contain plain text.</label>
+	<label ref="addruler_planet-required">You have to enter a name for your planet.</label>
+	<label ref="addruler_planet-tolong">Your planet name can only have up to 20 characters.</label>
+	<label ref="addruler_already-ruler">You have already registered as a ruler.</label>
+	
+	<!-- SCAN -->
+	<label ref="scan_galaxyTitle">The Universe</label>
+	<label ref="scan_systemTitle">Galaxy ({0})</label>
+	<label ref="scan_sectorTitle">System ({0})</label>
+	<label ref="scan_planetTitle">Sector ({0})</label>
+
+	<label ref="scan_performScan">Perform Planet Scan</label>
+	<label ref="scan_performSystemScan">Perform System Scan</label>
+	<label ref="scan_currentScans">Current Scans</label>
+	<label ref="scan_reports">Reports</label>
+	<label ref="scan_choose_coord">Please choose the coordinate</label>
+	<label ref="scan_no_energy">Can't perform scan, no energy. Needed &lt;b&gt;{0}&lt;/b&gt; got &lt;b&gt;{1}&lt;/b&gt;</label>
+	<label ref="scan_no_reports">No Reports</label>
+	<label ref="scan_target">Target</label>
+	<label ref="scan_cloaked">Cloaked</label>
+	<label ref="scan_success">Success</label>
+	<label ref="scan_report">Report</label>
+	<label ref="scan_inhabited">Inhabited</label>
+	<label ref="scan_fleet_number">Fleets detected</label>
+	<label ref="scan_ship_number">Combat Units detected</label>
+	<label ref="scan_scanCost">Scan Cost</label>
+	<label ref="scan_planetEnergy">Planet Energy</label>
+
+	<!-- RECURSOS -->
+
+	<!-- Labels Genéricas -->
+
+	<label ref="recursos">Resources</label>
+	<label ref="modificadores">Modifiers</label>
+	<label ref="modificadores_title">Richeness of your planet</label>
+	<label ref="recurso">Resource</label>
+	<label ref="quantidade">Quantity</label>
+	<label ref="quantidade_title">Quantity Available</label>
+	<label ref="ratio">Perc</label>
+	<label ref="turnIncome">Turn Income</label>
+	<label ref="turnIncome_title">How much you get every turn</label>
+	<label ref="add_title">Add</label>
+	<label ref="remove_title">Remove</label>
+
+	<!-- Nomes de Recursos -->
+
+	<!-- Intrinsic -->
+	<label ref="food">Food</label>
+	<label ref="energy">Energy</label>
+	<label ref="mp">MP</label>
+	<label ref="gold">Money</label>
+	<label ref="culture">Culture</label>
+	<label ref="housing">Housing</label>
+	<label ref="labor">Labor</label>
+	<label ref="marine">Marines</label>
+	<label ref="spy">Spies</label>
+	<label ref="score">Score</label>
+	<label ref="groundSpace">Ground Space</label>
+	<label ref="waterSpace">Water Space</label>
+	<label ref="orbitSpace">Orbit Space</label>
+	<label ref="queueCapacity">Queue Capacity</label>
+	<label ref="polution">Polution</label>
+	
+	<!-- Rare -->
+	<label ref="elk">Elk</label>
+	<label ref="hydrogen">Hydrogen</label>
+	<label ref="plastic">Plastic</label>
+	<label ref="titanium">Titanium</label>
+	<label ref="oil">Oil</label>
+	<label ref="diamond">Diamond</label>
+	<label ref="silver">Silver</label>
+	<label ref="uranium">Uranium</label>
+	<label ref="gas">Gas</label>
+
+	<!-- Base Building -->
+	<label ref="Outpost">Outpost</label>
+	<label ref="Colony">Colony</label>
+	<label ref="Metropolis">Metropolis</label>
+
+	<!-- Building -->
+	<label ref="Incinerator">Incinerator</label>
+	<label ref="RecyclingPlant">Recycling Plant</label>
+	<label ref="Etar">ETAR</label>
+	<label ref="SpaceStation">Space Station</label>
+	<label ref="Barracks">Barracks</label>
+	<label ref="StarPort">StarPort</label>
+	<label ref="TankFacility">Tank Facility</label>
+	<label ref="MechBuilding">Mech Building</label>
+	<label ref="PlanetaryDefenseRing">Planetary Defense Ring</label>
+	<label ref="IonCanon">Ion Cannon</label>
+	<label ref="Observatory">Observatory</label>
+	<label ref="School">School</label>
+	<label ref="University">University</label>
+	<label ref="ResearchCampus">Research Campus</label>
+	<label ref="WaterSchool">Water School</label>
+	<label ref="WaterUniversity">Water University</label>
+	<label ref="WaterResearchCampus">Water Research Campus</label>
+	<label ref="CommsSatellite">Comms Satellite</label>
+	<label ref="Marketplace">Marketplace</label>
+	<label ref="Hospital">Hospital</label>
+	<label ref="LeisureCentre">Leisure Centre</label>
+	<label ref="StockMarkets">Stock Markets</label>
+	<label ref="MineralExtractor">Mineral Extractor</label>
+	<label ref="LandReclamation">Land Reclamation</label>
+	<label ref="WaterReclamation">Water Reclamation</label>
+	<label ref="Zoomarine">Zoomarine</label>
+	<label ref="Spa">Spa</label>
+	<label ref="Gate">Gate</label>
+	<label ref="StarGate">Star Gate</label>
+	<label ref="Turret">Turret</label>
+	<label ref="IonCannon">Ion Cannon</label>
+	
+	<!-- Rare Resource Buildings -->
+	<label ref="HidroPlant">Hydrogyn Plant</label>
+	<label ref="ElkFacility">Elk Exploration</label>
+	<label ref="DiamondShop">Diamond Shop</label>
+	<label ref="OilPlant">Oil Plant</label>
+	<label ref="GasPlant">Gas Plant</label>
+	<label ref="SilverShop">Silver Shop</label>
+
+	<!-- Resource Generator -->
+	<label ref="PowerPlant">PowerPlant</label>
+	<label ref="SolarPanel">Solar Panel</label>
+	<label ref="Farm">Farm</label>
+	<label ref="GoldMine">Gold Mine</label>
+	<label ref="Mine">Mine</label>
+	<label ref="WaterMine">Water Mine</label>
+	<label ref="UniversalExplorationMine">Mine Level 2</label>
+	<label ref="House">House</label>
+	<label ref="FishingFacility">Fishing Facility</label>
+	<label ref="WaterPower">Water Power</label>
+	<label ref="WaterHouse">Water House</label>
+
+	<!-- Pesquisas -->
+	<label ref="Warfare">Warfare</label>
+	<label ref="Espionage">Espionage</label>
+	<label ref="AdvancedResearchI">Advanced Research I</label>
+	<label ref="AdvancedResearchII">Advanced Research II</label>
+	<label ref="AdvancedFlightI">Advanced Flight 1</label>
+	<label ref="AdvancedFlightII">Advanced Flight 2</label>
+	<label ref="AdvancedFlightIII">Advanced Flight 3</label>
+	<label ref="ShipShields">Unit Shields</label>
+	<label ref="ShipFirePower">Unit Fire Power</label>
+	<label ref="Cybernetics">Cybernetics</label>
+	<label ref="PlanetExploration">Planet Exploration</label>
+	<label ref="SectorExploration">Sector Exploration</label>
+	<label ref="SystemExploration">System Exploration</label>
+	<label ref="GalaxyExploration">Galaxy Exploration</label>
+	<label ref="PlanetLimit5">Planet Limit (5)</label>
+	<label ref="PlanetLimit10">Planet Limit (10)</label>
+	<label ref="PlanetLimit15">Planet Limit (15)</label>
+	<label ref="PlanetLimit20">Planet Limit (20)</label>
+	<label ref="PlanetLimit35">Planet Limit (35)</label>
+	<label ref="QueueCapacity3">Queue Capacity (3)</label>
+	<label ref="QueueCapacity5">Queue Capacity (5)</label>
+	<label ref="WaterExplorationI">Water Exploration I</label>
+	<label ref="WaterExplorationII">Water Exploration II</label>
+	<label ref="WaterExplorationIII">Water Exploration III</label>
+	<label ref="OrbitExploration">Orbit Exploration</label>
+	<label ref="Scanning">Scanning</label>
+	<label ref="SectorScanning">Sector Scanning</label>
+	<label ref="SystemScanning">System Scanning</label>
+	<label ref="GalaxyScanning">Galaxy Scanning</label>
+	<label ref="ScanLevelI">Scan level I</label>
+	<label ref="ScanLevelII">Scan level II</label>
+	<label ref="ScanLevelIII">Scan level III</label>
+	<label ref="ScanShieldLevelI">Scan Shield I</label>
+	<label ref="ScanShieldLevelII">Scan Shield II</label>
+	<label ref="ScanShieldLevelIII">Scan Shield III</label>
+	<label ref="ScanNotificationI">Scan Notification I</label>
+	<label ref="ScanNotificationII">Scan Notification II</label>
+	<label ref="ScanNotificationIII">Scan Notification III</label>
+	<label ref="Medicine">Medicine</label>
+	<label ref="Commerce">Commerce</label>
+	<label ref="Economics">Economics</label>
+	<label ref="Geology">Geology</label>
+	<label ref="GeoPlanet">GeoPlanet</label>
+	<label ref="TeletransportationI">Teletransportation I</label>
+	<label ref="TeletransportationII">Teletransportation II</label>
+	<label ref="TeletransportationIII">Teletransportation III</label>
+	<label ref="Recycling">Recycling</label>
+	<label ref="PlanetDefenseI">Planet Defense I</label>
+	<label ref="PlanetDefenseII">Planet Defense II</label>
+	
+	<!-- Prémios -->
+	<label ref="FirstToConquer">Conquer a Planet</label>
+	<label ref="FirstTo5">Conquer 5 Planets</label>
+	<label ref="FirstTo10">Conquer 10 Planets</label>
+	<label ref="FirstTo15">Conquer 15 Planets</label>
+	<label ref="FirstTo20">Conquer 20 Planets</label>
+	<label ref="StarPortPrize">Build Star Port</label>
+	<label ref="CommsSatellitePrize">Build Comms Satellite</label>
+	<label ref="FirstToKnowAll">Finish all Researches</label>
+	
+	<label ref="conquer_prizes">Conquer Prizes</label>
+	<label ref="building_prizes">Building Prizes</label>
+	<label ref="research_prizes">Research Prizes</label>
+	<label ref="prize">Prize</label>
+	<label ref="winner">Winner</label>
+	
+	<!-- Medalhas -->
+	<label ref="Gold">Gold</label>
+	<label ref="Silver">Silver</label>
+	<label ref="Bronze">Bronze</label>
+	<label ref="Other">Plastic</label>
+	<label ref="Medal">Medal</label>
+	
+	<!-- Tipos de Recursos -->
+
+	<label ref="Building">Building</label>
+	<label ref="Research">Research</label>
+	<label ref="Intrinsic">Intrinsic</label>
+
+	<!-- Outros -->
+
+	<label ref="inProduction">In Production</label>
+	<label ref="researchQueueTitle">Researching</label>
+	<label ref="researchTitle">Research Available</label>
+	<label ref="conclusao">Conclusion</label>
+	<label ref="coordenada">Coordinate</label>
+	<label ref="researchQueueEmpty">Nothing in research...</label>
+	<label ref="buildingsQueueEmpty">Nothing in construction...</label>
+	<label ref="empty">No Scans...</label>
+	<label ref="see">See</label>
+	<label ref="InvalidQueueRequest">Queue error! Please try again!</label>
+	<label ref="InvalidQueueState">Invalid queue state (maybe a turn has elapsed meanwhile?)</label>
+
+	<!-- STATS -->
+
+	<label ref="stats_title">Statistics</label>
+	<label ref="stats_alliances">Alliance</label>
+	<label ref="stats_rulers">Rulers</label>
+	<label ref="stats_registered">Registered</label>
+	<label ref="stats_planets">Planets</label>
+	<label ref="stats_timeFromLastReboot">Last Reboot</label>
+	<label ref="stats_lastTurnTime">Last Turn Time</label>
+	<label ref="stats_turnSinceReboot">Turns Since Reboot</label>
+	<label ref="stats_totalTurns">Total Turns</label>
+	<label ref="stats_turnTime">Time Between Turns</label>
+	<label ref="stats_lastTurn">Last Turn</label>
+	<label ref="stats_nextTurn">Next Turn</label>
+	<label ref="stats_nextCoordinate">Next Planet Coordinate</label>
+	<label ref="stats_persistence">Persistence</label>
+	<label ref="stats_cache_title">Cache Information</label>
+	<label ref="stats_cache_count">Items Count: </label>
+	<label ref="stats_cache_content">Application Specific Content: </label>
+	<label ref="stats_application_title">Application State Information</label>
+	<label ref="turn_current">Turn</label>
+	<label ref="turn_next">Next in</label>
+	<label ref="stats_text">
+		These statistics are gathered by &lt;a href='http://sourceforge.net'&gt;SourceForge.net&lt;/a&gt;. You can get a better statistics overview following this 
+&lt;a href='http://sourceforge.net/project/stats/?group_id=99352&amp;ugn=orionsbelt'&gt;link&lt;/a&gt; (leeds outside Orion's Belt).
+	</label>
+
+	<!-- LEFT MENU -->
+
+	<label ref="leftmenu_user-menu-label">Your universe</label>
+	<label ref="leftmenu_namedpages-header">Site</label>
+	<label ref="leftmenu_subMenu">Menu</label>
+
+	<!-- VALIDATORS -->
+
+	<label ref="validators_bad-formed-nick">Your nick can only have word charaters, numbers and spaces.</label>
+	<label ref="validators_big-nick">Your nick can have no more than 30 characters.</label>
+	<label ref="validators_big-pass">Your password must have 3 to 10 characters.</label>
+	<label ref="validators_big-url">Your WebSite Url can only have up to 60 characters.</label>
+	<label ref="validators_big-avatarUrl">Your Avatar Url can only have up to 250 characters.</label>
+	<label ref="validators_bad-formed-url">Mal formed WebSite Url. Example of an acceptable url: http://site.com/index.html.</label>
+	<label ref="validators_bad-formed-avatarUrl">Mal formed Avatar Url. Example of an acceptable url: http://site.com/avatar.gif.</label>
+	<label ref="validators_invalid-msn">Invalid MSN.</label>
+	<label ref="validators_invalid-icq">Invalid ICQ.</label>
+	<label ref="validators_invalid-jabber">Invalid JabberID.</label>
+	<label ref="validators_invalid-aim">Invalid AIM.</label>
+	<label ref="validators_invalid-yahoo">Invalid Yahoo.</label>
+	<label ref="validators_invalid-signature">Invalid Signature. Only plain text allowed.</label>
+	<label ref="validators_big-signature">Your Signature can only have up to 255 characters.</label>
+	<label ref="validators_invalidDir">Image directory has an invalid format.</label>
+	<label ref="validators_invalidMailFormat">The email has an invalid format.</label>
+	<label ref="validators_invalidEmail">Invalid email.</label>
+	
+	<!-- PLANETS -->
+
+	<label ref="your-planets">your planets</label>
+	<label ref="errorNoPermissions">You do not have permissions to see this Page. Contact us if you think you do.</label>
+	<label ref="planet-Information">Planet information</label>
+	<label ref="planet-buildings">planet buildings</label>
+	<label ref="generalInformation">General Planet Information</label>
+	<label ref="planetRicheness">Planet richness</label>
+	<label ref="planetResources">Planet resources</label>
+	<label ref="rulerResearch">Research List</label>
+	<label ref="noProduction">There is nothing being produced.</label>
+	<label ref="buildingList">Available Buildings</label>
+	<label ref="demolir">Demolish</label>
+	<label ref="build">Build</label>
+	<label ref="confirmDemolish">Do you want to demolish 1</label>
+	<label ref="askBuildQuantity">Insert Quantity</label>
+	<label ref="invalidQuantity">Invalid Quantity</label>
+	<label ref="confirmDequeue">Cancel item?</label>
+	<label ref="waiting">Waiting...</label>
+	<label ref="noneAvailable">None available...</label>
+
+	<label ref="diameter">Diameter</label>
+	<label ref="name">Name</label>
+	<label ref="coordinate">Coordinate</label>
+	<label ref="mass">Mass</label>
+	<label ref="temperature">Temperature</label>
+	<label ref="escape">Escape Velocity</label>
+	<label ref="terrain">Terrain</label>
+
+	<label ref="mineral">Mineral</label>
+
+	<label ref="water">Water</label>
+	<label ref="desert">Desert</label>
+	<label ref="rock">Rock</label>
+	<label ref="terrest">Terrest</label>
+	<label ref="forest">forest</label>
+	<label ref="ice">Ice</label>
+
+	<!-- BATTLE -->
+	
+	<label ref="battle_fleetsReadyToBattle">Fleets Ready to Battle</label>
+	<label ref="battle_noFleets">There are no fleet ready for a battle</label>
+	<label ref="battle_startBattle">Start Battle</label>
+	<label ref="battle_isInBattle">Planet In Battle</label>
+	<label ref="battle_sameAlliance">Same Alliance</label>
+
+	<label ref="battle_menu">Battle Menu</label>
+	<label ref="battle_position">Unit Position</label>
+	
+	<label ref="battle_insert">Insert Quantity</label>
+	<label ref="battle_minQuant">Minimum Quantity</label>
+	<label ref="battle_maxQuant">Maximum Quantity</label>
+	<label ref="battle_attack">Attack</label>
+	<label ref="battle_defense">Defense</label>
+	<label ref="battle_live">Live</label>
+	<label ref="battle_catapult">Catapult</label>
+	<label ref="battle_damageBehind">Rebound</label>
+	<label ref="battle_tripleAttack">Triple Attack</label>
+	<label ref="battle_replicator">Replicator</label>
+	<label ref="battle_moveCost">Movement Cost</label>
+	<label ref="battle_moveType">Movement Type</label>
+	<label ref="battle_range">Range</label>
+	<label ref="battle_error">Error</label>
+	<label ref="battle_unitsDestroyed">Units Destroyed</label>
+	<label ref="battle_info">Battle Information</label>
+	<label ref="battle_unitInfo">Unit Information</label>
+	<label ref="battle_canAttack">Can Attack</label>
+	<label ref="battle_strikeBack">Strike Back</label>
+	<label ref="battle_targetDefense">Enemy's Defense</label>
+	<label ref="battle_targetLive">Enemy's Live</label>
+		
+	<label ref="battle_invalidQuantity">Insert a valid quantity!</label>
+	<label ref="battle_UnitsLeft">You have to put all the Units in the battle field!</label>
+	<label ref="battle_noMoves">You don´t have enough moves!</label>
+	<label ref="battle_alreadyAttacked">The selected ship cannot be moved because it made an attack!</label>
+	<label ref="battle_minimumMove1">You must move at least 20% of the ships in a group. You moved </label>
+	<label ref="battle_minimumMove2">when you must move at least</label>
+	<label ref="battle_minimumRest1">You must leave at least 20% of the ships in a group. You left </label>
+	<label ref="battle_minimumRest2">when you should have left at least</label>
+	<label ref="battle_giveUpQuestion">Are you sure that you want to give up?</label>
+	<label ref="battle_endTurnQuestion">Are you sure that you want to end the turn?</label>
+	<label ref="battle_positioningQuestion">Are you sure that you want to make the positioning?</label>
+		
+	<label ref="battle_moves">Movements</label>
+	<label ref="battle_rank">Ranking</label>
+	<label ref="battle_endTurn">End Turn</label>
+	<label ref="battle_positioning">Position</label>
+	<label ref="battle_giveUp">Give Up</label>
+	
+	<label ref="battle_at">Battle at Coordinate {0}</label>
+	<label ref="battle_oneMove">You must do, at least, one movement</label>
+	
+	<label ref="battle_specialAvailable">Special Units Available</label>
+	<label ref="battle_lightAvailable">Light Units Available</label>
+	<label ref="battle_mediumAvailable">Medium Units Available</label>
+	<label ref="battle_heavyAvailable">Heavy Units Available</label>
+	<label ref="battle_animalsAvailable">Animals Available</label>
+
+	<label ref="battle_shipType">Ship Type</label>
+	
+	<label ref="battle_specialUnitType">Special Units</label>
+	<label ref="battle_lightUnitType">Light Units</label>
+	<label ref="battle_mediumUnitType">Medium Units</label>
+	<label ref="battle_heavyUnitType">Heavy Units</label>
+	<label ref="battle_animalType">Animal Units</label>
+	
+	<label ref="battle_noUnits">There are no units of this type available</label>
+	<label ref="battle_noInt">All quantities must be integers</label>
+	<label ref="battle_noUnitSelected">No Unit quantity was filled!</label>
+	<label ref="battle_noRulerSelected">No Ruler was selected!</label>
+	<label ref="battle_IntToBig">Unit {0} has a to big quantity! Please insert a lower value.</label>
+	
+	<label ref="battle_choose">Choose Oponent</label>
+	<label ref="battle_create">Create Battle</label>
+	<label ref="battle_type">Battle Type</label>
+	
+	<label ref="battle_friendlyCreated">Friendly battle created!</label>
+	
+	<label ref="battle_cannotCreatefriendlys">
+		&lt;p&gt;You cannot create Friendly battles because you reached the limit ({0} battles)&lt;/p&gt;
+		&lt;p&gt;If you wish to have unlimited battles among other advantages, become a premium member &lt;a href='#'&gt;here&lt;/a&gt;.&lt;/p&gt;
+	</label>
+	
+	<label ref="battle_toMuchUnits">You can only have {0} types of units!</label>
+	<label ref="battle_enemycanthave">Your opponent can't have more battles!</label>
+	
+	<!-- CURRENT BATTLE -->
+
+	<label ref="currentBattle_title">Current Battles</label>
+	<label ref="currentBattle_rulerTurn">your move</label>
+	<label ref="currentBattle_enemyTurn">opponent's move</label>
+	<label ref="currentBattle_enemyPositioning">opponent's positioning</label>
+	<label ref="currentBattle_rulerPosition">set Unit positions</label>
+	
+	<label ref="currentBattle_turn">Turn</label>
+	<label ref="currentBattle_opponent">Opponent</label>
+	<label ref="currentBattle_status">Status</label>
+	<label ref="currentBattle_location">Location</label>
+	<label ref="currentBattle_timeLeft">Time Left</label>
+	<label ref="currentBattle_timeout">Timeout</label>
+	
+	<label ref="currentBattle_viewBattle">View Battle</label>
+	
+	
+
+	
+	<label ref="d">day(s)</label>
+		
+	<label ref="currentBattle_noBattles">There are no battles</label>
+
+	<!-- END BATTLE TYPES -->
+	
+	<label ref="regicide">Regicide</label>
+	<label ref="totalannihilation">Total Annihilation</label>
+		
+	<!-- BATTLE ADMIN-->
+	
+	<label ref="battleAdminUser_view">View Battles</label>
+	<label ref="battleAdminUser_viewBattle">View Battle</label>
+	<label ref="battleAdminUser_type">BattleType</label>
+	<label ref="battleAdminUser_enemy">enemy</label>
+	<label ref="battleAdminUser_remove">Delete</label>
+	<label ref="battleAdminUser_winner">Set Winner</label>
+	<label ref="battleAdminUser_chooseRuler">Choose Ruler</label>
+	
+	<label ref="battleAdminUser_battle">Battle</label>
+	<label ref="battleAdminUser_tournament">Tournament</label>
+	<label ref="battleAdminUser_friendly">Friendly</label>
+	
+	<label ref="battleAdminUser_title">Admin User Battles</label>
+	
+	<label ref="battleAdminUser_norulerid">The ruler id must be in the above textbox</label>
+	<label ref="battleAdminUser_invalidBattleOwner">The ruler doesn't have the selected battle</label>
+	<label ref="battleAdminUser_setWinnerDone">Battle with id {0} has ended with {1} victory.</label>
+	
+	<!-- CANCEL BATTLE -->
+	
+	<label ref="cancelBattle_acceptReject">Accept/Reject Battles</label>
+	<label ref="cancelBattle_ruler">Ruler</label>
+	<label ref="cancelBattle_accept">Accept</label>
+	<label ref="cancelBattle_reject">Reject</label>
+	
+	<!-- RANKINGS -->
+
+	<label ref="rank_not-available">Rank Not Available</label>
+	<label ref="rank_weak">Weak</label>
+	<label ref="rank_impotent">Impotent</label>
+	<label ref="rank_peacefull">Peacefull</label>
+	<label ref="rank_courageous">Courageous</label>
+	<label ref="rank_daring">Daring</label>
+	<label ref="rank_fearless">Fearless</label>
+	<label ref="rank_heroic">Heroic</label>
+
+	<!-- MILITARY -->
+	<label ref="military_noShipsInThisFleet">There are no Units in this fleet</label>
+	<label ref="military_invalidData">Invalid data in the planet selection! Planet id : {0} ; Planet Object: {1}</label>
+
+	<!-- ACTION MESSAGES -->
+	<label ref="queueError">Error queuing resource</label>
+	<label ref="failed">Failed</label>
+	<label ref="succeeded">Succeeded</label>
+	<label ref="resource-needed">Resource needed: {1} {0}</label>
+	<label ref="FullQueue">Queue space available (max: {0})</label>
+	<label ref="FactoryNotAvailable">{0} factory exists in category {1}</label>
+	<label ref="add">Add {2} {1}</label>
+	<label ref="resource-available">Resource available:{2} {1} </label>
+	<label ref="resource-ref">Resource reference: {1} {0} </label>
+	<label ref="static">Restriction</label>
+	<label ref="supress-factory">Supress Factory: {0} {1}</label>
+	<label ref="disallow-build">Disable {1} construction in category {0}</label>
+	<label ref="addRatio">Increase {0} modifier by {1}</label>
+	<label ref="OperationSucceded">Operation succeded</label>
+	<label ref="InvalidOperation">Invalid Operation</label>
+	<label ref="CannotTeletransport">Cannot teletransport</label>
+	<label ref="ResourceNotAvailable">Resource not available: {0}</label>
+	<label ref="ResourceQuantityNotAvailable">Resource needed: {1} {0}</label>
+	<label ref="TargetNotAccessible">Target not accessible: {0}</label>
+	<label ref="PlanetInBattle">Planet in Battle</label>
+	<label ref="Immunity">Immunity</label>
+	<label ref="BattleImmunity">Immunity during {0} turns</label>
+	<label ref="CanNotDemolish">You can not demolish any more buildings this turn</label>
+	<label ref="battlesFought">Battles Fought: {0}</label>
+	<label ref="battles-pending">You have Battles wating for you!</label>
+	<label ref="vacation">You are on vacation!</label>
+	<label ref="planet-conquest-pending">You have planets waiting for your conquest!</label>
+	<label ref="InvalidQuantity">Invalid Quantity!</label>
+	<label ref="transformRareResource">Converts 1 of {0} to {2} of {1}!</label>
+	<label ref="transform">Converts {2} of {0} to {2} of {1}!</label>
+	<label ref="terrainAction">{0} Planet</label>
+	<label ref="housingAvailable">Housing Available</label>
+	<label ref="QueueSabotage">{0} production queue sabotaged! Marines Killed: {2}; Source: {1};</label>
+	<label ref="SabotageSucceded">{0} sabotage to target {1} successful! Enemy Marines Killed: {2}.</label>
+	<label ref="SabotageFailed">{0} sabotage to target {1} failed! Enemy Marines Killed: {2}.</label>
+	<label ref="SabotageAttempt">{0} sabotage attempt failed! Target: {2} Source: {1}! Marines Killed: {3}.</label>
+	
+	<label ref="InvalidMove">Invalid Move Detected</label>
+	<label ref="InvalidNumberOfMoves">Invalid number of moves!</label>
+	<label ref="InvalidCoordinate">Invalid Coordinate: {0}</label>
+	<label ref="InvalidSource">Invalid First Coordinate</label>
+	<label ref="InvalidRotation">Invalid Rotation: {0}</label>	
+	<label ref="InvalidShip">Invalid Unit at coordinate {0}</label>
+	<label ref="PositionNotCompleted">Not all units were positioned</label>
+	<label ref="InvalidAttack">Invalid Attack from coordinate {0} to coordinate {1}</label>
+	
+	<label ref="restriction">Restriction: {0} {1} {2}</label>
+	<label ref="queueRestriction">Restriction: {1} can not be in {0} queue</label>
+	<label ref="less-than">less than</label>
+	<label ref="bigger-than">bigger than</label>
+	<label ref="equal-to">equal to</label>
+
+	<!-- EXCEPTION LOG -->
+	<label ref="exceptionLog_name">Exception</label>
+	<label ref="exceptionLog_date">Date</label>
+	<label ref="exceptionLog_error">Error</label>
+	<label ref="exceptionLog_stackMessage">Message</label>
+	<label ref="exceptionLog_stackTrace">Stack Trace</label>
+	<label ref="exceptionLog_clear">Delete Exception</label>
+	<label ref="exceptionLog_removeExp">Are you sure that you want to remove this exception?</label>
+
+	<!-- GLOBAL ERROR -->
+	<label ref="globalError_title">Orion's Belt:: Global Site Error</label>
+	<label ref="globalError_text">
+		&lt;p&gt;
+		A serious error has ocurred that doesn't allow the user to visualize Orion's Belt Game Site.&lt;br/&gt;
+		For this reason we apologize. We will try to resolve the problem as fast as possible.&lt;br/&gt;
+		Thanks
+		&lt;/p&gt;
+		&lt;p&gt;
+		The Administrators
+		&lt;/p&gt;
+	</label>
+
+	<!-- ORIONSBELT ERROR -->
+	<label ref="orionsbeltError_text">
+		&lt;p&gt;
+		An error has ocurred in Orion's Belt Game Site. For this reason we apologize. &lt;br/&gt;
+		The problem has been reported to the responsables and it will be resolved as fast as possible. &lt;br/&gt;
+		Thanks
+		&lt;/p&gt;
+		&lt;p&gt;
+		The Administrators
+		&lt;/p&gt;
+	</label>
+	<label ref="orionsbelterror_date">Date</label>
+	<label ref="orionsbelterror_name">Name</label>
+	<label ref="orionsbelterror_noContent">No Exceptions had occured!</label>
+	<label ref="orionsbeltFatalError">
+		&lt;p&gt;
+		An error has ocurred in Orion's Belt Game Site. For this reason we apologize. &lt;br/&gt;
+		The problem has been reported to the responsables and it will be resolved as fast as possible. &lt;br/&gt;
+		Thanks
+		&lt;/p&gt;
+		&lt;p&gt;
+		The Administrators
+		&lt;/p&gt;
+		&lt;!--
+			Message:{0}<br />
+			StatckTrace:{1}<br />
+		--&gt;
+	 </label>
+	 <label ref="orionsbelterror_removeAll">Remove All</label>
+
+	<!-- Teletransporte -->
+	<label ref="tele_intrinsicTeletransportation">Intrinsic Teletransport</label>		 
+	<label ref="tele_fleetTeletransportation">Fleet Teletransport</label>
+	<label ref="tele_destiny">Destiny</label>
+	<label ref="tele_invalid_fields">Please insert all the parameters!</label>
+	<label ref="tele_no_energy">Not enough energy!</label>
+	<label ref="tele_available">Available</label>
+	<label ref="tele_no_resource">Not enough resource!</label>
+	<label ref="tele_report">Report</label>
+	<label ref="noFleets">You don't have any fleets on this planet</label>
+
+	<!-- FLEET -->
+	<label ref="fleet_buildShip">Build Units</label>
+	<label ref="fleet_planetShips">Planet's Fleets</label>
+	<label ref="fleet_planetsShips">Fleets in Planets</label>
+	<label ref="fleet_fleetsInSpace">Fleets in the Universe</label>
+	<label ref="fleet_maxReached">You already have your maximum number of fleets - You have {0} and the max is {1}</label>
+
+	<label ref="fleet_changeFleet">Change Fleet</label>
+
+	<label ref="ColonyShip">Colony Ship</label>
+	<label ref="FlagShip">Flag</label>
+	<label ref="Rain">Rain</label>
+	<label ref="Toxic">Toxic</label>
+	<label ref="Raptor">Raptor</label>
+	<label ref="Anubis">Anubis</label>
+	<label ref="Krill">Krill</label>
+	<label ref="Pretorian">Pretorian</label>
+	<label ref="Vector">Vector</label>
+	<label ref="Kamikaze">Kamikaze</label>
+	<label ref="Kahuna">Kahuna</label>
+	<label ref="Eagle">Eagle</label>
+	<label ref="Scarab">Scarab</label>
+	<label ref="Crusader">Crusader</label>
+	<label ref="Nova">Nova</label>
+	<label ref="Bozer">Bozer</label>
+	<label ref="Fenix">Fenix</label>
+	<label ref="Doomer">Doomer</label>
+	<label ref="Spider">Spider</label>
+	<label ref="BlackWidow">BlackWidow</label>
+	<label ref="Squid">Squid</label>
+	<label ref="Taurus">Taurus</label>
+	<label ref="Panther">Panther</label>
+	<label ref="Driller">Driller</label>
+	<label ref="Samurai">Samurai</label>
+
+	<label ref="Unit">Unit</label>
+	
+	<label ref="fleet_quant">Quantity</label>
+	<label ref="fleet_origin">Fleet of Origin</label>
+	<label ref="fleet_destiny">Fleet of Destiny</label>
+	<label ref="fleet_shipType">Unit Type</label>
+	<label ref="fleet_quantError">Quantity isn't valid!</label>
+	<label ref="fleet_moveShips">Move Units</label>
+	<label ref="fleet_moveAllShips">Move All Units</label>
+	<label ref="fleet_invalidFleetName">Invalid fleet name!</label>
+	<label ref="fleet_nameRequired">Fleet name required!</label>
+	<label ref="fleet_fleetAlreadyExists">Fleet already exists!</label>
+	<label ref="fleet_fleetCreated">Fleet created sucessfully!</label>
+	<label ref="fleet_removeFleet">Are you sure that you want to remove this Fleet?</label>
+	<label ref="fleet_removeOk">Fleet removed sucessfully. All units are now in the planet's fleet.</label>
+	<label ref="fleet_removeOkUniverse">Fleet removed sucessfully.</label>
+	<label ref="fleet_createFleet">Create Fleet</label>
+	<label ref="fleet_create">Create a new fleet</label>
+	<label ref="fleet_name">Fleet name</label>
+	<label ref="fleet_moveOk">Units moved sucessefully!</label>
+	<label ref="fleet_moveIncomplete">Only some Units were moved because the destiny fleet reached it's maximum capacity (8).</label>
+	<label ref="fleet_moveNotOk">That quantity of Units isn't available. Please confirm the value!</label>
+	<label ref="fleet_full">Destiny fleet is full. All fleets can only have 8 diferent types of units (except the planet's static fleet)</label>
+	<label ref="fleet_moveInvalid">Error moving Units. Please check all the fields.</label>
+	<label ref="fleet_hasntUnits">Origin Fleet doesn't have Units!</label>
+	<label ref="fleet_moveWhileBattle">Can´t move the Units while the planet is in battle!</label>
+	
+	<label ref="fleet_moveFleet">Move Fleet</label>
+	<label ref="fleet_fleetToMove">Fleet to move</label>
+	<label ref="fleet_noFleetsToMove">There are no Fleets to move</label>
+	<label ref="fleet_help"><b>Note:</b> Select a coordinate clicking in above table or selecting from the DropDownList</label>
+	<label ref="fleet_alreadAtCoordinate">Fleet already at the selected coordinate</label>
+	<label ref="fleet_cantMove">Cannot move fleet to coordinate {0}.<br/>Please confirm if you have the necessary tecnologies.</label>
+	<label ref="fleet_coordinate">Destiny coordinate</label>
+	
+	<label ref="fleet_moveNotAvailable">You don´t have the necessary research to move your fleets</label>
+		
+	<label ref="fleet_battleCoordinate">&lt;b&gt;Battle Coordinate: &lt;b&gt;</label>
+	
+	<label ref="fleet_location">&lt;b&gt;Location: &lt;/b&gt;</label>
+	<label ref="fleet_turnsToGo">&lt;b&gt;Arrival:&lt;/b&gt; {0} turn(s)</label>
+	<label ref="fleet_state">&lt;b&gt;State: &lt;/b&gt;</label>
+	<label ref="fleet_inMovement">moving</label>
+	<label ref="fleet_stopped">stopped</label>
+	<label ref="fleet_inBattle">in battle</label>
+	
+	<label ref="fleet_remove">remove fleet</label>
+	<label ref="fleet_type">Type</label>
+	
+	<!-- COORDINATE -->
+	<label ref="coordinate_invalidGalaxy">Invalid Galaxy! Use value between 1 and {0}</label>
+	<label ref="coordinate_invalidSector">Invalid Sector! Use values between 1 and {0}</label>
+	<label ref="coordinate_invalidPlanet">Invalid Planet! Use values between 1 and {0}</label>
+	
+	<!-- CONQUER PLANET -->
+	<label ref="conquerplanet_title">Planets to Conquer</label>
+	<label ref="conquerplanet_conquer">Conquer Planet</label>
+	<label ref="conquerplanet_attr">Planet Characteristics</label>
+	<label ref="conquerplanet_ruler">Owner</label>
+	<label ref="conquerplanet_none">none</label>
+	<label ref="conquerplanet_newName">New Name</label>
+	<label ref="conquerplanet_return">Return Planet</label>
+	<label ref="conquerplanet_invalidName">Invalid Planet Name!</label>
+	<label ref="conquerplanet_maxPlanetsError">Planet limit already reached! You can't conquer anymore!</label>
+	<label ref="conquerplanet_noPlanet">No planet to conquer</label>
+	<label ref="conquerplanet_thereisnoColonyUnit">You must have a colony Unit com colonize.</label>
+	
+	<!-- Ruler Ranking -->
+	<label ref="weak">Weak</label>
+	<label ref="impotent">Impotent</label>
+	<label ref="peacefull">Peacefull</label>
+	<label ref="agressive">Agressive</label>
+	<label ref="daring">Daring</label>
+	<label ref="fearless">Fearless</label>
+	<label ref="heroic">Heroic</label>
+	<label ref="not-available">Chicken Chaser</label>
+	
+	<!-- Roles -->
+	<label ref="user_admin">{0} is an administrator</label>
+	<label ref="user_betatester">{0} is a beta tester</label>
+	<label ref="user_artist">{0} is an artist</label>
+	
+	<!-- Filtros -->
+	<label ref="military">Military</label>
+	<label ref="resourceGenerator">Resource Generator</label>
+  	<label ref="all">&lt;b&gt;All&lt;/b&gt;</label>
+  	<label ref="scanning">Scanning</label>
+  	<label ref="teletransportation">Teletransportation</label>
+  	
+  	<!-- TRAVEL -->
+	<label ref="travel_controlPanel">Control Panel</label>
+	<label ref="travel_3">Go to Universe</label>
+	<label ref="travel_2">Go to Galaxy {0}</label>
+	<label ref="travel_1">Go to System {0}</label>
+	<label ref="travelTime">Travel Time</label>
+	<label ref="travel_directTravel">Simple</label>
+	<label ref="travel_advancedTravel">Advanced</label>
+	<label ref="travel_note">Note: if you do not choose a coordinate in the 'Advanced' tab, the coordinate choosen in the 'Simple' tab will be the default one.</label> 
+
+	<!-- Frases -->
+	<label ref="you_can_use_docs">Check what technologies you have and the ones that you are missing</label>
+	<label ref="go_to_research_wiki">Research/Technology Documentation</label>
+	<label ref="about_this_page">Help on this page</label>
+	<label ref="wiki_FilaDeEspera">Queue Documentation</label>
+	<label ref="wiki_Edificios">Building Documentation</label>
+	<label ref="wiki_Intrinsecos">Intrinsic Resources Documentation</label>
+	<label ref="Wiki_Teletransporte">Teletransport Documentation</label>
+	<label ref="Wiki_Scan">Scan Documentation</label>
+	<label ref="wiki_Prizes">Prizes Documentation</label>
+	<label ref="wiki_Medals">Medals Documentation</label>
+	<label ref="wiki_Sabotage">Sabotage Documentation</label>
+	<label ref="wiki_Market">Market Documentation</label>
+	<label ref="BattlesWaiting">You have battles waiting for you!</label>
+	
+	<!-- MAIL MESSAGES -->
+	<label ref="mailmessage_resetPassword"></label>
+	<label ref="pmsg_messages">Messages</label>
+	<label ref="pmsg_inbox">Inbox</label>
+	<label ref="pmsg_sent">Sent</label>
+	<label ref="pmsg_new">New Message</label>
+	<label ref="pmsg_send">Send Message</label>
+	
+	<!-- Sabotagem -->
+	<label ref="Sabotage">Sabotage</label>
+	<label ref="Perform">Perform</label>
+	<label ref="BuildingQueue">Sabotage Building Queue</label>
+	<label ref="UnitQueue">Sabotage Unit Queue</label>
+	<label ref="IntrinsicQueue">Sabotage Soldier Queue</label>
+	<label ref="SabotageQueue">Current Sabotage</label>
+	<label ref="SabotageQueueEmpty">Nothing being sabotaged...</label>
+	<label ref="RemainingTime">Remaining Turns</label>
+	<label ref="ResultReport">Operation Report</label>
+
+	<!-- Wiki Stuff -->
+	<label ref="IntrinsicListIntro">This page lists all *Intrinsic* resources.</label>
+	<label ref="RareListIntro">This page lists all *Rare* resources.</label>
+	<label ref="UnitListIntro">This page lists all the *Units* in the game.</label>
+	<label ref="BuildingListIntro">This page lists all the *Buildings* in the game.</label>
+	<label ref="ResearchListIntro">This page lists all the *Researchs* in the game.</label>
+	<label ref="UnidadesPorTerrenoIntro">Esta página apresenta as diversas Unit.[Unit] que têm vantagens ou desvantagens consoante o tipo de terreno do Orionsbelt.[MotorDeCombate].</label>
+	<label ref="UnidadesPorCategoriaIntro">Esta página apresenta as diversas Unit.[Unit] que têm vantagens ou desvantagens consoante a categoria do adversário.</label>
+	<label ref="UnidadesPorPosicaoIntro">Esta página apresenta as diversas Unit.[Unit] que têm vantagens ou desvantagens consoante a posição do adversário (unidade de ar ou de terra).</label>
+	<label ref="UnidadesPorTipoMovimentoIntro">Esta página apresenta as diversas Unit.[Unit] agrupadas por tipo de movimento.</label>
+	<label ref="UnidadesPorPosicao">Units by Position</label>
+	<label ref="UnidadesPorTerreno">Units by Terrain</label>
+	<label ref="UnidadesPorCategoria">Units by Category</label>
+	<label ref="UnidadesPorTipoMovimento">Units by Movement Type</label>
+	<label ref="RelatedTo">Related To</label>
+	<label ref="Summary">Summary</label>
+	<label ref="BuildingCategory">Buildings - *{0}* Category</label>
+	<label ref="WhoDependsOfThisResource">Who Depends of this Resource</label>
+	<label ref="CombatCaracteristics">Combate Attributes</label>
+	<label ref="Attribute">Attribute</label>
+	<label ref="Value">Value</label>
+
+	<!-- tournaments -->
+	<label ref="tournament_notavailable">Tournament not available at this time!</label>
+	<label ref="tournament_units">Units Per Battle</label>
+	<label ref="tournament_info">Tournament Information</label>
+	<label ref="tournament_registered">Registered</label>
+	<label ref="tournament_phase">Tournament Phase</label>
+	<label ref="Subscriptions">Subscriptions</label>
+	<label ref="Championship">Championship</label>
+	<label ref="Playoffs">Playoffs</label>
+	<label ref="Finished">Finished</label>
+	<label ref="tournament_register">Register in this tournament?</label>
+	<label ref="tournament_ruler_already_registered">You are already registered!</label>
+	<label ref="tournament_ruler_registered">You are now registered!</label>
+	<label ref="tournament_groups">Groups</label>
+	<label ref="tournament_group_results">Results</label>
+	<label ref="tournament_matches">Matches</label>
+	<label ref="tournament_playoffs">Playoffs</label>
+	<label ref="tournament_lucky">Automatically in the next Fase</label>
+	<label ref="tournament_finished">Tournament Finished</label>
+	<label ref="tournament_bag">Bag</label>
+
+	<!-- Ranks -->
+	<label ref="top_rank_label">This table presents the best of the best in the battle field. The score is updated
+every tournament match. See also &lt;a href="rankcalculator.aspx"&gt;Rank Calculator&lt;/a&gt;.</label>
+	<label ref="elo_battle_rank">Battle Rank</label>
+
+	<!-- Shop -->
+	<label ref="Accessories">Accessories</label>
+	<label ref="WhiteClothing">Simple Clothing</label>
+	<label ref="FashionClothing">Fashion Clothing</label>
+	<label ref="shop_intro">&lt;p&gt;Our &lt;b&gt;Orion's Belt&lt;/b&gt; products are from the &lt;a href="http://www.spreadshirt.net/"&gt;Spreadshirt&lt;/a&gt; company. They produce and sell every item, and we get a commission for each item sold.&lt;/p&gt;
+
+&lt;p&gt;You can buy your &lt;b&gt;Orion's Belt&lt;/b&gt; products at &lt;a href="http://orionsbelt.spreadshirt.net/"&gt;Orion's Belt Shop&lt;/a&gt;. However, in this page, we also list the available items.&lt;/p&gt;</label>
+
+	<!-- Alliance -->
+	<label ref="alliance_new">Create Alliance!</label>
+	<label ref="alliance_create">You are not a member of an alliance. You can join any alliance on the alliance information page, or you can create you alliance and try do rule Orion's Belt!</label>
+	<label ref="alliance_tag">Tag</label>
+	<label ref="alliance_motto">Motto</label>
+	<label ref="alliance_members">Members</label>
+	<label ref="alliance_wannabes">Wannabes</label>
+	<label ref="alliance_role">Military Rank</label>
+	<label ref="alliance_join">Join Alliance</label>
+	<label ref="alliance_join_waiting">You requested to join this alliance... You request is currentlt being analized.</label>
+	<label ref="alliance_join_try">Click here if you wish to belong to this Alliance!</label>
+	<label ref="alliance_by_round">Order by Score</label>
+	<label ref="alliance_by_rank">Order by Ranking</label>
+	<label ref="alliance_doesntExists">Alliance doesn't exists</label>
+	
+
+</language>

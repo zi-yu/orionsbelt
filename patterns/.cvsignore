@@ -1,0 +1,7 @@
+*.sln
+*.mdp
+*.pidb
+*.csproj
+bin/
+obj
+patterns.csproj.user

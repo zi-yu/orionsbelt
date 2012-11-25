@@ -1,0 +1,43 @@
+:Summary: Regras da Batalha
+:Parent: Orionsbelt.MotorDeCombate
+
+Numa batalha, cada jogador terá 1 dia para posicionar o seu conjunto de Unit.[Unit] da maneira que mais desejar. As Unit.[Unit] podem ser posicionadas nas primeiras duas linhas do tabuleiro e é obrigatório que o jogador as posicione todas.
+
+Se o jogador não posicionar as Unit.[Unit] no tempo dado (1 dia), estas serão posicionadas automaticamente e de forma aleatória.
+
+Cada Unit.[Unit] possui caracteristicas únicas:
+	* TipoDeMovimento
+	* CustoDeMovimento
+	* DistanciaDeAtaque
+	* [Bonus] contra outros tipos de Unit.[Unit], terreno, etc
+	* ContraAtaque
+	* AtaqueRicochete
+	* AtaqueCatapulta
+
+Algumas das características afectam os ataques que as Unit.[Unit] realizam, adicionando (ou retirando) poder de ataque. Estes ataques, quaisquer que sejam as Unit.[Unit], só podem ser feitos na direcção em que etsa está virada (o mesmo é válido para o contra-ataque, ou seja, se a Unit.[Unit] que vai contra-atacar não estiver virada para o atacante, esse contra-ataque não se irá realizar).
+
+A prioridade num ataque é do conjunto de Unit.[Unit] que toma a iniciativa. Se este conjunto fizer dano suficiente para destruir as Unit.[Unit] inimigas, estas, mesmo que tenham contra ataque, não o irão realizar visto que já terem sido eliminadas.
+
+O dano no ataque é calculado tendo em conta o ataque, a defesa e a vida. Consoante o bónus que o conjunto de Unit.[Unit] tiver, o minimo e máximo de dano que uma Unit.[Unit] irá causar poderá variar significativamente.
+
+O dano é calculado da seguinte maneira:
+
+	dano = DanoMínimoAtacante + ( ( DanoMáximoAtacante  - DanoMinimoAtacante  ) / 2 );
+	mod = ataqueAtacante / defesaDefensor;
+	 		
+	Se mod >= 1
+		DanoFinal = Random( dano, DanoMáximoAtacante );
+	Senão
+		DanoFinal = Random( DanoMínimoAtacante , dano );
+
+	DanoFinal = DanoFinal * QuantidadeNavesAtacante
+
+Notas:
+	* A função Random irá calcular um valor aleatório entre o primeiro valor e o segundo valor, ou seja, se tivermos Random( 1, 5 ) esta função irá dar um valor aleatório entre 1 e 5.
+	* mod irá determinar se o ''DanoFinal'' será muito ou pouco, ou seja, será um valor aleatório na zona no Dano Mínimo (na figura), ou um valor aleatório na zona do Dano máximo (na figura):
+	
+http://orionsbelt.sourceforge.net/battleDamage.gif
+	
+Caso haja situações onde um dos jogadores não jogue, este irá perder automaticamente ao fim de 3 timeouts (cada timout surge quando um jogador não joga durante 24 horas).
+
+Caso existam situações de anti-jogo, essas situações devem ser reportadas aos administradores para estes avaliarem a situação.

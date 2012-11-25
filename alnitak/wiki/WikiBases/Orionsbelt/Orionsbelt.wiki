@@ -1,0 +1,79 @@
+:Summary: Documentação do Orion's Belt
+:Display: Manual do Orion's Belt
+
+Esta é a página principal do projecto de documentação do Orion's Belt. Aqui é possível aprender todos os pormenores sobre o jogo, e funciona como referência para todos os recursos existentes no jogo.
+
+----
+
+Alguns tópicos principais:
+
+	* Os novatos devem ler PorOndeComecar para terem uma ideia base de como se joga;
+	* Temos disponível uma página com as PerguntasFrequentes;
+	* Os curiosos podem ver informações sobre o [Projecto] ou saber mais sobre a [Equipa];
+	* Também se pode saber mais sobre o registo de NovasIdeias ou [Bugs].
+
+!!!Histórico :: Hall of Fame
+	* Round.[HomePage]
+	* Tournaments.[regicide]
+	* Tournaments.[totalannihilation]
+
+!!!Lista de Recursos
+
+As seguintes páginas contém as listas de recursos de determinada categoria.
+	
+	* Intrinsic.[Intrinsic]
+	* Building.[Building]
+	* Research.[Research]
+	* Unit.[Unit]
+	* Rare.[Rare]
+
+!!!Conceitos Gerais
+
+Os seguintes tópicos são artigos que abordam os diversos conceitos do jogo Orion's Belt. Quaisquer dúvidas não esclarecidas podem ser deixadas no nosso "fórum":http://orionsbelt.zi-yu.com/forum/default.aspx !
+
+	* HomePlanet
+	* [Coordenada]
+	* [Armada]
+	* CaracteristicasDePlaneta
+	* FilaDeEspera
+	* FactorDeProducao
+	* [Scan]
+	* [TeleTransporte]
+	* [Comercio]
+	* [Mercados]
+
+!!!Documentação relacionada com Batalhas
+
+	* [Batalha]
+		* RegrasDaBatalha
+		* TiposDeBatalha
+			* BatalhaAmigavel
+			* BatalhaDeConquista
+			* [Tournament]
+		* Características de Unit.[Unit]
+			* TipoDeMovimento
+			* CustoDeMovimento
+			* DistanciaDeAtaque
+			* [Bonus]
+			* ContraAtaque
+			* AtaqueRicochete
+			* AtaqueCatapulta
+		* Battles.[HomePage]
+		* Battles.[Tactics]
+	* [Sabotagens]
+	
+!!!Documentação Geral
+	* PorOndeComecar
+	* [Filtros]
+	* [Medalhas]
+	* [Premios]
+	* [Restricoes]
+	* [Tournament]
+	* [Ranking]
+	
+!!!Outros
+	* RegrasDeConduta
+	* PerguntasFrequentes
+	* UserTags
+
+

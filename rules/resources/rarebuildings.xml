@@ -1,0 +1,226 @@
+<?xml version="1.0" ?>
+<!DOCTYPE resources SYSTEM "conf.dtd">
+<resources>
+	
+	<!-- Edifícios que tratam recursos raros -->
+	<resource type="Building" value="ElkFacility" category="general">
+		<dependencies>
+			<resource-ref type="Research" value="RareResources" />
+			<resource-ref type="Research" value="Commerce" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="3000" />
+			<resource-needed type="mp" value="400" />
+			<resource-needed type="energy" value="5700" />
+			<resource-needed type="groundSpace" value="1" />
+			<resource-available type="Intrinsic" resource="labor" value="2500" />
+			<duration value="60"/>
+		</cost>
+		<onturn>
+			<transformRareResource rare="elk" intrinsic="food" factor="9000" />
+		</onturn>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="350" />
+		</oncomplete>
+		<onremove>
+			<add type="Intrinsic" resource="groundSpace" value="1" />
+			<add type="Intrinsic" resource="score" value="-350" />
+		</onremove>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="groundSpace" value="1" />
+		</onCancelDuringBuild>
+		<keywords>
+			<keyword key="groundSpace" />
+			<keyword key="food" />
+			<keyword key="RareResources" />
+		</keywords>
+	</resource>
+	
+	<resource type="Building" value="HidroPlant" category="general">
+		<dependencies>
+			<resource-ref type="Research" value="RareResources" />
+			<resource-ref type="Research" value="Commerce" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="1500" />
+			<resource-needed type="mp" value="1400" />
+			<resource-needed type="energy" value="1700" />
+			<resource-needed type="waterSpace" value="1" />
+			<resource-available type="Intrinsic" resource="labor" value="2000" />
+			<duration value="70"/>
+		</cost>
+		<attributes>
+			<mod type="polution" value="100"/>
+		</attributes>
+		<onturn>
+			<transformRareResource rare="hydrogen" intrinsic="energy" factor="1000" />
+		</onturn>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="300" />
+		</oncomplete>
+		<onremove>
+			<add type="Intrinsic" resource="waterSpace" value="1" />
+			<add type="Intrinsic" resource="score" value="-300" />
+		</onremove>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="waterSpace" value="1" />
+		</onCancelDuringBuild>
+		<keywords>
+			<keyword key="waterSpace" />
+			<keyword key="energy" />
+			<keyword key="RareResources" />
+		</keywords>
+	</resource>
+	
+	<resource type="Building" value="OilPlant" category="general">
+		<dependencies>
+			<resource-ref type="Research" value="RareResources" />
+			<resource-ref type="Research" value="WaterExplorationI" />
+			<resource-ref type="Research" value="Geology" />
+			<resource-ref type="Building" value="WaterUniversity" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="4400" />
+			<resource-needed type="mp" value="4800" />
+			<resource-needed type="waterSpace" value="1" />
+			<resource-available type="Intrinsic" resource="labor" value="2600" />
+			<duration value="90"/>
+		</cost>
+		<attributes>
+			<mod type="polution" value="150"/>
+			<mod type="energy" value="-150"/>
+		</attributes>
+		<onturn>
+			<transformRareResource rare="oil" intrinsic="mp" factor="800" />
+		</onturn>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="300" />
+		</oncomplete>
+		<onavailable/>
+		<onremove>
+			<add type="Intrinsic" resource="waterSpace" value="1" />
+			<add type="Intrinsic" resource="score" value="-300" />
+		</onremove>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="waterSpace" value="1" />
+		</onCancelDuringBuild>
+		<keywords>
+			<keyword key="waterSpace" />
+			<keyword key="resourceGenerator" />
+			<keyword key="RareResources" />
+		</keywords>
+	</resource>
+	
+	<resource type="Building" value="DiamondShop" category="general">
+		<dependencies>
+			<resource-ref type="Research" value="RareResources" />
+			<resource-ref type="Research" value="Commerce" />
+			<resource-ref type="Building" value="University" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="4000" />
+			<resource-needed type="mp" value="5000" />
+			<resource-needed type="groundSpace" value="1" />
+			<resource-available type="Intrinsic" resource="labor" value="3600" />
+			<duration value="90"/>
+		</cost>
+		<attributes>
+			<mod type="polution" value="150"/>
+			<mod type="energy" value="-150"/>
+		</attributes>
+		<onturn>
+			<transformRareResource rare="diamond" intrinsic="gold" factor="1000" />
+		</onturn>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="300" />
+		</oncomplete>
+		<onavailable/>
+		<onremove>
+			<add type="Intrinsic" resource="groundSpace" value="1" />
+			<add type="Intrinsic" resource="score" value="-300" />
+		</onremove>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="groundSpace" value="1" />
+		</onCancelDuringBuild>
+		<keywords>
+			<keyword key="groundSpace" />
+			<keyword key="resourceGenerator" />
+			<keyword key="RareResources" />
+		</keywords>
+	</resource>
+	
+	<resource type="Building" value="SilverShop" category="general">
+		<dependencies>
+			<resource-ref type="Research" value="RareResources" />
+			<resource-ref type="Research" value="Commerce" />
+			<resource-ref type="Building" value="University" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="5000" />
+			<resource-needed type="mp" value="4000" />
+			<resource-needed type="waterSpace" value="1" />
+			<resource-available type="Intrinsic" resource="labor" value="3000" />
+			<duration value="85"/>
+		</cost>
+		<attributes>
+			<mod type="polution" value="150"/>
+			<mod type="energy" value="-150"/>
+		</attributes>
+		<onturn>
+			<transformRareResource rare="silver" intrinsic="gold" factor="1000" />
+		</onturn>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="300" />
+		</oncomplete>
+		<onavailable/>
+		<onremove>
+			<add type="Intrinsic" resource="waterSpace" value="1" />
+			<add type="Intrinsic" resource="score" value="-300" />
+		</onremove>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="waterSpace" value="1" />
+		</onCancelDuringBuild>
+		<keywords>
+			<keyword key="waterSpace" />
+			<keyword key="resourceGenerator" />
+			<keyword key="RareResources" />
+		</keywords>
+	</resource>
+	
+	<resource type="Building" value="GasPlant" category="general">
+		<dependencies>
+			<resource-ref type="Research" value="RareResources" />
+			<resource-ref type="Research" value="Geology" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="3500" />
+			<resource-needed type="mp" value="2400" />
+			<resource-needed type="energy" value="3700" />
+			<resource-needed type="groundSpace" value="1" />
+			<resource-available type="Intrinsic" resource="labor" value="2000" />
+			<duration value="65"/>
+		</cost>
+		<attributes>
+			<mod type="polution" value="100"/>
+		</attributes>
+		<onturn>
+			<transformRareResource rare="gas" intrinsic="energy" factor="1200" />
+		</onturn>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="300" />
+		</oncomplete>
+		<onremove>
+			<add type="Intrinsic" resource="groundSpace" value="1" />
+			<add type="Intrinsic" resource="score" value="-300" />
+		</onremove>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="groundSpace" value="1" />
+		</onCancelDuringBuild>
+		<keywords>
+			<keyword key="groundSpace" />
+			<keyword key="energy" />
+			<keyword key="RareResources" />
+		</keywords>
+	</resource>
+	
+</resources>

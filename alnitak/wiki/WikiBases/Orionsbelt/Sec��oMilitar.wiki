@@ -1,0 +1,3 @@
+Esta secção permite gerir todas as armadas de todos os planetas e que estão em movimento no universo.
+
+:Summary: Descrição da Secção Militar

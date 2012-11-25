@@ -1,0 +1,33 @@
+Dica:Só os jogadores mais rápidos e que melhor sabem gerir os seus recursos conseguem ganhar prémios.
+
+!Prémios Disponíveis
+
+Há diversos prémios disponíveis para quem conseguir ser o mais rápido. Todos os [Prémios] atribuidos podem ser consultados na SecçãoPrémios. O funcionamento dos [Prémios] é muito simples: o primeiro jogador a conseguir atingir determinado feito, ganha o prémio. Ganha reconhecimento, ganha pontos e ganha [Medalhas].
+
+Os prémios disponíves encontram-se de seguida.
+
+!!!Prémios relacionados com Conquista
+	* Primeiro a Conquistar um Planeta
+	* Primeiro a possuir 5 planetas
+	* Primeiro a possuir 10 planetas
+	* Primeiro a possuir 15 planetas 
+	* Primeiro a possuir 20 planetas
+
+!!!Prémios relacionados com Building.[Building]
+	* Primeiro a construir o Building.[StarPort]
+	* Primeiro a contruir o Building.[CommsSatellite]
+
+!!! Prémios relacionados com Research.[Research]
+	* Primeiro a desenvolver todas as Pesquisas
+
+NovasIdeias para outros prémios são bem vindas.
+
+!Pontos Obtidos
+
+Quando um jogador ganha um prémio, ganha pontos. A quantidade de pontos ganha não é constante. O jogador vai ganhar o número de pontos correspondente ao turno em que o prémio foi ganho. Exemplo: se um prémio é ganho no turno 150, o seu vencedor ganhará 150 pontos.
+
+!Reset do Prémio
+Passados 100 turnos da obtênção do último prémio, este prémio é passível de ser obtivo de novo, contudo com uma medalha inferior. Os pontos ganhos serão os mesmos pontos que o vendedor com a medalha de ouro recebeu.
+
+:Summary: Informação relacionada com Prémios
+:Display: Prémios

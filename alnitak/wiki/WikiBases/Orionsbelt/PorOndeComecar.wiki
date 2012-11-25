@@ -1,0 +1,29 @@
+!!!Entrei no jogo, o que faço?
+
+Neste jogo tens de gerir os teus recursos e realizar estratégias que te permitam triunfar sobre os teus inimigos.  Começas com um planeta: o teu HomePlanet. Num planeta podes contruir Building.[Building] por forma a aumentar a riqueza do planeta. Por norma, os Building.[Building] geram recursos Intrinsic.[Intrinsic], e é com recursos Intrinsic.[Intrinsic] que se constroem planetas, se alimenta a população, etc.
+
+A par da gestão do teu planeta, é necessário que efectues Research.[Research] para adquirir novos conhecimentos, novas funcionalidades, novos Building.[Building].
+
+Contudo, o jogo não se passa somente no teu planeta. Há um edifício especial que te permite contruir Unit.[Unit] de combate. Com estas Unit.[Unit] podes criar uma [Armada] e movê-la no Universo, colonizando planetas desabitados, ou travando batalhas com outros jogadores. As batalhas são realizadas pelo MotorDeCombate.
+
+Dica:Tão importante como realizar uma boa gestão de recursos, é aprender todos os segredos das batalhas.
+
+Com o tempo vais obtendo mais planetas que terás de gerir e proteger dos teus inimigos. Todas as tuas acções te dão determinada pontuação que marcará a tua posição no [SecçãoTop] de jogadores.
+
+!!!O que devo fazer primeiro?
+
+À medida que fores conhecendo o jogo, vais ganhando as tuas estratégias de gestão. Contudo, para quem não conhece bem o jogo, aqui vão umas pequenas dicas sobre o que fazer primeiro:
+
+'''1.''' Research.[Research] - As pesquisas além de pontuação dão acesso a vários outros recursos. É importante começar a exploração espacial o mais cedo possível, e para isso precisas de unidades de combate! Para teres acesso a Unit.[Unit] precisas de ter as pesquisas Research.[AdvancedFlightI] e Research.[PlanetExploration].
+'''2.''' Building.[Building] - Para poderes fabricar Unit.[Unit] precisas do edifício Building.[StarPort]. É um edificio um pouco caro, por isso tens de gerir bem os teus recursos.
+'''3. Recursos''' - Quanto mais recursos Intrinsic.[Intrinsic] tiveres, mais Unit.[Unit] e Building.[Building] poderás fazer. Convém fazeres Building.[Building] como '''Minas''' para o teu planeta ir enriquecendo.
+'''4.''' Research.[Research] - A Intrinsic.[culture] influencia a quantidade de turnos que as tuas pesquisas demoram a completar. Convém portanto apostar em Building.[Building] que aumentem a tua Intrinsic.[culture].
+
+Durante o jogo, podes ver documentação sobre os recursos ''clickando'' sobre eles. Verás todas as suas características, para que possas gerir os teus planetas de forma adequada.
+
+!!!Ok, mas onde é que eu posso fazer isso tudo?
+
+Existem várias páginas que servem de interface e existe uma fácil navegação entre as diversas secções do site. Para saber mais sobre cada página, ver [Secções].
+
+:Summary: Tutorial para quem dá os primeiros passos no jogo
+:Display: Por Onde Começar

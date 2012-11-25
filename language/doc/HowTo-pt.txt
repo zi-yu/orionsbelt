@@ -1,0 +1,50 @@
+Para usar:
+
+----------------------------------------------------
+	Configurar com asax
+----------------------------------------------------
+
+1)	Adicionar uma instância do LanguageManager ao Application, num asax, ou num módulo
+	por exemplo. 
+	
+	Language.LanguageManager man = new Language.LanguageManager(Context.Cache,"lang","pt");
+	Application["LanguageManager"] = man;
+	
+	O LanguageManager recebe a Cache, o directório base onde vai procurar os directorios
+	com os ficheiros ('en', 'pt-BR', etc...), e recebe qual a localização por defeito.
+	
+2)	No início de cada pedido, actualizar o CurrentUICulture com a cultura pretendida.
+	Para usar a cultura que vem no pedido:
+
+	string lang = Request.UserLanguages[0];
+	
+	System.Threading.Thread.CurrentThread.CurrentUICulture = 
+		System.Globalization.CultureInfo.CreateSpecificCulture(lang);
+
+
+----------------------------------------------------
+	Configurar com Módulos
+----------------------------------------------------
+
+1)	Já vem um módulo com o Language.dll que facilita o uso desta lib. Basta usar
+	o Web.config para por tudo a funcionar. Ver example/Web.config. 
+
+2)	Pode-se derivar de LanguageModulo e redefinir o mtodo getRequestLocale para estabelecer
+	localizações diferentes consoante os pedidos. Neste momento o getRequestLocale
+	vai buscar a primeira cultura que vier no header HTTP.
+
+----------------------------------------------------
+	Exemplo
+----------------------------------------------------
+	
+1)	Ver o exemplo em example/. Pode-se usar uma label especial Language.Label que vai
+	vuscar o seu texto ao LanguageManager, ou pode-se também ir buscar o texto 
+	implicitamente através dos métodos de LanguageManager:
+
+	LanguageManager man = Application["LanguageManager"];
+	LanguageInfo info = man.getLanguageInfo("pt");
+	
+	button.Text = info.getContent("index","button-label");
+	
+2)	Contacto: Pedro Santos <psantos.net> 
+	Projecto: Orion's Belt <orionsbelt.sf.net>

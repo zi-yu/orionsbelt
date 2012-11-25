@@ -1,0 +1,213 @@
+<?xml version="1.0" ?>
+<!DOCTYPE resources SYSTEM "conf.dtd">
+<resources>
+	<resource type="Building" value="WaterSchool" category="general">
+		<dependencies>
+			<resource-ref type="Research" value="WaterExplorationI" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="100" />
+			<resource-needed type="mp" value="800" />
+			<resource-needed type="energy" value="10" />
+			<resource-needed type="waterSpace" value="1" />
+			<resource-available type="Intrinsic" resource="labor" value="100" />
+			<duration value="10"/>
+		</cost>
+		<attributes>
+			<mod type="culture" value="10"/>
+		</attributes>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="10" />
+		</oncomplete>
+		<onremove>
+			<add type="Intrinsic" resource="mp" value="200" />
+			<add type="Intrinsic" resource="waterSpace" value="1" />
+			<add type="Intrinsic" resource="score" value="-10" />
+		</onremove>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="waterSpace" value="1" />
+		</onCancelDuringBuild>
+		<keywords>
+			<keyword key="waterSpace" />
+			<keyword key="culture" />
+			<keyword key="resourceGenerator" />
+		</keywords>
+	</resource>
+
+	<resource type="Building" value="WaterUniversity" category="general">
+		<dependencies>
+			<resource-ref type="Research" value="WaterExplorationI" />
+			<resource-ref type="Building" value="WaterSchool" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="100" />
+			<resource-needed type="mp" value="1800" />
+			<resource-needed type="energy" value="100" />
+			<resource-needed type="waterSpace" value="3" />
+			<resource-available type="Intrinsic" resource="labor" value="1000" />
+			<duration value="20"/>
+		</cost>
+		<attributes>
+			<mod type="culture" value="50"/>
+		</attributes>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="30" />
+		</oncomplete>
+		<onremove>
+			<add type="Intrinsic" resource="mp" value="200" />
+			<add type="Intrinsic" resource="waterSpace" value="3" />
+			<add type="Intrinsic" resource="score" value="-30" />
+		</onremove>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="waterSpace" value="3" />
+			<add type="Intrinsic" resource="labor" value="900" />
+		</onCancelDuringBuild>
+		<keywords>
+			<keyword key="waterSpace" />
+			<keyword key="culture" />
+			<keyword key="resourceGenerator" />
+		</keywords>
+
+	</resource>
+
+	<resource type="Building" value="WaterResearchCampus" category="general">
+		<dependencies>
+			<resource-ref type="Research" value="WaterExplorationII" />
+			<resource-ref type="Building" value="WaterUniversity" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="1000" />
+			<resource-needed type="mp" value="2800" />
+			<resource-needed type="energy" value="200" />
+			<resource-needed type="waterSpace" value="3" />
+			<resource-available type="Intrinsic" resource="labor" value="2700" />
+			<duration value="30"/>
+		</cost>
+		<attributes>
+			<mod type="culture" value="65"/>
+		</attributes>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="30" />
+		</oncomplete>
+		<onremove>
+			<add type="Intrinsic" resource="mp" value="200" />
+			<add type="Intrinsic" resource="waterSpace" value="3" />
+			<add type="Intrinsic" resource="score" value="-30" />
+		</onremove>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="waterSpace" value="3" />
+		</onCancelDuringBuild>
+		<keywords>
+			<keyword key="waterSpace" />
+			<keyword key="culture" />
+			<keyword key="resourceGenerator" />
+		</keywords>
+	</resource>
+
+	<resource type="Building" value="WaterReclamation" category="upgrade">
+		<dependencies>
+			<resource-ref type="Research" value="GeoPlanet" />
+			<resource-ref type="Research" value="WaterExplorationII" />
+			<resource-ref type="Building" value="WaterResearchCampus" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="600000" />
+			<resource-needed type="mp" value="500000" />
+			<resource-needed type="energy" value="904000" />
+			<resource-available type="Intrinsic" resource="labor" value="4500" />
+			<restriction resource="Building.WaterReclamation" type="equal-to" value="0" />
+			<queueRestriction type="Building" value="WaterReclamation" />
+			<duration value="650"/>
+		</cost>
+		<oncomplete>
+			<add type="Intrinsic" resource="waterSpace" value="20" />
+			<add type="Intrinsic" resource="score" value="4550" />
+		</oncomplete>
+		<onremove>
+			<static evaluate="false" action="false" />
+		</onremove>
+		<keywords>
+			<keyword key="waterSpace" />
+		</keywords>
+	</resource>
+
+	<resource type="Building" value="Zoomarine" category="general">
+		<dependencies>
+			<resource-ref type="Research" value="WaterExplorationIII" />
+			<resource-ref type="Research" value="Commerce" />
+			<resource-ref type="Research" value="Geology" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="4800" />
+			<resource-needed type="mp" value="4600" />
+			<resource-needed type="energy" value="1104" />
+			<resource-needed type="waterSpace" value="2" />
+			<resource-available type="Intrinsic" resource="labor" value="5000" />
+			<duration value="53"/>
+		</cost>
+		<attributes>
+			<mod type="culture" value="25"/>
+			<mod type="labor" value="10" />
+			<mod type="gold" value="350" />
+			<mod type="energy" value="-80" />
+			<mod type="polution" value="80" />
+		</attributes>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="60" />
+		</oncomplete>
+		<onremove>
+			<add type="Intrinsic" resource="mp" value="200" />
+			<add type="Intrinsic" resource="waterSpace" value="2" />
+			<add type="Intrinsic" resource="score" value="-60" />
+		</onremove>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="waterSpace" value="2" />
+		</onCancelDuringBuild>
+		<keywords>
+			<keyword key="waterSpace" />
+			<keyword key="culture" />
+			<keyword key="gold" />
+			<keyword key="labor" />
+			<keyword key="resourceGenerator" />
+		</keywords>
+	</resource>
+
+	<resource type="Building" value="Spa" category="upgrade">
+		<dependencies>
+			<resource-ref type="Research" value="Medicine" />
+			<resource-ref type="Research" value="WaterExplorationII" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="4400" />
+			<resource-needed type="mp" value="3300" />
+			<resource-needed type="energy" value="350" />
+			<resource-needed type="waterSpace" value="2" />
+			<resource-available type="Intrinsic" resource="labor" value="3000" />
+			<restriction resource="Building.Spa" type="equal-to" value="0" />
+			<queueRestriction type="Building" value="Spa" />
+			<duration value="35"/>
+		</cost>
+		<attributes>
+			<mod type="culture" value="40"/>
+			<mod type="labor" value="15" />
+		</attributes>
+		<oncomplete>
+			<addRatio type="labor" value="22" />
+			<add type="Intrinsic" resource="score" value="330" />	
+		</oncomplete>
+		<onremove>
+			<static evaluate="false" action="false" />
+		</onremove>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="waterSpace" value="2" />
+			<add type="Intrinsic" resource="labor" value="3000" />
+		</onCancelDuringBuild>
+		<keywords>
+			<keyword key="waterSpace" />
+			<keyword key="culture" />
+			<keyword key="labor" />
+			<keyword key="resourceGenerator" />
+		</keywords>
+	</resource>
+
+</resources>

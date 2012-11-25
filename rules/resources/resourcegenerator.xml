@@ -1,0 +1,356 @@
+<?xml version="1.0" ?>
+<!DOCTYPE resources SYSTEM "conf.dtd">
+<resources>
+
+	<resource type="Building" value="PowerPlant" category="general">
+		<cost>
+			<resource-needed type="mp" value="500" />
+			<resource-needed type="groundSpace" value="1" />
+			<resource-available type="Intrinsic" resource="labor" value="800" />
+			<duration value="6"/>
+		</cost>
+		<attributes>
+			<mod type="energy" value="150"/>
+			<mod type="culture" value="-1"/>
+			<mod type="polution" value="20" />
+		</attributes>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="1" />
+		</oncomplete>
+		<onavailable>
+			<add type="Building" resource="PowerPlant" value="1" />
+			<add type="Intrinsic" resource="energy" value="500" />
+		</onavailable>
+		<onremove>
+			<add type="Intrinsic" resource="mp" value="200" />
+			<add type="Intrinsic" resource="groundSpace" value="1" />
+			<add type="Intrinsic" resource="score" value="-1" />
+		</onremove>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="groundSpace" value="1" />
+		</onCancelDuringBuild>
+		<keywords>
+			<keyword key="groundSpace" />
+			<keyword key="energy" />
+			<keyword key="resourceGenerator" />
+		</keywords>
+	</resource>
+
+	<resource type="Building" value="SolarPanel" category="general">
+		<dependencies>
+			<resource-ref type="Research" value="OrbitExploration" />
+			<resource-ref type="Building" value="University" />
+		</dependencies>
+		<cost>
+			<resource-needed type="mp" value="9000" />
+			<resource-needed type="gold" value="10000" />
+			<resource-needed type="energy" value="15000" />
+			<resource-needed type="orbitSpace" value="2" />
+			<resource-available type="Intrinsic" resource="labor" value="1800" />
+			<duration value="80"/>
+		</cost>
+		<attributes>
+			<mod type="energy" value="450"/>
+			<mod type="mp" value="-50"/>
+		</attributes>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="10" />
+		</oncomplete>
+		<onremove>
+			<add type="Intrinsic" resource="mp" value="200" />
+			<add type="Intrinsic" resource="orbitSpace" value="2" />
+			<add type="Intrinsic" resource="score" value="-10" />
+		</onremove>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="orbitSpace" value="2" />
+		</onCancelDuringBuild>
+		<keywords>
+			<keyword key="orbitSpace" />
+			<keyword key="energy" />
+			<keyword key="resourceGenerator" />
+		</keywords>
+	</resource>
+
+	<resource type="Building" value="Farm" category="general">
+		<cost>
+			<resource-needed type="mp" value="400" />
+			<resource-needed type="gold" value="600" />
+			<resource-needed type="groundSpace" value="1" />
+			<resource-available type="Intrinsic" resource="labor" value="5" />
+			<duration value="6"/>
+		</cost>
+		<attributes>
+			<mod type="energy" value="-10" />
+			<mod type="food" value="4500"/>
+			<mod type="culture" value="-2" />
+			<mod type="polution" value="10" />
+		</attributes>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="1" />
+		</oncomplete>
+		<onavailable>
+			<add type="Building" resource="Farm" value="2" />
+			<add type="Intrinsic" resource="food" value="1000" />
+		</onavailable>
+		<onremove>
+			<add type="Intrinsic" resource="mp" value="200" />
+			<add type="Intrinsic" resource="groundSpace" value="1" />
+			<add type="Intrinsic" resource="score" value="-1" />
+		</onremove>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="groundSpace" value="1" />
+		</onCancelDuringBuild>
+		<keywords>
+			<keyword key="groundSpace" />
+			<keyword key="food" />
+			<keyword key="resourceGenerator" />
+		</keywords>
+	</resource>
+	
+	<resource type="Building" value="GoldMine" category="general">
+		<cost>
+			<resource-needed type="mp" value="700" />
+			<resource-needed type="groundSpace" value="1" />
+			<resource-available type="Intrinsic" resource="labor" value="900" />
+			<duration value="6"/>
+		</cost>
+		<attributes>
+			<mod type="energy" value="-10" />
+			<mod type="gold" value="180"/>
+			<mod type="culture" value="-5"/>
+			<mod type="polution" value="20" />
+		</attributes>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="1" />
+		</oncomplete>
+		<onavailable>
+			<add type="Building" resource="GoldMine" value="1" />
+			<add type="Intrinsic" resource="gold" value="1000" />
+		</onavailable>
+		<onremove>
+			<add type="Intrinsic" resource="mp" value="200" />
+			<add type="Intrinsic" resource="groundSpace" value="1" />
+			<add type="Intrinsic" resource="score" value="-1" />
+		</onremove>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="groundSpace" value="1" />
+		</onCancelDuringBuild>
+		<keywords>
+			<keyword key="groundSpace" />
+			<keyword key="gold" />
+			<keyword key="resourceGenerator" />
+		</keywords>
+	</resource>
+	
+	<resource type="Building" value="Mine" category="general">
+		<cost>
+			<resource-needed type="mp" value="100" />
+			<resource-needed type="gold" value="700" />
+			<resource-needed type="groundSpace" value="1" />
+			<resource-available type="Intrinsic" resource="labor" value="750" />
+			<duration value="6"/>
+		</cost>
+		<attributes>
+			<mod type="energy" value="-30" />
+			<mod type="mp" value="100"/>
+			<mod type="culture" value="-5" />
+			<mod type="polution" value="30" />
+		</attributes>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="1" />
+		</oncomplete>
+		<onavailable>
+			<add type="Building" resource="Mine" value="1" />
+			<add type="Intrinsic" resource="mp" value="1000" />
+		</onavailable>
+		<onremove>
+			<add type="Intrinsic" resource="mp" value="100" />
+			<add type="Intrinsic" resource="groundSpace" value="1" />
+			<add type="Intrinsic" resource="score" value="-1" />
+		</onremove>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="groundSpace" value="1" />
+		</onCancelDuringBuild>
+		<keywords>
+			<keyword key="groundSpace" />
+			<keyword key="mp" />
+			<keyword key="resourceGenerator" />
+		</keywords>
+	</resource>
+	
+	<resource type="Building" value="UniversalExplorationMine" category="general">
+		<dependencies>
+			<resource-ref type="Research" value="AdvancedResearchII" />
+			<resource-ref type="Research" value="GeoPlanet" />
+			<resource-ref type="Building" value="ResearchCampus" />
+		</dependencies>
+		<cost>
+			<resource-needed type="mp" value="1500" />
+			<resource-needed type="gold" value="6000" />
+			<resource-needed type="groundSpace" value="4" />
+			<resource-available type="Intrinsic" resource="labor" value="8500" />
+			<duration value="60"/>
+		</cost>
+		<attributes>
+			<mod type="energy" value="-60" />
+			<mod type="mp" value="1000"/>
+			<mod type="culture" value="-40"/>
+			<mod type="polution" value="300" />
+		</attributes>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="500" />
+		</oncomplete>
+		<onavailable/>
+		<onremove>
+			<add type="Intrinsic" resource="mp" value="250" />
+			<add type="Intrinsic" resource="groundSpace" value="4" />
+			<add type="Intrinsic" resource="score" value="-500" />
+		</onremove>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="groundSpace" value="4" />
+		</onCancelDuringBuild>
+		<keywords>
+			<keyword key="groundSpace" />
+			<keyword key="mp" />
+			<keyword key="resourceGenerator" />
+		</keywords>
+	</resource>
+	
+	<resource type="Building" value="House" category="general">
+		<dependencies/>
+		<cost>
+			<resource-needed type="mp" value="800" />
+			<resource-needed type="groundSpace" value="1" />
+			<resource-available type="Intrinsic" resource="labor" value="100" />
+			<duration value="6"/>
+		</cost>
+		<attributes>
+			<mod type="energy" value="-10" />
+			<mod type="labor" value="100" />
+		</attributes>
+		<oncomplete>
+			<add type="Intrinsic" resource="housing" value="2500" />
+			<add type="Intrinsic" resource="score" value="1" />
+		</oncomplete>
+		<onavailable>
+			<add type="Building" resource="House" value="1" />
+			<add type="Intrinsic" resource="labor" value="750" />
+		</onavailable>
+		<onremove>
+			<add type="Intrinsic" resource="mp" value="200" />
+			<add type="Intrinsic" resource="housing" value="-2500" />
+			<add type="Intrinsic" resource="groundSpace" value="1" />
+			<add type="Intrinsic" resource="score" value="-1" />
+		</onremove>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="groundSpace" value="1" />
+		</onCancelDuringBuild>
+		<keywords>
+			<keyword key="groundSpace" />
+			<keyword key="labor" />
+			<keyword key="housing" />
+			<keyword key="resourceGenerator" />
+		</keywords>
+	</resource>
+
+	<resource type="Building" value="Marketplace" category="general">
+		<dependencies>
+			<resource-ref type="Research" value="Commerce" />
+		</dependencies>
+		<cost>
+			<resource-needed type="mp" value="1800" />
+			<resource-needed type="gold" value="1800" />
+			<resource-needed type="groundSpace" value="1" />
+			<resource-available type="Intrinsic" resource="labor" value="1700" />
+			<duration value="55" />
+		</cost>
+		<attributes>
+			<mod type="energy" value="-15" />
+			<mod type="gold" value="250"/>
+			<mod type="culture" value="-3"/>
+			<mod type="polution" value="10" />
+		</attributes>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="90" />
+		</oncomplete>
+		<onremove>
+			<add type="Intrinsic" resource="mp" value="200" />
+			<add type="Intrinsic" resource="groundSpace" value="1" />
+			<add type="Intrinsic" resource="score" value="-90" />
+		</onremove>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="groundSpace" value="1" />
+		</onCancelDuringBuild>
+		<keywords>
+			<keyword key="groundSpace" />
+			<keyword key="gold" />
+			<keyword key="resourceGenerator" />
+		</keywords>
+	</resource>
+
+	<resource type="Building" value="Incinerator" category="general">
+		<cost>
+			<resource-needed type="gold" value="400" />
+			<resource-needed type="mp" value="500" />
+			<resource-needed type="groundSpace" value="1" />
+			<resource-available type="Intrinsic" resource="labor" value="600" />
+			<duration value="10"/>
+		</cost>
+		<attributes>
+			<mod type="energy" value="-100"/>
+			<mod type="polution" value="-250"/>
+		</attributes>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="30" />
+		</oncomplete>
+		<onavailable/>
+		<onremove>
+			<add type="Intrinsic" resource="groundSpace" value="1" />
+			<add type="Intrinsic" resource="score" value="-30" />
+		</onremove>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="groundSpace" value="1" />
+		</onCancelDuringBuild>
+		<keywords>
+			<keyword key="groundSpace" />
+			<keyword key="resourceGenerator" />
+			<keyword key="polution" />
+		</keywords>
+	</resource>
+
+	<resource type="Building" value="RecyclingPlant" category="general">
+		<dependencies>
+			<resource-ref type="Research" value="Recycling" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="4400" />
+			<resource-needed type="mp" value="4800" />
+			<resource-needed type="groundSpace" value="1" />
+			<resource-available type="Intrinsic" resource="labor" value="2600" />
+			<duration value="90"/>
+		</cost>
+		<attributes>
+			<mod type="energy" value="-250"/>
+		</attributes>
+		<onturn>
+			<transform input="polution" output="mp" factor="150" />
+		</onturn>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="300" />
+		</oncomplete>
+		<onavailable/>
+		<onremove>
+			<add type="Intrinsic" resource="groundSpace" value="1" />
+			<add type="Intrinsic" resource="score" value="-300" />
+		</onremove>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="groundSpace" value="1" />
+		</onCancelDuringBuild>
+		<keywords>
+			<keyword key="groundSpace" />
+			<keyword key="resourceGenerator" />
+			<keyword key="polution" />
+		</keywords>
+	</resource>
+
+</resources>

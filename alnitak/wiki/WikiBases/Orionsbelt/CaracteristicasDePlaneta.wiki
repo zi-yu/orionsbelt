@@ -1,0 +1,29 @@
+:Summary: Descrição das Diversas Características de um Planeta
+:Display: Características de Planeta
+
+Dica:Não vale a pena batalhar por um planeta fraco!
+
+!Características de um Planeta
+Todos os planetas têm diversas características que influenciam a sua riqueza. Estas características podem vistas na SecçãoPlaneta de um planeta e têm a seguinte descrição:
+
+||{!}*Característica*||{!}*Descrição*||
+||'''Coordenada'''||Indica a [Coordenada] onde está o planeta||
+||'''Diâmetro'''||Indica o diâmetro do planeta||
+||'''Massa'''||Indica a massa do planeta||
+||'''Temperatura'''||Indica a temperatura do planeta||
+||'''Velocidade de Escape'''||Indica a velocidade das naves para sair da atmosfera||
+||'''Terreno'''||Indica o tipo de terreno: Água, Floresta, Gêlo, Rocha, Deserto, Terrestre||
+
+Estas características influenciam a riqueza de um planeta. Por riqueza entende-se o quão propicio o planeta é para criar recursos Intrinsic.[Intrinsic] ou Rare.[Rare].  Planetas com um elevado diâmetro terão mais Intrinsic.[groundSpace] para contrução, se o seu tipo de terreno não for água ou rochoso. Planetas com o tipo de terreno Água são muito ricos em Intrinsic.[food], enquanto planetas com tipo de terreno Deserto são muito ricos em Intrinsic.[energy].
+
+A junção de todos estes factores faz com que cada planeta seja único, e com que haja planetas mais ricos que outros.
+
+Nota:Todos os HomePlanet's têm as mesmas características.
+
+!Riqueza de um Planeta
+
+A riqueza é dada pelo ''ratio'' que o planeta tem para os seus recursos Intrinsic.[Intrinsic]. Se uma Building.[Farm] produz 100 de Intrinsic.[food] por turno, será aproveitado somente ratio * 100 de Intrinsic.[food]. Isto indica que quanto maior for a riqueza do planeta para aquele recurso, mais se poderá aproveitar. Existem ''ratios'' para quase todos os tipos de recursos e são tratados no jogo como modificadores.
+
+Estes modificadores influenciam a quantidade de recursos Intrinsic.[Intrinsic] que são geradas por turno. Nota que, apesar de os modificadores dependerem das características gerais do planeta, podem ser enriquecidos através de Building.[Building] próprios.
+
+:Summary: Descrição das Características de um Planeta

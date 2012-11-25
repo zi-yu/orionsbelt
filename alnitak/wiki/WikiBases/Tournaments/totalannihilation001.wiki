@@ -1,0 +1,82 @@
+:Display: Destruição Total #1
+:Summary: Detalhes do 1º Torneio de Destruição Total
+
+!!!Informação do Torneio
+Total de inscritos: 28
+
+!!!Vencedores
+
+	1.º *Anfernius*
+	1.º *Pyro*
+	1.º *Malakias* e *Shadow_Knight*
+
+!!!Playoffs #4
+
+O jogador NOX_TOUCH foi eliminado da competição por falta de comparência.
+
+||{!}Ruler||{!}Pontuação||{!}Pontuação||{!}Ruler||
+||*NOX_TOUCH*||0 ||0 ||{!}*Anfernius*||
+
+!!!Playoffs #3
+
+Passou Automaticamente à Próxima Fase: *NOX_TOUCH*
+
+||{!}Ruler||{!}Pontuação||{!}Pontuação||{!}Ruler||
+||*Pyro*||37975 ||9398 ||{!}*Anfernius*||
+
+!!!Playoffs #2
+
+Passou Automaticamente à Próxima Fase: *NOX_TOUCH*
+
+||{!}Ruler||{!}Pontuação||{!}Pontuação||{!}Ruler||
+||{!}*Pyro* ||	9188 ||	5915 ||	*Shadow Knight*||
+||*Malakias* ||	5836|| 	4396 ||{!}*Anfernius*||
+
+!!!Playoffs #1
+
+Passou Automaticamente à Próxima Fase: *NOX_TOUCH*
+
+||{!}Ruler||{!}Pontuação||{!}Pontuação||{!}Ruler||
+||*funnynovato*|| 	7929 	||9194 ||{!}*Pyro*||
+||*MindScraper*|| 	8480 ||	750 ||{!}*Shadow Knight*||
+||{!}*Malakias*|| 	9190 ||	3758 ||	*Shikamaru*||
+||{!}*Anfernius*|| 	9191 ||	2361 ||	*super_dragao*||
+
+!!!Fase de Grupos
+
+||{^C5}*Grupo 1*||
+||{!}#||{!}Ruler||{!}Batalhas||{!}Resultados||{!}Pontuação||
+||{!}1º||*Anfernius*||9||9/0/0||67136||
+||{!}2º||*MindScraper*|| 	9|| 	7/0/2|| 	57540||
+||{!}3º||*super_dragao*|| 	9|| 	8/0/1|| 	51046||
+||4º||*d4rkpow3r*|| 	9|| 	5/0/4|| 	50676||
+||5º||*Axandy*|| 	9|| 	5/0/4|| 	48677||
+||6º||*MaisUm*|| 	9|| 	3/0/6|| 	43648||
+||7º||*Jota P*||9|| 	5/0/4|| 	41126||
+||8º||*BiggusDickus*||9|| 	2/0/7|| 	2112||
+||9º||*josepeseiro*||9|| 	1/0/8|| 	1669||
+||10º||*DuH_OnE*||9|| 	0/0/9|| 	0||
+ 
+||{^C5}*Grupo 2*||
+||{!}#||{!}Ruler||{!}Batalhas||{!}Resultados||{!}Pontuação||
+||{!}1 º ||	*Pyro* ||	8 ||	8/0/0 ||	73528||
+||{!}2 º ||	*Shadow Knight* ||	8 ||	7/0/1 ||	70802||
+||{!}3 º ||	*NOX_TOUCH* ||	8 ||	6/0/2 ||	63185||
+||4 º ||	*Jonbitor* ||	8 ||	5/0/3 ||	61785||
+||5 º ||	*Pr0Ph3T* ||	8 ||	3/0/5 ||	47009||
+||6 º|| 	*glued* ||	8 ||	3/0/5 ||	44293||
+||7 º|| 	*doba* ||	8 ||	2/0/6 ||	37712||
+||8 º|| 	*MuadDib* 	||8 ||	2/0/6 ||	36967||
+||9 º|| 	*sony* ||	8 ||	0/0/8 ||	27847||
+
+||{^C5}*Grupo 3*||
+||{!}#||{!}Ruler||{!}Batalhas||{!}Resultados||{!}Pontuação||
+||{!}1 º|| 	*Shikamaru*|| 	8 ||	8/0/0 ||	60860||
+||{!}2 º|| 	*funnynovato*|| 	8 ||	7/0/1 ||	59007||
+||{!}3 º|| 	*Malakias* ||	8 ||	6/0/2 ||	51560||
+||4 º|| 	*nGozi* 	||8 ||	5/0/3 ||	50658||
+||5 º|| 	*ViralSlam* ||	8 ||	3/0/5|| 	43372||
+||6 º|| 	*juanitoraton* ||	8 ||	4/0/4 ||	40412||
+||7 º|| 	*KaLoNg*|| 	8|| 	2/0/6 ||	20522||
+||8 º|| 	*Homem do Leite* 	||8 ||	1/0/7 ||	1800||
+||9 º|| 	*OrrB* ||	8 ||	0/0/8 ||	0||

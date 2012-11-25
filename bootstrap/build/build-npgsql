@@ -1,0 +1,2 @@
+nant -D:debug=false -buildfile:../Orionsbelt.build -D:test=false -D:wiki=true -D:forum=false -D:AlnitakTarget=npgsql -D:ChronosTarget=npgsql -D:temp=Mono-1.1.9.1
+

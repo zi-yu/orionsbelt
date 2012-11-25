@@ -1,0 +1,542 @@
+<?xml version="1.0" ?>
+<!DOCTYPE resources SYSTEM "conf.dtd">
+<resources>
+	<resource type="Building" value="StarPort" category="upgrade">
+		<dependencies/>
+		<cost>
+			<resource-needed type="gold" value="1000" />
+			<resource-needed type="mp" value="1000" />
+			<resource-needed type="energy" value="60" />
+			<resource-needed type="groundSpace" value="2" />
+			<resource-available type="Intrinsic" resource="labor" value="1000" />
+			<restriction resource="Building.StarPort" type="equal-to" value="0" />
+			<queueRestriction type="Building" value="StarPort" />
+			<duration value="20"/>
+		</cost>
+		<attributes>
+			<mod type="culture" value="-10"/>
+			<mod type="polution" value="50"/>
+		</attributes>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="150" />
+		</oncomplete>
+		<onremove>
+			<static action="false" evaluate="false" />
+		</onremove>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="groundSpace" value="2" />
+		</onCancelDuringBuild>
+		<keywords>
+			<keyword key="groundSpace" />
+			<keyword key="military" />
+		</keywords>
+	</resource>
+	
+	<resource type="Building" value="TankFacility" category="upgrade">
+		<dependencies>
+			<resource-ref type="Research" value="Warfare" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="1000" />
+			<resource-needed type="mp" value="1000" />
+			<resource-needed type="energy" value="2500" />
+			<resource-needed type="groundSpace" value="2" />
+			<resource-available type="Intrinsic" resource="labor" value="1000" />
+			<restriction resource="Building.TankFacility" type="equal-to" value="0" />
+			<queueRestriction type="Building" value="TankFacility" />
+			<duration value="100"/>
+		</cost>
+		<attributes>
+			<mod type="culture" value="-15"/>
+			<mod type="polution" value="45"/>
+		</attributes>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="200" />
+		</oncomplete>
+		<onremove>
+			<static action="false" evaluate="false" />
+		</onremove>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="groundSpace" value="2" />
+		</onCancelDuringBuild>
+		<keywords>
+			<keyword key="groundSpace" />
+			<keyword key="military" />
+		</keywords>
+	</resource>
+
+	<resource type="Building" value="School" category="general">
+		<dependencies/>
+		<cost>
+			<resource-needed type="gold" value="100" />
+			<resource-needed type="mp" value="800" />
+			<resource-needed type="energy" value="5" />
+			<resource-needed type="groundSpace" value="1" />
+			<resource-available type="Intrinsic" resource="labor" value="100" />
+			<duration value="10"/>
+		</cost>
+		<attributes>
+			<mod type="culture" value="10"/>
+		</attributes>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="10" />
+		</oncomplete>
+		<onavailable>
+			<add type="Building" resource="School" value="1" />
+		</onavailable>
+		<onremove>
+			<add type="Intrinsic" resource="mp" value="200" />
+			<add type="Intrinsic" resource="groundSpace" value="1" />
+			<add type="Intrinsic" resource="score" value="-10" />
+		</onremove>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="groundSpace" value="1" />
+		</onCancelDuringBuild>
+		<keywords>
+			<keyword key="groundSpace" />
+			<keyword key="culture" />
+			<keyword key="resourceGenerator" />
+		</keywords>
+	</resource>
+
+	<resource type="Building" value="University" category="general">
+		<dependencies>
+			<resource-ref type="Research" value="AdvancedResearchI" />
+			<resource-ref type="Building" value="School" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="100" />
+			<resource-needed type="mp" value="1800" />
+			<resource-needed type="energy" value="100" />
+			<resource-needed type="groundSpace" value="2" />
+			<resource-available type="Intrinsic" resource="labor" value="1000" />
+			<duration value="20"/>
+		</cost>
+		<attributes>
+			<mod type="culture" value="26"/>
+		</attributes>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="30" />
+		</oncomplete>
+		<onremove>
+			<add type="Intrinsic" resource="mp" value="200" />
+			<add type="Intrinsic" resource="groundSpace" value="2" />
+			<add type="Intrinsic" resource="score" value="-30" />
+		</onremove>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="groundSpace" value="2" />
+		</onCancelDuringBuild>
+		<keywords>
+			<keyword key="groundSpace" />
+			<keyword key="culture" />
+			<keyword key="resourceGenerator" />
+		</keywords>
+	</resource>
+
+	<resource type="Building" value="ResearchCampus" category="general">
+		<dependencies>
+			<resource-ref type="Research" value="AdvancedResearchII" />
+			<resource-ref type="Building" value="University" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="1000" />
+			<resource-needed type="mp" value="2800" />
+			<resource-needed type="energy" value="200" />
+			<resource-needed type="groundSpace" value="3" />
+			<resource-available type="Intrinsic" resource="labor" value="2500" />
+			<resource-ref type="Building" value="University" />
+			<duration value="30"/>
+		</cost>
+		<attributes>
+			<mod type="culture" value="60"/>
+		</attributes>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="30" />
+		</oncomplete>
+		<onremove>
+			<add type="Intrinsic" resource="mp" value="200" />
+			<add type="Intrinsic" resource="groundSpace" value="3" />
+			<add type="Intrinsic" resource="score" value="-30" />
+		</onremove>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="groundSpace" value="3" />
+		</onCancelDuringBuild>
+		<keywords>
+			<keyword key="groundSpace" />
+			<keyword key="culture" />
+			<keyword key="resourceGenerator" />
+		</keywords>
+	</resource>
+
+	<resource type="Building" value="CommsSatellite" category="upgrade">
+		<dependencies>
+			<resource-ref type="Research" value="Scanning" />
+			<resource-ref type="Building" value="ResearchCampus" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="1200000" />
+			<resource-needed type="mp" value="1500000" />
+			<resource-needed type="energy" value="1150000" />
+			<resource-needed type="orbitSpace" value="2" />
+			<resource-available type="Intrinsic" resource="labor" value="3000" />
+			<restriction resource="Building.CommsSatellite" type="equal-to" value="0" />
+			<queueRestriction type="Building" value="CommsSatellite" />
+			<duration value="300"/>
+		</cost>
+		<attributes>
+			<mod type="culture" value="-20"/>
+		</attributes>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="4000" />
+		</oncomplete>
+		<onremove>
+			<static action="false" evaluate="false" />
+		</onremove>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="orbitSpace" value="2" />
+		</onCancelDuringBuild>
+		<keywords>
+			<keyword key="orbitSpace" />
+			<keyword key="scanning" />
+		</keywords>
+	</resource>
+
+	<resource type="Building" value="Hospital" category="upgrade">
+		<dependencies>
+			<resource-ref type="Research" value="Medicine" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="4000" />
+			<resource-needed type="mp" value="3800" />
+			<resource-needed type="energy" value="304" />
+			<resource-needed type="groundSpace" value="2" />
+			<resource-available type="Intrinsic" resource="labor" value="3000" />
+			<restriction resource="Building.Hospital" type="equal-to" value="0" />
+			<queueRestriction type="Building" value="Hospital" />
+			<duration value="105"/>
+		</cost>
+		<attributes>
+			<mod type="culture" value="45"/>
+			<mod type="labor" value="10" />
+		</attributes>
+		<oncomplete>
+			<addRatio type="labor" value="20" />
+			<add type="Intrinsic" resource="score" value="330" />	
+		</oncomplete>
+		<onremove>
+			<static evaluate="false" action="false" />
+		</onremove>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="groundSpace" value="2" />
+		</onCancelDuringBuild>
+		<keywords>
+			<keyword key="groundSpace" />
+			<keyword key="culture" />
+			<keyword key="labor" />
+			<keyword key="resourceGenerator" />
+		</keywords>
+	</resource>
+
+	<resource type="Building" value="SpaceStation" category="general">
+		<dependencies>
+			<resource-ref type="Research" value="OrbitExploration" />
+			<resource-ref type="Building" value="ResearchCampus" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="3800" />
+			<resource-needed type="mp" value="3600" />
+			<resource-needed type="energy" value="3504" />
+			<resource-needed type="orbitSpace" value="2" />
+			<resource-available type="Intrinsic" resource="labor" value="3000" />
+			<duration value="137"/>
+		</cost>
+		<attributes>
+			<mod type="labor" value="10" />
+			<mod type="energy" value="-150" />
+			<mod type="polution" value="50" />
+		</attributes>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="300" />
+			<add type="Intrinsic" resource="housing" value="6000" />
+		</oncomplete>
+		<onremove>
+			<add type="Intrinsic" resource="orbitSpace" value="2" />
+			<add type="Intrinsic" resource="score" value="-300" />
+			<add type="Intrinsic" resource="housing" value="-6000" />
+		</onremove>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="orbitSpace" value="2" />
+		</onCancelDuringBuild>
+		<keywords>
+			<keyword key="orbitSpace" />
+			<keyword key="labor" />
+			<keyword key="housing" />
+		</keywords>
+	</resource>
+
+	<resource type="Building" value="StockMarkets" category="upgrade">
+		<dependencies>
+			<resource-ref type="Research" value="Economics" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="500000" />
+			<resource-needed type="mp" value="1200000" />
+			<resource-needed type="energy" value="700000" />
+			<resource-needed type="groundSpace" value="2" />
+			<resource-available type="Intrinsic" resource="labor" value="3500" />
+			<restriction resource="Building.StockMarkets" type="equal-to" value="0" />
+			<queueRestriction type="Building" value="StockMarkets" />
+			<duration value="557"/>
+		</cost>
+		<oncomplete>
+			<addRatio type="gold" value="30" />
+			<add type="Intrinsic" resource="score" value="4200" />
+		</oncomplete>
+		<onremove>
+			<static evaluate="false" action="false" />
+		</onremove>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="groundSpace" value="2" />
+		</onCancelDuringBuild>
+		<keywords>
+			<keyword key="groundSpace" />
+			<keyword key="gold" />
+		</keywords>
+	</resource>
+
+	<resource type="Building" value="MineralExtractor" category="upgrade">
+		<dependencies>
+			<resource-ref type="Research" value="PlanetExploration" />
+			<resource-ref type="Research" value="Geology" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="700000" />
+			<resource-needed type="mp" value="500000" />
+			<resource-needed type="energy" value="600000" />
+			<resource-needed type="groundSpace" value="2" />
+			<resource-available type="Intrinsic" resource="labor" value="4500" />
+			<restriction resource="Building.MineralExtractor" type="equal-to" value="0" />
+			<queueRestriction type="Building" value="MineralExtractor" />
+			<duration value="540"/>
+		</cost>
+		<attributes>
+			<mod type="polution" value="350" />
+		</attributes>
+		<oncomplete>
+			<addRatio type="mp" value="30" />
+			<add type="Intrinsic" resource="score" value="4500" />
+		</oncomplete>
+		<onremove>
+			<static evaluate="false" action="false" />
+		</onremove>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="groundSpace" value="2" />
+		</onCancelDuringBuild>
+		<keywords>
+			<keyword key="groundSpace" />
+			<keyword key="mp" />
+		</keywords>
+	</resource>
+
+	<resource type="Building" value="LandReclamation" category="upgrade">
+		<dependencies>
+			<resource-ref type="Research" value="GeoPlanet" />
+			<resource-ref type="Building" value="ResearchCampus" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="1000000" />
+			<resource-needed type="mp" value="1500000" />
+			<resource-needed type="energy" value="1200000" />
+			<resource-available type="Intrinsic" resource="labor" value="4500" />
+			<restriction resource="Building.LandReclamation" type="equal-to" value="0" />
+			<queueRestriction type="Building" value="LandReclamation" />
+			<duration value="650"/>
+		</cost>
+		<oncomplete>
+			<add type="Intrinsic" resource="groundSpace" value="20" />
+			<add type="Intrinsic" resource="score" value="4000" />
+		</oncomplete>
+		<onremove>
+			<static evaluate="false" action="false" />
+		</onremove>
+		<keywords>
+			<keyword key="groundSpace" />
+		</keywords>
+	</resource>
+
+	<!-- Teletransportation -->
+	<resource type="Building" value="Gate" category="upgrade">
+		<dependencies>
+			<resource-ref type="Research" value="TeletransportationII" />
+			<resource-ref type="Building" value="University" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="10000" />
+			<resource-needed type="mp" value="120000" />
+			<resource-needed type="energy" value="200000" />
+			<resource-needed type="groundSpace" value="2" />
+			<resource-available type="Intrinsic" resource="labor" value="500" />
+			<restriction resource="Building.Gate" type="equal-to" value="0" />
+			<queueRestriction type="Building" value="Gate" />			
+			<duration value="300"/>
+		</cost>
+		<attributes>
+			<mod type="culture" value="-20"/>
+			<mod type="polution" value="80"/>
+		</attributes>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="2800" />
+		</oncomplete>
+		<onremove>
+			<static evaluate="false" action="false" />
+		</onremove>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="groundSpace" value="2" />
+		</onCancelDuringBuild>
+		<keywords>
+			<keyword key="groundSpace" />
+			<keyword key="teletransportation" />
+		</keywords>
+	</resource>
+
+	<resource type="Building" value="StarGate" category="upgrade">
+		<dependencies>
+			<resource-ref type="Research" value="TeletransportationIII" />
+			<resource-ref type="Building" value="ResearchCampus" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="2000000" />
+			<resource-needed type="mp" value="1500000" />
+			<resource-needed type="energy" value="1000000" />
+			<resource-needed type="orbitSpace" value="2" />
+			<resource-available type="Intrinsic" resource="labor" value="1000" />
+			<restriction resource="Building.StarGate" type="equal-to" value="0" />
+			<queueRestriction type="Building" value="StarGate" />			
+			<duration value="600"/>
+		</cost>
+		<attributes>
+			<mod type="culture" value="-27"/>
+			<mod type="polution" value="100"/>
+		</attributes>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="5000" />
+		</oncomplete>
+		<onremove>
+			<static evaluate="false" action="false" />
+		</onremove>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="orbitSpace" value="2" />
+		</onCancelDuringBuild>
+		<keywords>
+			<keyword key="orbitSpace" />
+			<keyword key="teletransportation" />
+		</keywords>
+	</resource>
+	
+	<resource type="Building" value="Barracks" category="general">
+		<dependencies>
+			<resource-ref type="Research" value="Warfare" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="800" />
+			<resource-needed type="mp" value="600" />
+			<resource-needed type="energy" value="500" />
+			<resource-needed type="groundSpace" value="1" />
+			<resource-available type="Intrinsic" resource="labor" value="1200" />
+			<duration value="25"/>
+		</cost>
+		<attributes>
+			<mod type="energy" value="-50" />
+			<mod type="polution" value="70" />
+		</attributes>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="200" />
+		</oncomplete>
+		<onremove>
+			<add type="Intrinsic" resource="mp" value="200" />
+			<add type="Intrinsic" resource="groundSpace" value="1" />
+			<add type="Intrinsic" resource="score" value="-200" />
+		</onremove>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="groundSpace" value="1" />
+		</onCancelDuringBuild>
+		<keywords>
+			<keyword key="groundSpace" />
+			<keyword key="labor" />
+		</keywords>
+	</resource>
+		
+	<resource type="Building" value="Turret" category="upgrade">
+		<dependencies>
+			<resource-ref type="Research" value="PlanetDefenseI" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="5000000" />
+			<resource-needed type="mp" value="7000000" />
+			<resource-needed type="energy" value="4500000" />
+			<resource-needed type="groundSpace" value="1" />
+			<resource-available type="Intrinsic" resource="labor" value="10" />
+			<restriction resource="Building.Turret" type="equal-to" value="0" />
+			<queueRestriction type="Building" value="Turret" />
+			<duration value="250"/>
+		</cost>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="4000" />
+		</oncomplete>
+		<onremove>
+			<add type="Intrinsic" resource="groundSpace" value="1" />
+			<add type="Intrinsic" resource="score" value="-4000" />
+		</onremove>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="groundSpace" value="1" />
+		</onCancelDuringBuild>
+		<battle unitType="building">
+			<attack base="6500000" range="2" minimumDamage="6000000" maximumDamage="7500000" canDamageBehindUnits="true" catapultAttack="true" />
+			<defense base="7000000" hitPoints="8500000" canStrikeBack="true" />
+			<movement cost="0" type="none" level="ground" />
+		</battle>
+		<keywords>
+			<keyword key="groundSpace" />
+			<keyword key="military" />
+		</keywords>
+	</resource>
+	
+	<resource type="Building" value="IonCannon" category="upgrade">
+		<dependencies>
+			<resource-ref type="Research" value="PlanetDefenseII" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="9000000" />
+			<resource-needed type="mp" value="10000000" />
+			<resource-needed type="energy" value="6000000" />
+			<resource-needed type="groundSpace" value="1" />
+			<resource-available type="Intrinsic" resource="labor" value="13" />
+			<restriction resource="Building.IonCannon" type="equal-to" value="0" />
+			<queueRestriction type="Building" value="IonCannon" />
+			<duration value="400"/>
+		</cost>
+		<attributes>
+			<mod type="polution" value="45"/>
+		</attributes>
+		<oncomplete>
+			<add type="Intrinsic" resource="score" value="5000" />
+		</oncomplete>
+		<onremove>
+			<add type="Intrinsic" resource="groundSpace" value="1" />
+			<add type="Intrinsic" resource="score" value="-5000" />
+		</onremove>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="groundSpace" value="1" />
+		</onCancelDuringBuild>
+		<battle unitType="building">
+			<attack base="8000000" range="3" minimumDamage="7000000" maximumDamage="9000000" tripleAttack="true" catapultAttack="true" />
+			<defense base="10000000" hitPoints="12000000" canStrikeBack="true" />
+			<movement cost="0" type="none" level="ground" />
+		</battle>
+		<keywords>
+			<keyword key="groundSpace" />
+			<keyword key="military" />
+		</keywords>
+	</resource>
+
+</resources>

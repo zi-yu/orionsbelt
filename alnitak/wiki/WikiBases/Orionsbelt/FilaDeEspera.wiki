@@ -1,0 +1,13 @@
+A FilaDeEspera permite ter vários recursos em espera para construção, como por exemplo, Building.[Building], Unit.[Unit] ou Research.[Research]. A FilaDeEspera é composta por duas partes: Um recurso em construção, e zero ou mais recursos em espera. Assim que acabar o recurso em construção, será reposto outro. A duração final dos recursos em lista de espera depende do FactorDeProducao.
+
+A FilaDeEspera tem um limite de recursos em espera, que depende das Research.[Research] do jogador. No início somente é possível ter dois elementos em lista de espera, mas este limite poderá ser aumentado posteriormente.
+
+Após a ordem de inclusão de um recurso em FilaDeEspera é possível o seu cancelamento. Cancelar recursos que ainda não estão em produção não tem custos, contudo, se for cancelado um recurso já em construção os recursos Intrinsic.[Intrinsic] gastos não serão repostos.
+
+!!!Pesquisas Relacionadas
+
+Para aumentar o limite da lista de espera existem as seguintes pesquisas:
+	* Research.[QueueCapacity3]
+	* Research.[QueueCapacity5]
+
+:Summary: Informações sobre a Lista de Espera

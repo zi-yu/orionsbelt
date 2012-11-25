@@ -1,0 +1,12 @@
+:Summary: Informação sobre Batalha
+:Parent: Orionsbelt.MotorDeCombate
+
+A batalha é o meio de interacção entre os jogadores do jogo Orion's Belt. A batalha consiste num conjunto de 8 ou menos Unit.[Unit], as quais podem possuir diferentes quantidades, que possuem caracteristicas próprias e que se defrontam num tabuleiro 8X8:
+
+http://pdpsantos.sourceforge.net/Sample.png
+
+No Orion's Belt pode-se fazer batalhas em 3 situações diferentes:
+
+	* BatalhaDeConquista : em que o jogador que quer conquistar um novo planeta vai ter que batalhar com o dono corrente pela posse dele;
+	* BatalhaAmigavel: em que o jogador poderá escolher um amigo para trabalhar uma batalha. Esta batalha não tem qualquer prémio nem conta para nenhum [Ranking];
+	* [Tournament]: Onde os jogadores se podem inscrever e batalhar num campeonato.

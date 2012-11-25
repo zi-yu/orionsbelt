@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<language target="faq">
+
+	<!-- FAQ -->
+	
+	<label ref="faq_title">Perguntas Frequentes</label>
+	<label ref="P0">O que é o <b>Orion's Belt</b>?</label>
+	<label ref="R0">É um jogo de estratégia com interface web.</label>
+	<label ref="P1">Como posso jogar?</label>
+	<label ref="R1">Regista-te como um Ruler.</label>
+	
+</language>

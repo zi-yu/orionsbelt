@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<language>
+
+	<label ref="supports_intro">
+		Orion's Belt is a game totally made in PT (Portugal) and with a growing community. Who supports us
+		earns hindered and recognition of our community. If you are interested in support Orion's Belt should
+		contact the &lt;a href="about.aspx"&gt;administrators&lt;/a&gt;.
+	</label>
+	
+	<label ref="supports_clustercube">
+		A &lt;a href="http://www.clustercube.com/"&gt;ClusterCube&lt;/a&gt; apoia o Orion's Belt disponibilizando-nos alojamento - um serviço excelente e com suporte
+		cinco estrelas.
+		
+	</label>
+	
+	<label ref="supports_gsmbit">
+		A GSMBit é uma empresa que tem como objectivo o comércio de material informático e de telecomunicações.
+		Pode ser encontrada na internet em &lt;a href="http://www.gsmbit.com"&gt;www.gsmbit.com&lt;/a&gt;.
+	</label>
+
+	<label ref="supports_portcraft">
+		&lt;a href="http://www.portcraft.com/"&gt;PortCraft&lt;/a&gt; - Probably the biggest strategy/RPG game portal in Portugal.
+	</label>
+	
+	<label ref="supports_sf">
+		A &lt;a href="http://sf.net"&gt;SourceForge.net&lt;/a&gt; suporta milhares de projectos open source, e o
+		Orion's Belt é um deles. Eles disponibilizam um espaço na web, e ferramentas de desenvolvimento muito
+		úteis como um servidor CVS, um tracker de bugs, entre outras funcionalidades.
+	</label>
+	
+	<label ref="supports_cenqua">
+		&lt;a href="http://www.cenqua.com/"&gt;Cenqua&lt;/a&gt; is the company responsible for the product
+		Clover.NET, used by us to manage our tests. They where kind enough to provide Orion's Belt with
+		a free licence to Clover.NET. 
+	</label>
+	
+</language>

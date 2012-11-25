@@ -1,0 +1,18 @@
+:Display: Bónus
+:Summary: Bónus de Unidades
+:Parent: Orionsbelt.MotorDeCombate
+
+Há vários tipos de Unit.[Unit] que têm bónus váriados:
+	* em relação ao tipo de unidade alvo (se é ''light'', ''medium'' ou ''heavy'')
+	* em relação ao tipo de terreno da [Batalha]
+	* em relação à posição do adversário (unidade terrestre ou aérea)
+
+É muito importante conhecer os [Bonus] para tirar o máximo partido das Unit.[Unit] disponíveis. Alguns exemplos:
+	* As Unit.[Rain] podem ser muito fraquinhas, mas têm um bónus de +3000 de dano contra ''heavy ships'' (Unit.[Crusader], Unit.[Nova], etc), o que aliado ao seu baixo CustoDeMovimento e ao seu TipoDeMovimento as tornam mortíferas contra ''heavy ships''
+	* As Unit.[Raptor] são caças que têm bónus quando atacam outras ''light ships''
+	* Os Unit.[Bozer] têm bónus contra unidades aéreas, mas fraquezas quando são atacados por unidades terrestres
+
+Para melhor conhecer os [Bonus] das unidades, consultar:
+	* A lista de Unit.[Unit]
+	* Unit.[UnidadesPorTerreno]
+	* Unit.[UnidadesPorCategoria]

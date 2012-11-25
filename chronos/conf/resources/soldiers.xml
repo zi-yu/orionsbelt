@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<!DOCTYPE resources SYSTEM "conf.dtd">
+<resources>
+
+	<resource type="Intrinsic" value="marine" category="soldier">
+		<cost>
+			<resource-needed type="gold" value="5" />
+			<resource-needed type="mp" value="10" />
+			<resource-needed type="energy" value="5" />
+			<resource-needed type="labor" value="1" />
+			<reserve-resource type="housing" value="1" />
+			<resource-ref type="Building" value="Barracks" />
+			<duration value="20" quantity="2000" />
+		</cost>
+		<attributes>
+			<attribute type="Teletransportable" value="1"/>
+			<attribute type="TeletransportationCost" value="9"/>
+			<mod type="food" value="-2" />
+		</attributes>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="labor" value="1" />
+			<add type="Intrinsic" resource="housing" value="1" />
+		</onCancelDuringBuild>
+	</resource>
+	
+	<resource type="Intrinsic" value="spy" category="soldier">
+		<cost>
+			<resource-needed type="gold" value="10" />
+			<resource-needed type="mp" value="15" />
+			<resource-needed type="energy" value="10" />
+			<resource-needed type="labor" value="1" />
+			<reserve-resource type="housing" value="1" />
+			<resource-ref type="Building" value="Barracks" />
+			<resource-ref type="Research" value="Espionage" />
+			<duration value="20" quantity="2400" />
+		</cost>
+		<attributes>
+			<attribute type="Teletransportable" value="1"/>
+			<attribute type="TeletransportationCost" value="6"/>
+			<mod type="food" value="-2" />
+		</attributes>
+		<onCancelDuringBuild>
+			<add type="Intrinsic" resource="labor" value="1" />
+			<add type="Intrinsic" resource="housing" value="1" />
+		</onCancelDuringBuild>
+	</resource>
+	
+</resources>
+

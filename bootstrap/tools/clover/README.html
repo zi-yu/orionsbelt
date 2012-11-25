@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+  <head>
+    <title>Clover.NET Release Notes</title>
+  </head>
+  <body>
+    <h1>Clover.NET Version 1.2 - 1.1.2053 (15-August-2005)</h1>
+
+    <p>
+      Welcome to an update to Clover.NET&nbsp;1.2. This update addresses
+      the following issues since the previous Clover.NET 1.2 update.
+    </p>
+      
+    <ul>
+      <li>Improved Visual Studio integration. In some Visual Studio
+      installations, Clover.NET would fail with a Null Reference
+      exception. This has been corrected</li>
+      
+      <li>The operation of the keyfile option has been fixed and the
+          keyfile location is now propoerly quoted by the Clover.NET
+          NAnt tasks</li>
+    </ul>
+    
+    <p>
+      If you are upgrading from a version prior to 1.2, this release 
+      includes significant new functionality including: 
+    </p>
+    
+    <ul>
+        <li>New CloverSolution command line tool for Clovering Visual Studio 
+            Solutions from the command line.</li>
+        <li>New &lt;solution> NAnt task support allowing the use of Clover.NET
+            in continuos integration environments which use the &lt;solution>
+            task as the main build mechanism.</li>
+        <li>Major performance improvements in the parsing and instrumentation
+            phases of Clovering.</li>
+        <li>New options for ordering the coverage results in HTML reports</li>
+        <li>Fixed a number of VB.Net parsing and instrmentation problems.</li>
+    </ul>
+    
+    <h2>Visual Studio Plugin Installation</h2>
+
+    <p>To install the Clover.NET Visual Studio plugin, please ensure you install
+       the Microsoft VSIP interop assemblies beforehand and stop any 
+       Visual&nbsp;Studio instances you have running.
+    </p>
+
+    <h2>NAnt 0.85 users</h2>
+    
+    <p>
+        A recent change to NAnt after Release Candidate 3 is not
+        backward compatible and breaks the Clover.NET tasks. When
+        this code is release in RC4, we will issue an updated version of
+        the Clover.NET NAnt tasks.
+    </p>
+    
+    <h2>Feedback and Issues</h2>
+    
+    <h3>Email Support</h3>
+    <p>
+      For any issues or feedback, please email clover.net-support@cenqua.com 
+      with the details.
+    </p>
+    
+    <h3>Support Forum</h3>
+    <p>
+      You can use Cenqua's forums to discuss issues. The Clover.NET forums are
+      available 
+      <a href="http://www.cenqua.com/forums/category.jspa?categoryID=5">here</a>
+    </p>
+  </body>
+</html>

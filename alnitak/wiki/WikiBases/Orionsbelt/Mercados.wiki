@@ -1,0 +1,5 @@
+:Summary: Como funcionam os Mercados dos Planetas
+
+O mercado de um planeta permite a venda e compra de recursos Intrinsic.[Intrinsic] e de Rare.[Rare]. Para este fim é necessário que o planeta tenha o edifício Building.[Marketplace]. Quantos mais tiver, melhor negócio se poderá realizar.
+
+Como particularidade especial, estará disponível para compra um *recurso raro* aleatório no mercado. Este recurso terá um preço muito elevado e o Building.[Marketplace] poderá ter disponível inclusivé recursos raros que não existem no planeta.

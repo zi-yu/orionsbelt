@@ -1,0 +1,1736 @@
+#hotNews a {
+	color: #ffa500;
+}
+
+#reallyHotNews a {
+	color: #ffa500;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+#registNote {
+	border: white 1px solid;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+.shopItem {
+	margin: 5px;
+}
+
+a.shopItem img {
+	border: dotted 5px #2d2d2d;
+}
+
+.shopItemPreview img {
+	width: 120px;
+	height: 120px;
+}
+
+pre {
+	border: dotted 1px #2d2d2d;
+}
+
+a:link {
+	color: #b5b5b9;
+	text-decoration: none;
+}
+a:active {
+	color: #ffa500;
+	text-decoration: none;
+}
+a:visited {
+	color: #b5b5b9;
+	text-decoration: none;
+}
+a:hover {
+	color: #ffa500;
+	text-decoration: none;
+}
+
+a.ruler {
+	color:#b5b5b9;
+}
+
+a.ruler:hover {
+	color:#ffa500;
+}
+
+a.admin {
+	color:#ffa500;
+}
+
+a.admin:hover {
+	color:#b5b5b9;
+}
+
+a.filter {
+	font-weight:normal;
+	color: #b5b5b9;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+a.filter:hover {
+	text-decoration: underline;
+	color:#ffa500;
+}
+
+a.section_menu_link {
+	color:#b5b5b9;
+	text-decoration: none;
+}
+
+a.section_menu_link:visited {
+	color: #b5b5b9;
+	text-decoration: none;
+}
+
+a.section_menu_link:hover {
+	color: #ffa500;
+	text-decoration: none;
+}
+
+img.prize {
+	margin-left: 3px;
+}
+
+img.spaceImage {
+	margin-right: 15px;
+}
+
+img.filter {
+	margin-right: 10px;
+}
+
+body  {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #d4d4d4;
+	font-weight:normal;
+	margin: 0px;
+	border: none;
+	background-color:#363735;
+}
+
+img { border:0; }
+
+table, tr, td, th {
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+	font-size: 11px;
+}
+
+#allContent {
+	background-color:#080809;
+	vertical-align:top;
+	width:100%;
+	border:solid 1px #272727;
+	border-bottom:solid 1px #2d2d2d;
+	vertical-align:top;
+}
+
+#content {
+	width:100%;	
+	border-collapse:collapse;
+}
+
+#contentContainertd {
+	width:100%;
+	vertical-align:top;
+	padding: 10px 20px 10px 20px;
+	margin: 10px 20px 10px 20px;
+}
+
+#PlayoffsPreview li {
+	margin-bottom: 8px;
+}
+
+.border {
+	width:5px;
+	background-repeat:repeat-y;
+	background: url(http://orionsbelt.sourceforge.net/skins/eva/images/border.gif);
+}
+
+td.content {
+	width:100%;
+	vertical-align:top;
+	background-color:#080809;
+	border:solid 1px #2d2d2d;
+	border-bottom:solid 1px #4f4f4f;	
+}
+
+#usersOnline th{
+	background: url(http://orionsbelt.sourceforge.net/skins/eva/images/indexFill.gif) repeat;
+	height:21px;
+	text-align:left;
+	padding-left:20px;
+}
+
+#usersOnline td div{
+	width:95%;
+	padding:20px;
+}
+
+td.nameImage {
+	vertical-align:top;
+	text-align:right;
+	height:102px;
+}
+
+li.title {
+	list-style: none;
+	font-size: 15px;
+	padding: 10px;
+	margin: 0px;
+	margin-right: 50px;
+	margin-top: 10px;
+	border-bottom-width: 1px;
+	border-bottom-color: #2d2d2d;
+	border-bottom-style: solid;
+}
+
+ul.registered {
+	list-style: none;
+	padding: 10px;
+	margin: 0px;
+}
+
+td.title {
+	background-image:url(http://orionsbelt.sourceforge.net/skins/eva/images/titleFill.gif);
+	height:118px;
+	background-repeat:repeat-x;
+}
+
+td.section_menu_text {
+	vertical-align:middle;
+	text-align:right;
+	height:53px;
+}
+
+#menu {
+	border-collapse:collapse;
+}
+
+td.section_menu {
+	vertical-align:top;
+	padding-top:1px;
+	height:52px;
+}
+
+td.section_menu_button {
+	width:69px;
+	text-align:center;
+	padding-left:4px;
+}
+
+td.left_menu {
+	border-top:solid 1px #2d2d2d;
+	width:140px;
+}
+
+td.right_menu {
+	border-top:solid 1px #2d2d2d;
+	width:140px;
+}
+
+td.left_login {
+	padding-left:18px;
+}
+
+img { border:0; }
+
+input, checkbox, textarea, select {
+	background-color: #444543;
+	border: solid 1px #2d2d2d;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	color:#d4d4d4;
+	font-size:11px;
+}
+
+input.imageButton {
+	border-width:0px;
+}
+
+
+h1 {
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+div.content {
+	text-align: left;
+	width: 514;
+	padding: 0px;
+	margin: 0px;
+	background-color: #2d2d2d;
+	background: url(http://orionsbelt.sourceforge.net/skins/eva/images/menu_bkg_large.jpg);
+}
+
+div.banner {
+	text-align:center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.small-title {
+	font-weight: bold;
+	font-family: "Courier New", monospace;
+	padding-left: 20px;
+	background-color: #a2a5c1;
+	margin-right: 10px;
+	border-style: solid;
+	border-width: medium;
+	border-color: #d4d4d4;
+}
+
+div.logos {
+	text-align: center;
+	margin-top: 10px;
+}
+
+img.logo {
+	margin-top: 5px;
+}
+
+.small_title_box {
+	margin-right: 10px;
+}
+
+.turnInfo {
+	padding-left:18px;
+}
+
+.footer {
+	background-color: #304050;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #d4d4d4;
+	position: static;
+	width: 783px;
+	margin-top: 10px;
+}
+
+.box {
+	padding: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color:#25252a;
+	border: solid 1px #2d2d2d;
+}
+
+img.avatar {
+	margin-top:5px;
+	width:50px;
+	height:50px;
+}
+
+.stats-box {
+	font-family: "Courier New", monospace;
+	font-size: 1.1em;
+	border-style: dashed;
+	border-width: 1px;
+	border-color: #d4d4d4;
+	background-color: #2d2d2d;
+	padding: 10px;
+}
+
+.stats_cache_items {
+	font-family: "Courier New", monospace;
+	font-size: 10pt;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #d4d4d4;
+	background-color: #2d2d2d;
+	padding: 10px;
+}
+
+.box_title {
+	background: url(http://orionsbelt.sourceforge.net/skins/eva/images/box_title.jpg);
+	height: 15;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #d4d4d4;
+	margin: 5px;
+	margin-bottom: 0px;
+	text-align: center;
+	color: #d4d4d4;
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-variant: small-caps;
+	font-size: 10px;
+	font-weight: bold;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.box_content {
+	margin: 5px;
+	margin-top: 0px;
+	background: #617181 url(http://orionsbelt.sourceforge.net/skins/eva/images/box_content.jpg);
+	border-style: solid;
+	border-width: 1px;
+	border-top-width: 0px;
+	border-color: #d4d4d4;
+	padding: 5px;
+
+}
+
+.box_content_yellow {
+	background-color: #f7f3b9;
+	border-style: solid;
+	border-right-width: 0px;
+	border-color: #d4d4d4;
+	padding-left: 20px;
+}
+
+table.nav, .nav {
+	border:solid 1px #2d2d2d;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+div.errorTitle {
+	background-color: #d54444;
+	border-style: solid;
+	border-color: #d4d4d4;
+	border-width: 3px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+.top {
+	margin-left: 50px;
+}
+
+/* parte da FAQ */
+
+.faq-content-question {
+	padding-left: 5px;
+	padding-bottom: 5px;
+	border-width: 1px;
+	border-color: #AAAAAA;
+	border-style: dashed;
+	border-top: 0px;
+	border-left: 0px;
+	border-right:0px;
+	margin-bottom: 5px;
+	font-family: "Courier New", monospace;
+}
+
+.faq-content-reply {
+	padding-bottom: 10px;
+	font-family:verdana, arial, helvetica, sans-serif;
+}
+
+.loginPanel {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.error, .failed, .red {
+	color: #960000;
+}
+
+.succeeded, .green {
+	color: #116b11;
+}
+
+.orange {
+	color:#FF8A00;
+}
+
+div.filteron {
+	position:absolute;
+	visibility: visible;
+	z-index: 20;
+}
+
+div.filteroff {
+	position:absolute;
+	visibility:hidden;
+	z-index: 20;
+	top: 0px;
+	left: 0px;
+}
+
+table.filter {
+	border:solid 1px #2d2d2d;
+	z-index: 20;
+	background-color:#666666;
+	display: inline-table;
+}
+
+.planetFrame {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #2d2d2d;
+	margin:0px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.planetInfoZone {
+	border-width: medium;
+	border-color: #d4d4d4;
+	border-style: solid;	
+}
+
+td.planetInfoZoneTitle {
+	width: 100%;
+}
+
+.planetInfoZoneTitle {
+
+}
+
+b.title {
+	border:none;
+	background-color: white;
+	padding: 0px;
+}
+
+
+.planetInfoZoneBody {
+	margin-top: 10px;
+}
+
+.planetInfoZoneBody2 {
+	/*margin: 10px;*/
+}
+
+.planetInfoZoneBody3 {
+	margin: 10px;
+	margin-top: 0px;
+	padding-top: 10px;
+}
+
+td.planetInfoZone {
+	font-size: small;
+	border: 0px;
+	width: 20%;
+	margin-top: 10px;
+}
+
+th.planetInfoZone {
+	font-size: small;
+	border: 0px;
+	border-bottom-width: 1px;
+	border-bottom-color: #d4d4d4;
+	border-bottom-style: solid;
+	width: 20%;
+	text-align: left;
+}
+
+div.managePlanet {
+	color: #d4d4d4;
+}
+
+td.row1 {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	width: 50%;
+}
+
+td.row2 {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	width: 50%;
+	text-align: right;
+}
+
+.graph {
+	border: solid 1px #2d2d2d;
+	background-color: #414141;
+	text-align: left;
+}
+
+.overResource_resource {
+	background-color: #414141;
+	border: solid 1px #2d2d2d;
+}
+
+.overResource_resourceCell {
+	text-align: center;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #2d2d2d;
+	background-color: #414141;
+}
+
+.overResource_resourceManagement {
+	background-color: #414141;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #2d2d2d;
+	text-align: center;
+}
+
+.overResource_resourceCostCellSucceeded {
+	background-color: #414141;
+	text-align: center;
+	color: green;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #2d2d2d;
+}
+
+.overResource_resourceCostCellFailed {
+	background-color: #414141;
+	text-align: center;
+	color: red;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #2d2d2d;
+}
+
+
+td.resourceTitle, th.resourceTitle {
+	text-align: center;
+	background-color: #2d2d2d;
+}
+
+td.resource {
+	border-width: 1px;
+	border-color: #2d2d2d;
+	border-style: dotted;
+}
+
+td.resourceManagement {
+	text-align: center;
+	border-style: dotted;
+	border-width: 1px;
+	border-color: #2d2d2d;
+}
+
+tr.resourceTitle {
+	border-width: 1px;
+	border-color: #d4d4d4;
+	border-style: solid;
+	font-weight:bold;
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-size: 12px;
+}
+
+td.resourceCell {
+	border-width: 1px;
+	border-color: #2d2d2d;
+	border-style: dotted;
+	text-align: center;
+}
+
+td.resourceCostCellSucceeded {
+	text-align: center;
+	border-width: 1px;
+	border-color: #2d2d2d;
+	border-style: dotted;
+	color: Green;
+}
+
+td.resourceCostCellFailed {
+	text-align: center;
+	color: #D70000;
+	border-style: dotted;
+	border-width: 1px;
+	border-color: #2d2d2d;
+}
+
+.note {
+	color: #ffb938;
+	font-weight:bolder;
+	font-size:11px;
+	text-decoration: underline;
+}
+
+.littleTextBox {
+	width: 40px;
+}
+
+table.frame {
+	background-color:#666666;
+	border:solid 1px #2d2d2d;
+}
+
+td.borderTop {
+	 border-top:solid 1px #2d2d2d;
+}
+
+td.borderLeft {
+	 border-left:solid 1px #2d2d2d;
+}
+
+td.borderRight {
+	 border-right:solid 1px #2d2d2d;
+}
+
+td.borderBottom {
+	border-bottom:solid 1px #2d2d2d;
+}
+
+
+.smallPadding {
+	 padding: 10px 10px 10px 10px;
+}
+
+ul.help_zone {
+	background: url(../../commonImages/messages/ResearchManagement.gif) top right no-repeat ;
+	border:solid 1px #2d2d2d;
+	margin:5px 5px 5px 5px;
+}
+
+/* ============ Travel ============ */
+td.pointer {
+	cursor:pointer;
+}
+
+td.selectedCell {
+	border:solid 1px #00FF00;
+	cursor:pointer;
+}
+
+td.deselectedCell {
+	border:solid 1px #2d2d2d;
+	cursor:pointer;
+}
+
+td.enemyPlanet {
+	border:solid 1px #FF0000;
+	cursor:pointer;
+}
+
+td.allied {
+	border:solid 1px #0000FF;
+	cursor:pointer;
+}
+
+td.yours {
+	border:solid 1px #00FF00;
+	cursor:pointer;
+}
+
+td.none {
+	border:solid 1px #2d2d2d;
+	cursor:pointer;
+}
+
+.littleTextBox {
+	width: 40px;
+}
+
+div.selectedCell {
+	border:solid 1px #FF9C00;
+	width:52px;
+	height:52px;
+}
+
+div.deselectedCell {
+	border:solid 1px #2d2d2d;
+	width:52px;
+	height:52px;
+}
+
+/* ========== Tab de travel ============ */
+
+div.tabsPlaceholder {
+	padding-top:5px;
+	width: 500px;
+}
+
+/* div dos titulos */
+div.tabs {
+	width: 100%;
+}
+
+/* div dos conteudo */
+div.tabContents {
+	width: 100%;
+	height: 85%;
+	border:solid 1px #2d2d2d;
+	background-color: #25252a;
+	padding:0px;
+	margin:0px;
+}
+
+/* activa uma tab */
+span.selectedTab {
+	background-color: #25252a;
+	height: 100%;
+	padding:5px 5px 1px 5px;
+	border:solid 1px #2d2d2d;
+	border-bottom:none;
+	cursor: pointer;
+	color: #d4d4d4;
+}
+
+/* desactiva uma tab */
+span.unselectedTab
+{
+	background-color: #25252a;
+	height: 100%;
+	valign:top;
+	padding:2px 2px 0px 2px;
+	border:solid 1px #2d2d2d;
+	border-bottom:none;
+	cursor: pointer;
+}
+
+/* mostra o conteudo da tab */
+div.selectedTabContents {
+	padding-left: 5px;
+	padding-top: 5px;
+	display:block;
+}
+
+/* esconde o conteudo da tab */
+div.unselectedTabContents {
+	display: none;
+}
+
+/* WIKI */
+.TableCell {
+	color: white;
+	border-width: 1px;
+	border-color: #2d2d2d;
+	border-style: solid;
+	padding: 5px;
+}
+
+.TableCellHighlighted {
+	text-align: center;
+	background-color: #2d2d2d;
+	color: #d4d4d4;
+	font-weight: normal;
+	padding: 3px;
+}
+
+.Property
+{
+	margin-bottom: 10px;
+}
+
+.PropertyName
+{
+	color: #d4d4d4;
+	text-decoration: underline;
+}
+
+legend {
+	color: #d4d4d4;		
+}
+
+fieldset {
+	border-color:#d4d4d4;
+	border-style:ridge;
+	padding-bottom: 8px;
+}
+
+#wiki div.wikiTip
+{
+	background-color: pink;
+}
+
+/* ========== LOADING ========== */
+
+.loadingWindow {
+	font-size:16px;
+	font-family:arial;
+	height:100%;	
+	background-color:transparent; 
+	background-image:url(http://orionsbelt.sf.net/skins/commonImages/semi-transparent.gif);
+	position:absolute;
+}
+
+.preloaderT1 {
+	width: 100%;
+	height: 100%;
+
+}
+.preloaderT2 {
+	height: 45;
+	padding: 0;
+	background: #ffffff;
+	vertical-align: middle;
+	border: solid 1px #002040;
+}
+
+.preloaderT3 {
+	vertical-align: middle;
+	border: 1px;
+	text-align: center;
+	font-family: arial;
+	font-size: 14pt;
+	color: #d4d4d4;
+	font-weight: bold;
+	white-space: nowrap;
+	background-image: url(http://orionsbelt.sourceforge.net/skins/eva/images/loading.gif);
+	background-repeat: no-repeat;
+}	
+
+
+/* ========== FORUM ========== */
+
+
+/* Header 1 - Main header */
+.header1{
+	font-weight: bold;
+	background-color: #2d2d2d;	
+}
+
+.header1Title{
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size:12px;	
+}
+
+/* Header 2 - Sub header */
+.header2 {
+	background-color: #080809;
+	font-weight: bold;
+}
+
+/* Footer1 - Bottom of tables */
+.footer1{
+	font-size: 7pt;
+	background-color:#080809;
+}
+
+.footer1 select, .footer1 td{
+	font-size: 7pt;
+}
+
+.UserBox{
+	font-size:7.5pt;	
+}
+
+.postformheader {
+	background-color: #2d2d2d;
+	font-weight:bold;
+}
+
+/* Header of posts */
+.postheader {
+	background-color: #2d2d2d;
+}
+
+.postheader a{
+	font-size:10pt;
+}
+
+/* User info and post/article */
+.post {
+	background-color:#2d2d2d;
+}
+
+.post_alt {
+	background-color:#999999;
+}
+
+.post_priority{
+	font-weight:bold;
+}
+
+.post_link {
+	font-weight:bold;
+}
+
+/* Footer of posts */
+.postfooter {
+    background-color: #2d2d2d;
+}
+
+/* Area between posts */
+.postsep {
+	background-color: #2d2d2d;
+	height: 2px 
+}
+
+/* most tables are class 'content' */
+
+.forumContent {
+	border:solid 1px #2d2d2d;
+}
+
+.forumTitle {
+	background-color:#808080;
+}
+
+.forumContent td {
+	padding: 3px;
+}
+
+.forumheading 
+{
+	font-size:10pt;
+	font-weight:bold;
+}
+
+.forumviewing {
+	font-size:10px;
+}
+
+.forumsubheading{
+	font-weight:7.5pt;
+}
+
+#RichEdit td 
+{
+	padding: 0px;
+}
+
+/* used for quoting messages */
+.quote 
+{
+	margin-left: 16px;
+	padding-left: 16px;
+}
+
+.innerquote {
+	padding: 4px;
+	background-color: #18150D;
+	border: solid 1px #2d2d2d;
+}
+
+/* used for code */
+.code{
+	margin-left: 16px;
+	padding-left: 16px;	
+}
+
+.innercode{
+	padding: 4px;
+	border: solid 1px #2d2d2d;
+	font-size:8pt;
+	font-family:Courier New,Courier;
+}
+
+/* font sizes */
+.smallfont	{ font-size: 7.5pt; }
+.largefont	{ font-size: 9pt; }
+
+/* Image Links */
+a.imagelink 
+{
+	font-size: 8pt;
+	font-weight: bold;
+	color: #000080;
+}
+a:hover.imagelink{
+	text-decoration: underline;
+	color: #0000FF;
+	/*background-color: #D0D0D0;*/
+}
+
+/* Used for editor textarea */
+.posteditor {
+	width: 100%;
+	height: 200px;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 8pt;
+}
+
+/* Table just above and below tables */
+table.command {
+	/*border: solid 1px blue;*/
+	padding: 3px;
+}
+
+/* for printing */
+.print {
+	border: solid 1px #2d2d2d;
+}
+.printheader {
+	background-color: #2d2d2d;
+	padding: 4px;
+}
+.printbody {
+	background-color: #18150D;
+	padding: 4px;
+}
+
+/****** WIKI *****/
+
+#TopicTip
+{
+	display: none; 
+	position: absolute; 
+	border: 1px solid 2d2d2d;
+	padding: 4px;
+	font-size: 12px;
+}
+
+#wiki h1 {
+	border: solid 1px #2d2d2d;
+	border-left: none;
+	border-right: none;
+	padding: 5px;
+}
+
+#wiki li
+{
+	margin-bottom: 5px;
+}
+
+#wiki ul li li
+{
+	margin-bottom: 10px;
+}
+
+#wiki a
+{
+	color: #DDAC34;
+}
+
+#wiki h3
+{
+	font-variant: small-caps;
+	font-size: 15px;
+	border-bottom: dotted 1px #d4d4d4;
+}
+
+#wiki_nav 
+{
+	text-align: left;
+	margin-bottom: 8px;
+}
+
+#wiki_search 
+{
+	float: right;
+}
+
+.TopicTipStats
+{
+	font-size: 10px;
+	border-top: solid 1px black;
+}
+
+#wiki table 
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+#wiki .PreviewImage 
+{
+	float: right;
+}
+
+#wiki .TableCellHighlighted 
+{
+	border: solid 1px #d4d4d4;
+}
+
+/*** Information ***/
+
+ul.information 
+{
+	margin-top: 8px;
+	list-style: none;
+}
+
+ul.information li.failed 
+{
+	background: url(http://orionsbelt.sf.net/skins/commonImages/remove.gif) no-repeat center left;
+	padding-left: 17px;
+}
+
+ul.information li.succeeded 
+{
+	background: url(http://orionsbelt.sf.net/skins/commonImages/ok.gif) no-repeat center left;
+	padding-left: 17px;
+}
+
+/**** Mercado ****/
+
+#market table {
+	width: 100%;
+}
+
+#market table td {
+	width: 33%;
+
+}
+
+#market table td select {
+	width: 90%;
+	height: 110px;
+	margin: 5px;
+}
+
+#market_operations {
+	margin: 5px;
+	margin-left: 10px;
+}
+
+/* ============ Battle ============ */
+
+#battleField td{
+	vertical-align:top;
+}
+
+#battleGrid {
+	width:452px;
+	height:452px;
+	border: solid 1px #2d2d2d;
+}
+
+#battleGrid td img {
+	width:50px;
+	height:50px;
+	z-index:0;
+}
+
+#battleGrid td {
+	border: solid 1px #2d2d2d;
+	text-align:center;
+	vertical-align:middle;
+	width:52px;
+	height:52px;
+	padding:0px;
+	margin:0px;
+}
+
+td.enemy {
+	background-image: url(http://orionsbelt.sf.net/skins/commonImages/enemy.gif);
+	background-repeat:no-repeat;
+	vertical-align:middle;
+	text-align:center;
+	border: solid 1px #2d2d2d;
+	z-index:-1;
+}
+
+#battleGrid td img {
+	cursor: pointer;
+}
+
+
+#battleGrid td.enemyBorder {
+	background-color:#9B4A4A;
+	border: solid 1px black;
+	filter:alpha(opacity=50);
+	-moz-opacity:.5;
+	opacity:.5;
+}
+
+#battleMenu {
+	margin-top:10px;
+	width:200px;
+	border-collapse:collapse;
+	margin-left:5px;
+}
+
+#battleMenu td {
+	padding:5px;
+}
+
+#battleMenu td input {
+	width:45px;
+}
+
+#srcShips td{
+	cursor: pointer;
+}
+
+#srcShips td img{
+	width:50px;
+	height:50px;
+}
+
+td.BattleMenuTitle {
+	padding:0px;
+	margin:1px;	
+	background-color:#444543;
+	border-bottom: solid 1px #2d2d2d;
+	text-align:center;
+}
+
+td.borderBottom {
+	border-bottom: solid 1px #2d2d2d;
+}
+
+td.selectedSector {
+	background-color:#6A9B4A;
+	padding:0px;
+	margin:0px;
+}
+
+img.invisible {
+	visibility:hidden;
+	position:absolute;
+}
+
+img.visible {
+	position:absolute;
+	z-index:2;
+	visibility:visible;
+}
+
+td.canMove {
+	background-image:url(http://orionsbelt.sf.net/skins/commonImages/arrow.gif);
+	background-repeat:no-repeat;
+	vertical-align:middle;
+	text-align:center;
+}
+
+td.cannotMove {
+	background-image:url(http://orionsbelt.sf.net/skins/commonImages/arrowRed.gif);
+	background-repeat:no-repeat;
+	vertical-align:middle;
+	text-align:center;
+}
+
+#vs {
+	font-weight:bold;
+	font-size:16px;
+}
+
+/* ============ Queue Preview ============ */
+
+.unit_small_preview
+{
+	width:50px;
+	height:30px;
+}
+
+#inProductionPreview
+{
+	border: solid 1px #666666;
+	height: 90px;
+}
+
+#inProductionPreview img
+{
+	float: left;
+	width: 133px;
+	height: 80px;
+	margin-right:30px;
+}
+
+/* ============ Terrains ============ */
+
+table.water {
+	background-image:url(http://orionsbelt.sf.net/skins/commonImages/terrain/water.png);
+}
+
+table.desert {
+	background-image:url(http://orionsbelt.sf.net/skins/commonImages/terrain/desert.png);
+}
+
+table.rock {
+	background-image:url(http://orionsbelt.sf.net/skins/commonImages/terrain/rock.png);
+}
+
+table.terrest {
+	background-image:url(http://orionsbelt.sf.net/skins/commonImages/terrain/terrest.png);
+}
+
+table.forest {
+	background-image:url(http://orionsbelt.sf.net/skins/commonImages/terrain/forest.png);
+}
+
+table.ice {
+	background-image:url(http://orionsbelt.sf.net/skins/commonImages/terrain/ice.png);
+}
+
+/* =============== Messages =============== */
+
+#informationTable {
+	border-bottom:solid 1px #2d2d2d;
+	border-left:solid 1px #2d2d2d;
+	border-right:solid 1px #2d2d2d;
+	width:100%;
+	border-collapse:collapse;
+}
+
+#informationTable th {
+	background-image:url(http://orionsbelt.sourceforge.net/skins/eva/images/msg_fill.gif);
+	text-align:left;	
+}
+
+#informationTable th img {
+	float:left;
+	padding-left:2px;
+	vertical-align:middle;
+}
+
+#informationTable .messageContent {
+	width:100%;
+	padding-left:10px;
+}
+
+#informationTable td img{
+	margin:10px 10px 10px 40px;
+	
+}
+
+/* ============== news ================= */
+
+#news {
+	border:0;
+	width:100%;
+	height:100%;
+	margin:0px;
+	padding:0px;
+	border-collapse:collapse;
+}
+
+#news a {
+	color:#ffa500;
+}
+
+#news th{
+	background: url(http://orionsbelt.sourceforge.net/skins/eva/images/indexFill.gif) repeat;
+	height:21px;
+	text-align:left;
+	padding-left:20px;
+}
+
+#news td{
+	margin:0px;
+	padding:0px;
+	vertical-align:top;
+	
+}
+
+#moveNews {
+	width:95%;
+	margin-left:10px;
+}
+
+#fixedNews {
+	border-left:solid 1px #2d2d2d;
+	width:300px;
+	vertical-align:top;
+	padding:0px;
+	margin:0px;
+}
+
+#newsDivider {
+	border-top:solid 1px #2d2d2d;
+	width:100%;
+}
+
+#moveNews span {
+	color:#b5b5b9;
+}
+
+#moveNews div {
+	padding-top:8px;
+}
+
+hr {
+	padding-top:1px;
+	border-color:#2d2d2d;
+	background-color:#2d2d2d;
+	width:95%;
+}
+
+img.floatRight {
+	float:right;
+	margin-top:40px;
+	margin-right:40px;
+}
+
+div.newsTitle {
+	background: url(http://orionsbelt.sourceforge.net/skins/eva/images/indexFill.gif);
+	background-repeat:repeat-x;
+	height:21px;
+	padding-left:20px;
+	padding-top:3px;
+	text-align:left;
+}
+
+#topRulers {
+	margin:10px;
+}
+
+#topRulers div {
+	padding-top:5px;
+	padding-bottom:5px;
+	vertical-align:middle;
+}
+
+#topRulers td{
+	vertical-align:middle;
+}
+
+/* ============== ScreenShot Viewer ================= */
+
+#screenShotViewer {
+	width:300px;	
+	margin:0px;
+	padding:0px;
+	border-collapse:collapse;
+}
+
+#screenShotViewer th{
+	text-align:right;
+	padding-right:20px;
+}
+
+#screenShotViewer span {
+	cursor:pointer;
+}
+
+#currentPictureNumber{
+	cursor:auto;
+}
+/* ================================== Menu ===================================== */
+
+#leftMenu {
+	margin:0px;
+	padding:0px;
+	border-collapse:collapse;
+	vertical-align:top;
+	width:140px;
+}
+
+#leftMenu dl{
+	margin:0px;
+	padding:0px;
+}
+
+#topItem{
+	margin:0px;
+	padding:0px;
+}
+
+#topItem dt{
+	font-size: 11px;
+	font-weight: bold;
+	text-align:center;
+	background-image:url(http://orionsbelt.sourceforge.net/skins/eva/images/menuTitleFirst.gif);
+	background-repeat: no-repeat;
+	margin:0px;
+	padding:0px;
+	height:16px;
+}
+
+#topItem dd{
+	margin:0px;
+	padding:0px;
+	padding-left:20px;
+	background-color:#363735;
+	color:#d4d4d4;
+	background: url(http://orionsbelt.sourceforge.net/skins/eva/images/menuLeftFirst.gif);
+	background-repeat:repeat-y;
+	border-bottom: solid 1px #2d2d2d;
+}
+
+#topItem dd.menuBottom{
+	margin:0px;
+	padding:0px;
+	background: url(http://orionsbelt.sourceforge.net/skins/eva/images/menuBottom.gif);
+	background-repeat:repeat-y;	
+	height:31px;
+	border: none;
+}
+
+#leftMenu dl dt{
+	font-size: 11px;
+	font-weight: bold;
+	text-align:center;
+	background-image:url(http://orionsbelt.sourceforge.net/skins/eva/images/menuTitle.gif);
+	background-repeat: no-repeat;
+	margin:0px;
+	padding:0px;
+	height:16px;
+}
+
+#leftMenu dl dd{
+	margin:0px;
+	padding:0px;
+	padding-left:20px;
+	background-color:#363735;
+	color:#d4d4d4;
+	background: url(http://orionsbelt.sourceforge.net/skins/eva/images/menuLeft.gif);
+	background-repeat:repeat-y;
+	border-bottom: solid 1px #2d2d2d;
+}
+
+#leftMenu dl dd.menuBottom{
+	margin:0px;
+	padding:0px;
+	background: url(http://orionsbelt.sourceforge.net/skins/eva/images/menuBottom.gif);
+	background-repeat:repeat-y;	
+	height:31px;
+	border: none;
+}
+
+#pub dt {
+	border-bottom: solid 1px #363735;
+}
+
+#pub dd.pubItem {
+	background-image:url(http://orionsbelt.sourceforge.net/skins/eva/images/menuFill.gif);
+	height:240px;
+}
+
+/* RIGHT */
+
+#rightMenu {
+	margin:0px;
+	padding:0px;
+	border-collapse:collapse;
+	vertical-align:top;
+	width:140px;
+}
+
+#rightMenu dl{
+	margin:0px;
+	padding:0px;
+}
+
+#topItemR{
+	margin:0px;
+	padding:0px;
+}
+
+#rightMenu dl dt{
+	font-size: 11px;
+	font-weight: bold;
+	text-align:center;
+	background-image:url(http://orionsbelt.sourceforge.net/skins/eva/images/menuTitleR.gif);
+	background-repeat: no-repeat;
+	margin:0px;
+	padding:0px;
+	height:17px;
+}
+
+#rightMenu dl dd{
+	margin:0px;
+	padding:0px;
+	padding-right:20px;
+	background-color:#363735;
+	color:#d4d4d4;
+	background: url(http://orionsbelt.sourceforge.net/skins/eva/images/menuRight.gif);
+	background-repeat:repeat-y;
+	border-bottom: solid 1px #2d2d2d;
+	text-align:right;
+}
+
+#rightMenu dl dd.menuBottom{
+	margin:0px;
+	padding:0px;
+	background: url(http://orionsbelt.sourceforge.net/skins/eva/images/menuBottomR.gif);
+	background-repeat:repeat-y;	
+	height:31px;
+	border: none;
+}
+
+#topItemR dt{
+	font-size: 11px;
+	font-weight: bold;
+	text-align:center;
+	height:16px;
+	background-image:url(http://orionsbelt.sourceforge.net/skins/eva/images/menuTitleFirstr.gif);
+	background-repeat: no-repeat;
+	margin:0px;
+	padding:0px;
+	height:17px;
+}
+
+#topItemR dd{
+	margin:0px;
+	padding:0px;
+	padding-left:20px;
+	background-color:#363735;
+	color:#960000;
+	background: url(http://orionsbelt.sourceforge.net/skins/eva/images/menuTitleFirstr.gif);
+	background-repeat:repeat-y;
+	border-bottom: solid 1px #2d2d2d;
+	text-align:center;
+}
+
+#topItemR dd.menuBottom{
+	margin:0px;
+	padding:0px;
+	background: url(http://orionsbelt.sourceforge.net/skins/eva/images/menuBottomR.gif);
+	background-repeat:repeat-y;	
+	height:31px;
+	border: none;
+}
+
+#topItemR dd.battleNotifier a {
+	margin:0px;
+	padding:0px;
+	color:#960000;
+}
+
+#historyItem {
+	margin:0px;
+	padding:0px;
+}
+
+#historyItem dt{
+	font-size: 11px;
+	font-weight: bold;
+	text-align:center;
+	background-image:url(http://orionsbelt.sourceforge.net/skins/eva/images/menuTitleR.gif);
+	background-repeat: no-repeat;
+	margin:0px;
+	padding:0px;
+	height:17px;
+}
+
+#historyItem dd{
+	margin:0px;
+	padding:0px;
+	padding-left:0px;
+	background-color:#363735;
+	color:#d4d4d4;
+	background: url(http://orionsbelt.sourceforge.net/skins/eva/images/menuRight.gif);
+	background-repeat:repeat-y;
+}
+
+#historyItem dd.menuBottom{
+	margin:0px;
+	padding:0px;
+	background: url(http://orionsbelt.sourceforge.net/skins/eva/images/menuBottomR.gif);
+	background-repeat:repeat-y;	
+	height:31px;
+	border: none;
+}
+
+div.history {
+	background: url(http://orionsbelt.sourceforge.net/skins/eva/images/menuRightHistory.gif);
+	text-align:right;
+	border-bottom: solid 1px #2d2d2d;
+	padding-right:20px;
+}
+
+a.menuItem img{
+	height:8px;
+	width:8px;	
+}
+
+a.admin{
+	color: #ffa500;
+}
+
+/* Top Planets */
+
+#topPlanets table {
+	width: 90%;
+	margin: 8px;
+	border:solid 1px #2d2d2d;
+}
+
+#topPlanets th {
+	font-weight: bold;
+	text-align: center;
+	border-width: 1px;
+	border-color: #2d2d2d;
+	border-style: dotted;
+	background-color: #2d2d2d;
+}
+
+#topPlanets td {
+	text-align: center;
+	border-width: 1px;
+	border-color: #2d2d2d;
+	border-style: dotted;
+}

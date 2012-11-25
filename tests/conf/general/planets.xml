@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfPlanetInfo>
+	<PlanetInfo id="0" diameter="12.757" mass="6.0" terrain="3" temperature="-100ºC to +50ºC" escapevelocity="11.27" />
+	<PlanetInfo id="1" diameter="12.483" mass="5.85" terrain="1" temperature="-55ºC to +90ºC" escapevelocity="12.56" />
+	<PlanetInfo id="2" diameter="11.379" mass="5.33" terrain="2" temperature="-100ºC to +50ºC" escapevelocity="12.44" />
+	<PlanetInfo id="3" diameter="13.256" mass="6.22" terrain="2" temperature="-100ºC to +75ºC" escapevelocity="10.11" />
+	<PlanetInfo id="4" diameter="10.574" mass="4.95" terrain="2" temperature="0ºC to +200ºC" escapevelocity="4.5" />
+	<PlanetInfo id="5" diameter="9.834" mass="4.61" terrain="1" temperature="-10ºC to +250ºC" escapevelocity="10.3" />
+	<PlanetInfo id="6" diameter="9.592" mass="4.5" terrain="2" temperature="-º14C to +º220C" escapevelocity="15.3" />
+	<PlanetInfo id="7" diameter="8.343" mass="3.01" terrain="2" temperature="-º30C to +70ºC" escapevelocity="16.3" />
+	<PlanetInfo id="8" diameter="11.232" mass="5.27" terrain="0" temperature="-70ºC to +20ºC" escapevelocity="12.5" />
+	<PlanetInfo id="9" diameter="8.823" mass="4.2" terrain="0" temperature="-40ºC to +50ºC" escapevelocity="14.5" />
+	<PlanetInfo id="10" diameter="6.823" mass="3.2" terrain="1" temperature="-5ºC to +190ºC" escapevelocity="14.5" />
+	<PlanetInfo id="11" diameter="5.211" mass="2.44" terrain="0" temperature="-º150C to +20ºC" escapevelocity="10.0" />
+	<PlanetInfo id="12" diameter="12.012" mass="5.63" terrain="2" temperature="-º60C to +60ºC" escapevelocity="9.01" />
+	<PlanetInfo id="13" diameter="14.754" mass="6.92" terrain="3" temperature="-100ºC to +50ºC" escapevelocity="11.27" />
+	<PlanetInfo id="14" diameter="9.213" mass="4.32" terrain="0" temperature="-º200C to +5ºC" escapevelocity="4.12" />
+	<PlanetInfo id="15" diameter="8.543" mass="4.0" terrain="0" temperature="-90ºC to +30ºC" escapevelocity="5.45" />
+	<PlanetInfo id="16" diameter="9.675" mass="4.54" terrain="1" temperature="-30ºC to +150ºC" escapevelocity="12.3" />
+	<PlanetInfo id="17" diameter="6.235" mass="2.92" terrain="0" temperature="-110ºC to +32ºC" escapevelocity="6.45" />
+	<PlanetInfo id="18" diameter="9.455" mass="4.43" terrain="4" temperature="-50ºC to +140ºC" escapevelocity="11.3" />
+	<PlanetInfo id="19" diameter="8.021" mass="3.76" terrain="4" temperature="-10ºC to +35ºC" escapevelocity="10.0" />
+	<PlanetInfo id="20" diameter="10.927" mass="5.12" terrain="2" temperature="-45ºC to +100ºC" escapevelocity="9.32" />
+	<PlanetInfo id="21" diameter="5.302" mass="2.49" terrain="5" temperature="-º60C to +95ºC" escapevelocity="8.99" />
+	<PlanetInfo id="22" diameter="7.824" mass="3.67" terrain="3" temperature="-40ºC to +50ºC" escapevelocity="7.01" />
+	<PlanetInfo id="23" diameter="7.593" mass="3.56" terrain="1" temperature="-45ºC to +196ºC" escapevelocity="4.3" />
+	<PlanetInfo id="24" diameter="11.938" mass="5.6" terrain="1" temperature="-93ºC to +174ºC" escapevelocity="9.8" />
+	<PlanetInfo id="25" diameter="9.354" mass="4.38" terrain="4" temperature="-39ºC to +28ºC" escapevelocity="13.4" />
+	<PlanetInfo id="26" diameter="4.982" mass="2.33" terrain="4" temperature="-33ºC to +38ºC" escapevelocity="8.71" />
+	<PlanetInfo id="27" diameter="8.964" mass="4.2" terrain="5" temperature="-100ºC to +49ºC" escapevelocity="12.7" />
+	<PlanetInfo id="28" diameter="15.134" mass="7.1" terrain="5" temperature="-150ºC to +56ºC" escapevelocity="8.93" />
+	<PlanetInfo id="29" diameter="11.012" mass="5.16" terrain="0" temperature="-370ºC to -23ºC" escapevelocity="4.33" />
+	<PlanetInfo id="30" diameter="6.078" mass="2.85" terrain="5" temperature="-400ºC to -100ºC" escapevelocity="7.84" />
+	<PlanetInfo id="31" diameter="13.025" mass="6.12" terrain="2" temperature="-40ºC to +300ºC" escapevelocity="15.4" />
+	<PlanetInfo id="32" diameter="9.812" mass="4.6" terrain="3" temperature="-350ºC to -10ºC" escapevelocity="8.75" />
+	<PlanetInfo id="33" diameter="4.839" mass="2.27" terrain="5" temperature="-95ºC to +74ºC" escapevelocity="12.9" />
+	<PlanetInfo id="34" diameter="5.213" mass="2.44" terrain="3" temperature="-5ºC to +30ºC" escapevelocity="17.6" />
+	<PlanetInfo id="35" diameter="9.458" mass="4.43" terrain="4" temperature="-146ºC to +20ºC" escapevelocity="9.38" />
+	<PlanetInfo id="36" diameter="9.734" mass="4.56" terrain="0" temperature="-43ºC to +174ºC" escapevelocity="9.99" />
+	<PlanetInfo id="37" diameter="10.832" mass="5.1" terrain="3" temperature="-396ºC to -15ºC" escapevelocity="16.9" />
+	<PlanetInfo id="38" diameter="8.753" mass="2.84" terrain="5" temperature="-46ºC to +43ºC" escapevelocity="11.27" />
+	<PlanetInfo id="39" diameter="3.924" mass="1.84" terrain="3" temperature="-38ºC to +58ºC" escapevelocity="13.6" />
+	<PlanetInfo id="40" diameter="12.543" mass="5.9" terrain="0" temperature="-378ºC to -43ºC" escapevelocity="11.9" />
+	<PlanetInfo id="41" diameter="14.578" mass="6.84" terrain="5" temperature="-46ºC to +43ºC" escapevelocity="9.04" />
+</ArrayOfPlanetInfo>

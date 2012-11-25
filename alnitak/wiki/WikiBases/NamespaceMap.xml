@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FederationConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <DefaultNamespace>Orionsbelt</DefaultNamespace>
+  <About>Este é o projecto de documentação do jogo Orionsbelt</About>
+  <Borders>Orionsbelt._NormalBorders,Orionsbelt.BORDER</Borders>
+  <WikiTalkVersion>1</WikiTalkVersion>
+  <DefaultDirectoryForNewNamespaces>.</DefaultDirectoryForNewNamespaces>
+  <Namespaces>
+    <Namespace Root="Orionsbelt" Secure="false" Namespace="Orionsbelt" />
+    <Namespace Root="Research" Secure="false" Namespace="Research" />
+    <Namespace Root="Unit" Secure="false" Namespace="Unit" />
+    <Namespace Root="Intrinsic" Secure="false" Namespace="Intrinsic" />
+    <Namespace Root="Building" Secure="false" Namespace="Building" />
+    <Namespace Root="Rare" Secure="false" Namespace="Rare" />
+    <Namespace Root="Tournaments" Secure="false" Namespace="Tournaments" />
+    <Namespace Root="Battles" Secure="false" Namespace="Battles" />
+    <Namespace Root="Round" Secure="false" Namespace="Round" />
+  </Namespaces>
+</FederationConfiguration>

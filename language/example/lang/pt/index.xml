@@ -1,0 +1,8 @@
+<language target="index" locale="pt">
+	<label ref="body">
+		Olá! Falas português?
+	</label>
+	<label ref="locale-info">
+		Localização: 
+	</label>
+</language>

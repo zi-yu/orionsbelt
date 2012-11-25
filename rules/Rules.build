@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<project name="Orion's Belt Rules" default="prepare" basedir=".">
+	
+	<description>Orion's Belt Rules</description>
+	<property name="Alnitak.conf.dir" value="../alnitak/configuration" />
+	<property name="Alnitak.js.dir" value="../alnitak/skins/commonScripts" />
+	<property name="Chronos.conf.dir" value="../chronos/conf" />
+	<property name="Tests.conf.dir" value="../tests/conf" />
+	<property name="AlnitakTests.conf.dir" value="../tests/alnitak/bin/conf" />
+	<property name="ChronosTests.conf.dir" value="../tests/chronos/bin/conf" />
+
+	<target name="clean" description="removes all current Alnitak, Tests and Chronos Rules">
+		<echo message="Deleting all Chronos, Tests and Alnitak configuration files in:" />
+		<echo message="- ${Alnitak.conf.dir}" />
+		<echo message="- ${Chronos.conf.dir}" />
+		<echo message="- ${Tests.conf.dir}" />
+		<delete>
+			<fileset>
+				<include name="${Alnitak.conf.dir}/resources/*.*" />
+				<include name="${Alnitak.conf.dir}/general/*.*" />
+		            	<include name="${Chronos.conf.dir}/resources/*.*" />
+				<include name="${Chronos.conf.dir}/general/*.*" />  
+            			<include name="${Tests.conf.dir}/resources/*.*" />
+				<include name="${Tests.conf.dir}/general/*.*" />
+				<include name="${AlnitakTests.conf.dir}/general/*.*" />
+				<include name="${AlnitakTests.conf.dir}/resources/*.*" />
+				<include name="resources/*.xml~" />
+				<include name="resources/base-buildings.xml" />
+				<include name="resources/transportship.xml" />
+				<include name="xslt/*.js" />           	
+			</fileset>
+        	</delete>
+
+	</target>
+	
+	<target name="prepare" description="Copies the rules files to Chronos, Alnitak and Tests">
+	
+		<copy todir="${Alnitak.conf.dir}" overwrite="true">
+		    <fileset>
+		        <include name="general/*.xml" />
+		    </fileset>
+		</copy>
+		
+		<copy todir="${Chronos.conf.dir}" overwrite="true">
+		    <fileset>
+		        <include name="general/*.xml" />
+		    </fileset>
+		</copy>
+
+		<copy todir="${Tests.conf.dir}" overwrite="true">
+		    <fileset>
+		        <include name="general/*.xml" />
+		    </fileset>
+		</copy>
+		
+		<copy todir="${Tests.conf.dir}" overwrite="true">
+		    <fileset>
+		        <include name="general/*.xml" />
+		    </fileset>
+		</copy>
+		
+		<copy todir="${AlnitakTests.conf.dir}" overwrite="true">
+		    <fileset>
+		        <include name="general/*.xml" />
+		    </fileset>
+		</copy>
+		
+		<copy todir="${ChronosTests.conf.dir}" overwrite="true">
+		    <fileset>
+		        <include name="general/*.xml" />
+		    </fileset>
+		</copy>
+		
+		<copy todir="${Alnitak.conf.dir}" overwrite="true">
+		    <fileset>
+		        <include name="resources/*.xml" />
+		    </fileset>
+		</copy>
+		<copy todir="${Alnitak.conf.dir}/resources" overwrite="true" file="resources/conf.dtd" />
+		
+		<copy todir="${Chronos.conf.dir}" overwrite="true">
+		    <fileset>
+		        <include name="resources/*.xml" />
+		    </fileset>
+		</copy>
+		<copy todir="${Chronos.conf.dir}/resources" overwrite="true" file="resources/conf.dtd" />
+
+		<copy todir="${Tests.conf.dir}" overwrite="true">
+		    <fileset>
+		        <include name="resources/*.xml" />
+		    </fileset>
+		</copy>
+		<copy todir="${Tests.conf.dir}/resources" overwrite="true" file="resources/conf.dtd" />
+		
+		<copy todir="${AlnitakTests.conf.dir}" overwrite="true">
+		    <fileset>
+		        <include name="resources/*.xml" />
+		    </fileset>
+		</copy>
+		<copy todir="${AlnitakTests.conf.dir}/resources" overwrite="true" file="resources/conf.dtd" />
+		
+		<copy todir="${ChronosTests.conf.dir}" overwrite="true">
+		    <fileset>
+		        <include name="resources/*.xml" />
+		    </fileset>
+		</copy>
+		<copy todir="${ChronosTests.conf.dir}/resources" overwrite="true" file="resources/conf.dtd" />
+		
+		<call target="rulestojs" />
+	</target>
+	
+	 <!-- compila o projecto -->
+	<target name="build" description="compiles XsltUtils.dll">
+
+		<csc target="library" output="xslt/bin/XsltUtils.dll"
+			debug="${debug}">
+
+			<sources>
+				<include name="*.cs" />
+			</sources>
+			
+			<references>
+				<include name="bin/Chronos.dll" />
+				<include name="bin/Alnitak.dll" />
+				<include name="bin/Language.dll" />
+			</references>
+       	</csc>
+
+  	</target>
+
+	<target name="xslt-utils" description="compiles XsltUtils.dll">
+
+		<csc target="library" output="xslt/bin/XsltUtils.dll" debug="false">
+			<sources>
+				<include name="xslt/*.cs" />
+			</sources>
+       	</csc>
+  	</target>
+  	
+	
+	<target name="rulestojs" description="generates .js from the battle rules" depends="xslt-utils">
+
+		<style style="xslt/rulestojs.xslt" in="resources/unit.xml" out="xslt/unit.js">
+			<parameters>
+		        <parameter name="topObject" namespaceuri="" value="Unit" />
+		        <parameter name="init" namespaceuri="" value="yes" />
+		    </parameters>
+	        <extensionobjects>
+		        <extensionobject namespaceuri="urn:ToLower" typename="Xslt.ToLower" assembly="xslt/bin/XsltUtils.dll" />
+		    </extensionobjects>
+		</style>
+		
+		<style style="xslt/rulestojs.xslt" in="resources/buildings.xml" out="xslt/buildings.js">
+			<parameters>
+		        <parameter name="topObject" namespaceuri="" value="Unit" />
+		        <parameter name="init" namespaceuri="" value="no" />
+		    </parameters>
+	        <extensionobjects>
+		        <extensionobject namespaceuri="urn:ToLower" typename="Xslt.ToLower" assembly="xslt/bin/XsltUtils.dll" />
+		    </extensionobjects>
+		</style>
+		
+		<copy todir="${Alnitak.js.dir}/" overwrite="true" file="xslt/unit.js" />
+		<copy todir="${Alnitak.js.dir}/" overwrite="true" file="xslt/buildings.js" />
+
+	</target>
+	
+</project>

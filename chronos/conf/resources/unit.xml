@@ -1,0 +1,687 @@
+<?xml version="1.0" ?>
+<!DOCTYPE resources SYSTEM "conf.dtd">
+<resources>
+
+	<!--
+		Special Units
+	-->
+
+	<resource type="Unit" value="ColonyShip">
+		<dependencies>
+			<resource-ref type="Building" value="StarPort" />
+			<resource-ref type="Research" value="AdvancedFlightI" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="5000" />
+			<resource-needed type="mp" value="8000" />
+			<resource-needed type="energy" value="1000" />
+			<resource-ref type="Building" value="StarPort" />
+			<duration value="15" quantity="1" />
+		</cost>
+		<attributes>
+			<attribute type="TeletransportationCost" value="350"/>
+		</attributes>
+		<oncomplete/>
+		<battle unitType="special">
+			<attack base="230" range="1" minimumDamage="200" maximumDamage="250"/>
+			<defense base="8000" hitPoints="9200" canStrikeBack="true" />
+			<movement cost="6" type="all" level="air" />
+		</battle>
+	</resource>
+	
+	<resource type="Unit" value="FlagShip">
+		<dependencies>
+			<static evaluate="false" action="false" />
+		</dependencies>
+		<attributes>
+			<attribute type="TournamentValue" value="50000"/>
+		</attributes>
+		<battle unitType="special">
+			<attack base="1" range="1" minimumDamage="1" maximumDamage="2" />
+			<defense base="8000" hitPoints="10000" />
+			<movement cost="1" type="all" level="air" />
+		</battle>
+	</resource>
+	
+	<!--
+		Light Units
+	-->
+
+	<resource type="Unit" value="Rain">
+		<dependencies>
+			<resource-ref type="Building" value="StarPort" />
+			<resource-ref type="Research" value="AdvancedFlightI" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="50" />
+			<resource-needed type="mp" value="40" />
+			<resource-needed type="energy" value="40" />
+			<resource-ref type="Building" value="StarPort" />
+			<duration value="4" quantity="100" />
+		</cost>
+		<attributes>
+			<attribute type="TeletransportationCost" value="1" />
+			<attribute type="TournamentValue" value="1"/>
+		</attributes>
+		<battle unitType="light">
+			<attack base="50" range="1" minimumDamage="40" maximumDamage="80">
+				<target type="unit" key="heavy" value="1200" />
+			</attack>
+			<defense base="70" hitPoints="60" />
+			<movement cost="1" type="all"  level="air"/>
+		</battle>
+	</resource>
+	
+	<resource type="Unit" value="Toxic">
+		<dependencies>
+			<resource-ref type="Building" value="StarPort" />
+			<resource-ref type="Research" value="AdvancedFlightI" />
+			<resource-ref type="Research" value="RareResources" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="580" />
+			<resource-needed type="mp" value="500" />
+			<resource-needed type="energy" value="250" />
+			<resource-needed type="uranium" value="1" />
+			<resource-ref type="Building" value="StarPort" />
+			<duration value="4" quantity="100" />
+		</cost>
+		<attributes>
+			<attribute type="TeletransportationCost" value="1" />
+			<attribute type="TournamentValue" value="1"/>
+		</attributes>
+		<battle unitType="light">
+			<attack base="450" range="2" minimumDamage="350" maximumDamage="590">
+				<target type="unit" key="animal" value="2000" />
+			</attack>
+			<defense base="600" hitPoints="700" />
+			<movement cost="1" type="normal"  level="air"/>
+		</battle>
+	</resource>
+	
+	<resource type="Unit" value="Raptor">
+		<dependencies>
+			<resource-ref type="Building" value="StarPort" />
+			<resource-ref type="Building" value="DiamondShop" />
+			<resource-ref type="Research" value="AdvancedFlightI" />
+			<resource-ref type="Research" value="RareResources" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="400" />
+			<resource-needed type="mp" value="350" />
+			<resource-needed type="energy" value="200" />
+			<resource-needed type="diamond" value="1" />
+			<resource-ref type="Building" value="StarPort" />
+			<duration value="4" quantity="100" />
+		</cost>
+		<attributes>
+			<attribute type="TeletransportationCost" value="1" />
+			<attribute type="TournamentValue" value="1"/>
+		</attributes>
+		<battle unitType="light">
+			<attack base="280" range="2" minimumDamage="200" maximumDamage="500">
+				<target type="terrain" key="ice" value="200" />
+				<target type="unit" key="light" value="1000" />
+			</attack>
+			<defense base="400" hitPoints="500">
+				<target type="terrain" key="ice" value="200" />
+			</defense>
+			<movement cost="1" type="all"  level="air"/>
+		</battle>
+	</resource>
+	
+	<resource type="Unit" value="Anubis">
+		<dependencies>
+			<resource-ref type="Building" value="StarPort" />
+			<resource-ref type="Research" value="RareResources" />
+			<resource-ref type="Research" value="ShipShields" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="580" />
+			<resource-needed type="mp" value="510" />
+			<resource-needed type="energy" value="540" />
+			<resource-needed type="titanium" value="1" />
+			<resource-ref type="Building" value="StarPort" />
+			<duration value="4" quantity="100" />
+		</cost>
+		<attributes>
+			<attribute type="TeletransportationCost" value="1" />
+			<attribute type="TournamentValue" value="1"/>
+		</attributes>
+		<battle unitType="light">
+			<attack base="200" range="1" minimumDamage="230" maximumDamage="460">
+				<target type="terrain" key="rock" value="100" />
+			</attack>
+			<defense base="750" hitPoints="500">
+				<target type="terrain" key="rock" value="100" />
+				<target type="unit" key="heavy" value="3000" />
+			</defense>
+
+			<movement cost="1" type="all"  level="air"/>
+		</battle>
+	</resource>
+
+	<resource type="Unit" value="Samurai">
+		<dependencies>
+			<resource-ref type="Building" value="StarPort" />
+			<resource-ref type="Research" value="RareResources" />
+			<resource-ref type="Research" value="ShipFirePower" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="200" />
+			<resource-needed type="mp" value="250" />
+			<resource-needed type="energy" value="200" />
+			<resource-needed type="titanium" value="1" />
+			<resource-ref type="Building" value="StarPort" />
+			<duration value="4" quantity="100" />
+		</cost>
+		<attributes>
+			<attribute type="TeletransportationCost" value="1" />
+			<attribute type="TournamentValue" value="1"/>
+		</attributes>
+		<battle unitType="light">
+			<attack base="40" range="1" minimumDamage="30" maximumDamage="70" replicatorAttack="true" />
+			<defense base="200" hitPoints="450" />
+			<movement cost="1" type="all" level="air"/>
+		</battle>
+	</resource>
+
+	<resource type="Unit" value="Panther">
+		<dependencies>
+			<resource-ref type="Building" value="TankFacility" />
+			<resource-ref type="Research" value="RareResources" />
+			<resource-ref type="Research" value="Warfare" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="600" />
+			<resource-needed type="mp" value="650" />
+			<resource-needed type="energy" value="600" />
+			<resource-needed type="titanium" value="1" />
+			<resource-ref type="Building" value="TankFacility" />
+			<duration value="4" quantity="100" />
+		</cost>
+		<attributes>
+			<attribute type="TeletransportationCost" value="1" />
+			<attribute type="TournamentValue" value="1"/>
+		</attributes>
+		<battle unitType="light">
+			<attack base="300" range="1" minimumDamage="250" maximumDamage="500" canDamageBehindUnits="true" />
+			<defense base="300" hitPoints="450" />
+			<movement cost="1" type="all" level="ground"/>
+		</battle>
+	</resource>
+	
+	<!--
+		Medium Units
+	-->
+
+	<resource type="Unit" value="Krill">
+		<dependencies>
+			<resource-ref type="Building" value="StarPort" />
+			<resource-ref type="Research" value="AdvancedFlightII" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="600" />
+			<resource-needed type="mp" value="800" />
+			<resource-needed type="energy" value="150" />
+			<resource-ref type="Building" value="StarPort" />
+			<duration value="10" quantity="100" />
+		</cost>
+		<attributes>
+			<attribute type="TeletransportationCost" value="3" />
+			<attribute type="TournamentValue" value="2"/>
+		</attributes>
+		<battle unitType="medium">
+			<attack base="1500" range="3" minimumDamage="1200" maximumDamage="1300" />
+			<defense base="1000" hitPoints="1100" canStrikeBack="true" />
+			<movement cost="2" type="all" level="air" />
+		</battle>
+	</resource>
+	
+	<resource type="Unit" value="Pretorian">
+		<dependencies>
+			<resource-ref type="Building" value="StarPort" />
+			<resource-ref type="Research" value="ShipShields" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="1500" />
+			<resource-needed type="mp" value="1800" />
+			<resource-needed type="energy" value="2000" />
+			<resource-ref type="Building" value="StarPort" />
+			<duration value="25" quantity="100" />
+		</cost>
+		<attributes>
+			<attribute type="TeletransportationCost" value="3" />
+			<attribute type="TournamentValue" value="3"/>
+		</attributes>
+		<battle unitType="medium">
+			<attack base="350" range="3" minimumDamage="110" maximumDamage="620" />
+			<defense base="2800" hitPoints="5550" canStrikeBack="true">
+				<target type="unit" key="heavy" value="500" />
+			</defense>
+			<movement cost="2" type="diagonal" level="air" />
+		</battle>
+	</resource>
+	
+	<resource type="Unit" value="Vector">
+		<dependencies>
+			<resource-ref type="Building" value="StarPort" />
+			<resource-ref type="Research" value="ShipFirePower" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="1000" />
+			<resource-needed type="mp" value="1200" />
+			<resource-needed type="energy" value="900" />
+			<resource-needed type="plastic" value="1" />
+			<resource-ref type="Building" value="StarPort" />
+			<duration value="10" quantity="100" />
+		</cost>
+		<attributes>
+			<attribute type="TeletransportationCost" value="3" />
+			<attribute type="TournamentValue" value="2"/>
+		</attributes>
+		<battle unitType="medium">
+			<attack base="2000" range="3" minimumDamage="1900" maximumDamage="2300" catapultAttack="true">
+				<target type="unit" key="heavy" value="300" />
+				<target type="terrain" key="forest" value="400" />
+			</attack>
+			<defense base="1200" hitPoints="1500">
+				<target type="terrain" key="forest" value="400" />
+			</defense>
+			<movement cost="3" type="normal" level="air" />
+		</battle>
+	</resource>
+	
+	<resource type="Unit" value="Kamikaze">
+		<dependencies>
+			<resource-ref type="Building" value="StarPort" />
+			<resource-ref type="Research" value="ShipFirePower" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="1500" />
+			<resource-needed type="mp" value="1000" />
+			<resource-needed type="energy" value="180" />
+			<resource-ref type="Building" value="StarPort" />
+			<duration value="10" quantity="100" />
+		</cost>
+		<attributes>
+			<attribute type="TeletransportationCost" value="3" />
+			<attribute type="TournamentValue" value="1"/>
+		</attributes>
+		<battle unitType="medium">
+			<attack base="4000" range="1" minimumDamage="3800" maximumDamage="5300" />
+			<defense base="1" hitPoints="10" />
+			<movement cost="1" type="all" level="air" />
+		</battle>
+	</resource>
+	
+	<resource type="Unit" value="Kahuna">
+		<dependencies>
+			<resource-ref type="Building" value="TankFacility" />
+			<resource-ref type="Research" value="Warfare" />
+			<resource-ref type="Research" value="RareResources" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="1000" />
+			<resource-needed type="mp" value="800" />
+			<resource-needed type="energy" value="800" />
+			<resource-needed type="oil" value="1" />
+			<resource-ref type="Building" value="StarPort" />
+			<duration value="10" quantity="100" />
+		</cost>
+		<attributes>
+			<attribute type="TeletransportationCost" value="3" />
+			<attribute type="TournamentValue" value="2"/>
+		</attributes>
+		<battle unitType="medium">
+			<attack base="1000" range="2" minimumDamage="950" maximumDamage="1300" canDamageBehindUnits="true">
+				<target type="terrain" key="terrest" value="400" />
+			</attack>
+			<defense base="1300" hitPoints="1200">
+				<target type="terrain" key="terrest" value="400" />
+				<target type="level" key="air" value="400" />
+			</defense>
+			<movement cost="2" type="all" level="ground" />
+		</battle>
+	</resource>
+	
+	<resource type="Unit" value="Eagle">
+		<dependencies>
+			<resource-ref type="Building" value="StarPort" />
+			<resource-ref type="Building" value="SilverShop" />
+			<resource-ref type="Research" value="AdvancedFlightII" />
+			<resource-ref type="Research" value="RareResources" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="1200" />
+			<resource-needed type="mp" value="1000" />
+			<resource-needed type="energy" value="820" />
+			<resource-needed type="silver" value="1" />
+			<resource-ref type="Building" value="StarPort" />
+			<duration value="10" quantity="100" />
+		</cost>
+		<attributes>
+			<attribute type="TeletransportationCost" value="3" />
+			<attribute type="TournamentValue" value="2"/>
+		</attributes>
+		<battle unitType="medium">
+			<attack base="1100" range="3" minimumDamage="1000" maximumDamage="1200" catapultAttack="true">
+				<target type="unit" key="medium" value="400" />
+				<target type="terrain" key="desert" value="200" />
+			</attack>
+			<defense base="1200" hitPoints="1400">
+				<target type="unit" key="heavy" value="400" />
+				<target type="terrain" key="desert" value="100" />
+			</defense>
+
+			<movement cost="2" type="diagonal" level="air" />
+		</battle>
+	</resource>
+	
+	<resource type="Unit" value="Scarab">
+		<dependencies>
+			<resource-ref type="Building" value="StarPort" />
+			<resource-ref type="Research" value="AdvancedFlightII" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="1300" />
+			<resource-needed type="mp" value="900" />
+			<resource-needed type="energy" value="1050" />
+			<resource-ref type="Building" value="StarPort" />
+			<duration value="10" quantity="100" />
+		</cost>
+		<attributes>
+			<attribute type="TeletransportationCost" value="3" />
+			<attribute type="TournamentValue" value="2"/>
+		</attributes>
+		<battle unitType="medium">
+			<attack base="1900" range="2" minimumDamage="1800" maximumDamage="2300" />
+			<defense base="2300" hitPoints="2200">
+				<target type="level" key="ground" value="500" />
+			</defense>
+
+			<movement cost="1" type="front" level="air" />
+		</battle>
+	</resource>
+
+	<resource type="Unit" value="Driller">
+		<dependencies>
+			<resource-ref type="Building" value="TankFacility" />
+			<terrain type="rock" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="2300" />
+			<resource-needed type="mp" value="1900" />
+			<resource-needed type="energy" value="1050" />
+			<resource-ref type="Building" value="StarPort" />
+			<duration value="10" quantity="100" />
+		</cost>
+		<attributes>
+			<attribute type="TeletransportationCost" value="3" />
+			<attribute type="TournamentValue" value="2"/>
+		</attributes>
+		<battle unitType="medium">
+			<attack base="1500" range="1" minimumDamage="1250" maximumDamage="1700" tripleAttack="true" />
+			<defense base="1500" hitPoints="1500">
+				<target type="level" key="ground" value="500" />
+			</defense>
+			<movement cost="2" type="all" level="ground" />
+		</battle>
+	</resource>
+	
+	<!-- 
+		Heavy Units
+	-->
+
+	<resource type="Unit" value="Crusader">
+		<dependencies>
+			<resource-ref type="Building" value="StarPort" />
+			<resource-ref type="Research" value="AdvancedFlightIII" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="2200" />
+			<resource-needed type="mp" value="1800" />
+			<resource-needed type="energy" value="1000" />
+			<resource-ref type="Building" value="StarPort" />
+			<duration value="20" quantity="100" />
+		</cost>
+		<attributes>
+			<attribute type="TeletransportationCost" value="5" />
+			<attribute type="TournamentValue" value="5"/>
+		</attributes>
+		<battle unitType="heavy">
+			<attack base="2600" range="6" minimumDamage="2350" maximumDamage="2900" />
+			<defense base="2200" hitPoints="2400" />
+			<movement cost="4" type="front" level="air" />
+		</battle>
+	</resource>
+
+	<resource type="Unit" value="Nova">
+		<dependencies>
+			<resource-ref type="Building" value="StarPort" />
+			<resource-ref type="Research" value="AdvancedFlightIII" />
+			<resource-ref type="Research" value="RareResources" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="2900" />
+			<resource-needed type="mp" value="2200" />
+			<resource-needed type="energy" value="1900" />
+			<resource-needed type="uranium" value="1" />
+			<resource-ref type="Building" value="StarPort" />
+			<duration value="20" quantity="100" />
+		</cost>
+		<attributes>
+			<attribute type="TeletransportationCost" value="5" />
+			<attribute type="TournamentValue" value="5"/>
+		</attributes>
+		<battle unitType="heavy">
+			<attack base="2700" range="5" minimumDamage="2500" maximumDamage="3800">
+				<target type="unit" key="animal" value="4000" />
+			</attack>
+			<defense base="1900" hitPoints="2000" />
+			<movement cost="4" type="normal" level="air" />
+		</battle>
+	</resource>
+	
+	<resource type="Unit" value="Bozer">
+		<dependencies>
+			<resource-ref type="Building" value="TankFacility" />
+			<resource-ref type="Research" value="Warfare" />
+			<resource-ref type="Research" value="RareResources" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="2800" />
+			<resource-needed type="mp" value="2500" />
+			<resource-needed type="energy" value="3000" />
+			<resource-needed type="oil" value="1" />
+			<resource-ref type="Building" value="StarPort" />
+			<duration value="20" quantity="100" />
+		</cost>
+		<attributes>
+			<attribute type="TeletransportationCost" value="5" />
+			<attribute type="TournamentValue" value="5"/>
+		</attributes>
+		<battle unitType="heavy">
+			<attack base="3200" range="5" minimumDamage="3100" maximumDamage="3450">
+				<target type="level" key="air" value="3000" />
+			</attack>
+			<defense base="2800" hitPoints="2800"  canStrikeBack="true">
+				<target type="terrain" key="forest" value="500" />
+				<target type="terrain" key="terrest" value="150" />
+				<target type="level" key="ground" value="-2000" />
+			</defense>
+			<movement cost="4" type="front" level="ground" />
+		</battle>
+	</resource>
+	
+	<resource type="Unit" value="Fenix">
+		<dependencies>
+			<resource-ref type="Building" value="StarPort" />
+			<resource-ref type="Building" value="DiamondShop" />
+			<resource-ref type="Research" value="AdvancedFlightIII" />
+			<resource-ref type="Research" value="RareResources" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="2000" />
+			<resource-needed type="mp" value="1500" />
+			<resource-needed type="energy" value="1800" />
+			<resource-needed type="diamond" value="1" />
+			<resource-ref type="Building" value="StarPort" />
+			<duration value="20" quantity="100" />
+		</cost>
+		<attributes>
+			<attribute type="TeletransportationCost" value="5" />
+			<attribute type="TournamentValue" value="5"/>
+		</attributes>
+		<battle unitType="heavy">
+			<attack base="2500" range="4" minimumDamage="2450" maximumDamage="2900" canDamageBehindUnits="true">
+				<target type="unit" key="medium" value="200" />
+			</attack>
+			<defense base="2800" hitPoints="2950" />
+			<movement cost="3" type="normal" level="air" />
+		</battle>
+	</resource>
+	
+	<resource type="Unit" value="Doomer">
+		<dependencies>
+			<resource-ref type="Building" value="StarPort" />
+			<resource-ref type="Building" value="HidroPlant" />
+			<resource-ref type="Research" value="ShipFirePower" />
+			<resource-ref type="Research" value="RareResources" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="1000" />
+			<resource-needed type="mp" value="1500" />
+			<resource-needed type="energy" value="1000" />
+			<resource-needed type="hydrogen" value="1" />
+			<resource-ref type="Building" value="StarPort" />
+			<duration value="20" quantity="100" />
+		</cost>
+		<attributes>
+			<attribute type="TeletransportationCost" value="5" />
+			<attribute type="TournamentValue" value="5"/>
+		</attributes>
+		<battle unitType="heavy">
+			<attack base="6000" range="3" minimumDamage="5800" maximumDamage="6200" canDamageBehindUnits="true" catapultAttack="true" />
+			<defense base="500" hitPoints="800" />
+			<movement cost="3" type="diagonal" level="air" />
+		</battle>
+	</resource>
+
+	<resource type="Unit" value="Taurus">
+		<dependencies>
+			<resource-ref type="Building" value="TankFacility" />
+			<resource-ref type="Research" value="ShipFirePower" />
+			<resource-ref type="Research" value="RareResources" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="3500" />
+			<resource-needed type="mp" value="3000" />
+			<resource-needed type="energy" value="3200" />
+			<resource-needed type="silver" value="1" />
+			<resource-ref type="Building" value="StarPort" />
+			<duration value="20" quantity="100" />
+		</cost>
+		<attributes>
+			<attribute type="TeletransportationCost" value="5" />
+			<attribute type="TournamentValue" value="5"/>
+		</attributes>
+		<battle unitType="heavy">
+			<attack base="5000" range="3" minimumDamage="3000" maximumDamage="5500" canDamageBehindUnits="true" tripleAttack="true" />
+			<defense base="3500" hitPoints="3800" />
+			<movement cost="4" type="front" level="ground" />
+		</battle>
+	</resource>
+	
+	<!-- 
+		Animal Units
+	-->
+	
+	<resource type="Unit" value="Spider">
+		<dependencies>
+			<resource-ref type="Building" value="TankFacility" />
+			<resource-ref type="Research" value="RareResources" />
+			<terrain type="forest" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="2000" />
+			<resource-needed type="mp" value="1800" />
+			<resource-needed type="energy" value="1000" />
+			<resource-needed type="plastic" value="1" />
+			<resource-ref type="Building" value="StarPort" />
+			<duration value="12" quantity="100" />
+		</cost>
+		<attributes>
+			<attribute type="TeletransportationCost" value="4" />
+			<attribute type="TournamentValue" value="3"/>
+		</attributes>
+		<battle unitType="animal">
+			<attack base="1400" range="3" minimumDamage="1350" maximumDamage="1850">
+				<target type="unit" key="heavy" value="500" />
+			</attack>
+			<defense base="2000" hitPoints="1200" canStrikeBack="true">
+				<target type="unit" key="heavy" value="500" />
+			</defense>
+			<movement cost="2" type="all" level="ground" />
+		</battle>
+	</resource>
+
+	<resource type="Unit" value="BlackWidow">
+		<dependencies>
+			<resource-ref type="Building" value="TankFacility" />
+			<resource-ref type="Research" value="RareResources" />
+			<resource-ref type="Research" value="ShipFirePower" />
+			<terrain type="forest" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="3000" />
+			<resource-needed type="mp" value="2600" />
+			<resource-needed type="energy" value="2850" />
+			<resource-needed type="plastic" value="1" />
+			<resource-ref type="Building" value="TankFacility" />
+			<duration value="12" quantity="100" />
+		</cost>
+		<attributes>
+			<attribute type="TeletransportationCost" value="4" />
+			<attribute type="TournamentValue" value="3"/>
+		</attributes>
+		<battle unitType="animal">
+			<attack base="2200" range="2" minimumDamage="2000" maximumDamage="2400" tripleAttack="true" catapultAttack="true">
+			</attack>
+			<defense base="2800" hitPoints="2000" canStrikeBack="true">
+			</defense>
+			<movement cost="3" type="all" level="ground" />
+		</battle>
+	</resource>
+
+	<resource type="Unit" value="Squid">
+		<dependencies>
+			<resource-ref type="Building" value="TankFacility" />
+			<resource-ref type="Research" value="RareResources" />
+			<terrain type="water" />
+		</dependencies>
+		<cost>
+			<resource-needed type="gold" value="18000" />
+			<resource-needed type="mp" value="2000" />
+			<resource-needed type="energy" value="1000" />
+			<resource-needed type="hydrogen" value="1" />
+			<resource-ref type="Building" value="TankFacility" />
+			<duration value="12" quantity="100" />
+		</cost>
+		<attributes>
+			<attribute type="TeletransportationCost" value="4" />
+			<attribute type="TournamentValue" value="3"/>
+		</attributes>
+		<battle unitType="animal">
+			<attack base="1500" range="3" minimumDamage="1400" maximumDamage="1600" canDamageBehindUnits="true">
+				<target type="unit" key="heavy" value="500" />
+				<target type="terrain" key="water" value="500" />
+			</attack>
+			<defense base="1800" hitPoints="200">
+				<target type="terrain" key="water" value="2300" />
+			</defense>
+			<movement cost="2" type="all" level="ground" />
+		</battle>
+	</resource>
+	
+</resources>

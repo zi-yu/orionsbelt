@@ -1,0 +1,56 @@
+:Summary: Factores que influenciam a Produção de um Planeta
+:Display: Factor de Produção
+
+O *Factor de Produção* influencia a quantidade de turnos que determinada operação em FilaDeEspera (ou já em produção) demorará até ser concluída. Este factor tem em conta vários factores relativos à qualidade do planeta, como a Intrinsic.[polution] do planeta, a Intrinsic.[culture] do planeta, e a quantidade de Intrinsic.[labor] disponíveis para trabalhar. Para além destes recursos, também incide sobre o *Factor de Produção* a distância do planeta ao HomePlanet do jogador.
+
+Todos estes valores são usados para calcular o *Factor de Produção*. Quando maior este valor, mais tempo demorará um recurso a ser acabado. Por outro lado, quando menor, mais rápido será concluído. A duração final é dada por:
+
+ Duração = DuraçãoBase * FactorDeProdução
+
+O valor absoluto do *Factor de Produção* nunca ultrapassa 135%.
+
+!!!Informação Avançada
+
+O algoritmo que calcula o *Factor de Produção* é o seguinte.
+
+ factor = FactorDistânciaAoHomePlanet
+
+ factor = factor - Trabalhadores / 100 
+ factor = factor + Poluição / 100
+
+ Se Cultura > 0 
+	 factor = factor - Cultura / 10000
+ Caso Contrário
+	 factor = factor - Cultura / 500
+
+ Se População > Habitações
+	factor = factor + 15
+
+Nota que valores positivos influenciam o factor de forma negativa. O algoritmo que calcula o *Factor Distância ao HomePlanet*, com base no planeta em questão, e no HomePlanet, é o seguinte:
+
+ Se HomePlanet
+	factor = -5
+
+ Se Em Galáxias Diferentes
+	factor = 25;
+
+ Se a Mais de 3 Sistemas de Distância
+	factor = 18
+
+ Se a Menos de 3 Sistemas de Diferença
+	factor = Distância * 3
+ 
+ Se estão no Mesmo Sector
+	Se Distância é 0
+		factor = -4
+	Se Distância é 1
+		factor = -3
+	Se Distância é 2
+		factor = -2
+	Se Distância é 3
+		factor = -1
+	Caso Contrário
+		factor = 0
+
+
+

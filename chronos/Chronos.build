@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<project name="Chronos" default="build-all" basedir=".">
+
+	<description>Chronos</description>
+	<property name="debug" value="true" unless="${property::exists('debug')}"/>
+	<property name="CLI" value="${framework::get-target-framework()}" />
+
+	<property name="ChronosTarget" value="file" unless="${property::exists('ChronosTarget')}" />
+	<property name="ChronosSqlServer" value="${string::contains('sqlserver',property::get-value('ChronosTarget'))}" />
+	<property name="ChronosFile" value="${string::contains('file',property::get-value('ChronosTarget'))}" />
+	<property name="ChronosNpgsql" value="${string::contains('npgsql',property::get-value('ChronosTarget'))}" />
+
+	<property name="PersistenceType" value="PERSIST_TO_FILE" />
+	<property name="PersistenceType" value="PERSIST_TO_SQLSERVER" if="${ChronosSqlServer}" />
+	<property name="PersistenceType" value="PERSIST_TO_POSTGRE" if="${ChronosNpgsql}" />
+
+	<property name="version" value="0.1" unless="${property::exists('version')}" />
+
+	<target name="clean" description="remove all generated files">
+		<delete>
+			<fileset>
+				<include name="*~" />>
+				<include name="bin/*.dll" />
+				<include name="bin/*.exe" />
+				<include name="bin/*.pdb" />
+				<include name="bin/*.xml" />
+				<include name="bin/*~" />
+				<include name="bin/.*" />
+				
+				<include name="bin/Debug/*.dll" />
+				<include name="bin/Debug/*.exe" />
+				<include name="bin/Debug/*.pdb" />
+				<include name="bin/Debug/*.xml" />
+				<include name="bin/Release/*.dll" />
+				<include name="bin/Release/*.exe" />
+				<include name="bin/Release/*.pdb" />
+				<include name="bin/Release/*.xml" />
+				<exclude name="bin/DesignPatterns.dll" />
+				<exclude name="bin/Npgsql.dll" />
+            	<exclude name="bin/Debug/Npgsql.dll" />
+            	<exclude name="bin/Release/Npgsql.dll" />
+            	
+            	<exclude name="bin/Mono.Security.dll" />
+            	<exclude name="bin/Debug/Mono.Security.dll" />
+            	<exclude name="bin/Release/Mono.Security.dll" />
+
+				<include name="conf/*~" />
+				<include name="conf/.*" />
+
+				<include name="conf/resources/*~" />
+				<include name="conf/resources/.*" />
+
+				<include name="conf/general/*~" />
+				<include name="conf/general/.*" />
+				
+				
+
+			</fileset>
+		</delete>
+  	</target>
+
+	<!-- Compila todos os componentes do projecto -->
+	<target name="build-all" description="compiles Chronos">
+		<call target="build" />
+		<call target="validator" />
+		<echo message="Chronos compiled successfully!" />
+		<echo message="" />
+		<echo message="Debug Build     : ${debug}" />
+		<echo message="ChronosTarget   : ${ChronosTarget}" />
+		<echo message="Compiling with  : ${PersistenceType}" />
+		<echo message="" />
+		<echo message="OS              : ${platform::get-name()}" />
+		<echo message="Target Platform : ${framework::get-target-framework()}" />
+	</target>
+
+	<!-- Gera o AssemblyInfo.cs do Chronos -->
+	<target name="generate-asminfo" description="Gera o AssemblyInfo.cs do Chronos">
+		<asminfo output="src/AssemblyInfo.cs" language="CSharp">
+			<imports>
+				<import namespace="System" />
+				<import namespace="System.Reflection" />
+				<import namespace="System.Runtime.CompilerServices" />
+			</imports>
+			<attributes>
+				<attribute type="AssemblyVersionAttribute" value="${version}.0.0" />
+				<attribute type="AssemblyTitleAttribute" value="Chronos" />
+				<attribute type="AssemblyDescriptionAttribute" value="Orion's Belt Engine" />
+				<attribute type="AssemblyCopyrightAttribute" value="Copyright (c) 2004, Sapos Dominadores" />	
+				<attribute type="AssemblyInformationalVersionAttribute" 
+						value="Debug: ${debug}; Persistence: ${ChronosTarget}; OS: ${platform::get-name()}; TargetPlatform: ${framework::get-target-framework()};" />
+			</attributes>
+		</asminfo>
+	</target>
+
+  	<!-- compila o projecto -->
+	<target name="build" description="compiles Chronos.dll" depends="generate-asminfo">
+
+		<csc target="library" output="bin/Chronos.dll"
+			debug="${debug}" doc="bin/Chronos.xml"
+			optimize="true"
+
+			define="${PersistenceType},NANT">
+
+			<nowarn>
+	            <!-- do not report warnings for missing XML comments -->
+				<warning number="1591" />
+				<warning number="1570" />
+				<warning number="1572" />
+				<warning number="1573" />
+				<warning number="0649" />
+				<warning number="0169" />
+				<warning number="0414" if="${platform::is-unix()}"/>
+			</nowarn>
+
+			<sources>
+				<include name="src/**/*.cs" />
+					
+				<include name="persistence/*.cs" />
+				<include name="persistence/File/*.cs" />
+				<include name="persistence/SqlServer/*.cs" if="${ChronosSqlServer}" />
+				<include name="persistence/PostGreSql/*.cs" if="${ChronosNpgsql}" />
+				
+				<exclude name="src/Main.cs" />
+			</sources>
+			<references>
+				<include name="bin/DesignPatterns.dll" />
+				<include name="System.Data.dll" />
+				<include name="bin/Npgsql.dll" if="${ChronosNpgsql}" />
+			</references>
+		</csc>
+		
+		<copy file="bin/Chronos.dll" tofile="../alnitak/bin/Chronos.dll" />
+		<copy file="bin/Chronos.dll" tofile="../tests/bin/Chronos.dll" />
+		<copy file="bin/Chronos.dll" tofile="../rulestowiki/bin/Chronos.dll" />
+  	</target>
+
+  	<!-- compila o validator -->
+	<target name="validator" description="compiles Validator.exe" >
+		<csc target="exe" output="bin/Validator.exe" debug="${debug}" doc="bin/Validator.xml">
+			<sources>
+				<include name="src/Main.cs" />
+			</sources>
+			<references>
+				<include name="bin/Chronos.dll" />
+			</references>
+		</csc>
+		
+		<exec program="bin/Validator.exe" useruntimeengine="true" />
+	</target>
+
+</project>

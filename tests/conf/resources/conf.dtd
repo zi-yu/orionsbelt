@@ -1,0 +1,139 @@
+<!ELEMENT resources (resource*) >
+
+<!ELEMENT resource (dependencies?, cost?, attributes?, onturn?, oncomplete?, onavailable?,onremove?,onCancelDuringBuild?,battle?,keywords?) >
+<!ATTLIST resource type CDATA #REQUIRED>
+<!ATTLIST resource value CDATA #REQUIRED>
+<!ATTLIST resource always-create (true|false) #IMPLIED>
+<!ATTLIST resource category (general|upgrade|planet|tech|exploration|fleet|soldier) #IMPLIED>
+<!ATTLIST resource appliesTo (ruler|planet) "planet">
+
+<!ELEMENT dependencies (resource-ref*,terrain?,battlesFought?,static?) >
+
+	<!ELEMENT resource-ref EMPTY>
+	<!ATTLIST resource-ref type CDATA #REQUIRED>
+	<!ATTLIST resource-ref value CDATA #REQUIRED>
+
+	<!ELEMENT battlesFought EMPTY>
+	<!ATTLIST battlesFought value CDATA #REQUIRED>
+	
+	<!ELEMENT terrain EMPTY>
+	<!ATTLIST terrain type CDATA #REQUIRED>
+
+<!ELEMENT cost (housingAvailable*,resource-needed*,reserve-resource*,resource-available*,restriction*,queueRestriction*,disallow-build*,resource-ref*,duration?) >
+<!ATTLIST cost allowUndoDuringBuild (true|false) "false">
+
+	<!ELEMENT housingAvailable EMPTY>
+
+	<!ELEMENT resource-needed EMPTY>
+	<!ATTLIST resource-needed type CDATA #REQUIRED>
+	<!ATTLIST resource-needed value CDATA #REQUIRED>
+	
+	<!ELEMENT reserve-resource EMPTY>
+	<!ATTLIST reserve-resource type CDATA #REQUIRED>
+	<!ATTLIST reserve-resource value CDATA #REQUIRED>
+	
+	<!ELEMENT resource-available EMPTY>
+	<!ATTLIST resource-available type CDATA "Intrinsic">
+	<!ATTLIST resource-available resource CDATA #REQUIRED>
+	<!ATTLIST resource-available value CDATA "1">
+
+	<!ELEMENT duration EMPTY>
+	<!ATTLIST duration value CDATA #REQUIRED>
+	<!ATTLIST duration quantity CDATA "1">
+	<!ATTLIST duration dependency CDATA #IMPLIED>
+	<!ATTLIST duration function CDATA #IMPLIED>
+
+	<!ELEMENT disallow-build EMPTY>
+	<!ATTLIST disallow-build category CDATA #REQUIRED>
+	<!ATTLIST disallow-build factory CDATA #REQUIRED>
+	
+	<!ELEMENT restriction EMPTY>
+	<!ATTLIST restriction resource CDATA #REQUIRED>
+	<!ATTLIST restriction type (less-than|bigger-than|equal-to) #REQUIRED>
+	<!ATTLIST restriction value CDATA #REQUIRED>
+
+	<!ELEMENT queueRestriction EMPTY>
+	<!ATTLIST queueRestriction type CDATA #REQUIRED>
+	<!ATTLIST queueRestriction value CDATA #REQUIRED>
+	
+<!ELEMENT attributes (attribute*,mod*)>
+
+	<!ELEMENT attribute EMPTY>
+	<!ATTLIST attribute type CDATA #REQUIRED>
+	<!ATTLIST attribute value CDATA #REQUIRED>
+	<!ATTLIST attribute group (true|false) "false">
+
+	<!ELEMENT mod EMPTY>
+	<!ATTLIST mod type CDATA #REQUIRED>
+	<!ATTLIST mod value CDATA #REQUIRED>
+	<!ATTLIST mod apply-once (true|false) #IMPLIED>
+	
+<!ELEMENT onturn (transform*,transformRareResource*)>
+
+	<!ELEMENT transformRareResource EMPTY>
+	<!ATTLIST transformRareResource rare CDATA #REQUIRED>
+	<!ATTLIST transformRareResource intrinsic CDATA #REQUIRED>
+	<!ATTLIST transformRareResource factor CDATA #REQUIRED>
+
+	<!ELEMENT transform EMPTY>
+	<!ATTLIST transform input CDATA #REQUIRED>
+	<!ATTLIST transform output CDATA #REQUIRED>
+	<!ATTLIST transform factor CDATA #REQUIRED>
+
+<!ELEMENT oncomplete (addRatio*,supress-factory*,add*)>
+
+	<!ELEMENT supress-factory EMPTY>
+	<!ATTLIST supress-factory type CDATA #REQUIRED>
+	<!ATTLIST supress-factory value CDATA #REQUIRED>
+
+	<!ELEMENT addRatio EMPTY>
+	<!ATTLIST addRatio type CDATA #REQUIRED>
+	<!ATTLIST addRatio value CDATA #REQUIRED>
+	
+<!ELEMENT onavailable (add*)>
+
+	<!ELEMENT add EMPTY>
+	<!ATTLIST add type CDATA #REQUIRED>
+	<!ATTLIST add resource CDATA #REQUIRED>
+	<!ATTLIST add value CDATA #REQUIRED>
+	
+<!ELEMENT onremove (static*,add*)>
+
+	<!ELEMENT static EMPTY>
+	<!ATTLIST static evaluate (true|false) #REQUIRED>
+	<!ATTLIST static action (true|false) #REQUIRED>
+
+<!ELEMENT onCancelDuringBuild (static*,add*)>
+
+<!ELEMENT keywords (keyword*)>
+
+<!ELEMENT keyword EMPTY>
+	<!ATTLIST keyword key CDATA #REQUIRED>
+
+<!ELEMENT battle (attack,defense,movement)>
+	<!ATTLIST battle unitType (light|medium|heavy|animal|special|building) #REQUIRED>
+
+<!ELEMENT target EMPTY>
+	<!ATTLIST target type (unit|terrain|level) #REQUIRED>
+	<!ATTLIST target key CDATA #REQUIRED>
+	<!ATTLIST target value CDATA #REQUIRED>
+
+<!ELEMENT attack (target*,terrain*)>
+	<!ATTLIST attack base CDATA #REQUIRED>
+	<!ATTLIST attack range CDATA #REQUIRED>
+	<!ATTLIST attack maximumDamage CDATA #REQUIRED>
+	<!ATTLIST attack minimumDamage CDATA #REQUIRED>
+	<!ATTLIST attack canDamageBehindUnits (true|false) "false">
+	<!ATTLIST attack catapultAttack (true|false) "false">
+	<!ATTLIST attack replicatorAttack (true|false) "false">
+	<!ATTLIST attack tripleAttack (true|false) "false">
+	
+<!ELEMENT defense (target*,terrain*)>
+	<!ATTLIST defense base CDATA #REQUIRED>
+	<!ATTLIST defense hitPoints CDATA #REQUIRED>
+	<!ATTLIST defense canStrikeBack (true|false) "false">
+	
+<!ELEMENT movement EMPTY>
+	<!ATTLIST movement cost CDATA #REQUIRED>
+	<!ATTLIST movement type CDATA #REQUIRED>
+	<!ATTLIST movement level (air|ground) #REQUIRED>

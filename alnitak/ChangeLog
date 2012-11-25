@@ -1,0 +1,190 @@
+7-1-2005 Nuno Silva	<pyrus@users.sf.net>
+	* Correcção de um bug no Conquer planet que ocorria quando 
+	  um utilizador ia para um planet que tinha naves e n era dele e no entanto
+	  aparecia o menu para conquistar
+	* Corrigida uma anormalia na conquista. Se um Ruler é derrotado na batalha, aparecia o
+	  Planeta para conquistar.
+	* Alteração do código de acesso às excepções na Base de dados para que dois SGBDs n
+	  precisem de ter o mesmo nome em cada campo
+
+2-1-2005 Nuno Silva	<pyrus@users.sf.net>
+	* Corrigido um pequeno bug no SectionMenu
+
+19-12-2004	Nuno Silva	<pyrus@users.sf.net>
+	* adicionado o controlo CurrentBattles
+	* terminado o controlo ItemsTable
+
+
+19-12-2004	Pedro Santos	<pre@users.sf.net>
+
+	* Adicionada a secção de documentação
+	* Modificada a página de informação de passagem de turno
+
+19-12-2004	Pedro Santos	<pre@users.sf.net>
+
+	* Adicionada a NamedPage toprulers que lista o top de rulers
+	* Adicionada à Home informação sobre o ruler
+
+14-12-2004	Nuno Silva	<pyrus@users.sf.net>
+
+	* Adicionado A conquista do Planeta
+	* Resolução de Alguns Bugs
+
+12-12-2004	Pedro Santos	<pre@users.sf.net>
+
+	* Adicionado o controlo MessageList que lista as mensagens de um
+	MessageManager. Colocado este controlo na Home, de modo a que o Ruler
+	ao ver a sua página veja as suas mensagens.
+
+5-12-2004	Pedro Santos	<pre@users.sf.net>
+
+	* Suporta para exclusão do Chronos. No defaul.aspx, caso o Universo não
+	esteja disponível, é carregada a página
+	skins/commonsControls/UniverseUnavailable.ascx indicadora que o turno
+	está a passar
+
+23-11-2004	Nuno Silva	<pyrus@users.sf.net>
+	
+	* Resolução do Bug de nunca ir para a página de entrada do ruler
+	* Suporte para uma default Skin. Se uma determinada página não existir, será carregada
+	  a página equivalente da skin por defeito
+
+22-11-2004	Pedro Santos	<pre@users.sf.net>
+	
+	* Criado o Controlo ResourcesList que lista os recursos de determinada
+		categoria de um ResourceManager
+	
+21-11-2004	Pedro Santos	<pre@users.sf.net>
+
+	* Criação do ficheiro de build Alnitak.build
+	* Alteração das classes de acesso a dados para receberem macros
+		de compilação que indicam se vai ser usado MySQL ou SQL
+		Server.
+
+7-11-2004	Nuno Silva	<pyrus@users.sf.net>
+
+	* SeguranÃ§a nas NamedPages (ver modificações no ficheiro de insert da BD de SQL e ficheiros removidos)
+	* Modificaçã do BasePageModule para suportar seguranÃ§a
+	* criação da pÃ¡gina InvalidAccess para tratar redireccionar o utilizador curioso
+	
+
+6-11-2004	Nuno Silva	<pyrus@users.sf.net>
+	
+	* Criada um control para dar informaÃ§Ãµes da batalha
+	* IntegraÃ§Ã£o completa da batalha, com excepÃ§Ã£o da finalizaÃ§Ã£o da mesmo e do que
+	acontece depois.
+
+4-11-2004	Nuno Silva	<pyrus@users.sf.net>
+
+	* Criação das páginas da batalha e respectiva secção bem como criação dos controlos para comunicar com a lógica
+	* Adicionado controlos para movimentar as fleets
+	* OrionGlobals.getImagePath passou a OrionGlobals.getSkinImagePath e OrionGlobals.getCommonImagesPath passou a 
+	OrionGlobals.getCommonImagePath
+	
+31-10-2004	Pedro Santos	<pre@users.sf.net>
+
+	* Adicionada a propriedade AskBuildQuantity ao Resources que permite
+		que seja o utlizador a escolher a quantidade de recursos a construir.
+		Se a propriedade tiver a false conta sÃ³ 1.
+	* Criada a função isPositiveNumber no common.js que retorna true se uma variÃ¡vel
+		passada Ã© uma quantidade vÃ¡lida ou não.
+
+28-10-2004	Nuno Silva	<pyrus@users.sf.net>
+
+	* criação da tabela Orionsbelt_ExceptionLog onde estÃ£o guardadas informaÃ§Ãµes sobre
+	  as excepções que ocorreram;
+	* Adicionado ao OrionApplication o evento onError para suportar excepções globais
+	* Criada a pÃ¡gina ASPX globalError onde vÃ£o ser mostradas as excepções globais
+
+21-10-2004	Pedro Santos	<pre@users.sf.net>
+
+	* ElaboraÃ§Ã£o de controlos genÃ©ricos que tratam recursos: QueueErrorReport, QueueNotifier
+		e Resources. Feita tambÃ©m a pÃ¡gina de research e buildings com estes controlos.
+
+21-10-2004	Nuno Silva	<pyrus@users.sf.net>
+
+	* lógicas de excepções da aplicaÃ§Ã£o
+	
+	
+21-10-2004	Pedro Santos	<pre@users.sf.net>
+
+	* Suporte para cancelar construcÃ§Ãµes que estÃ£o em Queue ou em construcÃ§Ã£o, sendo que
+		o valor sÃ³ Ã© reposto caso não esteja a ser construÃ­do.
+
+19-10-2004	Nuno Silva	<pyrus@users.sf.net>
+	
+	* adicionado o campo 'section_isVisible'  tabela Sections (OrionsBelt_Sections no MsSqlServer)
+	  por causa do submenu dinmico;
+	* adicionado o respectivo booleano ao objecto SectionInfo;
+	* resolvido o bug do subMenu. J t a bombar fixe. Antes de por a bombar fazer a actualizao do
+	  primeiro ponto.
+	* Optimizado o contrlo para mostrar as fleets do planeta e todas as fleets do ruler ( o mesmo).
+
+
+19-10-2004	Pedro Santos	<pre@users.sf.net>
+
+	* Adicionado o relatÃ³rio de erros, internacionalizado, quando um enqueue de um building
+		falha.
+
+
+18-10-2004	Nuno Silva	<pyrus@users.sf.net>
+	
+	* Removido o ficheiro AssemblyInfo.cs que estava em duplicado (Removido o da dir Framework/)
+	* Actualizao do ficheiros de config:
+		* marine.xml mudou para soldiers.xml
+		* mech.xml mudou para mechs.xml
+	* afinao do contrlo SubSection menu. Mudei o controlo de sitio: da pasta do galaxy para a 
+	  pasta components
+	
+15-10-2004	Nuno Silva	<pyrus@users.sf.net>
+	
+	* Actualizao dos ficheiros de script da Base de Dados SqlSever
+	
+01-10-2004	Nuno Silva	<pyrus@users.sf.net>
+	
+
+	* criao de um menu dinmico para as subseces
+	* organizao e uniformizao das resources
+	* criao de um menu dinmico para as subseces
+	* organizao e uniformizao das resources
+
+
+01-10-2004	Nuno Silva	<pyrus@users.sf.net>
+	
+	* retirei o internal do CultureModule pq precisava de acesso a ele num aspx
+	* mudana do nome do divheiro Planet.ascx da pasta content para Planets.ascx
+	* mudana da namedPage planet.aspx
+
+
+01-10-2004	Nuno Silva	<pyrus@users.sf.net>
+	
+	* Correco do Bug de Mudana de Skins
+
+17-09-2004	Pedro Santos	<pre@users.sf.net>
+
+	* Preparao com Integrao com o Chronos.
+	* Criada a class ChronosStats que tem estatsticas desde o inicio que
+a aplicao comeou.
+	* Criadas as pginas planet.aspx que mostra informaes genricas do
+planeta e a pgina building.aspx que permite a gesto de ediccios no
+planeta. Isto para a skin Light.
+
+04-08-2004	Nuno Silva	<pyrus@users.sf.net>
+
+	* actualizao de uns bugs e melhorias no OrionApplication
+		* force login
+		* return url
+		* etc
+	* upgrade do motor de batalha para ser geral
+
+
+27-06-2004	Nuno Silva	<pyrus@users.sf.net>
+
+	* Actualizao dos ficheiros relativos  batalha
+		* inicio do salvamento dos deslocamentos
+		* inicio da batalha entre dois grupos de naves
+
+
+27-06-2004	Pedro Santos	<pre@users.sf.net>
+
+	* Ficheiro importado para o mdulo.

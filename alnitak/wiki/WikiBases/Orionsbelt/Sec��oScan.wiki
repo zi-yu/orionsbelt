@@ -1,0 +1,3 @@
+Esta secção permite fazer um [Scan] a um planeta para obter informação sobre ele.
+
+:Summary: Descrição da Secção de Scans

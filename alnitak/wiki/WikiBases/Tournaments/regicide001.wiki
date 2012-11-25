@@ -1,0 +1,85 @@
+:Display: Regicídio #1
+:Summary: Detalhes do 1º Torneio de Regicídio
+
+!!!Informação do Torneio
+Total de inscritos: 31
+
+!!!Vencedores
+
+	1.º *Pyro*
+	1.º *Gangster*
+	1.º *Anfernius*
+
+!!!Playoffs #4
+
+||{!}Ruler||{!}Pontuação||{!}Pontuação||{!}Ruler||
+||{!}*Pyro*|| 	59488|| 	3058||*Gangster*||
+
+!!!Playoffs #3
+
+Passou Automaticamente à Próxima Fase: *Gangster*
+
+||{!}Ruler||{!}Pontuação||{!}Pontuação||{!}Ruler||
+||{!}*Pyro*||57975 ||5398 ||*Anfernius*||
+
+!!!Playoffs #2
+
+||{!}Ruler||{!}Pontuação||{!}Pontuação||{!}Ruler||
+||{!}*Pyro*|| 	9343|| 	55369 ||	Shadow Knight||
+||{!}*Anfernius* ||	52865|| 	3811 ||	Shikamaru||
+||{!}*Gangster* ||	50000 ||	0 ||	Axandy||
+
+!!!Playoffs #1
+
+||{!}Ruler||{!}Pontuação||{!}Pontuação||{!}Ruler||
+||{!}*Gangster*|| 	50000 	||2165 ||*sony*||
+||{!}*Pyro*|| 	56576 ||	4126 ||*nGozi*||
+||{!}*Anfernius*|| 	56576 ||	1501 ||	*Pr0Ph3T*||
+||*Jonbitor*|| 	58022 ||	2361 ||{!}*Axandy*||
+||{!}*Shadow Knight*|| 	54100 ||	3287 ||	*glued*||
+||*MaisUm*|| 	3534 ||	56218 ||{!}*Shikamaru*||
+
+!!!Fase de Grupos
+
+||{^C5}*Grupo 1*||
+||{!}#||{!}Ruler||{!}Batalhas||{!}Resultados||{!}Pontuação||
+||{!}1 º ||	*Gangster* ||	7 ||	6/0/1 ||	329079||
+||{!}2 º ||	*Anfernius* ||	7 ||	7/0/0 ||	325854||
+||{!}3 º ||	*Pr0Ph3T* ||	7 ||	4/0/3 ||	225879||
+||4 º ||	*ViralSlam* ||	7 ||	4/0/3 ||	176509||
+||5 º|| 	*juanitoraton* ||	7 ||	3/0/4 ||	169542||
+||6 º ||	*KaLoNg* ||	7 ||	3/0/4 ||	158028||
+||7 º ||	*NOX_TOUCH* ||	7 ||	1/0/6 ||	12650||
+||8 º|| 	*BiggusDickus* ||	7 ||	0/0/7 ||	1992||
+
+||{^C5}*Grupo 2*||
+||{!}#||{!}Ruler||{!}Batalhas||{!}Resultados||{!}Pontuação||
+||{!}1 º ||	*Axandy* 	||7 ||	7/0/0 	||375079||
+||{!}2 º ||	*glued* ||	7 ||	6/0/1 	||307277||
+||{!}3 º ||	*sony* ||	7 ||	5/0/2 ||	258578||
+||4 º ||	*GantX* ||	7 ||	4/0/3 ||	205650||
+||5 º ||	*MuadDib* ||	7 ||	2/0/5 ||	66184||
+||6 º ||	*d4rkpow3r* ||	7 ||	3/0/4 ||	64514||
+||7 º ||	*Homem do Leite*|| 	7 	||1/0/6 ||	52876||
+||8 º ||	*Yamato*|| 	7 ||	0/0/7 ||	0||
+
+||{^C5}*Grupo 3*||
+||{!}#||{!}Ruler||{!}Batalhas||{!}Resultados||{!}Pontuação||
+||{!}1 º ||	*Shadow Knight* ||	7 ||	6/0/1 ||	323561||
+||{!}2 º ||	*Shikamaru* ||	7 ||	6/0/1 	||323325||
+||{!}3 º ||	*Jonbitor* 	||7 	||3/0/4 ||	233819||
+||4 º|| 	*Jota P* ||	7 ||	5/0/2 ||	222957||
+||5 º ||	*funnynovato* ||	7 ||	4/0/3 ||	220770||
+||6 º ||	*fipas* ||	7 ||	2/0/5 ||	111793||
+||7 º|| 	*MindScraper* ||	7 ||	1/0/6 ||	78543||
+||8 º|| 	*super_dragao* ||	7 ||	1/0/6 	||56988||
+
+||{^C5}*Grupo 4*||
+||{!}#||{!}Ruler||{!}Batalhas||{!}Resultados||{!}Pontuação||
+||{!}1 º ||	*Pyro* ||	6 ||	6/0/0 ||	323993||
+||{!}2 º ||	*nGozi* ||	6 ||	5/0/1 	||259807||
+||{!}3 º ||	*MaisUm* ||	6 ||	4/0/2 ||	217460||
+||4 º ||	*Malakias* ||	6 ||	3/0/3 	||159372||
+||5 º ||	*doba* ||	6 ||	2/0/4 ||	54325||
+||6 º ||	*josepeseiro* ||	6 ||	1/0/5 ||	500||
+||7 º ||	*DuH_OnE* ||	6 ||	0/0/6|| 	0||

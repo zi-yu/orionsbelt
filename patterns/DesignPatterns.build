@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<project name="Factory Design Pattern" default="build" basedir=".">
+	
+	<description>Factory Design Pattern</description>
+	<property name="debug" value="false" unless="${property::exists('debug')}"/>
+
+	<target name="clean" description="remove all generated files">
+		<delete>
+			<fileset>
+				<include name="bin/*.dll" />
+				<include name="bin/*.exe" />
+				<include name="bin/*.pdb" />
+				<include name="bin/*.xml" />
+				<include name="bin/Debug/*.dll" />
+				<include name="bin/Debug/*.exe" />
+				<include name="bin/Debug/*.pdb" />
+				<include name="bin/Debug/*.xml" />
+				<include name="bin/Release/*.dll" />
+				<include name="bin/Release/*.exe" />
+				<include name="bin/Release/*.pdb" />
+				<include name="bin/Release/*.xml" />
+			</fileset>
+		</delete>
+	</target>
+	
+	<target name="build" description="compiles DesignPatterns.dll">
+		<csc target="library" output="bin/DesignPatterns.dll" debug="${debug}">
+			<sources basedir="src">
+				<include name="*.cs" />
+				<include name="Attributes/*.cs" />
+				<include name="Exceptions/*.cs" />
+			</sources>
+		</csc>
+		<copy file="bin/DesignPatterns.dll" tofile="../chronos/bin/DesignPatterns.dll" />
+		<copy file="bin/DesignPatterns.dll" tofile="../alnitak/bin/DesignPatterns.dll" />
+		<copy file="bin/DesignPatterns.dll" tofile="../tests/bin/DesignPatterns.dll" />
+		<copy file="bin/DesignPatterns.dll" tofile="../rulestowiki/bin/DesignPatterns.dll" />
+	</target>
+	
+	<target name="build-test" description="compiles FactoryTest.exe" depends="build">
+		<csc target="exe" output="bin/FactoryTest.exe" debug="${debug}">
+			<sources basedir="src">
+				<include name="Test/FactoryTest.cs" />
+			</sources>
+			<references>
+				<include name="bin/DesignPatterns.dll" />
+			</references>
+		</csc>
+	</target>
+	
+</project>

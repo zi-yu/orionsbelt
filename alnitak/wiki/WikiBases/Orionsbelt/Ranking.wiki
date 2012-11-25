@@ -1,0 +1,5 @@
+:Summary: Sistema de Ranking
+
+O sistema de [Ranking] do Orion's Belt permite distinguir quais os melhores jogadores n [Batalha]. Este [Ranking] não está relacionado com a ronda corrente e é afectado pelas batalhas de [Tournament].
+
+Este sistema é baseado no ELO Ranking System usado no Xadrez.

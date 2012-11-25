@@ -1,0 +1,4 @@
+:Summary: Contra Ataque
+:Parent: Orionsbelt.MotorDeCombate
+
+As Unit.[Unit] com contra ataque, ao serem alvo de um ataque, atacam de volta o seu adversário. Ver mais em [Batalha].

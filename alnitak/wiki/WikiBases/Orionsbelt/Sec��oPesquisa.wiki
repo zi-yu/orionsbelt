@@ -1,0 +1,3 @@
+Esta página permite efectuar [Pesquisas].
+
+:Summary: Descrição da Secção de Pesquisas

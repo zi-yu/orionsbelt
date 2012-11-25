@@ -1,0 +1,29 @@
+:Summary: Informações sobre os Torneios
+:Display: Torneios
+
+Os [Tournament] permitem a competição entre os jogadores do Orion's Belt. Nos [Tournament] todos os jogadores têm partidas com o mesmo número de Unit.[Unit] do adversário. Estas Unit.[Unit] são criadas de propósito para os combates do torneio, pelo que os jogadores não precisam de as construir.
+
+Pode haver vários [Tournament] a decorrer com diferentes TiposDeBatalha. Cada um dos [Tournament] tem várias fases, descritas de seguida. Cada batalha de torneio conta para o [Ranking].
+
+!!!1. Inscrições
+
+Esta fase permite a inscrição de jogadores no torneio. Quando esta fase terminar, não será possível a inscrição de novos jogadores. Aquando da inscrição, os jogadores são organizados em *Potes*, com base no seu [Ranking]. Estes potes vão servir para construir os grupos da fase seguinte.
+
+Dado um pote, todos os seus jogadores ficarão em grupos distintos.
+
+!!!2. Campeonato
+
+Os jogadores inscritos são divididos por grupos. Cada grupo pode ter no máximo 10 jogadores e todos os jogadores terão de se defrontar. Passam à fase seguinte os 3 primeiros do grupo. A pontuação em cada jogo é dada pelo número de Unit.[Unit] adversárias destruídas. Cada unidade é ponderada pelo seu valor no torneio. Este valor pode ser consultado na documentação de cada unidade, mas segue mais ou menos a seguinte linha:
+	* *Unidades Leves Destruídas*: 1 ponto
+	* *Unidades Médias Destruídas*: 2 pontos
+	* *Unidades Animais Destruídas*: 3 ponto
+	* *Unidades Pesadas Destruídas*: 5 pontos
+	* *Flag Ship*: 50000 pontos
+
+!!!3. Playoffs
+
+Esta fase pega em todos os jogadores que passaram a fase de campeonato, e gera aleatoriamente combates dois a dois. Só os vencedores passarão à próxima fase. Este procedimente repete-se até só persistirem 2 jogadores. Quem ganhar o último combate, será o campeão!
+
+!!!Pontuação
+
+A vitória em cada combate do jogo, dá 500 de Intrinsic.[score], independentemente da fase a que o jogo é relativo.

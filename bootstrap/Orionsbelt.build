@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<project name="Orion's Belt" default="build" basedir="../">
+	
+	<description>Orion's Belt</description>
+	<property name="debug" value="true" unless="${property::exists('debug')}"/>
+	<property name="version" value="0.9" />
+	
+	<property name="ChronosTarget" value="file" unless="${property::exists('ChronosTarget')}" />
+	<property name="AlnitakTarget" value="mysql" unless="${property::exists('AlnitakTarget')}" />
+	<property name="test" value="true" unless="${property::exists('test')}" />
+
+	<property name="AlnitakSqlServer" value="${string::contains('sqlserver',property::get-value('AlnitakTarget'))}" />
+	<property name="AlnitakMySql" value="${string::contains('mysql',property::get-value('AlnitakTarget'))}" />
+	<property name="AlnitakNpgsql" value="${string::contains('npgsql',property::get-value('AlnitakTarget'))}" />
+
+	<property name="ChronosSqlServer" value="${string::contains('sqlserver',property::get-value('ChronosTarget'))}" />
+	<property name="ChronosFile" value="${string::contains('file',property::get-value('ChronosTarget'))}"  />
+	<property name="ChronosNpgsql" value="${string::contains('npgsql',property::get-value('ChronosTarget'))}"  />
+
+	<property name="clover" value="false" unless="${property::exists('clover')}" />
+	<property name="clover.home" value="bootstrap/tools/clover/"/>
+	<property name="clover.output" value="bootstrap/tools/clover-output/"/>
+	<loadtasks assembly="${clover.home}/CloverNAnt-0.85.dll"/>
+
+	<target name="clean" description="Removes all generated files">
+		<nant buildfile="rules/Rules.build" target="clean" inheritall="true" />
+		<nant buildfile="rulestowiki/RulesToWiki.build" target="clean" inheritall="true" unless="${debug}" />
+		<nant buildfile="patterns/DesignPatterns.build" target="clean" inheritall="true" />
+		<nant buildfile="language/Language.build" target="clean" inheritall="true" />
+		<nant buildfile="chronos/Chronos.build" target="clean" inheritall="true" />
+		<nant buildfile="flexwiki/FlexWiki.build" target="clean" inheritall="true" />
+		<nant buildfile="alnitak/Alnitak.build" target="clean" inheritall="true" />
+		<nant buildfile="tests/Tests.build" target="clean" inheritall="true" if="${test}" />
+	</target>
+
+	<target name="build" description="Build's Orion's Belt" depends="clean">
+		<nant buildfile="flexwiki/FlexWiki.build" target="flexwiki" inheritall="true" />
+		<call target="prepare-clover" if="${clover}" />
+		<nant buildfile="rules/Rules.build" target="prepare" inheritall="true" />
+		<nant buildfile="patterns/DesignPatterns.build" target="build" inheritall="true" />
+		<nant buildfile="language/Language.build" target="build" inheritall="true" />
+		<nant buildfile="language/Language.build" target="validator" inheritall="true" />
+		<nant buildfile="chronos/Chronos.build" target="build-all" inheritall="true" />
+		<nant buildfile="alnitak/Alnitak.build" target="build-all" inheritall="true" />
+		<nant buildfile="rulestowiki/RulesToWiki.build" target="generate" inheritall="true" unless="${debug}" />
+		<nant buildfile="tests/Tests.build" target="test-all" inheritall="true" if="${test}" />
+		<call target="info" />
+	</target>
+
+	<target name="prepare-clover">
+		<clover-setup initstring="${clover.output}/clover.cdb"
+			builddir="${clover.output}"
+			enabled="true"
+			flushinterval="1000"
+			flatten="true"/>
+		<copy file="${clover.home}/CloverRuntime.dll" tofile="alnitak/bin/CloverRuntime.dll" />
+	</target>
+
+	<target name="report">
+		<property name="clover" value="true" />
+		<call target="build" />
+		<clover-report>
+		 <current title="Orion's Belt Test Coverage" output="${clover.output}">
+		   <format type="html" orderby="Alpha" />
+		 </current>
+		</clover-report>
+		<echo message="Cleaning up Clover.NET temp files..." />
+		<delete>
+			<fileset>
+				<include name="${clover.output}/*.cs" />       	
+				<include name="${clover.output}/*.cdb*" />
+			</fileset>
+		</delete>
+	</target>
+
+	<target name="web-deploy" description="Private: Deploys all necessary files to a .zip file">
+		<zip zipfile="Orionsbelt-${AlnitakTarget}-${version}.zip">
+			<fileset basedir="alnitak/" >
+				<include name="bin/*.dll" />
+				<include name="skins/**/*" />
+				<include name="backups/**/*" />
+				<include name="configuration/**/*" />
+				<include name="engine/Language/**/*.xml" />
+				<include name="wiki/**/*" />
+				<include name="*.aspx" />
+				<include name="*.asax" />
+				<include name="*.config" />
+				<exclude name="**/*/*.db" />
+				<exclude name="**/*/*.bin" />
+				<exclude name="**/*/*.rar" />
+				<exclude name="**/*/*.zip" />
+				<exclude name="skins/**/*/CVS" />
+				<exclude name="wiki/**/*/CVS" />
+			</fileset>
+		</zip>
+	</target>
+
+	<target name="lang-deploy" description="Private: Deploys all necessary language files">
+		<zip zipfile="Orionsbelt-LanguagePack-v${version}-d${datetime::get-day-of-year(datetime::now())}.zip">
+			<fileset basedir="alnitak/engine/" >
+				<include name="Language/**/*" />
+			</fileset>
+			<fileset basedir="alnitak/wiki/" >
+				<include name="WikiBases/Orionsbelt/*.wiki" />
+				<include name="WikiBases/Orionsbelt-en/*.wiki" />
+			</fileset>
+			<fileset basedir="language/bin/" >
+				<include name="*.dll" />
+				<include name="*.exe" />
+				<include name="../doc/Readme.txt" />
+			</fileset>
+		</zip>
+	</target>
+
+	<target name="info" description="Prints the build parameters">
+		<echo message="Orionsbelt bootstrap completed successfully!" />
+		<echo message="" />
+		<echo message="Version         : ${version}" />
+		<echo message="Debug Build     : ${debug}" />
+		<echo message="Tested          : ${test}" />
+		<echo message="Clover          : ${clover}" />
+		<echo message="ChronosTarget   : ${ChronosTarget}" />
+		<echo message="AlnitakTarget   : ${AlnitakTarget}" />
+		<echo message="" />
+		<echo message="OS              : ${platform::get-name()}" />
+		<echo message="Target Platform : ${framework::get-target-framework()}" />
+	</target>
+
+</project>

@@ -1,0 +1,597 @@
+<?xml version="1.0"?>
+<Resources language="Portugues" code="pt">
+	<page name="COMMON">
+		<!-- common... -->
+		<Resource tag="POWERED_BY">Powered by {0} versão {1}</Resource>
+		<Resource tag="GENERATED">Esta página foi gerada em {0:N3} segundos.</Resource>
+		<Resource tag="SAVE">Guardar</Resource>
+		<Resource tag="CANCEL">Cancelar</Resource>
+		<Resource tag="FORUM_JUMP">Ir para:</Resource>
+		<Resource tag="CAN_POST">[b]Pode[/b] inserir novos tópicos neste fórum.</Resource>
+		<Resource tag="CAN_REPLY">[b]Pode[/b] responder a tópicos neste fórum.</Resource>
+		<Resource tag="CAN_DELETE">[b]Pode[/b] apagar as suas mensagens neste fórum.</Resource>
+		<Resource tag="CAN_EDIT">[b]Pode[/b] editar as suas mensagens neste fórum.</Resource>
+		<Resource tag="CAN_POLL">[b]Pode[/b] criar votações neste fórum.</Resource>
+		<Resource tag="CAN_VOTE">[b]Pode[/b] votar neste fórum.</Resource>
+		<Resource tag="CANNOT_POST">[b]Não[/b] pode inserir novos tópicos neste fórum.</Resource>
+		<Resource tag="CANNOT_REPLY">[b]Não[/b] pode responder a tópicos neste fórum.</Resource>
+		<Resource tag="CANNOT_DELETE">[b]Não[/b] pode apagar as suas mensagens neste fórum.</Resource>
+		<Resource tag="CANNOT_EDIT">[b]Não[/b] pode editar as suas mensagens neste fórum.</Resource>
+		<Resource tag="CANNOT_POLL">[b]Não[/b] pode criar votações neste fórum.</Resource>
+		<Resource tag="CANNOT_VOTE">[b]Não[/b] pode votar neste fórum.</Resource>
+		<Resource tag="REGMAIL_SENT">Foi enviado um e-mail. Verifique a sua caixa de entrada e clique no [i]link[/i] que se encontra no e-mail.</Resource>
+		<Resource tag="UNREAD_MSG">Tem {0} mensagens não lidas na sua caixa de entrada</Resource>
+		<Resource tag="REGMAIL_WILL_BE_SEND">Será enviado um e-mail quando se registar. Pare efectuar o login deve verificar a sua caixa de correio e clicar no ligação que lá se encontra.</Resource>
+		<!-- Find out how to modify these date/time strings at: http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfsystemglobalizationdatetimeformatinfoclasstopic.asp -->
+		<Resource tag="FORMAT_DATE_TIME_LONG">F</Resource>
+		<Resource tag="FORMAT_DATE_TIME_SHORT">G</Resource>
+		<Resource tag="FORMAT_DATE_LONG">D</Resource>
+		<Resource tag="FORMAT_DATE_SHORT">d</Resource>
+		<Resource tag="FORMAT_TIME">T</Resource>
+		<Resource tag="MAX_ONLINE">A quantidade máxima de utilizadores online foram {0}, {1}.</Resource>
+	</page>
+	<page name="TOOLBAR">
+		<!-- "Toolbar" at top of most pages -->
+		<Resource tag="SEARCH">Procurar</Resource>
+		<Resource tag="ADMIN">Admin</Resource>
+		<Resource tag="MODERATE">Moderar</Resource>
+		<Resource tag="ACTIVETOPICS">Tópicos Activos</Resource>
+		<Resource tag="MYPROFILE">Meu Perfil</Resource>
+		<Resource tag="MEMBERS">Membros</Resource>
+		<Resource tag="LOGOUT">Logout</Resource>
+		<Resource tag="LOGIN">Log in</Resource>
+		<Resource tag="REGISTER">Registar</Resource>
+		<Resource tag="LOGGED_IN_AS">Ligado como: {0}</Resource>
+		<Resource tag="WELCOME_GUEST">Bem vindo Convidado</Resource>
+		<Resource tag="HELP">Ajuda</Resource>
+	</page>
+	<page name="ICONLEGEND">
+		<!-- Common icon texts -->
+		<Resource tag="NEW_POSTS">Novas mensagens</Resource>
+		<Resource tag="NO_NEW_POSTS">Sem novas mensagens</Resource>
+		<Resource tag="ANNOUNCEMENT">Anúncios</Resource>
+		<Resource tag="ANNOUNCEMENT_NEW">Anúncios (New Posts)</Resource>
+		<Resource tag="NEW_POSTS_LOCKED">Novas Mensagens (Bloqueado)</Resource>
+		<Resource tag="NO_NEW_POSTS_LOCKED">Sem novas mensagens (Bloqueado)</Resource>
+		<Resource tag="FORUM_LOCKED">Fórum bloqueado</Resource>
+		<Resource tag="MOVED">Movido</Resource>
+		<Resource tag="POLL">Votação</Resource>
+		<Resource tag="POLL_NEW">Votação (New Posts)</Resource>
+		<Resource tag="STICKY">Inamovível</Resource>
+	</page>
+	<page name="ATTACHMENTS">
+		<Resource tag="TITLE">Anexo</Resource>
+		<Resource tag="BACK">Voltar</Resource>
+		<Resource tag="UPLOAD">Upload</Resource>
+		<Resource tag="SELECT_FILE">Escolha o ficheiro que deseja fazer [i]upload[/i].</Resource>
+		<Resource tag="UPLOAD_TITLE">Ficheiro [i]Upload[/i]</Resource>
+		<Resource tag="FILENAME">Nome do ficheiro</Resource>
+		<Resource tag="SIZE">Tamanho</Resource>
+		<Resource tag="DELETE">Apagar</Resource>
+		<Resource tag="FILEERROR">'{0}' não é um ficheiro válido para [i]upload[/i].</Resource>
+		<Resource tag="ASK_DELETE">Apagar este anexo?</Resource>
+		<Resource tag="ERROR_TOOBIG">Não pode anexar ficheiros com este tamanho.</Resource>
+	</page>
+	<page name="DEFAULT">
+		<!-- default.aspx -->
+		<Resource tag="FORUM">Fórum</Resource>
+		<Resource tag="TOPICS">Tópicos</Resource>
+		<Resource tag="POSTS">Mensagens</Resource>
+		<Resource tag="LASTPOST">Última mensagem</Resource>
+		<Resource tag="MODERATORS">Moderadores</Resource>
+		<Resource tag="CURRENT_TIME">Hora corrente: {0}.</Resource>
+		<Resource tag="LAST_VISIT">A sua última visita: {0}.</Resource>
+		<Resource tag="STATS_POSTS">Existem {0:N0} mensagens em {1:N0} tópicos de {2:N0} fóruns.</Resource>
+		<Resource tag="STATS_LASTPOST">Última mensagem em {0} por {1}.</Resource>
+		<Resource tag="STATS_MEMBERS">Temos {0:N0} membros registados.</Resource>
+		<Resource tag="STATS_LASTMEMBER">O membro mais novo é {0}.</Resource>
+		<Resource tag="IN">em {0}</Resource>
+		<Resource tag="BY">por {0}</Resource>
+		<Resource tag="NO_POSTS">Não há mensagens</Resource>
+		<Resource tag="UNREAD1">Tem {0} mensagem não lida na sua caixa de entrada.</Resource>
+		<Resource tag="UNREAD0">tem {0} mensagens não lidas na sua caixa de entrada.</Resource>
+		<Resource tag="INFORMATION">Informações</Resource>
+		<Resource tag="STATS">Estatísticas</Resource>
+		<Resource tag="ACTIVE_USERS">Utilizadores activos</Resource>
+		<Resource tag="ACTIVE_USERS_COUNT1">{0:N0} utilizador activo</Resource>
+		<Resource tag="ACTIVE_USERS_COUNT2">{0:N0} utilizadores activos</Resource>
+		<Resource tag="ACTIVE_USERS_MEMBERS1">{0:N0} membro</Resource>
+		<Resource tag="ACTIVE_USERS_MEMBERS2">{0:N0} membros</Resource>
+		<Resource tag="ACTIVE_USERS_GUESTS1">{0:N0} convidado</Resource>
+		<Resource tag="ACTIVE_USERS_GUESTS2">{0:N0} convidados</Resource>
+		<Resource tag="VIEWING">({0} membros a ver)</Resource>
+		<Resource tag="NO_FORUM_ACCESS">(Sem Acesso)</Resource>
+		<Resource tag="MARKALL">Marcar todos os fóruns como lidos</Resource>
+		<Resource tag="GO_LAST_POST">Ir para a última mensagem</Resource>
+	</page>
+	<page name="TOPICS">
+		<!-- topics.aspx -->
+		<Resource tag="TOPICS">Tópicos</Resource>
+		<Resource tag="TOPIC_STARTER">Criador</Resource>
+		<Resource tag="REPLIES">Respostas</Resource>
+		<Resource tag="VIEWS">Vizualizações</Resource>
+		<Resource tag="LASTPOST">Última mensagem</Resource>
+		<Resource tag="NO_POSTS">Sem Mensagens</Resource>
+		<Resource tag="WATCHFORUM">Acompanhar Fórum</Resource>
+		<Resource tag="UNWATCHFORUM">Não Acompanhar Fórum</Resource>
+		<Resource tag="SHOWTOPICS">Mostrar Tópicos</Resource>
+		<Resource tag="ALL">Todos</Resource>
+		<Resource tag="LAST_DAY">de ontem</Resource>
+		<Resource tag="LAST_TWO_DAYS">dos últimos dois dias</Resource>
+		<Resource tag="LAST_WEEK">da última semana</Resource>
+		<Resource tag="LAST_TWO_WEEKS">das últimas duas semanas</Resource>
+		<Resource tag="LAST_MONTH">do último mês</Resource>
+		<Resource tag="LAST_TWO_MONTHS">dos últimos dois meses</Resource>
+		<Resource tag="LAST_SIX_MONTHS">dos últimos seis meses</Resource>
+		<Resource tag="LAST_YEAR">do último ano</Resource>
+		<Resource tag="BY">por {0}</Resource>
+		<Resource tag="FORUMUSERS">Utilizadores a navegar neste fórum</Resource>
+		<Resource tag="CREATED">Criado</Resource>
+		<Resource tag="WARN_FORUM_LOCKED">Este fórum está fechado.</Resource>
+		<Resource tag="WARN_LOGIN_FORUMWATCH">Deve estar registado para acompanhar fóruns.</Resource>
+		<Resource tag="INFO_WATCH_FORUM">Será notificado quando novas mensagens forem publicadas neste fórum.</Resource>
+		<Resource tag="INFO_UNWATCH_FORUM">Não será notificado quando novas mensagens forem publicadas neste fórum.</Resource>
+		<Resource tag="MARKREAD">Marcar este fórum como lido</Resource>
+		<Resource tag="SUBFORUMS">{0} Sub-Fórums</Resource>
+ 		<Resource tag="RSSFEED">Rss Feed</Resource>
+ 		<Resource tag="TODAYAT">[b]Hoje[/b] às {0:T}</Resource>
+ 		<Resource tag="YESTERDAYAT">[b]Ontem[/b] às {0:T}</Resource>
+ 		<Resource tag="GOTO_POST_PAGER">[ ir para a página: {0} ]</Resource>
+	</page>
+	<page name="POSTS">
+		<!-- posts.aspx -->
+		<Resource tag="QUESTION">Questão da votação</Resource>
+		<Resource tag="CHOICE">Escolha</Resource>
+		<Resource tag="VOTES">Votos</Resource>
+		<Resource tag="STATISTICS">Estatísticas</Resource>
+		<Resource tag="PREVTOPIC">Tópico Anterior</Resource>
+		<Resource tag="NEXTTOPIC">Próximo Tópico</Resource>
+		<Resource tag="WATCHTOPIC">Acompanhar este tópico</Resource>
+		<Resource tag="UNWATCHTOPIC">Não Acompanhar este tópico</Resource>
+		<Resource tag="EMAILTOPIC">Enviar este tópico por e-mail</Resource>
+		<Resource tag="PRINTTOPIC">Imprimir este tópico</Resource>
+ 		<Resource tag="RSSTOPIC">RSS Feed</Resource>
+		<Resource tag="POSTED">Publicado</Resource>
+		<Resource tag="TOP">Voltar ao topo</Resource>
+		<Resource tag="PM">PM</Resource>
+		<Resource tag="CONFIRM_DELETEMESSAGE">Apagar esta mensagem?</Resource>
+		<Resource tag="CONFIRM_DELETETOPIC">Apagar este tópico?</Resource>
+		<Resource tag="RANK">Nível</Resource>
+		<Resource tag="GROUPS">Grupos</Resource>
+		<Resource tag="JOINED">Registo</Resource>
+		<Resource tag="POSTS">Mensagens</Resource>
+		<Resource tag="LOCATION">Localização</Resource>
+		<Resource tag="TOPICBROWSERS">Utilizadores a navegar neste tópico</Resource>
+		<Resource tag="INFO_TOPIC_LOCKED">Tópico bloqueado.</Resource>
+		<Resource tag="INFO_TOPIC_UNLOCKED">Tópico desbloqueado.</Resource>
+		<Resource tag="WARN_TOPIC_LOCKED">Tópicos Fechado.</Resource>
+		<Resource tag="WARN_FORUM_LOCKED">Forum Fechado.</Resource>
+		<Resource tag="WARN_PMLOGIN">Deve estar ligado para enviar mensagens privadas.</Resource>
+		<Resource tag="WARN_ALREADY_VOTED">Já votou.</Resource>
+		<Resource tag="INFO_VOTED">Obrigado pelo seu voto!</Resource>
+		<Resource tag="WARN_WATCHLOGIN">Deve estar registado para acompanhar tópicos.</Resource>
+		<Resource tag="INFO_WATCH_TOPIC">Será notificado quando novas mensagens forem publicadas neste tópico.</Resource>
+		<Resource tag="INFO_UNWATCH_TOPIC">Não será mais notificado quando novas mensagens forem publicadas neste tópico.</Resource>
+		<Resource tag="INFO_NOMORETOPICS">Não existem mais tópicos neste fórum.</Resource>
+		<Resource tag="WARN_EMAILLOGIN">Deve estar registado para enviar emails.</Resource>
+		<Resource tag="ATTACHMENTS">Anexo(s):</Resource>
+		<Resource tag="IMAGE_ATTACHMENT_TEXT">{0} anexou a seguinte imagem(s):</Resource>
+		<Resource tag="ATTACHMENTINFO">{0:N0} KB, foi efectuado download {1:N0} vezes(s).</Resource>
+		<Resource tag="NORMAL">Normal</Resource>
+		<Resource tag="THREADED">Em árvore</Resource>
+		<Resource tag="FORUM_JUMP">Ir para</Resource>
+	</page>
+	<page name="ACTIVE">
+		<!-- active.aspx -->
+		<Resource tag="TITLE">Tópicos Activos</Resource>
+		<Resource tag="SINCE">Desde</Resource>
+		<Resource tag="LAST_VISIT">última visita a {0}</Resource>
+		<Resource tag="LAST_HOUR">última hora</Resource>
+		<Resource tag="LAST_TWO_HOURS">últimas duas horas</Resource>
+		<Resource tag="LAST_DAY">último dia</Resource>
+		<Resource tag="LAST_TWO_DAYS">últimos dois dias</Resource>
+		<Resource tag="LAST_WEEK">última semana</Resource>
+		<Resource tag="LAST_TWO_WEEKS">últimas duas semanas</Resource>
+		<Resource tag="LAST_MONTH">último mês</Resource>
+		<Resource tag="TOPICS">Tópicos</Resource>
+		<Resource tag="TOPIC_STARTER">Quem iniciou o tópico</Resource>
+		<Resource tag="REPLIES">Respostas</Resource>
+		<Resource tag="RSSFEED">Rss Feed</Resource>
+		<Resource tag="VIEWS">Visualizações</Resource>
+		<Resource tag="LASTPOST">Última Mensagem</Resource>
+		<Resource tag="BY">por {0}</Resource>
+		<Resource tag="NO_POSTS">Sem Mensagens</Resource>
+	</page>
+	<page name="ACTIVEUSERS">
+		<!-- activeusers.aspx -->
+		<Resource tag="TITLE">Utilizadores Activos</Resource>
+		<Resource tag="USERNAME">Nome do utilizador</Resource>
+		<Resource tag="LOGGED_IN">Ligado</Resource>
+		<Resource tag="LAST_ACTIVE">Última activação</Resource>
+		<Resource tag="ACTIVE">Activo</Resource>
+		<Resource tag="BROWSER">Browser</Resource>
+		<Resource tag="PLATFORM">Plataforma</Resource>
+		<Resource tag="MINUTES">{0:N0} minutos</Resource>
+	</page>
+	<page name="APPROVE">
+		<!-- approve.aspx -->
+		<Resource tag="TITLE">Validar endereço de e-mail</Resource>
+		<Resource tag="EMAIL_VERIFIED">O seu endereço de email foi verificado.</Resource>
+		<Resource tag="EMAIL_VERIFY_FAILED">Falhou a verificação do endereço de e-mail.</Resource>
+		<Resource tag="ENTER_KEY">Introduza a chave de validação</Resource>
+		<Resource tag="VALIDATE">Validar</Resource>
+	</page>
+	<page name="CP_EDITPROFILE">
+		<!-- cp_editprofile.aspx -->
+		<Resource tag="TITLE">Editar Perfil</Resource>
+		<Resource tag="LOCATION">Localização</Resource>
+		<Resource tag="WHERE">Onde vive?</Resource>
+		<Resource tag="HOMEPAGE">Home Page</Resource>
+		<Resource tag="HOMEPAGE2">A sua home page:</Resource>
+		<Resource tag="TIMEZONE">Fuso Horário</Resource>
+		<Resource tag="TIMEZONE2">Para fornecer as horas e datas na sua hora local, precisamos saber qual o seu fuso horário.</Resource>
+		<Resource tag="AVATAR">Avatar</Resource>
+		<Resource tag="AVATARUPLOAD">Upload avatar do seu computador.</Resource>
+		<Resource tag="AVATARDELETE">Apagar o avatar de que fez upload.</Resource>
+		<Resource tag="DELETE_AVATAR">Apagar Avatar</Resource>
+		<Resource tag="AVATARREMOTE">Introduza o url do avatar que será mostrado próximo das suas mensagens.</Resource>
+		<Resource tag="CHANGE_PASSWORD">Mudar Palavra-Passe</Resource>
+		<Resource tag="OLDPASSWORD">Palavra-Passe antiga:</Resource>
+		<Resource tag="NEWPASSWORD">Nova Palavra-Passe:</Resource>
+		<Resource tag="CONFIRMPASSWORD">Repetir a Nova Palavra-Passe:</Resource>
+		<Resource tag="CHANGE_EMAIL">Alterar endereço de e-mail</Resource>
+		<Resource tag="EMAIL">Endereço de email.</Resource>
+		<Resource tag="NO_EMPTY_PASSWORD">A Palavra-Passe não pode se vazia.</Resource>
+		<Resource tag="NO_PASSWORD_MATCH">A Nova Palavra-Passe não coincide.</Resource>
+		<Resource tag="OLD_PASSWORD_WRONG">A Palavra-Passe antiga está errada.</Resource>
+		<Resource tag="MAIL_SENT">Foi enviado um email para {0}.\n\n Precisa verificar o seu novo endereço de email \nabrindo o link no email antes que se proceda à alteração do endereço de e-mail.</Resource>
+		<Resource tag="FORUM_SETTINGS">Configurações do Fórum</Resource>
+		<Resource tag="SELECT_THEME">Escolha o seu tema preferido:</Resource>
+		<Resource tag="SELECT_LANGUAGE">Quem linguagem deseja usar:</Resource>
+		<Resource tag="WEBLOG2">O seu Weblog:</Resource>
+		<Resource tag="MESSENGER">Seviços de mensagens instantâneas</Resource>
+		<Resource tag="ABOUTYOU">Sobre si</Resource>
+		<Resource tag="REALNAME2">Qual é o seu nome verdadeiro?</Resource>
+		<Resource tag="WARN_TOOBIG">O tamanho da imagem não pode exceder {0}x{1} pixels.</Resource>
+		<Resource tag="WARN_SIZE">O tamanho da seua imagem tem {0}x{1} pixels.</Resource>
+		<Resource tag="WARN_RESIZED">A imagem foi alterada para respeitar os valores máximos.</Resource>
+		<Resource tag="WARN_BIGFILE">O tamanho da sua imagem não pode exceder {0} bytes.</Resource>
+		<Resource tag="WARN_FILESIZE">O tamanho da sua imagem tinha {0} bytes.</Resource>
+		<Resource tag="OURAVATAR">A nossa colecção de avatar.</Resource>
+		<Resource tag="OURAVATAR_SELECT">Escolha da nossa colecção de avatar.</Resource>
+		<Resource tag="BAD_EMAIL">Introduziu um endereço de e-mail inválido.</Resource>
+		<Resource tag="BAD_MSN">Introduziu um endereço de e-mail inválido para a sua conta MSN.</Resource>
+		<Resource tag="BAD_HOME">Introduziu um endereço inválido para a sua home page.</Resource>
+		<Resource tag="BAD_WEBLOG">Introduziu um endereço inválido para o seu weblog.</Resource>
+		<Resource tag="BAD_ICQ">Introduziu um valor inválido para o seu N.º de ICQ.</Resource>
+	</page>
+	<page name="CP_INBOX">
+		<!-- cp_inbox.aspx -->
+		<Resource tag="TITLE">Caixa de Entrada</Resource>
+		<Resource tag="SENTITEMS">Itens Enviados</Resource>
+		<Resource tag="DELETESELECTED">Apagar selecção</Resource>
+		<Resource tag="SUBJECT">Assunto</Resource>
+		<Resource tag="FROM">De</Resource>
+		<Resource tag="TO">Para</Resource>
+		<Resource tag="DATE">Data</Resource>
+		<Resource tag="MSGDELETED1">Foi apagada 1 mensagem.</Resource>
+		<Resource tag="MSGDELETED2">Foram apagadas {0} mensagens.</Resource>
+		<Resource tag="CONFIRM_DELETE">Apagar todas as mensagens seleccionadas?</Resource>
+	</page>
+	<page name="CP_MESSAGE">
+		<!-- cp_message.aspx -->
+		<Resource tag="INBOX">Caixa de Entrada</Resource>
+		<Resource tag="SENTITEMS">Itens Enviados</Resource>
+		<Resource tag="MSG_DELETED">A mensagem foi apagada.</Resource>
+		<Resource tag="POSTED">Publicado:</Resource>
+	</page>
+	<page name="CP_PROFILE">
+		<!-- cp_profile.aspx -->
+		<Resource tag="NEW_MESSAGE">Nova Mensagem</Resource>
+		<Resource tag="CONTROL_PANEL">Painel de Controlo</Resource>
+		<Resource tag="MESSENGER">Messenger:</Resource>
+		<Resource tag="PERSONAL_PROFILE">Perfil Pessoal:</Resource>
+		<Resource tag="INBOX">Caixa de Entrada</Resource>
+		<Resource tag="SENTITEMS">Itens Enviados</Resource>
+		<Resource tag="EDIT_PROFILE">Editar Perfil</Resource>
+		<Resource tag="SIGNATURE">Assinatura</Resource>
+		<Resource tag="SUBSCRIPTIONS">Subscrições</Resource>
+		<Resource tag="YOUR_ACCOUNT">A sua conta</Resource>
+		<Resource tag="YOUR_USERNAME">O seu utilizador:</Resource>
+		<Resource tag="YOUR_EMAIL">O seu endereço de e-mail:</Resource>
+		<Resource tag="NUMPOSTS">Número de mensagens:</Resource>
+		<Resource tag="GROUPS">É membro destes grupos:</Resource>
+		<Resource tag="JOINED">É membro desde:</Resource>
+	</page>
+	<page name="CP_SIGNATURE">
+		<!-- cp_signature.aspx -->
+		<Resource tag="TITLE">Editar assinatura</Resource>
+		<Resource tag="SIGNATURE">Assinatura:</Resource>
+	</page>
+	<page name="CP_SUBSCRIPTIONS">
+		<!-- cp_subscriptions.aspx -->
+		<Resource tag="TITLE">Subscrições</Resource>
+		<Resource tag="FORUMS">Forums</Resource>
+		<Resource tag="FORUM">Fórum</Resource>
+		<Resource tag="TOPICS">Tópicos</Resource>
+		<Resource tag="REPLIES">Respostas</Resource>
+		<Resource tag="LASTPOST">Última mensagem</Resource>
+		<Resource tag="TOPIC">Tópicos</Resource>
+		<Resource tag="VIEWS">Visualizações</Resource>
+		<Resource tag="UNSUBSCRIBE">Cancelar subscrição</Resource>
+		<Resource tag="LASTPOSTLINK">{0} por {1}</Resource>
+		<Resource tag="WARN_SELECTTOPICS">Por favor seleccione primeiro os tópicos de que deseja cancelar a subscrição.</Resource>
+		<Resource tag="WARN_SELECTFORUMS">Por favor seleccione primeiro os fóruns de que deseja cancelar a subscrição.</Resource>
+	</page>
+	<page name="EMAILTOPIC">
+		<!-- emailtopic.aspx -->
+		<Resource tag="TITLE">Send a page to a friend</Resource>
+		<Resource tag="TO">Send To (Email Address):</Resource>
+		<Resource tag="SUBJECT">Subject:</Resource>
+		<Resource tag="MESSAGE">Message:</Resource>
+		<Resource tag="SEND">Send Email</Resource>
+		<Resource tag="NEED_EMAIL">You must enter a email address.</Resource>
+		<Resource tag="FAILED">Failed to send email.\n\n{0}</Resource>
+	</page>
+	<page name="INFO">
+		<!-- info.aspx -->
+		<Resource tag="CONTINUE">Continuar...</Resource>
+		<Resource tag="MODERATED">Uma vez que publicou uma mensagem num fórum moderado, o moderador do fórum deve aprová-la antes de ficar visível.</Resource>
+		<Resource tag="SUSPENDED">A sua conta foi suspensa temporariamente. Esta suspensão termina em {0}.</Resource>
+	</page>
+	<page name="LOGIN">
+		<!-- login.aspx -->
+		<Resource tag="TITLE">Login</Resource>
+		<Resource tag="USERNAME">Utilizador:</Resource>
+		<Resource tag="PASSWORD">Palavra-Passe:</Resource>
+		<Resource tag="AUTO">Login Automático:</Resource>
+		<Resource tag="LOSTPASSWORD">Perdeu Palavra-Passe</Resource>
+		<Resource tag="FORUM_LOGIN">Login no Fórum</Resource>
+		<Resource tag="EMAIL">Endereço de Email</Resource>
+		<Resource tag="PASSWORD_ERROR">O utilizador ou a palavra-passe foram introduzidos incorrectamente. Por favor tente novamente.</Resource>
+		<Resource tag="RECOVER">Recuperar Palavra-Passe</Resource>
+		<Resource tag="WRONG_USERNAME_EMAIL">Utilizador ou endereço de email inválido.</Resource>
+		<Resource tag="EMAIL_SENT_PASSWORD">Foi enviado um email com a sua nova palavra-passe.</Resource>
+		<Resource tag="SENDPASSWORD">Enviar Palavra-Passe</Resource>
+		<Resource tag="BOTH_USERNAME_EMAIL">O utilizador e o endereço de email são obrigatórios.</Resource>
+		<Resource tag="RECOVER_ERROR">Houve um erro quando criou a sua nova password.</Resource>
+	</page>
+	<page name="MEMBERS">
+		<!-- members.aspx -->
+		<Resource tag="TITLE">Membros</Resource>
+		<Resource tag="USERNAME">Nome do Utilizador</Resource>
+		<Resource tag="RANK">Nível</Resource>
+		<Resource tag="JOINED">Registo</Resource>
+		<Resource tag="POSTS">Mensagens</Resource>
+		<Resource tag="PAGES">{0} Páginas:</Resource>
+	</page>
+	<page name="MODERATE">
+		<!-- moderate.aspx -->
+		<Resource tag="TITLE">Moderar</Resource>
+		<Resource tag="TOPICS">Tópicos</Resource>
+		<Resource tag="TOPIC_STARTER">Quem iniciou o tópico</Resource>
+		<Resource tag="REPLIES">Respostas</Resource>
+		<Resource tag="VIEWS">Visualizações</Resource>
+		<Resource tag="LASTPOST">Última mensagem</Resource>
+		<Resource tag="CONFIRM_DELETE">Apagar este tópico?</Resource>
+		<Resource tag="BY">por {0}</Resource>
+		<Resource tag="DELETED">Tópico apagado.</Resource>
+		<Resource tag="NO_POSTS">Sem Mensagens</Resource>
+		<Resource tag="MEMBERS">Membros</Resource>
+		<Resource tag="USER">Utilizador</Resource>
+		<Resource tag="ACCEPTED">Aceite</Resource>
+		<Resource tag="ACCESSMASK">Regra de Acesso</Resource>
+		<Resource tag="EDIT">Editar</Resource>
+		<Resource tag="REMOVE">Remover</Resource>
+		<Resource tag="INVITE">Convidar Utilizador</Resource>
+	</page>
+	<page name="MOVETOPIC">
+		<!-- movetopic.aspx -->
+		<Resource tag="TITLE">Mover Tópico</Resource>
+		<Resource tag="SELECT_FORUM">Escolha o fórum para onde desja mover:</Resource>
+		<Resource tag="MOVE">Mover Tópico</Resource>
+	</page>
+
+	<page name="PMESSAGE">
+		<!-- pmessage.aspx -->
+		<Resource tag="TITLE">Publicar uma Mensagem Privada</Resource>
+		<Resource tag="TO">Para:</Resource>
+		<Resource tag="SUBJECT">Assunto:</Resource>
+		<Resource tag="MESSAGE">Mensagem</Resource>
+		<Resource tag="NEED_TO">Não referiu o destinatário da mensagem.</Resource>
+		<Resource tag="NEED_SUBJECT">Deve introduzir um assunto.</Resource>
+		<Resource tag="NEED_MESSAGE">Não escreveu nada na mensagem.</Resource>
+		<Resource tag="SAVE">Publicar</Resource>
+		<Resource tag="NO_SUCH_USER">O utilizador não existe.</Resource>
+		<Resource tag="NOT_GUEST">Não pode enviar uma mensagem privada para Convidados.</Resource>
+		<Resource tag="FINDUSERS">Encontrar Utilizadores</Resource>
+		<Resource tag="ALLUSERS">Todos os utilizadores</Resource>
+	</page>
+	<page name="POSTMESSAGE">
+		<!-- postmessage.aspx -->
+		<Resource tag="NEWTOPIC">Publicar um novo tópico</Resource>
+		<Resource tag="REPLY">Publicar uma resposta</Resource>
+		<Resource tag="EDIT">Editas Mensagem</Resource>
+		<Resource tag="PREVIEW">Pré-visualizar</Resource>
+		<Resource tag="PREVIEWTITLE">Pré-visualizar:</Resource>
+		<Resource tag="SUBJECT">Assunto:</Resource>
+		<Resource tag="FROM">De:</Resource>
+		<Resource tag="PRIORITY">Prioridade:</Resource>
+		<Resource tag="MESSAGE">Mensagem:</Resource>
+		<Resource tag="LAST10">Últimas 10 Mensagens (em ordem inversa)</Resource>
+		<Resource tag="NORMAL">Normal</Resource>
+		<Resource tag="STICKY">Inamovível</Resource>
+		<Resource tag="ANNOUNCEMENT">Anúncio</Resource>
+		<Resource tag="CREATEPOLL">Criar Votação</Resource>
+		<Resource tag="POLLQUESTION">Questão da Votação:</Resource>
+		<Resource tag="CHOICE1">Escolha 1:</Resource>
+		<Resource tag="CHOICE2">Escolha 2:</Resource>
+		<Resource tag="CHOICE3">Escolha 3:</Resource>
+		<Resource tag="CHOICE4">Escolha 4:</Resource>
+		<Resource tag="CHOICE5">Escolha 5:</Resource>
+		<Resource tag="CHOICE6">Escolha 6:</Resource>
+		<Resource tag="CHOICE7">Escolha 7:</Resource>
+		<Resource tag="CHOICE8">Escolha 8:</Resource>
+		<Resource tag="CHOICE9">Escolha 9:</Resource>
+		<Resource tag="NEED_SUBJECT">Introduza, sff, um assunto para a mensagem.</Resource>
+		<Resource tag="WAIT">Não pode publicar nos próximos {0:N0} segundos.</Resource>
+		<Resource tag="POSTED">Publicado:</Resource>
+		<Resource tag="SAVE">Publicar</Resource>
+		<Resource tag="NEED_QUESTION">Deve introduzir uma questão para a votação.</Resource>
+		<Resource tag="NEED_CHOICES">A votação precisa de um mínimo de duas escolhas.</Resource>
+		<Resource tag="SMILIES_HEADER">[b]Adicionar Smiley[/b]</Resource>
+	</page>
+	<page name="PRINTTOPIC">
+		<!-- printtopic.aspx -->
+		<Resource tag="POSTEDBY">Colocado por</Resource>
+	</page>
+	<page name="PROFILE">
+		<!-- profile.aspx -->
+		<Resource tag="MEMBERS">membros</Resource>
+		<Resource tag="PROFILE">Perfil:</Resource>
+		<Resource tag="ABOUT">Sobre</Resource>
+		<Resource tag="USERNAME">Nome do utilizador:</Resource>
+		<Resource tag="GROUPS">Grupos:</Resource>
+		<Resource tag="RANK">Nível:</Resource>
+		<Resource tag="JOINED">Registo:</Resource>
+		<Resource tag="EMAIL">E-mail:</Resource>
+		<Resource tag="LASTVISIT">Última visita:</Resource>
+		<Resource tag="STATISTICS">Estatísticas</Resource>
+		<Resource tag="NUMPOSTS">Número de mensagens:</Resource>
+		<Resource tag="LAST10">Últimas 10 mensagens</Resource>
+		<Resource tag="TOPIC">Tópico:</Resource>
+		<Resource tag="POSTED">Publicado:</Resource>
+		<Resource tag="ENDS">Suspensão do utilizador termina a:</Resource>
+		<Resource tag="REMOVESUSPENSION">Remover suspensão</Resource>
+		<Resource tag="SUSPEND">Suspender</Resource>
+		<Resource tag="DAYS">dias</Resource>
+		<Resource tag="HOURS">horas</Resource>
+		<Resource tag="MINUTES">minutos</Resource>
+		<Resource tag="AVATAR">Avatar</Resource>
+		<Resource tag="CONTACT">Contact</Resource>
+		<Resource tag="PM">Mensagem Privada:</Resource>
+		<Resource tag="MSN">MSN Messenger:</Resource>
+		<Resource tag="YIM">Yahoo Messenger:</Resource>
+		<Resource tag="AIM">AIM-Name:</Resource>
+		<Resource tag="ICQ">ICQ-Number:</Resource>
+		<Resource tag="REALNAME">Nome Real:</Resource>
+		<Resource tag="WEBSITE">Página Pessoal:</Resource>
+		<Resource tag="WEBLOG">Weblog:</Resource>
+		<Resource tag="OCCUPATION">Ocupação:</Resource>
+		<Resource tag="INTERESTS">Interesses:</Resource>
+		<Resource tag="GENDER">Sexo:</Resource>
+		<Resource tag="GENDER0">Desconhecido</Resource>
+		<Resource tag="GENDER1">Masculino</Resource>
+		<Resource tag="GENDER2">Feminino</Resource>
+		<Resource tag="NUMALL">{0:N2}% de todas as mensagens</Resource>
+		<Resource tag="NUMDAY">{0:N2} mensagens por dia</Resource>
+		<Resource tag="ERROR_ADMINISTRATORS">Não pode suspender administradores.</Resource>
+		<Resource tag="ERROR_FORUMMODERATORS">Não pode suspender moderadores do fórum.</Resource>
+		<Resource tag="ERROR_GUESTACCOUNT">Não pode suspender a conta de convidados.</Resource>
+	</page>
+	<page name="REGISTER">
+		<!-- register.aspx -->
+		<Resource tag="TITLE">Registar um novo utilizador</Resource>
+		<Resource tag="DETAILS">Detalhe do Registo</Resource>
+		<Resource tag="USERNAME">Nome do Utilizador</Resource>
+		<Resource tag="NEED_USERNAME">Nome do Utilizador é obrigatório.</Resource>
+		<Resource tag="PASSWORD">Palavra-Passe</Resource>
+		<Resource tag="NEED_PASSWORD">Palavra-Passe é obrigatória.</Resource>
+		<Resource tag="RETYPE_PASSWORD">Repetir a Palavra-Passe</Resource>
+		<Resource tag="NEED_MATCH">As palavras-passes não coincidem.</Resource>
+		<Resource tag="EMAIL">Endereço de E-mail</Resource>
+		<Resource tag="PROFILE">Informações do Perfil</Resource>
+		<Resource tag="LOCATION">Localização</Resource>
+		<Resource tag="HOMEPAGE">Home Page</Resource>
+		<Resource tag="PREFERENCES">Preferências</Resource>
+		<Resource tag="TIMEZONE">Fuso Horário</Resource>
+		<Resource tag="ALREADY_REGISTERED">O seu Nome de Utilizador ou email já se encontra registado.</Resource>
+		<Resource tag="REGISTER">Registar</Resource>
+		<Resource tag="BAD_EMAIL">O endereço de e-mail não é válido.</Resource>
+	</page>
+	<page name="SEARCH">
+		<!-- search.aspx -->
+		<Resource tag="TITLE">Procura</Resource>
+		<Resource tag="BTNSEARCH">Procura</Resource>
+		<Resource tag="RESULTS">Resultados</Resource>
+		<Resource tag="TOPIC">Tópicos:</Resource>
+		<Resource tag="POSTED">Publicado:</Resource>
+		<Resource tag="ALLFORUMS">Todos os fóruns</Resource>
+		<Resource tag="RESULT5">5 resultados por página</Resource>
+		<Resource tag="RESULT10">10 resultados por página</Resource>
+		<Resource tag="RESULT25">25 resultados por página</Resource>
+		<Resource tag="RESULT50">50 resultados por página</Resource>
+		<Resource tag="POSTS">Mensagens</Resource>
+		<Resource tag="POSTEDBY">Colocado por</Resource>
+		<Resource tag="MATCH_ALL">Coincidir todas as palavras</Resource>
+		<Resource tag="MATCH_ANY">Coincidir qualquer palavra</Resource>
+		<Resource tag="MATCH_EXACT">Coincindir a frase exacta</Resource>
+		<Resource tag="NO_SEARCH_RESULTS">[b]Procura sem resultados.[/b]</Resource>
+		<Resource tag="BY">por</Resource>
+	</page>
+	<page name="MODERATE_DEFAULT">
+		<Resource tag="TITLE">Moderar</Resource>
+		<Resource tag="FORUM">Fórum</Resource>
+		<Resource tag="UNAPPROVED">Mensagens por aprovar</Resource>
+		<Resource tag="CATEGORY">Categoria</Resource>
+	</page>
+	<page name="MODERATE_FORUM">
+		<Resource tag="UNAPPROVED">Mensagens por aprovar</Resource>
+		<Resource tag="TOP">Voltar ao topo</Resource>
+		<Resource tag="APPROVE">Aprovar mensagem</Resource>
+		<Resource tag="DELETE">Apagar mensagem</Resource>
+		<Resource tag="ASK_DELETE">Apagar esta mensagem?</Resource>
+		<Resource tag="APPROVED">Mensagem aprovada.</Resource>
+		<Resource tag="DELETED">Mensagam apagada.</Resource>
+	</page>
+	<page name="MOD_FORUMUSER">
+		<Resource tag="TITLE">Utilizador do fórum</Resource>
+		<Resource tag="USER">Utilizador:</Resource>
+		<Resource tag="FIND">Encontrar utilizadores</Resource>
+		<Resource tag="ACCESSMASK">Regra de Acesso:</Resource>
+		<Resource tag="UPDATE">Actualizar</Resource>
+		<Resource tag="CANCEL">Cancelar</Resource>
+	</page>
+	<page name="RTE">
+		<Resource tag="BOLD">Negrito</Resource>
+		<Resource tag="ITALIC">Itálico</Resource>
+		<Resource tag="UNDERLINE">Sublinhado</Resource>
+		<Resource tag="LEFT">Alinhar à esquerda</Resource>
+		<Resource tag="CENTER">Centrado</Resource>
+		<Resource tag="RIGHT">Alinhar à direita</Resource>
+		<Resource tag="ORDERED">Lista Ordenada</Resource>
+		<Resource tag="UNORDERED">Lista</Resource>
+		<Resource tag="OUTDENT">Outdent</Resource>
+		<Resource tag="INDENT">Indent</Resource>
+		<Resource tag="LINK">Inserir Link</Resource>
+		<Resource tag="IMAGE">Adicionar Imagem</Resource>
+		<Resource tag="SPELL">Verificar Ortografia</Resource>
+		<Resource tag="NORMAL">Normal</Resource>
+		<Resource tag="CLEAR">Apagar Formatação</Resource>
+		<Resource tag="FORMATTED">Formatado</Resource>
+	</page>
+	<page name="AVATAR">
+		<Resource tag="TITLE">Avatars</Resource>
+		<Resource tag="EDITPROFILE">Editar Perfil</Resource>
+	</page>
+	<page name="IM_YIM">
+		<Resource tag="TITLE">Yahoo! Messenger</Resource>
+	</page>
+	<page name="IM_AIM">
+		<Resource tag="TITLE">AOL Instant Messenger</Resource>
+	</page>
+	<page name="IM_ICQ">
+		<Resource tag="TITLE">ICQ</Resource>
+		<Resource tag="NAME">Nome:</Resource>
+		<Resource tag="EMAIL">E-mail:</Resource>
+		<Resource tag="SEND">Enviar mensagem</Resource>
+		<Resource tag="BODY">Escreva aqui a sua mensagem:</Resource>
+	</page>
+	<page name="IM_EMAIL">
+		<Resource tag="TITLE">E-mail</Resource>
+		<Resource tag="SEND">Enviar E-mail</Resource>
+		<Resource tag="SUBJECT">Assunto:</Resource>
+		<Resource tag="BODY">Escreva aqui a sua mensagem:</Resource>
+		<Resource tag="ERROR">Ocorreu um erro ao enviar o e-mail.</Resource>
+	</page>
+</Resources>

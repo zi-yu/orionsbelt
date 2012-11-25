@@ -1,0 +1,5 @@
+:Display: Histórico de Torneios
+:Summary: Overview dos Torneios
+
+* [regicide]
+* [totalannihilation]

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<language target="faq">
+
+	<!-- FAQ -->
+	
+	<label ref="faq_title">Frequently Asked Questions</label>
+	<label ref="P0">What's Orion's Belt?</label>
+	<label ref="R0">It's a web based game.</label>
+	<label ref="P1">How can I play?</label>
+	<label ref="R1">Register as a ruler.</label>
+	
+</language>

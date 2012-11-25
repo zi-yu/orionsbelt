@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language>
+
+	<label ref="mensagens">Messages</label>
+	<label ref="management">Management</label>
+	<label ref="other">Other</label>
+	<label ref="intel">Battle / Intel</label>
+	<label ref="unread_messages">New Messages: {0}</label>
+	
+	<!-- Alert Messages -->
+	<label ref="LaborDying">Labor in planet {0} is dying because there is no suficient {1}</label>
+
+	<!-- Building Messages -->
+	<label ref="BuildingAvailable">Building {0} on planet {1} is now available</label>
+	<label ref="BuildingCompleted">Construction of building {0} on planet {1} is terminated</label>
+	<label ref="BuildingStarted">Construction of building {0} on planet {1} has started</label>
+	<label ref="BuildingDestroyed">Building {1} has been destroyed in planet {1} during battle</label>
+
+	<!-- Research Messages -->
+	<label ref="ResearchAvailable">Research {0} is now available</label>
+	<label ref="ResearchCompleted">{0} researching is now completed</label>
+	<label ref="ResearchStarted">Started researching {0}</label>
+
+	<!-- Ship Messages -->
+	<label ref="ShipAvailable">New ship {1} available on planet {0} for construction</label>
+	<label ref="ShipCompleted">Construction of {2} {0}s on planet {1} is terminated</label>
+	<label ref="ShipStarted">Construction of {2} {0}s on planet {1} has started</label>
+	
+	<!-- Fleet Messages-->
+	<label ref="FleetArrived">Fleet {0} arrived at {1} {2}.</label>
+	<label ref="fleetArrived_coordinate">coordinate</label>
+	<label ref="fleetArrived_planet">planet</label>
+	
+	<!-- Battle Messages -->
+	<label ref="BattleStarted">A Battle with ruler {0} has started in coordinate {1}!</label>
+	<label ref="BattleEnded">The Battle with {0} in coordinate {1} has ended. You {2}! Score: {3}</label>
+	<label ref="BattleTimedOut">The Battle with {0} in coordinate {1} has ended because ou had 3 TimeOut's</label>
+	<label ref="BattleWon">Won</label>
+	<label ref="BattleLost">Lost</label>
+	<label ref="BattleDraw">Draw</label>
+	<label ref="MinimumMove">You must move at least 20% of the ships in a group. You moved {0} {1} when you must move at least {2}!</label>
+	<label ref="MinimumRest">You must leave at least 20% of the ships in a group. You left {0} {1} when you should have left at least {2}!</label>
+	<label ref="BattleRejected">Ruler {0} rejected the friendly battle.</label>
+	<label ref="BattleAccepted">Ruler {0} accepted the friendly battle.</label>
+	
+	<label ref="TournamentStarted">A Tournament Battle with ruler {0} has started!</label>
+	<label ref="TournamentEnded">The Tournament Battle with ruler {0} has ended. You {1}!</label>
+	
+	<label ref="FriendlyStarted">A Friendly Battle with ruler {0} has started!</label>
+	<label ref="FriendlyEnded">The Friendly Battle with ruler {0} has ended. You {1}!</label>
+	
+	<label ref="BattleDeleted">Battle with ruler '{0}' was deleted by the administrator!</label>
+	
+	<!-- Prizes -->
+	<label ref="PlanetPrize">You have won a {2} medal for the {0} prize: +{1} points</label>
+	<label ref="RulerPrize">You have won a {2} medal for the {0} prize: +{1} points</label>
+
+	<!-- Scan -->
+	<label ref="ScanDetected">Scan detected from coordinate {0} to planet {1} - Succeded: {2}</label>
+	
+	<!-- Battle Inner Messages -->
+	<label ref="BattleAttack">Ship in coordinate {0} attacked the ship at the position {1}.</label>
+	<label ref="BattleDamage">{0} {1} made {2} of damage which destroyed {3} {4}.</label>
+	<label ref="BattleRotation">Ship at coordinate {0} made a {1} rotation.</label>
+	<label ref="BattleMove">{0} {1} where moved from coordinate {2} to coordinate {3}.</label>
+	<label ref="BattlePenalty">The attack will have a penalty of {0}% because of the distance (was {1}).</label>
+	<label ref="BattleRebound">Rebound of the previous attack made {0} of damage that destroyed {1} {2}.</label>
+	<label ref="BattleTripleAttackLeft">Triple Attack attack made {0} of damage to the Left that destroyed {1} {2}.</label>
+	<label ref="BattleTripleAttackRight">Triple Attack attack made {0} of damage to the Right that destroyed {1} {2}.</label>
+	<label ref="BattleReplicator">Replicator attack made the unit {0} replicate {1} times.</label>
+	<label ref="BattleEndTurn">Ruler {0} ended is turn.</label>
+	
+</language>

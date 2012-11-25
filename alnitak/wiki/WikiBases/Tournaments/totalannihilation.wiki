@@ -1,0 +1,24 @@
+:Display: Destruição Total
+:Summary: Overview dos Torneios de Destruição Total
+
+Esta página contém o histórico de todos os torneios de Destruição Total realizados!
+
+!!!Top Geral
+
+||{!}#||{!}Ruler||{!}Vencedor||{!}Finais||{!}Meias||{!}Quartos||
+||1º||*Shadow_Knight*||1||1||2||2||
+||2º||*Anfernius*||1||1||1||1||
+||3º||*Pyro*||0||2||2||2||
+||4º||*funnynovato*||0||0||2||2||
+||5º||*Malakias*||0||0||1||1||
+||6º||*Shikamaru*||0||0||0||2||
+||7º||*MindScraper*||0||0||0||1||
+||8º||*super_dragao*||0||0||0||1||
+
+!!!Historial
+	* [totalannihilation002]
+		1.º *Shadow_Knight*
+		1.º *Pyro*
+	* [totalannihilation001]
+		1.º *Anfernius*
+		1.º *Pyro*

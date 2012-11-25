@@ -1,0 +1,3 @@
+Esta página tem informações gerais sobre um planeta, como as suas CaracterísticasDePlaneta e os seus recursos [Intrínsecos].
+
+:Summary: Descrição da Secção de Planeta

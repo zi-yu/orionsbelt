@@ -1,0 +1,17 @@
+*.pidb
+*.mdp
+*.csproj
+*.mds
+backups
+bin
+upload
+vpproject
+XmlPersistence
+*.webinfo
+*.resx
+*.csv
+Teste.aspx
+*.zip
+backup
+wiki
+deploy.bat

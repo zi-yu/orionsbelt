@@ -1,0 +1,21 @@
+!Secções do Site
+
+O jogo está dividido entre diversas páginas que servem de interface para o utilizador. De seguida está uma listagem destas páginas tendo em conta o seu parentesco.
+
+	* SecçãoHome
+	* SecçãoPlanetas
+		* SecçãoPlaneta
+		* SecçãoEdifícios
+		* SecçãoArmadas
+		* SecçãoScan
+		* SecçãoTeletransporte
+	* SecçãoMilitar
+	* SecçãoPesquisa
+	* SecçãoBatalha
+	* SecçãoTop
+	* SecçãoHelp
+	* SecçãoWiki
+	* SecçãoBugs
+	* SecçãoPrémios
+
+:Summary: Descrição das Secções do Site

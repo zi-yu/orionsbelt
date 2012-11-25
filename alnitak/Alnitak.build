@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<project name="Alnitak" default="build-all" basedir=".">
+
+	<description>Orionsbelt Web UI</description>
+	<property name="debug" value="true" unless="${property::exists('debug')}"/>
+
+	<property name="AlnitakTarget" value="mysql" unless="${property::exists('AlnitakTarget')}" />
+
+	<property name="AlnitakSqlServer" value="${string::contains('sqlserver',property::get-value('AlnitakTarget'))}" />
+	<property name="AlnitakMySql" value="${string::contains('mysql',property::get-value('AlnitakTarget'))}" />
+	<property name="AlnitakNpgsql" value="${string::contains('npgsql',property::get-value('AlnitakTarget'))}" />
+
+	<property name="PersistenceType" value="PERSIST_TO_SQLSERVER" />
+	<property name="PersistenceType" value="PERSIST_TO_MYSQL" if="${AlnitakMySql}" />
+	<property name="PersistenceType" value="PERSIST_TO_POSTGRE" if="${AlnitakNpgsql}" />
+
+	<property name="version" value="0.1" unless="${property::exists('version')}" />
+	
+	<property name="wiki" value="true" unless="${property::exists('wiki')}" />
+	<property name="WikiFlag" value="NO_WIKI" />
+	<property name="WikiFlag" value="WIKI" if="${wiki}" />
+
+	<property name="forum" value="false" unless="${property::exists('forum')}" />
+	<property name="ForumFlag" value="NO_FORUM" />
+	<property name="ForumFlag" value="FORUM" if="${forum}" />
+
+	<property name="Temp" value="NO_TEMP" />
+	<property name="Temp" value="MONO_1_1_9_1" if="${property::exists('temp')}" />
+
+	<target name="clean" description="remove all generated files">
+		<delete>
+			<fileset>
+				<include name="*~" />
+            	<include name="bin/*.dll" />
+            	<include name="bin/*.exe" />
+            	<include name="bin/*.pdb" />
+            	<include name="bin/*.xml" />
+				<include name="bin/*~" />
+				<include name="bin/.*" />
+            	<include name="bin/Debug/*.dll" />
+            	<include name="bin/Debug/*.exe" />
+            	<include name="bin/Debug/*.pdb" />
+				<include name="bin/Debug/*.xml" />
+           		<include name="bin/Release/*.dll" />
+            	<include name="bin/Release/*.exe" />
+				<include name="bin/Release/*.pdb" />
+				<include name="bin/Release/*.xml" />
+				<include name="wiki/WikiBases/Orionsbelt/*.awiki" />
+				<exclude name="bin/ByteFX.MySqlClient.dll" />
+				<exclude name="bin/FlexWiki*.dll" />
+				<exclude name="bin/nunit.framework.dll" />
+				<exclude name="bin/Npgsql.dll" />
+				<exclude name="bin/Mono.Security.dll" />
+				</fileset>
+        	</delete>
+  	</target>
+
+	<!-- Gera o AssemblyInfo.cs do Alnitak -->
+	<target name="generate-asminfo" description="Gera o AssemblyInfo.cs do Alnitak">
+		<asminfo output="engine/AssemblyInfo.cs" language="CSharp">
+			<imports>
+				<import namespace="System" />
+				<import namespace="System.Reflection" />
+				<import namespace="System.Runtime.CompilerServices" />
+			</imports>
+			<attributes>
+				<attribute type="AssemblyVersionAttribute" value="${version}.0.0" />
+				<attribute type="AssemblyTitleAttribute" value="Chronos" />
+				<attribute type="AssemblyDescriptionAttribute" value="Orion's Belt Engine" />
+				<attribute type="AssemblyCopyrightAttribute" value="Copyright (c) 2004, Sapos Dominadores" />
+				<attribute type="AssemblyInformationalVersionAttribute"
+						value="Debug: ${debug}; Persistence: ${AlnitakTarget}; OS: ${platform::get-name()}; TargetPlatform: ${framework::get-target-framework()}; Wiki: ${wiki};" />
+			</attributes>
+		</asminfo>
+	</target>
+
+  	<!-- compila o projecto -->
+	<target name="build-all" description="compiles Alnitak.dll" depends="generate-asminfo">
+
+		<exec program="bin/LanguageValidator.exe" commandline="engine/Language/" useruntimeengine="true" />
+		
+		<csc target="library" output="bin/Alnitak.dll"
+			debug="${debug}"
+			define="${WikiFlag},${PersistenceType},NANT,${ForumFlag},${Temp}">
+
+			<nowarn>
+	            <!-- do not report warnings for missing XML comments -->
+				<warning number="1591" />
+				<warning number="1570" />
+				<warning number="1572" />
+				<warning number="1573" />
+				<warning number="0649" />
+				<warning number="0169" />
+				<warning number="0414" if="${platform::is-unix()}"/>
+			</nowarn>
+
+			<sources>
+				<include name="*.cs" />
+				<include name="engine/**/*.cs" />
+				
+				<include name="dataAccess/*/*Base.cs" />
+				<include name="dataAccess/*/SqlServer*.cs" if="${AlnitakSqlServer}"/>
+ 				<include name="dataAccess/*/MySql*.cs" if="${AlnitakMySql}" />
+ 				<include name="dataAccess/*/Post*.cs" if="${AlnitakNpgsql}" />
+
+				<include name="dataAccess/User/UserUtility.cs" />
+				<include name="dataAccess/News/NewsUtility.cs" />
+				<include name="dataAccess/Scan/ScanUtility.cs" />
+				<include name="dataAccess/Exceptions/ExceptionLogUtility.cs" />
+				<include name="dataAccess/Alliance/AllianceUtility.cs" />
+
+				<include name="dataAccess/BaseClasses/MySqlUtility.cs" if="${AlnitakMySql}" />
+				<include name="dataAccess/BaseClasses/SqlServerUtility.cs" if="${AlnitakSqlServer}" />
+				<include name="dataAccess/BaseClasses/Post*.cs" if="${AlnitakNpgsql}" />
+
+				<!--  forum -->
+				<include name="forum/**/*.cs" if="${forum}" />
+			</sources>
+			
+			<references>
+				<include name="System.Data.dll" />
+				<include name="System.Web.dll" />
+
+				<include name="ByteFX.Data.dll" if="${AlnitakMySql}" />
+				<include name="bin/Npgsql.dll" if="${AlnitakNpgsql}" />
+				<include name="bin/ByteFX.MySqlClient.dll" if="${AlnitakMySql}" />
+				<include name="bin/Npgsql.dll" if="${AlnitakNpgsql}" />
+
+				<include name="bin/Language.dll" />
+				<include name="bin/DesignPatterns.dll" />
+				<include name="bin/Chronos.dll" />
+
+				<include name="bin/FlexWiki.dll" if="${wiki}" />
+				<include name="bin/FlexWiki.Web.dll" if="${wiki}" />
+
+				<include name="System.Web.Services.dll" if="${forum}" />
+				<include name="System.Drawing.dll" if="${forum}" />
+			</references>
+		</csc>
+
+		<copy file="bin/Alnitak.dll" tofile="../tests/bin/Alnitak.dll" />
+		<copy file="bin/Alnitak.dll" tofile="../rulestowiki/bin/Alnitak.dll" />
+
+		<echo message="Alnitak compiled successfully!" />
+		<echo message="" />
+		<echo message="Debug Build     : ${debug}" />
+		<echo message="AlnitakTarget   : ${AlnitakTarget}" />
+		<echo message="Wiki Support    : ${wiki}" />
+		<echo message="Forum Support   : ${forum}" />
+		<echo message="Compiling with  : ${PersistenceType}" />
+		<echo message="                : ${WikiFlag}" />
+		<echo message="                : ${ForumFlag}" />
+		<echo message="                : ${Temp}" />
+		<echo message="" />
+		<echo message="OS              : ${platform::get-name()}" />
+		<echo message="Target Platform : ${framework::get-target-framework()}" />
+  	</target>
+
+  	<target name="images" description="generates the zip with all website images">
+		<zip zipfile="orionImages.zip">
+			<fileset basedir=".">
+				<include name="skins/**/*.png" />
+				<include name="skins/**/*.gif" />
+				<include name="skins/**/*.jpg" />
+				<include name="skins/**/**/*.png" />
+				<include name="skins/**/**/*.gif" />
+				<include name="skins/**/**/*.jpg" />
+			</fileset>
+		</zip>
+	</target>
+</project>

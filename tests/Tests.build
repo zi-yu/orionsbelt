@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<project name="Orionsbelt.Tests" default="test-all" basedir=".">
+
+	<description>Orionsbelt Tests</description>
+	<property name="debug" value="true" unless="${property::exists('debug')}"/>
+	<property name="CLI" value="${framework::get-target-framework()}" />
+
+	<property name="ChronosTarget" value="file" unless="${property::exists('ChronosTarget')}" />
+	<property name="ChronosSqlServer" value="${string::contains('sqlserver',property::get-value('ChronosTarget'))}" unless="${property::exists('ChronosSqlServer')}" />
+	<property name="ChronosFile" value="${string::contains('file',property::get-value('ChronosTarget'))}" unless="${property::exists('ChronosFile')}" />
+
+	<property name="PersistenceType" value="PERSIST_TO_FILE" />
+	<property name="PersistenceType" value="PERSIST_TO_SQLSERVER" if="${ChronosSqlServer}" />
+
+	<property name="version" value="0.1" unless="${property::exists('version')}" />
+
+	<target name="clean" description="remove all generated files">
+		<delete>
+			<fileset>
+				<include name="*~" />
+            			<include name="bin/*.dll" />
+            			<include name="bin/*.exe" />
+            			<include name="bin/*.pdb" />
+				<include name="bin/*.xml" />
+				<include name="bin/*~" />
+				<include name="bin/.*" />
+				<include name="bin/*.bin" />
+				<include name="bin/*.mdb" />
+
+				<exclude name="bin/DesignPatterns.dll" />
+
+				<include name="conf/**/*~" />
+				<include name="conf/**/.*" />
+          		</fileset>
+        	</delete>
+  	</target>
+
+	<target name="test-all" description="compiles Chronos">
+		<call target="build-tests" />
+		<echo message="Orionsbelt Tests compiled successfully!" />
+		<call target="run-tests" />
+		<echo message="Orionsbelt Tests are completed!" />
+	</target>
+
+	<target name="build-tests" description="compiles the unit tests">
+		<csc target="library" output="bin/Orionsbelt.Tests.dll" debug="${debug}" define="NANT,${PersistenceType}">
+			<nowarn>
+	            <!-- do not report warnings for missing XML comments -->
+				<warning number="1591" />
+				<warning number="1570" />
+				<warning number="1572" />
+				<warning number="1573" />
+				<warning number="0649" />
+				<warning number="0169" />
+			</nowarn>
+			<sources>
+				<include name="chronos/*.cs" />
+				<include name="alnitak/*.cs" />
+				<include name="patterns/*.cs" />
+				<exclude name="chronos/BinarySqlPersistenceTester.cs" unless="${ChronosSqlServer}"/>
+				<exclude name="chronos/SqlServerGlobals.cs" unless="${ChronosSqlServer}"/>
+				<exclude name="chronos/PostGreGlobals.cs" />
+			</sources>
+			<references>
+				<include name="nunit.framework.dll" />
+				<include name="${nant::get-base-directory()}lib\${framework::get-family(framework::get-target-framework())}\${framework::get-version(framework::get-target-framework())}\nunit.framework.dll"
+					 if="${platform::is-win32()}"	
+					/>
+				<include name="bin/Chronos.dll" />
+				<include name="bin/Alnitak.dll" />
+				<include name="bin/DesignPatterns.dll" />
+				<include name="System.Data.dll" if="${ChronosSqlServer}" />
+				<include name="System.Data.SqlClient.dll" if="${ChronosSqlServer}" />
+			</references>
+		</csc>
+	</target>
+
+	<!-- testname="Chronos.Tests.ScanTester" appconfig="bin/Validator.exe.config"-->
+	<target name="run-tests" description="Runs NUnit on Orionsbelt.Tests.dll" depends="build-tests"
+		failonerror="false">
+		<echo message="Running Orion's Belt tests..." />
+		<nunit2 verbose="true" failonerror="false">
+		    <formatter type="Plain" />
+		    <test assemblyname="bin/Orionsbelt.Tests.dll" testname="Chronos.Tests.RulerTester" />
+		</nunit2>
+	</target>
+
+</project>
+

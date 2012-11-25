@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language>
+
+	<label ref="mensagens">Mensagens</label>
+	<label ref="management">Gestão</label>
+	<label ref="other">Outras</label>
+	<label ref="intel">Batalhas / Espionagem</label>
+	<label ref="unread_messages">Mensagens Novas: {0}</label>
+	
+	<!-- Alert Messages -->
+	<label ref="LaborDying">Há trabalhadores a morrer no planeta {0} devido à falta de {1}</label>
+
+	<!-- Building Messages -->
+	<label ref="BuildingAvailable">Novo edifício {0} disponível para construção no planeta {1}</label>
+	<label ref="BuildingCompleted">Construção do edifício {0} terminada no planeta {1}</label>
+	<label ref="BuildingStarted">Iniciada a construção do edifício {0} no planeta {1}</label>
+	<label ref="BuildingDestroyed">Um edifício {1} foi destruído no planeta {1} durante a batalha</label>
+
+	<!-- Research Messages -->
+	<label ref="ResearchAvailable">Nova pesquisa {0} disponível</label>
+	<label ref="ResearchCompleted">Pesquisa {0} concluída</label>
+	<label ref="ResearchStarted">Iniciada a pesquisa {0}</label>
+
+	<!-- Ship Messages -->
+	<label ref="ShipAvailable">Novo tipo de nave {1} disponível para construção no planeta {0}</label>
+	<label ref="ShipCompleted">Construção de {2} {0}(s) terminada no planeta {1}</label>
+	<label ref="ShipStarted">Começada construção de {2} {0}(s) no planeta {1}</label>
+	
+	<!-- Fleet Messages-->
+	<label ref="FleetArrived">Armada {0} chegou {1} {2}.</label>
+	<label ref="fleetArrived_coordinate">à coordenada</label>
+	<label ref="fleetArrived_planet">ao planeta</label>
+		
+	<!-- Battle Messages -->
+	<label ref="BattleStarted">Começou uma batalha com o Ruler {0} na coordenada {1}!</label>
+	<label ref="BattleEnded">A batalha com o Ruler {0} na coordenada {1} terminou. Você {2}! Pontuação: {3}</label>
+	<label ref="BattleTimedOut">A batalha com o Ruler {0} na coordenada {1} acabou porque teve 3 TimeOut's!</label>
+	<label ref="BattleWon">Ganhou</label>
+	<label ref="BattleLost">Perdeu</label>
+	<label ref="BattleDraw">Empatou</label>
+	<label ref="MinimumMove">Tem de mover pelo menos 20% das unidades de um grupo. Moveu {0} {1} quando devia ter movido pelo menos {2}!</label>
+	<label ref="MinimumRest">Tem de deixar pelo menos 20% das unidades de um grupo. Deixou {0} {1} quando devia ter deixado pelo menos {2}!</label>
+	
+	<label ref="BattleRejected">Ruler {0} rejeitou a batalha amigável.</label>
+	<label ref="BattleAccepted">Ruler {0} aceitou a batalha amigável.</label>
+	
+	<label ref="TournamentStarted">Começou uma batalha de torneio com o Ruler {0}!</label>
+	<label ref="TournamentEnded">A batalha de torneio com o Ruler {0} terminou. Você {1}!</label>
+	
+	<label ref="FriendlyStarted">Começou uma batalha amigável com o Ruler {0}!</label>
+	<label ref="FriendlyEnded">A batalha amigável com o Ruler {0} terminou. Você {1}!</label>
+	
+	<label ref="BattleDeleted">A batalha com o ruler '{0}' foi eliminada pelo administrador!</label>
+	
+	<!-- Prizes -->
+	<label ref="PlanetPrize">Ganhou a medalha de {2} para o prémio {0}: +{1} pontos</label>
+	<label ref="RulerPrize">Ganhou a medalha de {2} para o prémio {0}: +{1} pontos</label>
+
+	<!-- Scan -->
+	<label ref="ScanDetected">Scan detectado apartir a coordenada {0} para o planeta {1} - Com sucesso: {2}</label>
+	
+	<!-- Battle Inner Messages -->
+	<label ref="BattleAttack">Nave na coordenada {0} atacou a nave na posição {1}.</label>
+	<label ref="BattleDamage">{0} {1} fizeram {2} de dano o que destruiu {3} {4}.</label>
+	<label ref="BattleRotation">A nave na coordenada {0} fez uma rotação {1}.</label>
+	<label ref="BattleMove">{0} {1} foram movidos da coordenada {2} para a coordenada {3}.</label>
+	<label ref="BattlePenalty">O ataque terá uma penalização de {0}% devido à distância (foi {1}).</label>
+	<label ref="BattleRebound">O Ricochete do ataque anterior fez {0} de dano que destruiu {1} {2}.</label>
+	<label ref="BattleTripleAttackLeft">O Ataque Triplo fez {0} de dano à unidade da esquerda que destrui {1} {2}.</label>
+	<label ref="BattleTripleAttackRight">O Ataque Triplo fez {0} de dano à unidade da direita que destrui {1} {2}.</label>
+	<label ref="BattleReplicator">Ataque Replicador fez a unidade {0} multiplicar-se {1} vez(es).</label>
+	<label ref="BattleEndTurn">Ruler {0} acabou o turno.</label>
+
+</language>
+

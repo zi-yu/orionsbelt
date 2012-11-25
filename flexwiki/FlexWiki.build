@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<project name="FlexWiki" default="flexwiki" basedir=".">
+
+	<description>FlexWiki</description>
+	<property name="debug" value="true" unless="${property::exists('debug')}"/>
+
+  	<!-- compila o projecto -->
+	<target name="flexwiki-engine" description="compiles FlexWiki.dll">
+		
+		<csc target="library" output="bin/FlexWiki.dll"
+			debug="${debug}">
+
+			<nowarn>
+	            		<!-- do not report warnings for missing XML comments -->
+				<warning number="1591" />
+				<warning number="1570" />
+				<warning number="1572" />
+				<warning number="1573" />
+				<warning number="0649" />
+				<warning number="0169" />
+				<warning number="0219" />
+				<warning number="0169" />
+				<warning number="1717" if="${platform::is-unix()}"/>
+				<warning number="0414" if="${platform::is-unix()}"/>
+			</nowarn>
+
+			<sources>
+				<include name="EngineSource/*.cs" />
+			</sources>
+			
+			<references>
+				<include name="System.Data.dll" />
+				<include name="System.Web.dll" />
+			</references>
+		</csc>
+
+  	</target>
+
+	<target name="flexwiki-web" description="compiles FlexWiki.Web.dll" depends="flexwiki-engine">
+		
+		<csc target="library" output="bin/FlexWiki.Web.dll"
+			debug="${debug}">
+
+			<nowarn>
+	            		<!-- do not report warnings for missing XML comments -->
+				<warning number="1591" />
+				<warning number="1570" />
+				<warning number="1572" />
+				<warning number="1573" />
+				<warning number="0649" />		
+				<warning number="0219" />
+				<warning number="0169" />
+				<warning number="1717" if="${platform::is-unix()}"/>
+				<warning number="0414" if="${platform::is-unix()}"/>
+			</nowarn>
+
+			<sources>
+				<include name="FlexWiki.Web/*.cs" />
+				<include name="FlexWiki.Web/Newsletters/*.cs" />
+				<include name="FlexWiki.Web/admin/*.cs" />
+				<include name="FlexWiki.Web.Service/*.cs" />
+				<include name="FlexWikiSecurity/*.cs" />
+			</sources>
+			
+			<references>
+				<include name="System.Data.dll" />
+				<include name="System.Web.dll" />
+				<include name="System.Web.Services.dll"  />
+				<include name="System.Drawing.dll" />
+				<include name="bin/FlexWiki.dll" />
+			</references>
+		</csc>
+
+  	</target>
+
+	<target name="flexwiki" description="compiles FlexWiki" depends="flexwiki-web">
+		<copy todir="../alnitak/bin/">
+		    <fileset basedir="bin">
+		        <include name="FlexWiki*" />
+		    </fileset>
+		</copy>
+		<copy todir="../alnitak/wiki/bin/">
+		    <fileset basedir="bin">
+		        <include name="FlexWiki*" />
+		    </fileset>
+		</copy>
+		<copy todir="../tests/bin/">
+		    <fileset basedir="bin">
+		        <include name="FlexWiki*" />
+		    </fileset>
+		</copy>
+  	</target>
+
+	<target name="clean" description="remove all generated files">
+		<delete>
+			<fileset>
+				<include name="*~" />
+            			<include name="bin/*.dll" />
+            			<include name="bin/*.exe" />
+            			<include name="bin/*.pdb" />
+				<include name="bin/*.xml" />
+				<include name="bin/*~" />
+				<include name="bin/.*" />
+            			<include name="bin/Debug/*.dll" />
+            			<include name="bin/Debug/*.exe" />
+            			<include name="bin/Debug/*.pdb" />
+				<include name="bin/Debug/*.xml" />
+           			<include name="bin/Release/*.dll" />
+            			<include name="bin/Release/*.exe" />
+			        <include name="bin/Release/*.pdb" />
+				<include name="bin/Release/*.xml" />
+          		</fileset>
+        	</delete>
+  	</target>
+
+</project>

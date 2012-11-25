@@ -1,0 +1,15 @@
+:Description: Round Hall of Fame
+:Display: Ronda
+
+Esta página contém os histórico de todas as rondas do Orion's Belt: vencedores, estatísticas, quem tem os melhores planetas, etc.
+
+!!!Ronda 1 :: 05-11-2005 a 18-03-2006
+	* *Vencedores*:
+		1. ACSK Anfernius
+		1. IUC funnynovato
+		1. CUS Shadow Knight
+	* *Estatísticas*:
+		* [round001_Top]
+		* [round001_RulerStats]
+		* [round001_PlanetStats]
+		* [round001_Prizes]

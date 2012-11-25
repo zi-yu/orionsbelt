@@ -1,0 +1,3 @@
+Nesta secção é possível adicionar NovasIdeias ou registar [Bugs].
+
+:Summary: Descrição da Secção de Bugs

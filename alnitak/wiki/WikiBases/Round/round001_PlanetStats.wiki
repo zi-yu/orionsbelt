@@ -1,0 +1,246 @@
+:Display: Planet Stats
+:Parent: Round.HomePage
+
+!!Top by Labor
+||{!^}*#*||{!^}*Planet*||{!^}*Ruler*||{!^}*Trabalhadores*||
+||1||The_Killer @ 1:10:4:3||Rolando2424||55 910||
+||2||Death Bringer @ 1:10:1:3||Rolando2424||53 564||
+||3||Death Ball @ 1:10:3:1||Rolando2424||49 931||
+||4||Desert @ 1:17:5:3||super_dragao||47 898||
+||5||Gaia XII @ 1:15:16:3||ACSK Anfernius||46 519||
+||6||GOE @ 1:1:4:1||ACSK SF fipas||46 255||
+||7||Canhamo @ 1:14:18:3||IUC Ashis BR||45 280||
+||8||Gaia VIII @ 1:10:11:3||ACSK Anfernius||44 995||
+||9||Gaia XVI @ 1:20:3:3||ACSK Anfernius||44 925||
+||10||Gaia XIV @ 1:18:18:2||ACSK Anfernius||43 536||
+||11||OMERTA 14 @ 3:20:13:2||glued||42 443||
+||12||The Pain @ 1:10:3:3||Rolando2424||42 390||
+||13||Dantoine @ 1:14:15:2||IUC Ashis BR||42 139||
+||14||Gaia Reconquered @ 2:1:1:2||ACSK Anfernius||41 602||
+||15||Avalon @ 1:7:3:1||IUC ''SkyKing'' ||41 577||
+||16||Gaia XV @ 1:19:8:3||ACSK Anfernius||40 320||
+||17||Gaia XI @ 1:15:12:2||ACSK Anfernius||40 242||
+||18||Mouse @ 1:2:12:1||dj_mouse||39 295||
+||19||Gaia XVII @ 1:20:4:3||ACSK Anfernius||38 788||
+||20||Gaia IX @ 1:14:11:2||ACSK Anfernius||38 264||
+||21||Gaia XVIII @ 1:16:2:2||ACSK Anfernius||36 350||
+||22||King @ 2:8:7:3||super_dragao||35 912||
+||23||kalunka @ 1:14:15:1||seravat||35 118||
+||24||Naboo @ 1:14:17:2||IUC Ashis BR||33 360||
+||25||Badaouin @ 1:14:12:3||IUC Ashis BR||33 131||
+!!!Top Rulers by Fleet
+||{!^}*#*||{!^}*Planet*||{!^}*Ruler*||{!^}*L*||{!^}*M*||{!^}*H*||{!^}*A*||{!^}*Armada*||
+||1||tommy @ 1:1:10:3||falkirk||31 441||797 915||203 482||0||1 032 838||
+||2||Descobridor @ 1:7:19:2||falkirk||92 863||805 171||51 029||0||949 065||
+||3||MSI @ 1:1:18:2||falkirk||76 797||419 918||146 633||0||643 348||
+||4||Brutamontes @ 1:1:14:3||falkirk||59 288||277 108||205 124||0||541 520||
+||5||Mauro @ 1:1:4:2||falkirk||23 663||488 615||24 101||0||536 379||
+||6||Palhaço @ 1:1:19:2||falkirk||94 060||330 666||64 708||0||488 614||
+||7||Arabick @ 1:1:16:3||falkirk||23 644||384 914||53 965||0||462 523||
+||8||Victolandia @ 1:1:14:2||falkirk||13 693||208 559||223 771||0||446 023||
+||9||Tom Tom @ 1:1:17:2||falkirk||12 810||341 482||49 238||20||403 550||
+||10||JOLI @ 1:1:15:3||falkirk||81 798||203 763||99 861||0||385 422||
+||11||Big Boy @ 1:1:11:2||falkirk||45 185||303 153||18 472||0||366 810||
+||12||Joker @ 1:1:8:2||falkirk||164 624||118 528||76 184||0||359 336||
+||13||Bad Sector @ 1:1:13:2||falkirk||207 203||122 143||27 713||0||357 059||
+||14||UM @ 1:1:19:3||falkirk||10 569||286 624||13 793||0||310 986||
+||15||Garfield @ 1:1:3:2||falkirk||46 221||167 770||70 411||0||284 403||
+||16||Spoon @ 1:1:15:2||falkirk||55 048||163 391||63 169||0||281 609||
+||17||HP @ 1:1:17:3||falkirk||43 137||168 803||41 309||0||253 249||
+||18||Tutancamon @ 1:1:16:2||falkirk||60 864||110 610||60 103||0||231 577||
+||19||Chato @ 1:1:5:3||falkirk||20 526||192 364||14 515||0||227 406||
+||20||Villa Clara @ 1:3:9:3||Giorkas||131 000||15 500||43 800||0||189 300||
+||21||Green -  Terrestre @ 1:4:13:2||Frutooso||3 918||132 187||51 425||0||187 530||
+||22||Zeus @ 1:3:2:1||fallen god||155 553||11 193||3 000||0||169 746||
+||23||New One @ 1:1:7:2||falkirk||25 688||103 181||36 283||0||165 153||
+||24||OMERTA 4 @ 1:3:11:2||glued||138 955||14 343||9 501||0||162 348||
+||25||OMERTA 5 @ 1:3:15:2||glued||132 254||18 559||7 097||0||157 910||
+!!!Top by Culture
+||{!^}*#*||{!^}*Planet*||{!^}*Ruler*||{!^}*Cultura*||
+||1||Mercurio - Ice @ 1:4:9:2||Frutooso||5 217 539||
+||2||Terra @ 1:4:9:1||Frutooso||5 142 771||
+||3||Green -  Terrestre @ 1:4:13:2||Frutooso||4 883 275||
+||4||Abism @ 1:11:12:3||CUS Goblin||4 593 716||
+||5||Mummy @ 1:11:7:3||CUS Goblin||4 346 718||
+||6||1_5_18_2 @ 1:5:18:2||IUC Pescador||4 172 555||
+||7||dobit @ 1:4:2:1||doba||3 823 376||
+||8||tmp3 @ 1:11:20:2||ACSK Shikamaru||3 784 435||
+||9||Linhares @ 1:2:14:1||Fuzo||3 638 015||
+||10||Scorpion @ 1:2:18:1||Scorpion||3 388 434||
+||11||Mr. Hyde @ 1:11:9:3||CUS Goblin||3 361 605||
+||12||Ghost @ 1:11:10:3||CUS Goblin||3 186 974||
+||13||Plutao - Ice @ 1:4:13:3||Frutooso||3 112 605||
+||14||1_3_18_3 @ 1:3:18:3||IUC Pescador||3 083 491||
+||15||Gama @ 1:1:1:2||ACSK Shikamaru||2 970 685||
+||16||Omega @ 1:1:4:3||ACSK Shikamaru||2 905 270||
+||17||Mobius @ 1:8:13:2||ACSK Pyro||2 894 763||
+||18||haleluia @ 1:3:13:3||Mais Um||2 741 638||
+||19||Rscorpio @ 1:2:18:3||rhas||2 735 978||
+||20||Iô12 @ 1:19:5:3||kaesar||2 697 643||
+||21||Flinstones @ 1:3:6:3||IUC funnynovato||2 652 302||
+||22||dark moon @ 1:13:14:1||MYR||2 597 706||
+||23||Zyrlax @ 1:2:4:2||Gangster||2 580 783||
+||24||Death Ball @ 1:10:3:1||Rolando2424||2 569 576||
+||25||Pyropalys @ 1:1:13:1||morzan||2 511 947||
+!!!Top by Score
+||{!^}*#*||{!^}*Planet*||{!^}*Ruler*||{!^}*Score*||
+||1||Gaia XI @ 1:15:12:2||ACSK Anfernius||28 642||
+||2||Gaia Reconquered @ 2:1:1:2||ACSK Anfernius||24 365||
+||3||Gaia XVII @ 1:20:4:3||ACSK Anfernius||23 787||
+||4||Gaia XVI @ 1:20:3:3||ACSK Anfernius||23 364||
+||5||Black Ice III @ 1:13:20:2||Ultra Ice||22 577||
+||6||Black Ice II @ 1:13:15:3||Ultra Ice||22 076||
+||7||Gaia XV @ 1:19:8:3||ACSK Anfernius||21 343||
+||8||Victoria VI @ 1:6:16:2||IUC ''SkyKing'' ||21 040||
+||9||Panda @ 1:2:5:2||IUC funnynovato||20 890||
+||10||Gaia XII @ 1:15:16:3||ACSK Anfernius||20 608||
+||11||Gaia IX @ 1:14:11:2||ACSK Anfernius||20 601||
+||12||Gaia Nova 2 @ 1:5:2:3||ACSK Anfernius||20 444||
+||13||Minnie @ 1:2:1:3||IUC funnynovato||19 966||
+||14||Gaia VII @ 1:1:2:2||ACSK Anfernius||19 536||
+||15||Gaia VIII @ 1:10:11:3||ACSK Anfernius||19 267||
+||16||Gaia XIV @ 1:18:18:2||ACSK Anfernius||19 238||
+||17||Flinstones @ 1:3:6:3||IUC funnynovato||19 022||
+||18||Montejunto @ 1:13:16:2||CUS Mimoso||18 788||
+||19||Alverca @ 1:13:7:2||CUS Mimoso||18 691||
+||20||OMERTA 13 @ 3:20:15:2||glued||18 573||
+||21||Joana @ 1:5:10:2||CUS Shadow Knight||18 172||
+||22||Toy Story @ 1:3:12:2||IUC funnynovato||18 109||
+||23||Olhavo @ 1:12:9:3||CUS Mimoso||18 048||
+||24||Las Tunas @ 1:7:14:3||Giorkas||18 016||
+||25||Black Ice IV @ 1:13:14:2||Ultra Ice||17 891||
+!!!Top by Dinheiro
+||{!^}*#*||{!^}*Planet*||{!^}*Ruler*||{!^}*Per turn*||{!^}*Ratio*||
+||1||Garfield @ 1:4:5:2||IUC funnynovato||+15 315||%78||
+||2||Guantánamo @ 1:7:18:3||Giorkas||+13 387||%90||
+||3||Flinstones @ 1:3:6:3||IUC funnynovato||+12 616||%68||
+||4||Porrus @ 2:6:19:2||gandalf||+11 337||%73||
+||5||Prometheus @ 1:7:13:2||ACSK Pyro||+11 267||%99||
+||6||Mercurio - Ice @ 1:4:9:2||Frutooso||+10 946||%86||
+||7||Alverca @ 1:9:14:2||wolfie||+10 846||%56||
+||8||Cogumelus @ 2:1:15:3||gandalf||+10 708||%81||
+||9||rhas @ 1:2:19:1||rhas||+10 640||%80||
+||10||OMERTA 12 @ 3:20:17:2||glued||+10 612||%102||
+||11||Heidi @ 1:3:13:2||IUC funnynovato||+10 550||%100||
+||12||Omerta 3 @ 1:3:14:2||glued||+10 540||%90||
+||13||OMERTA 1 @ 1:3:13:1||glued||+10 480||%80||
+||14||Black Ice III @ 1:13:20:2||Ultra Ice||+10 361||%103||
+||15||Bobadela @ 1:9:10:2||wolfie||+10 000||%51||
+||16||Mickey @ 1:4:3:3||IUC funnynovato||+9 958||%102||
+||17||Marte @ 1:2:7:2||CUS Solrac||+9 832||%96||
+||18||Lisboa @ 1:13:11:2||CUS Mimoso||+9 779||%84||
+||19||Nowhere Colony 15 @ 1:8:8:2||juanitoraton||+9 491||%91||
+||20||Camagüey @ 1:7:16:2||Giorkas||+9 426||%99||
+||21||Toy Story @ 1:3:12:2||IUC funnynovato||+9 393||%78||
+||22||Mercurio @ 1:2:10:3||CUS Solrac||+9 370||%86||
+||23||Ciego de Ávila @ 1:7:17:2||Giorkas||+9 273||%109||
+||24||Black Ice V @ 1:13:5:2||Ultra Ice||+9 265||%106||
+||25||Espargus @ 2:2:17:2||gandalf||+9 196||%86||
+!!!Top by MP
+||{!^}*#*||{!^}*Planet*||{!^}*Ruler*||{!^}*Per turn*||{!^}*Ratio*||
+||1||OMERTA 13 @ 3:20:15:2||glued||+16 250||%108||
+||2||Gaia XI @ 1:15:12:2||ACSK Anfernius||+14 040||%117||
+||3||Gaia XV @ 1:19:8:3||ACSK Anfernius||+13 290||%116||
+||4||Panda @ 1:2:5:2||IUC funnynovato||+12 902||%111||
+||5||OMERTA 7 @ 3:3:12:3||glued||+12 650||%107||
+||6||Anubis @ 1:6:10:2||ACSK Pyro||+12 450||%121||
+||7||Black Ice II @ 1:13:15:3||Ultra Ice||+12 380||%99||
+||8||Gaia XVII @ 1:20:4:3||ACSK Anfernius||+12 350||%101||
+||9||Gaia VIII @ 1:10:11:3||ACSK Anfernius||+12 060||%114||
+||10||Gaia XII @ 1:15:16:3||ACSK Anfernius||+12 030||%111||
+||11||Joana @ 1:5:10:2||CUS Shadow Knight||+11 706||%103||
+||12||Gaia IX @ 1:14:11:2||ACSK Anfernius||+11 700||%100||
+||13||OMERTA  17 @ 3:5:16:2||glued||+11 642||%121||
+||14||Gaia XIV @ 1:18:18:2||ACSK Anfernius||+11 430||%102||
+||15||Gaia XVI @ 1:20:3:3||ACSK Anfernius||+11 340||%101||
+||16||Minnie @ 1:2:1:3||IUC funnynovato||+10 840||%107||
+||17||R2 @ 1:2:19:2||rhas||+10 770||%108||
+||18||kremlin @ 1:7:10:2||IUC ''SkyKing'' ||+10 700||%107||
+||19||rhas @ 1:2:19:1||rhas||+10 650||%80||
+||20||TERRA @ 1:6:7:1||CUS MASTER||+10 510||%80||
+||21||OMERTA 18 @ 3:3:20:3||glued||+10 474||%112||
+||22||Helio @ 1:2:1:2||CUS Solrac||+10 432||%76||
+||23||Miltral 4 @ 1:2:13:3||ACSK Anfernius||+10 420||%98||
+||24||Venus @ 1:2:6:2||CUS Solrac||+10 380||%79||
+||25||OMERTA 1 @ 1:3:13:1||glued||+10 000||%80||
+!!!Top by Energia
+||{!^}*#*||{!^}*Planet*||{!^}*Ruler*||{!^}*Per turn*||{!^}*Ratio*||
+||1||Alverca @ 1:13:7:2||CUS Mimoso||+12 438||%68||
+||2||mimosalândia @ 1:6:15:1||a Ovelha Negra dos CUS||+12 228||%50||
+||3||Terra @ 1:1:12:1||ACSK Pyro||+11 920||%50||
+||4||Merceana @ 1:12:3:2||CUS Mimoso||+11 719||%66||
+||5||o mástére é amigo @ 1:5:20:3||a Ovelha Negra dos CUS||+10 340||%29||
+||6||Beja @ 1:12:11:3||CUS Mimoso||+10 302||%70||
+||7||Rabble trey @ 2:4:11:3||Papamurph||+10 295||%47||
+||8||Gaia IV @ 1:1:3:3||ACSK Anfernius||+10 009||%57||
+||9||Anubis @ 1:6:10:2||ACSK Pyro||+9 212||%69||
+||10||Gaia XI @ 1:15:12:2||ACSK Anfernius||+9 052||%80||
+||11||1_3_18_3 @ 1:3:18:3||IUC Pescador||+8 942||%76||
+||12||OMERTA 14 @ 3:20:13:2||glued||+8 454||%68||
+||13||The Nest II @ 1:16:1:2||ACSK Anfernius||+8 259||%60||
+||14||pinguim cinco @ 1:8:4:2||a Ovelha Negra dos CUS||+8 250||%51||
+||15||1_12_10_2 @ 1:12:10:2||IUC Pescador||+7 733||%66||
+||16||muuuuuuuuuuuuu @ 1:6:14:3||a Ovelha Negra dos CUS||+7 549||%56||
+||17||1_5_17_2 @ 1:5:17:2||IUC Pescador||+7 450||%49||
+||18||Light house @ 1:4:4:3||CUS MASTER||+7 392||%59||
+||19||Marte @ 1:2:7:2||CUS Solrac||+7 345||%54||
+||20||TERRA @ 1:6:7:1||CUS MASTER||+7 297||%50||
+||21||conquista 1 @ 1:6:10:3||CUS MASTER||+7 235||%73||
+||22||Mercurio - Ice @ 1:4:9:2||Frutooso||+7 225||%62||
+||23||Almeirin @ 1:12:10:3||CUS Mimoso||+7 169||%51||
+||24||Carina @ 1:5:15:3||CUS Shadow Knight||+7 120||%79||
+||25||Planet_13_2 @ 1:2:13:2||Fuzo||+6 786||%60||
+!!!Top by Comida
+||{!^}*#*||{!^}*Planet*||{!^}*Ruler*||{!^}*Per turn*||{!^}*Ratio*||
+||1||Bad Sector @ 1:1:13:2||falkirk||+203 570||%95||
+||2||Led @ 1:10:15:2||CUS Solrac||+194 959||%95||
+||3||flyer @ 1:10:2:2||CUS Solrac||+164 292||%80||
+||4||Tom Tom @ 1:1:17:2||falkirk||+145 890||%84||
+||5||Rock @ 1:10:17:2||ACSK Pyro||+130 297||%59||
+||6||1_5_16_3 @ 1:5:16:3||IUC Pescador||+120 228||%91||
+||7||Number 2 @ 2:4:11:2||Papamurph||+109 646||%85||
+||8||''JBang'' @ 1:11:5:3||ACSK Pyro||+109 252||%48||
+||9||Mauro @ 1:1:4:2||falkirk||+108 715||%79||
+||10||Jaws @ 1:11:3:3||CUS Goblin||+105 075||%87||
+||11||MSI @ 1:1:18:2||falkirk||+101 217||%57||
+||12||Joker @ 1:1:8:2||falkirk||+96 121||%94||
+||13||''KonGs'' @ 1:1:17:1||''KaLoNg''||+82 067||%50||
+||14||bla @ 1:1:10:2||falkirk||+80 371||%79||
+||15||Descobridor @ 1:7:19:2||falkirk||+69 428||%92||
+||16||Rabble Quinque @ 2:4:12:3||Papamurph||+68 977||%71||
+||17||''BigBoy'' @ 1:1:11:2||falkirk||+68 613||%91||
+||18||Ghost @ 1:3:14:1||Anti Shadow Knight||+67 852||%50||
+||19||tmp3 @ 1:11:20:2||ACSK Shikamaru||+61 974||%88||
+||20||Miltral 3 @ 1:1:13:3||ACSK Anfernius||+58 149||%58||
+||21||HP @ 1:1:17:3||falkirk||+56 467||%29||
+||22||1_6_20_2 @ 1:6:20:2||IUC Pescador||+55 507||%58||
+||23||Chipnew @ 1:2:8:2||CUS Solrac||+50 134||%29||
+||24||Pyro1 @ 1:1:18:3||ACSK Pyro||+49 678||%76||
+||25||Bowler @ 1:1:7:3||falkirk||+48 549||%88||
+!!!Top by Size
+||{!^}*#*||{!^}*Planet*||{!^}*Ruler*||{!^}*Ground*||{!^}*Water*||{!^}*Orbit*||
+||1||Cogumelus @ 2:1:15:3||gandalf||70||60||30||
+||2||Gaia Nova 2 @ 1:5:2:3||ACSK Anfernius||70||60||30||
+||3||Flinstones @ 1:3:6:3||IUC funnynovato||70||60||30||
+||4||Gaia XVI @ 1:20:3:3||ACSK Anfernius||70||60||30||
+||5||SLB @ 3:1:19:2||CUS MASTER||70||60||30||
+||6||Murconis @ 1:16:2:3||ACSK Anfernius||70||60||30||
+||7||Miltral 3 @ 1:1:13:3||ACSK Anfernius||70||60||30||
+||8||Big Conquer @ 3:6:14:3||super_dragao||70||60||30||
+||9||Miltral @ 1:1:9:3||ACSK Anfernius||70||60||30||
+||10||King @ 2:8:7:3||super_dragao||70||60||30||
+||11||Gaia XVII @ 1:20:4:3||ACSK Anfernius||70||60||30||
+||12||Gaia XI @ 1:15:12:2||ACSK Anfernius||70||60||30||
+||13||Rafaelo @ 1:2:14:3||IUC funnynovato||70||60||30||
+||14||Gaia IX @ 1:14:11:2||ACSK Anfernius||70||60||30||
+||15||Gaia XV @ 1:19:8:3||ACSK Anfernius||70||60||30||
+||16||Espargus @ 2:2:17:2||gandalf||70||60||30||
+||17||New Land @ 3:4:6:3||super_dragao||70||60||30||
+||18||Denovo @ 1:6:17:2||IUC ''SkyKing'' ||70||60||30||
+||19||Porrus @ 2:6:19:2||gandalf||70||60||30||
+||20||Gaia XII @ 1:15:16:3||ACSK Anfernius||70||60||30||
+||21||Master @ 2:9:10:3||super_dragao||70||60||30||
+||22||Gaia VIII @ 1:10:11:3||ACSK Anfernius||70||60||30||
+||23||Campeão @ 2:20:4:3||CUS MASTER||70||60||30||
+||24||champanhe @ 2:20:8:3||CUS MASTER||70||60||30||
+||25||Gaia Reconquered @ 2:1:1:2||ACSK Anfernius||70||60||30||

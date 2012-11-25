@@ -1,0 +1,4 @@
+:Summary: Ataque Catapulta
+:Parent: Orionsbelt.MotorDeCombate
+
+As Unit.[Unit] com ataque catapulta, são capazes de disparar por cima de outras Unit.[Unit], tendo sempre como limitação a sua DistanciaDeAtaque.

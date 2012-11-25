@@ -1,0 +1,20 @@
+:Display: Regicídio
+:Summary: Overview dos Torneios de Regicídio
+
+Esta página contém o histórico de todos os torneios de Regicídio realizados!
+
+!!!Top Geral
+
+||{!}#||{!}Ruler||{!}Vencedor||{!}Finais||{!}Meias||{!}Quartos||
+||1º||*Pyro*||1||1||1||1||
+||2º||*Gangster*||0||1||1||1||
+||3º||*Anfernius*||0||0||1||1||
+||4º||*Shikamaru*||0||0||0||1||
+||5º||*Shadow Knight*||0||0||0||1||
+||6º||*Axandy*||0||0||0||1||
+
+
+!!!Historial
+	* [regicide001]
+		1.º *Pyro*
+		1.º *Gangster*

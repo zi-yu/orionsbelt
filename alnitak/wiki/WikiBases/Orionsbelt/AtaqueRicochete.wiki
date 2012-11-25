@@ -1,0 +1,4 @@
+:Summary: Contra Ataque
+:Parent: Orionsbelt.MotorDeCombate
+
+Quando Unit.[Unit] com ataque ricochete, atacam um alvo, caso este seja totalmente destruído, o dano restante é passado à unidade que estaria atrás do alvo.

@@ -1,0 +1,7 @@
+!!!Top de Jogadores
+
+A secção top mostra os 30 jogadores com mais pontuação do jogo. O Top é ilustrado com várias informações sobre cada jogador, como a quantidade de planetas sobre a alçada do jogador, o número de batalhas ganhas e perdidas, a sua classificação a nível de batalhas e a sua pontuação.
+
+Este top é actualizado com a passagem de cada turno. Pode haver em certas situações jogadores com mais pontos numa posição inferior, mas esta será rectificada na passagem do turno.
+
+:Summary: Descrição da Secção de Top de Jogadores

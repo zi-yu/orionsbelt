@@ -1,0 +1,3 @@
+Esta secção permite realizar [Teletransporte].
+
+:Summary: Descrição da Secção de Teletransporte

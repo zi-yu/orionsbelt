@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTerrain>
+	
+	<!-- WATER -->
+	<Terrain id="0">
+		<description>water</description>
+		<mineralRicheness>2</mineralRicheness>
+		<food>6</food>
+		<gold>3</gold>
+		<energy>6</energy>
+		<groundSpace>1</groundSpace>
+		<waterSpace>6</waterSpace>
+		<orbitSpace>6</orbitSpace>
+	</Terrain>
+	
+	<!-- DESERT -->
+	<Terrain id="1">
+		<description>desert</description>
+		<mineralRicheness>5</mineralRicheness>
+		<food>1</food>
+		<gold>5</gold>
+		<energy>6</energy>
+		<groundSpace>6</groundSpace>
+		<waterSpace>1</waterSpace>
+		<orbitSpace>6</orbitSpace>
+	</Terrain>
+  
+	<!-- ROCK -->
+	<Terrain id="2">
+		<description>rock</description>
+		<mineralRicheness>6</mineralRicheness>
+		<food>2</food>
+		<gold>6</gold>
+		<energy>3</energy>
+		<groundSpace>5</groundSpace>
+		<waterSpace>2</waterSpace>
+		<orbitSpace>6</orbitSpace>
+	</Terrain>
+  
+	<!-- TERREST -->
+	<Terrain id="3">
+		<description>terrest</description>
+		<mineralRicheness>4</mineralRicheness>
+		<food>5</food>
+		<gold>3</gold>
+		<energy>3</energy>
+		<groundSpace>4</groundSpace>
+		<waterSpace>5</waterSpace>
+		<orbitSpace>6</orbitSpace>
+	</Terrain>
+
+	<!-- FLOREST -->
+	<Terrain id="4">
+		<description>forest</description>
+		<mineralRicheness>6</mineralRicheness>
+		<food>5</food>
+		<gold>3</gold>
+		<energy>3</energy>
+		<groundSpace>3</groundSpace>
+		<waterSpace>4</waterSpace>
+		<orbitSpace>6</orbitSpace>
+	</Terrain>
+
+	<!-- ICE -->
+	<Terrain id="5">
+		<description>ice</description>
+		<mineralRicheness>3</mineralRicheness>
+		<food>1</food>
+		<gold>3</gold>
+		<energy>5</energy>
+		<groundSpace>6</groundSpace>
+		<waterSpace>6</waterSpace>
+		<orbitSpace>6</orbitSpace>
+	</Terrain>
+
+</ArrayOfTerrain>

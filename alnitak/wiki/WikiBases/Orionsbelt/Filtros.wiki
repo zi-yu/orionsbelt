@@ -1,0 +1,7 @@
+Os [Filtros] permitem filtrar a listagem de alguns recursos como Building.[Building], Research.[Research] ou Unit.[Unit]. Existe uma lupa no canto superior direito dos menus que permitem construir/desenvolver recursos. Ao passar o rato por essa lupa aparece um conjunto de palavras chave que. Ao seleccionar um filtro, só os recursos que pertencem a esse filtro serão mostrados.
+
+!!!Exemplo
+
+O menu de construção de Building.[Building] na SecçãoEdifícios pode-se tornar muito grande, com muitos Building.[Building] listados. Com os [Filtros] podemos ver só Building.[Building] militares, que geram recursos, que só se constroem em água, etc.
+
+:Summary: Informação sobre os Filtros

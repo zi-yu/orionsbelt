@@ -1,0 +1,3 @@
+Esta é a primeira página que um jogador vê. Tem algunas informações sobre o jogador e diversas mensagens do que se passa no seu império para que o jogador possa estar sempre em cima de todos os acontecimentos.
+
+:Summary: Descrição da Secção do Jogador

@@ -1,0 +1,11 @@
+O [Comercio] consiste na troca de recursos Intrinsic.[Intrinsic] entre planetas distintos através de rotas comerciais entre estes.
+
+Ainda não está implementado, estava a pensar no seguinte:
+	* Requesitos: porto espacial nos planetas
+	* Pesquisa que dá acesso ao [Comercio]
+	* Haveria disponíveis vários tipos de naves de mercadorias (diferentes das [Unit].Unit de batalha), cada uma com as suas características que seriam algo como: espaço e recurso que transporta.
+	* Estabelecia-se uma rota comercial entre dois planetas, e quais as naves que a frequentariam. 
+	* As naves comerciais ficariam no planeta a tiar X por turno do seu recurso, quanto estivessem cheias, iam para o planeta de destino, descarregavam, e voltavam atrás.
+
+:Summary: Comércio entre Planetas
+:Display: Comércio

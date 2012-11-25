@@ -1,0 +1,3 @@
+Esta página permite a construcção de novos [Edifícios] e a gestão dos [Edifícios] existentes.
+
+:Summary: Descrição da Secção de Edifícios

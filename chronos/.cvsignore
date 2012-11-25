@@ -1,0 +1,11 @@
+*.pidb
+*.mdp
+*.csproj
+*.mds
+*.user
+*.sln
+*.suo
+obj
+.cvsignore
+_ReSharper.chronos
+chronos.resharperoptions

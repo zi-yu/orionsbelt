@@ -1,0 +1,82 @@
+Informação do Torneio
+Inscritos: 45
+Grupos: 5
+
+Playoffs
+Jogos 	Ruler 	Pontuação 	Pontuação 	Ruler
+- 	ZorbiX 	58500 	2078 	dongalo
+- 	ACSK Pyro 	56170 	2776 	marlene
+- 	IUC funnynovato 	7329 	58317 	CUS Solrac
+- 	ACSK Anfernius 	58062 	2124 	CUS rumbafum
+- 	CUS Shadow Knight 	56445 	2016 	CUSMimoso
+- 	Gangster 	58500 	4449 	lrz
+- 	CUS Goblin 	186 	50385 	ACSK Shikamaru
+- 	MaisUm 	735 	52706 	glued
+
+Fase: Grupos
+Grupos
+Group 1
+# 	Ruler 	Batalhas 	Resultados 	Pontuação
+1 º 	CUS Shadow Knight 	8 	8/0/0 	411042
+2 º 	CUS Goblin 	8 	7/0/1 	367809
+3 º 	CUSMimoso 	8 	6/0/2 	308099
+4 º 	Fuzo 	8 	5/0/3 	266366
+5 º 	masterui 	8 	4/0/4 	234610
+6 º 	Ridge 	8 	3/0/5 	176030
+7 º 	Rachel 	8 	2/0/6 	117000
+8 º 	red_xone 	8 	1/0/7 	58500
+9 º 	SCORPION 	8 	0/0/8 	0
+Group 2
+# 	Ruler 	Batalhas 	Resultados 	Pontuação
+1 º 	ACSK Anfernius 	8 	8/0/0 	416425
+2 º 	glued 	8 	6/0/2 	327666
+3 º 	marlene 	8 	5/0/3 	265664
+4 º 	IUC Pescador 	8 	6/0/2 	261571
+5 º 	Giorkas 	8 	4/0/4 	216948
+6 º 	Dj_South_Park 	8 	4/0/4 	210624
+7 º 	ViKiNg 	8 	2/0/6 	109371
+8 º 	Filipe 	8 	1/0/7 	59355
+9 º 	Ghede 	8 	0/0/8 	0
+Group 3
+# 	Ruler 	Batalhas 	Resultados 	Pontuação
+1 º 	ZorbiX 	8 	8/0/0 	444514
+2 º 	Gangster 	8 	7/0/1 	375539
+3 º 	lrz 	8 	6/0/2 	334768
+4 º 	dongalo 	8 	5/0/3 	288476
+5 º 	a Ovelha Negra dos CUS 	8 	4/0/4 	223223
+6 º 	wolfie 	8 	2/0/6 	129953
+7 º 	ACSK SF N fipas 	8 	2/0/6 	117021
+8 º 	mig2005 	8 	1/0/7 	70084
+9 º 	ships killer 	8 	1/0/7 	61204
+Group 4
+# 	Ruler 	Batalhas 	Resultados 	Pontuação
+1 º 	IUC funnynovato 	8 	8/0/0 	429958
+2 º 	ACSK Shikamaru 	8 	7/0/1 	326919
+3 º 	CUS Solrac 	8 	5/0/3 	273143
+4 º 	gandalf 	8 	4/0/4 	235917
+5 º 	Spirdiamantino 	8 	4/0/4 	222695
+6 º 	CUS MASTER 	8 	3/0/5 	185920
+7 º 	super_dragao 	8 	3/0/5 	176077
+8 º 	Basaf 	8 	2/0/6 	117607
+9 º 	doba 	8 	0/0/8 	3462
+Group 5
+# 	Ruler 	Batalhas 	Resultados 	Pontuação
+1 º 	ACSK Pyro 	8 	8/0/0 	431260
+2 º 	MaisUm 	8 	7/0/1 	353437
+3 º 	rumbafum 	8 	6/0/2 	305966
+4 º 	zeonite 	8 	5/0/3 	267362
+5 º 	Pr0Ph3T 	8 	4/0/4 	220077
+6 º 	morzan 	8 	3/0/5 	180393
+7 º 	mega_vortex 	8 	2/0/6 	119400
+8 º 	NOX_TOUCH 	8 	1/0/7 	61516
+9 º 	Lord Dark L 	8 	0/0/8 	3520
+Playoffs Preview
+
+    * ZorbiX vs dongalo
+    * ACSK Pyro vs marlene
+    * IUC funnynovato vs CUS Solrac
+    * ACSK Anfernius vs rumbafum
+    * CUS Shadow Knight vs CUSMimoso
+    * Gangster vs lrz
+    * CUS Goblin vs ACSK Shikamaru
+    * MaisUm vs glued

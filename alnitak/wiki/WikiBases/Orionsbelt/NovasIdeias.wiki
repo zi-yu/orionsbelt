@@ -1,0 +1,11 @@
+!!!A tua ideia é importante!
+
+(i) Todas as ideias são bem vindas! A [Equipa] de bom agrado implementará todas as ideias, que poderão tocar os seguintes tópicos:
+
+	* Novos Recursos, Edifícios, etc
+	* Novas tecnologias
+	* Novas regras do MotorDeCombate
+
+Se pretendes ter um papel mais activo na evolução do jogo, basta passares pelo fórum e opinares. Por lá se discutem NovasIdeias e se planea a implementação do jogo.
+
+:Summary: Como registar novas Ideias

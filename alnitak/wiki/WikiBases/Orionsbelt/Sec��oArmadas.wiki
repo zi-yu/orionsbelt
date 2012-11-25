@@ -1,0 +1,3 @@
+Esta página permite construir [Naves] no planeta e gerir as [Naves] que estão na armada do planeta, criar novas armadas, e mover [Naves] entre as armadas que estão no planeta.
+
+:Summary: Descrição da Secção de Armadas

@@ -1,0 +1,10 @@
+É possível o [TeleTransporte] de recursos Intrinsic.[Intrinsic] e de Unit.[Unit] entre planetas distintos do jogador, que tenham Building.[Building] para esse efeito. O [TeleTransporte] é instantâneo e tem o seu custo em Intrinsic.[energy]. Existem três tecnologias relacionadas com o [Teletransporte]:
+
+	* Research.[TeletransportationI] - Pesquisa preliminar sobre teletransporte de recuros. Disponobiliza a pesquisa Teletransporte II.
+	* Research.[TeletransportationII] - Possibilidade de teletransportar recursos Intrinsic.[Intrinsic] entre dois planetas que tenham o edifício Building.[Gate].
+	* Research.[TeletransportationIII] - Possibilidade de teletransportar armadas entre dois planetas que tenham o edifício Building.[StarGate].
+
+Não será possível teletransportar recursos para um destino que esteja em batalha.
+
+:Summary: Informação sobre o Teletransporte
+:Display: Teletransporte

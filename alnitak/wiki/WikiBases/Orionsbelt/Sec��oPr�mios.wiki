@@ -1,0 +1,3 @@
+Esta página mostra todos os [Prémios], os seus vencedores e o turno em que foram adquiridos.
+
+:Summary: Descrição da Secção de Prémios

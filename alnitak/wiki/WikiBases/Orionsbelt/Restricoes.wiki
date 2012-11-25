@@ -1,0 +1,17 @@
+
+As restrições são regras que inibem o jogador de realizar as suas operações rotineiras: construir Building.[Building] ou Unit.[Unit], realizar [Scans] ou até mesmo fazer [TeleTransportes]. O jogador terá obrigatoriamente de resolver as restrições para jogar normalmente.
+
+!!!Porque existem as restrições?
+
+Para impedir anti-jogo por parte dos jogadores. 
+
+!!!Que restrições existem?
+
+Existem as seguintes restrições:
+	* *O jogador tem de fazer a sua jogada em todos os combates* - Para impedir que um jogador atrase ao máximo a sua jogada, penalizando o adversário.
+	* *O jogador não pode ter planetas por conquistar* - Para impedir que um jogador ganhe uma batalha, mas não conquiste ou devolva o planeta.
+
+:Summary: Regras que restringem o jogador a certas operações
+:Display: Restrições
+
+

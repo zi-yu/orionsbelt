@@ -1,0 +1,15 @@
+<language target="index" locale="en">
+
+	<label ref="page-title">
+		This is the english page!
+	</label>
+	
+	<label ref="body">
+		Hi there! Do you speak english?
+	</label>
+	
+	<label ref="locale-info">
+		Your current UI locale is
+	</label>
+	
+</language>

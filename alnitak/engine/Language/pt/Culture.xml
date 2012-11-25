@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<language target="Culture">
+
+	<label ref="pt">
+		Português
+	</label>
+	
+	<label ref="en">
+		Inglês
+	</label>
+	
+</language>

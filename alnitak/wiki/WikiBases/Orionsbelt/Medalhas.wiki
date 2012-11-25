@@ -1,0 +1,11 @@
+Entende-se por medalha, algo que um jogador fez digno de menção. Estas medalhas podem ser consultadas na página de utilizador, e o nome do jogador aparecerá sempre com as medalhas à frente.
+
+!Medalhas de Prémios
+As medalhas são atribuídas através de [Prémios]. Para cada prémio há quatro medalhas possíveis: Ouro, Prata e Bronze.
+
+!Outras Medalhas
+Há medalhas especiais para utilizadores especiais. Há a medalha de administração, que indica que determinado utilizador é um administrador/developer do jogo, e há a medalha de beta tester atribuída aos jogadores que participam activamente no desenvolvimento do jogo sugerindo NovasIdeias e relatando [Bugs].
+
+Há também medalhas para os artistas do jogo. Estas medalhas são atribuídas aos membros que contribuíram com imagens para o jogo, como por exemplo imagens de recursos ou de Unit.[Unit].
+
+:Summary: Critérios das Medalhas

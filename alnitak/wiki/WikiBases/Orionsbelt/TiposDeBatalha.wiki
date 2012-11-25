@@ -1,0 +1,11 @@
+:Summary: Descrição dos Vários Tipos de Batalha
+
+O Orion's Belt suporta vários tipos de batalha. Neste momento quando um planeta é atacado, o tipo de batalha será sempre Destruição Total. Contudo, através de amigáveis ou de [Tournament] é possível jogar os restantos tipos de batalha. Os dois tipos de batalha suportados na versão corrente são *Destruição Total* e *Regicídio*.
+
+!!!Destruição Total
+
+Este é o modo de batalha clássico, em que perde o primeiro jogador que se encontrar sem unidades.
+
+!!!Regicídio
+
+Neste modo de jogo é adicionada à armada uma unidade especial, a Unit.[FlagShip]. O primeiro jogador a destruir a Unit.[FlagShip] ganha.

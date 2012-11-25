@@ -1,0 +1,612 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FlexWikiSecurity</name>
+    </assembly>
+    <members>
+        <member name="T:FlexWikiSecurity.DataProviderFactory">
+            <summary>
+            Data Provider Factory allows a plug in architecture for security data providers
+            </summary>
+        </member>
+        <member name="M:FlexWikiSecurity.DataProviderFactory.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:FlexWikiSecurity.DataProviderFactory.GetRoleProvider">
+            <summary>
+            Get the Role Provider that is currently configured
+            </summary>
+            <returns>Interface Role Data Provider</returns>
+        </member>
+        <member name="M:FlexWikiSecurity.DataProviderFactory.GetRoleProvider(System.String,System.String)">
+            <summary>
+            Get a specific Role Provider
+            </summary>
+            <param name="assyName">The Assembly Name of the Role Provider</param>
+            <param name="className">The Class Name of the Role Provider</param>
+            <returns>Interface Role Data Provider</returns>
+        </member>
+        <member name="M:FlexWikiSecurity.DataProviderFactory.GetUserProvider">
+            <summary>
+            Get the User Provider that is currently configured
+            </summary>
+            <returns>Interface User Data Provider</returns>
+        </member>
+        <member name="M:FlexWikiSecurity.DataProviderFactory.GetUserProvider(System.String,System.String,System.String)">
+            <summary>
+            Get a specific User Provider
+            </summary>
+            <param name="assyName">The Assembly Name of the User Provider</param>
+            <param name="className">The Class Name of the User Provider</param>
+            <param name="connection">The Connection string of the User Provider</param>
+            <returns>Interface User Data Provider</returns>
+        </member>
+        <member name="M:FlexWikiSecurity.DataProviderFactory.GetPermissionsProvider">
+            <summary>
+            Get the Permissions Provider that is currently configured
+            </summary>
+            <returns>Interface Permissions Data Provider</returns>
+        </member>
+        <member name="M:FlexWikiSecurity.DataProviderFactory.GetPermissionsProvider(System.String,System.String,System.String)">
+            <summary>
+            Get a specific Provider that is currently configured
+            </summary>
+            <param name="assyName">Assembly Name of the Permissions Provider</param>
+            <param name="className">Class Name of the Permissions Provider</param>
+            <param name="connection">The connection string for the Permissions Provider</param>
+            <returns>Interface Permissions Data Provider</returns>
+        </member>
+        <member name="T:FlexWikiSecurity.IPermissionsDataProvider">
+            <summary>
+            Interface for Permissions Data Provider.
+            </summary>
+        </member>
+        <member name="M:FlexWikiSecurity.IPermissionsDataProvider.GetPermissions(System.String,System.Int32)">
+            <summary>
+            Returns the permissions for a given nameSpace and UserID combination
+            </summary>
+            <param name="nameSpace">Namespace</param>
+            <param name="userID">ID of User permissions requested</param>
+            <returns>Permissions DataSet</returns>
+        </member>
+        <member name="M:FlexWikiSecurity.IPermissionsDataProvider.GetPermissions(System.Int32)">
+            <summary>
+            Gets the permissions for the given User 
+            </summary>
+            <param name="userID">ID of User</param>
+            <returns>Permissions DataSet</returns>
+        </member>
+        <member name="M:FlexWikiSecurity.IPermissionsDataProvider.AddPermission(System.String,System.Int32,System.Int32)">
+            <summary>
+            Adds a permission to a specified user
+            </summary>
+            <param name="nameSpace">Namespace of the permission</param>
+            <param name="roleID">ID of the Role</param>
+            <param name="userID">ID of the User</param>
+            <returns>Number of rows affected, 0=no rows, 1=a single row</returns>
+        </member>
+        <member name="M:FlexWikiSecurity.IPermissionsDataProvider.DeletePermission(System.String,System.Int32,System.Int32)">
+            <summary>
+            Deletes a permission assigned to aspecified user
+            </summary>
+            <param name="nameSpace">Namespace of the permission</param>
+            <param name="roleID">ID of the Role</param>
+            <param name="userID">ID of the User</param>
+            <returns>Number of rows affected, 0=no rows affected, 1=a single row affected</returns>
+        </member>
+        <member name="M:FlexWikiSecurity.IPermissionsDataProvider.SetConnection(System.String)">
+            <summary>
+            Sets the connection string for the DataProvider
+            </summary>
+            <param name="connection">connection string</param>
+        </member>
+        <member name="T:FlexWikiSecurity.IRoleDataProvider">
+            <summary>
+            Interface to the Role Data Provider
+            </summary>
+        </member>
+        <member name="M:FlexWikiSecurity.IRoleDataProvider.GetRoles">
+            <summary>
+            Returns all Roles available for the DataProvider
+            </summary>
+            <returns>Role DataSet</returns>
+        </member>
+        <member name="M:FlexWikiSecurity.IRoleDataProvider.GetRole(System.Int32)">
+            <summary>
+            Gets a specific role
+            </summary>
+            <param name="roleID">ID of the Role</param>
+            <returns>Role DataSet, if the Role is not found the DataSet is stillreturned but the number of rows is 0</returns>
+        </member>
+        <member name="M:FlexWikiSecurity.IRoleDataProvider.AddRole(System.Int32,System.String)">
+            <summary>
+            Add a new Role
+            </summary>
+            <param name="roleID">ID of the Role</param>
+            <param name="roleName">Name of the Role</param>
+            <returns>Number of Roles added, 0=no roles added, 1=a single role was added</returns>
+        </member>
+        <member name="M:FlexWikiSecurity.IRoleDataProvider.DeleteRole(System.Int32)">
+            <summary>
+            Deletes a specific Role
+            </summary>
+            <param name="roleID">ID of the Role</param>
+            <returns>The number of Roles deleted</returns>
+        </member>
+        <member name="T:FlexWikiSecurity.IUserDataProvider">
+            <summary>
+            Interface to the User Data Provider.
+            </summary>
+        </member>
+        <member name="M:FlexWikiSecurity.IUserDataProvider.GetUsers">
+            <summary>
+            Get all Users stored in the Data Provider
+            </summary>
+            <returns>User Dataset</returns>
+        </member>
+        <member name="M:FlexWikiSecurity.IUserDataProvider.GetUser(System.Int64)">
+            <summary>
+            Get a specific user by User ID.  If the user is not found the data set is still 
+            returned but there will be no rows returned
+            </summary>
+            <param name="userID">ID of Specific User to load</param>
+            <returns>User Dataset</returns>
+        </member>
+        <member name="M:FlexWikiSecurity.IUserDataProvider.GetUser(System.String)">
+            <summary>
+            Get a specific user by email.  If the user is not found the data set is still 
+            returned but there will be no rows returned
+            </summary>
+            <param name="email">Email of Specific User to load</param>
+            <returns>User DataSet</returns>
+        </member>
+        <member name="M:FlexWikiSecurity.IUserDataProvider.AddUser(System.String,System.String,System.String)">
+            <summary>
+            Adds a user to the DataProvider repository
+            </summary>
+            <param name="name">Full Name of the user</param>
+            <param name="email">Email address of the user</param>
+            <param name="password">Password for the user</param>
+            <returns>Number of users addedd. 0=no users added, 1=a single user added</returns>
+        </member>
+        <member name="M:FlexWikiSecurity.IUserDataProvider.UpdateUser(System.Int64,System.String,System.String,System.String)">
+            <summary>
+            Update the user to the DataProvider repository
+            </summary>
+            <param name="userID">User to update</param>
+            <param name="name">Fule Name</param>
+            <param name="email">Email address</param>
+            <param name="password">Password</param>
+            <returns>The unique ID of the new user. 0=if no user was added</returns>
+        </member>
+        <member name="M:FlexWikiSecurity.IUserDataProvider.DeleteUser(System.Int64)">
+            <summary>
+            Deletes a specific user from the DataProvider repository
+            </summary>
+            <param name="userID">ID of user to delete</param>
+            <returns>Number of users deleted. 0=no users deleted, 1=a single user was deleted</returns>
+        </member>
+        <member name="M:FlexWikiSecurity.IUserDataProvider.SetConnection(System.String)">
+            <summary>
+            Sets the connection string for the DataProvider
+            </summary>
+            <param name="connection">connection string to set</param>
+        </member>
+        <member name="T:FlexWikiSecurity.Role">
+            <summary>
+            Summary description for Role.
+            </summary>
+        </member>
+        <member name="M:FlexWikiSecurity.Role.#ctor">
+            <summary>
+            Default Constructor
+            </summary>
+        </member>
+        <member name="M:FlexWikiSecurity.Role.#ctor(System.Int32)">
+            <summary>
+            Constructor based on Role ID
+            </summary>
+            <param name="roleID"></param>
+        </member>
+        <member name="M:FlexWikiSecurity.Role.GetRoles">
+            <summary>
+            Get all roles
+            </summary>
+            <returns>DataSet of roles</returns>
+        </member>
+        <member name="P:FlexWikiSecurity.Role.RoleID">
+            <summary>
+            Property Role ID
+            </summary>
+        </member>
+        <member name="P:FlexWikiSecurity.Role.RoleName">
+            <summary>
+            Property Role Name
+            </summary>
+        </member>
+        <member name="T:FlexWikiSecurity.SimplePermissionsDataProvider">
+            <summary>
+            Summary description for SimplePermissionsDataProvider.
+            </summary>
+        </member>
+        <member name="M:FlexWikiSecurity.SimplePermissionsDataProvider.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:FlexWikiSecurity.SimplePermissionsDataProvider.SetConnection(System.String)">
+            <summary>
+            Set the Connection String which ends up being the path including the file of the Permissions DataSet
+            </summary>
+            <param name="connection"></param>
+        </member>
+        <member name="M:FlexWikiSecurity.SimplePermissionsDataProvider.GetPermissions(System.String,System.Int32)">
+            <summary>
+            Get the permissions for a given NameSpace and User ID combination
+            </summary>
+            <param name="nameSpace">NameSpace</param>
+            <param name="userID">ID of the User</param>
+            <returns>Permissions DataSet</returns>
+        </member>
+        <member name="M:FlexWikiSecurity.SimplePermissionsDataProvider.GetPermissions(System.Int32)">
+            <summary>
+            Get all permissions for a given user
+            </summary>
+            <param name="userID">ID of User</param>
+            <returns>Permissions DataSet</returns>
+        </member>
+        <member name="M:FlexWikiSecurity.SimplePermissionsDataProvider.AddPermission(System.String,System.Int32,System.Int32)">
+            <summary>
+            Add a specific Permission to a given User
+            </summary>
+            <param name="nameSpace">NameSpace</param>
+            <param name="roleID">ID of Role</param>
+            <param name="userID">ID of User</param>
+            <returns>The number of rows affected</returns>
+        </member>
+        <member name="M:FlexWikiSecurity.SimplePermissionsDataProvider.DeletePermission(System.String,System.Int32,System.Int32)">
+            <summary>
+            Delete a specifc Permission for a given user
+            </summary>
+            <param name="nameSpace">NameSpace</param>
+            <param name="roleID">ID of Role</param>
+            <param name="userID">ID of User</param>
+            <returns>Permissions DataSet</returns>
+        </member>
+        <member name="T:FlexWikiSecurity.SimpleRoleDataProvider">
+            <summary>
+            This Role Provider has a fixed list of roles and does not persist the roles anywhere.
+            Therefore the Add and Delete method does nothing to the list of available roles.
+            </summary>
+        </member>
+        <member name="M:FlexWikiSecurity.SimpleRoleDataProvider.#ctor">
+            <summary>
+            Default Constructor
+            </summary>
+        </member>
+        <member name="M:FlexWikiSecurity.SimpleRoleDataProvider.GetRoles">
+            <summary>
+            Returns the fixed set of available roles
+            </summary>
+            <returns>DataSet of available roles in the Roles table</returns>
+        </member>
+        <member name="M:FlexWikiSecurity.SimpleRoleDataProvider.GetRole(System.Int32)">
+            <summary>
+            Get a specific Role
+            </summary>
+            <param name="roleID">ID of Role</param>
+            <returns>Role DataSet</returns>
+        </member>
+        <member name="M:FlexWikiSecurity.SimpleRoleDataProvider.AddRole(System.Int32,System.String)">
+            <summary>
+            Is not implimented and will always return -1
+            </summary>
+            <param name="id"></param>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FlexWikiSecurity.SimpleRoleDataProvider.DeleteRole(System.Int32)">
+            <summary>
+            Is not implimented and will always return -1
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FlexWikiSecurity.SimpleUserDataProvider">
+            <summary>
+            This provider persists the user information in an XML file.
+            </summary>
+        </member>
+        <member name="M:FlexWikiSecurity.SimpleUserDataProvider.#ctor">
+            <summary>
+            Default Constructor
+            </summary>
+        </member>
+        <member name="M:FlexWikiSecurity.SimpleUserDataProvider.SetConnection(System.String)">
+            <summary>
+            File Name location of the users data
+            </summary>
+            <param name="connection"></param>
+        </member>
+        <member name="M:FlexWikiSecurity.SimpleUserDataProvider.GetUsers">
+            <summary>
+            Get All users for this DataProvider
+            </summary>
+            <returns>User DataSet</returns>
+        </member>
+        <member name="M:FlexWikiSecurity.SimpleUserDataProvider.GetUser(System.Int64)">
+            <summary>
+            Get a Specific User by ID
+            </summary>
+            <param name="userID">ID of User</param>
+            <returns>User DataSet</returns>
+        </member>
+        <member name="M:FlexWikiSecurity.SimpleUserDataProvider.GetUser(System.String)">
+            <summary>
+            Get a specific User by Email
+            </summary>
+            <param name="email">Email</param>
+            <returns>User DataSet</returns>
+        </member>
+        <member name="M:FlexWikiSecurity.SimpleUserDataProvider.AddUser(System.String,System.String,System.String)">
+            <summary>
+            Add a User 
+            </summary>
+            <param name="name">Full Name</param>
+            <param name="email">Email</param>
+            <param name="password">Password</param>
+            <returns>The unique ID of the user added</returns>
+        </member>
+        <member name="M:FlexWikiSecurity.SimpleUserDataProvider.UpdateUser(System.Int64,System.String,System.String,System.String)">
+            <summary>
+            Persist the User 
+            </summary>
+            <param name="userID">ID of User to persist</param>
+            <param name="name">Full Name</param>
+            <param name="email">Email</param>
+            <param name="password">Password</param>
+            <returns>The number of rows affected</returns>
+        </member>
+        <member name="M:FlexWikiSecurity.SimpleUserDataProvider.DeleteUser(System.Int64)">
+            <summary>
+            Deletes a specific user
+            </summary>
+            <param name="userID">ID of User</param>
+            <returns>The number of rows affected</returns>
+        </member>
+        <member name="T:FlexWikiSecurity.SiteIdentity">
+            <summary>
+            Summary description for SiteIdentity.
+            </summary>
+        </member>
+        <member name="M:FlexWikiSecurity.SiteIdentity.#ctor(System.String)">
+            <summary>
+            Constructor based on email
+            </summary>
+            <param name="email">Email</param>
+        </member>
+        <member name="M:FlexWikiSecurity.SiteIdentity.#ctor(System.Int32)">
+            <summary>
+            Constructor based on User ID
+            </summary>
+            <param name="userID">User ID</param>
+        </member>
+        <member name="P:FlexWikiSecurity.SiteIdentity.AuthenticationType">
+            <summary>
+            Read only Property Authentication Type
+            </summary>
+        </member>
+        <member name="P:FlexWikiSecurity.SiteIdentity.IsAuthenticated">
+            <summary>
+            Read Only Property
+            </summary>
+        </member>
+        <member name="P:FlexWikiSecurity.SiteIdentity.UserID">
+            <summary>
+            Read Only Property User ID
+            </summary>
+        </member>
+        <member name="P:FlexWikiSecurity.SiteIdentity.Name">
+            <summary>
+            Read Only Property Name
+            </summary>
+        </member>
+        <member name="P:FlexWikiSecurity.SiteIdentity.Email">
+            <summary>
+            Read Only Property Email
+            </summary>
+        </member>
+        <member name="P:FlexWikiSecurity.SiteIdentity.Password">
+            <summary>
+            Read Only Property Password
+            </summary>
+        </member>
+        <member name="T:FlexWikiSecurity.SitePrincipal">
+            <summary>
+            Flexwiki SitePrincipal.
+            </summary>
+        </member>
+        <member name="F:FlexWikiSecurity.SitePrincipal.identity">
+            <summary>
+            Protected identity
+            </summary>
+        </member>
+        <member name="F:FlexWikiSecurity.SitePrincipal.roleList">
+            <summary>
+            Protected collection of available roles. A List of RoleIDs.
+            </summary>
+        </member>
+        <member name="F:FlexWikiSecurity.SitePrincipal.nameSpace">
+            <summary>
+            Protected namespace used to filter the roles
+            </summary>
+        </member>
+        <member name="M:FlexWikiSecurity.SitePrincipal.#ctor(System.String)">
+            <summary>
+            Constructor based on email
+            </summary>
+            <param name="email">Email</param>
+        </member>
+        <member name="M:FlexWikiSecurity.SitePrincipal.#ctor(System.Int32)">
+            <summary>
+            Constructor based on User ID
+            </summary>
+            <param name="userID">User ID</param>
+        </member>
+        <member name="M:FlexWikiSecurity.SitePrincipal.#ctor(System.String,System.String)">
+            <summary>
+            Constructor based on Namespace and Email
+            </summary>
+            <param name="nameSpace">NameSpace</param>
+            <param name="email">Email</param>
+        </member>
+        <member name="M:FlexWikiSecurity.SitePrincipal.#ctor(System.String,System.Int32)">
+            <summary>
+            Constructor based on NameSpace User ID
+            </summary>
+            <param name="nameSpace">NameSpace</param>
+            <param name="userID">ID of User</param>
+        </member>
+        <member name="M:FlexWikiSecurity.SitePrincipal.ValidateLogin(System.String,System.String,System.String)">
+            <summary>
+            Validates the passed in email and password combination exists in the repository
+            </summary>
+            <param name="email">email address</param>
+            <param name="password">password</param>
+            <param name="nameSpace">Valid FlexWiki NameSpace</param>
+            <returns>SitePrincipal object or null if the user does not validate</returns>
+        </member>
+        <member name="M:FlexWikiSecurity.SitePrincipal.IsInRole(System.String)">
+            <summary>
+            Determines if the user is in a given role
+            </summary>
+            <param name="role">Valid role</param>
+            <returns>True if role is found</returns>
+        </member>
+        <member name="P:FlexWikiSecurity.SitePrincipal.Identity">
+            <summary>
+            Property access to User Identity
+            </summary>
+        </member>
+        <member name="P:FlexWikiSecurity.SitePrincipal.NameSpace">
+            <summary>
+            Property access to the Namespace to filter the roles by
+            </summary>
+        </member>
+        <member name="P:FlexWikiSecurity.SitePrincipal.Roles">
+            <summary>
+            Read Only property of user roles
+            </summary>
+        </member>
+        <member name="T:FlexWikiSecurity.User">
+            <summary>
+            Manage users
+            </summary>
+        </member>
+        <member name="M:FlexWikiSecurity.User.#ctor">
+            <summary>
+            Empty constructor
+            </summary>
+        </member>
+        <member name="M:FlexWikiSecurity.User.#ctor(System.Int32)">
+            <summary>
+            Constructor based on User ID
+            </summary>
+            <param name="userID"></param>
+        </member>
+        <member name="M:FlexWikiSecurity.User.#ctor(System.String)">
+            <summary>
+            Constructor based on email
+            </summary>
+            <param name="email"></param>
+        </member>
+        <member name="M:FlexWikiSecurity.User.GetUsers">
+            <summary>
+            Static method to get All available users
+            </summary>
+            <returns>User DataSet</returns>
+        </member>
+        <member name="M:FlexWikiSecurity.User.GetUserRoles(System.String,System.Int32)">
+            <summary>
+            Static method to get available Roles
+            </summary>
+            <param name="nameSpace">NameSpace</param>
+            <param name="userID">ID of User</param>
+            <returns>ArrayList of roles</returns>
+        </member>
+        <member name="M:FlexWikiSecurity.User.GetRoles">
+            <summary>
+            Get permissions for the current user
+            </summary>
+            <returns>Permissions DataSet</returns>
+        </member>
+        <member name="M:FlexWikiSecurity.User.GetRoles(System.String)">
+            <summary>
+            Get permissions for a the current user and NameSpace combination
+            </summary>
+            <param name="nameSpace">NameSpace</param>
+            <returns>Permissions DataSet</returns>
+        </member>
+        <member name="M:FlexWikiSecurity.User.Add">
+            <summary>
+            Add the specific User
+            </summary>
+            <returns>The unique ID of the new user</returns>
+        </member>
+        <member name="M:FlexWikiSecurity.User.Update">
+            <summary>
+            Persist the current user 
+            </summary>
+            <returns>Update was successfull</returns>
+        </member>
+        <member name="M:FlexWikiSecurity.User.Delete">
+            <summary>
+            Delete the current user 
+            </summary>
+            <returns>Delete was successfull</returns>
+        </member>
+        <member name="M:FlexWikiSecurity.User.AddToRole(System.String,System.Int32)">
+            <summary>
+            Add a Permission to the current user
+            </summary>
+            <param name="nameSpace">NameSpace</param>
+            <param name="roleID">ID of Role</param>
+            <returns>Successfull</returns>
+        </member>
+        <member name="M:FlexWikiSecurity.User.RemoveFromRole(System.String,System.Int32)">
+            <summary>
+            Remove a Permission from the current user
+            </summary>
+            <param name="nameSpace">nameSpace</param>
+            <param name="roleID">ID of Role</param>
+            <returns>Successfull</returns>
+        </member>
+        <member name="P:FlexWikiSecurity.User.UserID">
+            <summary>
+            Property User ID
+            </summary>
+        </member>
+        <member name="P:FlexWikiSecurity.User.FullName">
+            <summary>
+            Property Full Name
+            </summary>
+        </member>
+        <member name="P:FlexWikiSecurity.User.Email">
+            <summary>
+            Property Email
+            </summary>
+        </member>
+        <member name="P:FlexWikiSecurity.User.Password">
+            <summary>
+            Property password
+            </summary>
+        </member>
+        <member name="P:FlexWikiSecurity.User.DateAdded">
+            <summary>
+            Property DateTime added
+            </summary>
+        </member>
+    </members>
+</doc>

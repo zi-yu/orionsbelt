@@ -1,0 +1,3 @@
+Permite obter informações sobre todos os recursos do jogo.
+
+:Summary: Descrição da Secção de Ajuda

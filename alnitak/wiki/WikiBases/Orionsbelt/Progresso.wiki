@@ -1,0 +1,12 @@
+Esta página ilustra o progresso em termos de implementação do jogo. Aqui vão sendo colocadas NovasIdeias a implementar, e qual o estado em que estas se encontram.
+
+||{!}Ideia||{!}Estado||
+||[Maravilhas]|| À espera de ideias e de sugestões de [Maravilhas]||
+||[Prémios]|| Implementado! À espera de mais sugestões para prémios||
+||[Comércio]|| À espera de ideias...||
+||[Scan]|| 20% Implementado! À espera de mais ideias...||
+||[TeleTransporte]|| À espera de ideias...||
+||[MotorDeCombate]|| À espera de ideias...||
+||[Filtros]||Completo||
+
+:Summary: Progresso da implementação de ideias

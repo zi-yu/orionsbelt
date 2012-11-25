@@ -1,0 +1,19 @@
+:Summary: Informação sobre Batalhas de Conquista
+:Parent: Orionsbelt.MotorDeCombate
+
+No decorrer do jogo, o jogador pode fazer uma batalha seguindo os seguintes passos:
+	* Criar uma Armada num dos planetas;
+	* Mover Unit.[Unit] para essa armada;
+	* Ir à secção Militar e escolher a [Coordenada] para onde o movimento deve ser feito;
+	* Depois da armada chegar, ir à secção de Batalha. Caso estejam reunidas as condições necessárias o jogador poderá iniciar uma batalha pela conquista do planeta.
+
+A imagem seguinte ilustra todos estes passos:
+
+		[imagem]
+
+As Condições necessárias para que haja uma batalha são:
+	* O Planeta ter dono;
+	* O Planeta ter naves na armada de defesa;
+	* O Planeta não estar já numa batalha;
+
+Caso o planeta não tenha dono, ou não tenha Unit.[Unit] na armada de defesa, o planeta pode ser conquistado imediatamente.

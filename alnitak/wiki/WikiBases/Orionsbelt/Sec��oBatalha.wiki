@@ -1,0 +1,3 @@
+Esta página permite gerir as batalhas correntes, começar novas batalhas, ou realizar turnos no MotorDeCombate das batalhas correntes.
+
+:Summary: Descrição da Secção de Batalha

@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<language>
+
+	<!-- General -->
+	<label ref="modifiers">Modifiers</label>
+	<label ref="attributes">Attributes</label>
+	<label ref="onavailable">On Available</label>
+	<label ref="onturn">On Turn</label>
+	<label ref="oncomplete">On Completed</label>
+	<label ref="onremove">On Removed</label>
+	<label ref="onCancelDuringBuild">On Cancel During Build</label>
+	<label ref="cost">Cost</label>
+	<label ref="duration">Duration</label>
+	<label ref="attack">Attack</label>
+	<label ref="defense">Defense</label>
+	<label ref="Teletransportable">Teletransportable</label>
+	<label ref="TeletransportationCost">Teletransportation Cost</label>
+	
+	<!-- Ships -->
+	<label ref="ColonyShip_description">Allows you to colonize planets</label>
+	<label ref="FlagShip_description">Special unit for special games</label>
+	<label ref="Rain_description">Very Fast Ship</label>
+	<label ref="Toxic_description">Fast Ship That uses Nucler Power</label>
+	<label ref="Raptor_description">Fast Laser Based Unit</label>
+	<label ref="Anubis_description">Fast and with good defense Unit</label>
+	<label ref="Krill_description">Average Medium Unit</label>
+	<label ref="Pretorian_description">Powerfull Defense Unit</label>
+	<label ref="Vector_description">Attack Unit</label>
+	<label ref="Kamikaze_description">Strong Attack -  Very Weak Defense</label>
+	<label ref="Kahuna_description">Powerfull Ground Unit</label>
+	<label ref="Eagle_description">Good Ranged Medium Unit</label>
+	<label ref="Scarab_description">Good Attack Medium Unit</label>
+	<label ref="Crusader_description">Average Heavy Unit</label>
+	<label ref="Nova_description">Nuclear Heavy Unit</label>
+	<label ref="Bozer_description">Powerfull Heavy Ground Unit</label>
+	<label ref="Fenix_description">Versatile Heavy Unit</label>
+	<label ref="Doomer_description">Powerfull Attack - Weak Defense</label>
+	<label ref="Spider_description">Versatile Animal Unit</label>
+	<label ref="BlackWidow_description">Powerfull Spider Unit</label>
+	<label ref="Squid_description">Powerfull UnderWater Unit</label>
+	<label ref="Taurus_description">Powerfull Tank</label>
+	<label ref="Panther_description">Versatile and very quick Tank</label>
+	<label ref="Driller_description">Quick Unit with low range and powerfull attack</label>
+	<label ref="Samurai_description">Quick Unit with replicator abilities</label>
+	<label ref="Turret_description">Light building for planetary defense</label>
+	<label ref="IonCannon_description">Medium building for planetary defense</label>
+	
+	
+	
+	<!-- Buildings -->
+	<label ref="Incinerator_description">Threats Polution</label>
+	<label ref="RecyclingPlant_description">Transforms Polution into MP</label>
+	<label ref="Etar_description">Destroys Polution</label>
+	<label ref="SpaceStation_description">Space Habitation</label>
+	
+	<label ref="StarPort_description">
+		Allows for Ship construction
+	</label>
+	
+	<label ref="TankFacility_description">
+		Allows for Tank construction
+	</label>
+
+	<label ref="PowerPlant_description">
+		Produces Energy
+	</label>
+
+	<label ref="SolarPanel_description">
+		Produces Energy
+	</label>
+	
+	<label ref="Farm_description">
+		Produces Food
+	</label>
+	
+	<label ref="GoldMine_description">
+		Produces Money
+	</label>
+	
+	<label ref="UniversalExplorationMine_description">
+		Produces MP
+	</label>
+	
+	<label ref="House_description">
+		Allows for more labor
+	</label>
+	
+	<label ref="WaterHouse_description">
+		Allows for more labor
+	</label>
+
+	<label ref="Mine_description">
+		Produces MP
+	</label>
+
+	<label ref="WaterMine_description">
+		Produces MP
+	</label>
+	
+	<label ref="School_description">
+		Allows your culture to grow
+	</label>
+	
+	<label ref="University_description">
+		Allows your culture to grow
+	</label>
+	
+	<label ref="ResearchCampus_description">
+		Allows your culture to grow
+	</label>
+
+	<label ref="WaterSchool_description">
+		Allows your culture to grow
+	</label>
+
+	<label ref="WaterUniversity_description">
+		Allows your culture to grow
+	</label>
+
+	<label ref="WaterResearchCampus_description">
+		Allows your culture to grow
+	</label>
+
+	<label ref="Observatory_description">
+		Allows your culture to grow
+	</label>
+
+	<label ref="WaterPower_description">
+		Increases your energy
+	</label>
+	
+	<label ref="FishingFacility_description">
+		Increases your food income
+	</label>
+	
+	<label ref="CommsSatellite_description">
+		Allows you to scan planets
+	</label>
+
+	<label ref="Marketplace_description">
+		Allows commerce between the planet workers
+	</label>
+	
+	<label ref="Hospital_description">
+		Increases the population health
+	</label>
+	
+	<label ref="LeisureCentre_description">
+		Allows for population leisure
+	</label>
+
+	<label ref="StockMarkets_description">
+		Increases tje money flow in the planet
+	</label>
+
+	<label ref="MineralExtractor_description">
+		Increases the MP flow in the planet
+	</label>
+
+	<label ref="LandReclamation_description">
+		Increases the available ground space
+	</label>
+
+	<label ref="WaterReclamation_description">
+		Increases the available water space
+	</label>
+	
+	<label ref="Barracks_description">
+		Trains soldiers
+	</label>
+	
+	<label ref="Zoomarine_description">
+		Allows for population leisure
+	</label>
+
+	<label ref="Spa_description">
+		Increases the population health
+	</label>
+	
+	<label ref="OilFacility_description">
+		Transforms oil in intrinsic resources
+	</label>
+
+	<label ref="Gate_description">
+		Allows you to teletransport intrinsic resources
+	</label>
+
+	<label ref="StarGate_description">
+		Allows you to teletransporte fleets
+	</label>
+
+	<label ref="HidroPlant_description">Converts Hydrogen to energy</label>
+	<label ref="ElkFacility_description">Converts Elks in Food</label>
+	<label ref="DiamondShop_description">Converts Diamonds to Money</label>
+	<label ref="OilPlant_description">Converts Oil to MP and Money</label>
+	<label ref="GasPlant_description">Converts Gas to Energy</label>
+	<label ref="SilverShop_description">Converts Silver to Money</label>
+
+	<!-- Research -->
+	<label ref="Cybernetics_description">
+		Allows for better ship components
+	</label>
+
+	<label ref="Warfare_description">
+		 Combat Knowledge
+	</label>
+
+	<label ref="Espionage_description">
+		Espionage Techniques
+	</label>
+	
+	<label ref="AdvancedFlightI_description">
+		Allows the building of weak ships
+	</label>
+	
+	<label ref="AdvancedFlightII_description">
+		Allows the building of medium ships
+	</label>
+	
+	<label ref="AdvancedFlightIII_description">
+		Allows the building of more powerfull ships
+	</label>
+	
+	<label ref="ShipShields_description">Allows for better ship defense</label>
+	<label ref="ShipFirePower_description">Allows for better ship attack</label>
+	
+	<label ref="PlanetExploration_description">
+		Allows you to conquer planets in your sector 
+	</label>
+	
+	<label ref="SectorExploration_description">
+		Allows you to conquer and navigate to planets in diferent sectors
+	</label>
+	
+	<label ref="SystemExploration_description">
+		Allows you to conquer and navigate to planets in diferent systems
+	</label>
+	
+	
+	<label ref="GalaxyExploration_description">
+		Allows you to conquer and navigate to planets in diferent galaxies
+	</label>
+	
+	<label ref="AdvancedResearchI_description">
+		Allows for advanced researches
+	</label>
+	
+	<label ref="AdvancedResearchII_description">
+		Allows for more advanced researches
+	</label>
+	
+	<label ref="PlanetLimit5_description">
+		Increase number of planets you can own to five
+	</label>
+	
+	<label ref="PlanetLimit10_description">
+		Increase number of planets you can own to ten
+	</label>
+	
+	<label ref="PlanetLimit15_description">
+		Increase number of planets you can own to fifteen
+	</label>
+	
+	<label ref="PlanetLimit20_description">
+		Increase number of planets you can own to twenty
+	</label>
+
+	<label ref="PlanetLimit35_description">
+		Increase number of planets you can own to 35
+	</label>
+	
+	<label ref="QueueCapacity3_description">
+		Increase your queue capacity to suport 3 items in queue
+	</label>
+	
+	<label ref="QueueCapacity5_description">
+		Increase your queue capacity to suport 5 items in queue
+	</label>
+	
+	<label ref="WaterExplorationI_description">
+		Allows you to explore water space
+	</label>
+	
+	<label ref="WaterExplorationII_description">
+		Allows advanced exploration of water space
+	</label>
+
+	<label ref="WaterExplorationIII_description">
+		Allows advanced exploration of water space
+	</label>
+	
+	<label ref="OrbitExploration_description">Allows for the exploration of Orbit Space</label>
+	<label ref="Scanning_description">Allows to scan other planets</label>
+	<label ref="SectorScanning_description">Allows to scan other planets in other sectors</label>
+	<label ref="SystemScanning_description">Allows to scan other planets in other systems</label>
+	<label ref="GalaxyScanning_description">Allows to scan other planets in other galaxies</label>
+	<label ref="ScanLevelI_description">Base Scan Technology</label>
+	<label ref="ScanLevelII_description">Scan Technology level 2</label>
+	<label ref="ScanLevelIII_description">Scan Technology level 3</label>
+	<label ref="ScanShieldLevelI_description">Allows enemy scans to fail</label>
+	<label ref="ScanShieldLevelII_description">Allows enemy scans to fail</label>
+	<label ref="ScanShieldLevelIII_description">Allows enemy scans to fail</label>
+	<label ref="ScanNotificationI_description">Allows you to be notified when an enemy scans your planet</label>
+	<label ref="ScanNotificationII_description">Allows you to be notified when an enemy scans your planet</label>
+	<label ref="ScanNotificationIII_description">Allows you to be notified when an enemy scans your planet</label>
+	
+	<label ref="Medicine_description">Allows cultural advances</label>
+	<label ref="Commerce_description">Allows you to explore commerce</label>
+	<label ref="Economics_description">Allows you to better explore your planets economics</label>
+	<label ref="Geology_description">Allows you to know more about your planet</label>
+	<label ref="GeoPlanet_description">Allows you to know more about your planet</label>
+
+	<label ref="TeletransportationI_description">Allows the research for basic teletransportation principles</label>
+	<label ref="TeletransportationII_description">Allows you to teletransport elementar resources</label>
+	<label ref="TeletransportationIII_description">Allows you to teletransport fleets</label>
+	
+	<label ref="RareResources_description">Allows the exploration of rare resources</label>
+	<label ref="Recycling_description">Handles Polution</label>
+
+	<label ref="PlanetDefenseI_description">Allows you to construct basic planetary defenses (turrets)</label>
+	<label ref="PlanetDefenseII_description">Allows you to construct medium planetary defenses (ion cannons)</label>
+</language>

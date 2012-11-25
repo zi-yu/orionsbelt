@@ -1,0 +1,40 @@
+:Display: Prémios
+:Parent: Round.HomePage
+
+!!!Prémios de Conquista
+	* Conquistar um Planeta 
+		1. ''MindScraper'' - ''turno 161''
+		1. super_dragao - ''turno 191''
+		1. juanitoraton - ''turno 198''
+	* Possuir 5 planetas
+		1. ACSK Anfernius - ''turno 344''
+		1. ''MindScraper'' - ''turno 367''
+		1. juanitoraton - ''turno 488''
+	* Possuir 10 planetas
+		1. ''MindScraper'' - ''turno 540''
+		1. ''KaLoNg'' - ''turno 858''
+		1. juanitoraton - ''916''
+	* Possuir 15 planetas
+		1. CUS Shadow Knight - ''turno 1510''
+		1. falkirk - ''turno 2484''
+		1. juanitoraton - ''turno 3296''
+	* Possuir 20 planetas
+		1. CUS Shadow Knight - ''turno 2658''
+		1. falkirk - ''turno 3136''
+		1. IUC ''SkyKing'' - ''turno 4110''
+
+!!!Prémios de Edifícios
+	* Construir o Porto Espacial
+		1. ''MindScraper'' - ''turno 43''
+		1. Sephiroth - ''turno 47''
+		1. d4rkpow3r - ''turno 49''	
+	* Construir o Satélite
+		1. ''ViralSlam'' - ''turno 485''
+		1. ''MindScraper'' - ''turno 498''
+		1. Solaris - ''turno 604''
+
+!!!Prémios de Pesquisa
+	* Desenvolver todas as Pesquisas
+		1. CUS Shadow Knight - ''turno 2215''
+		1. falkirk - ''turno 2368''
+		1. nGozi - ''turno 2471''

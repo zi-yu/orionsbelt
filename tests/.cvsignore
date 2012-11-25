@@ -1,0 +1,15 @@
+tests.csproj
+test-results
+bin
+Tests.pidb
+Tests.mdp
+OrionsbeltTests.mds
+OrionsbeltTests.md-nunit
+*.pidb
+*.mdp
+*.csproj
+*.mds
+conf/
+tests.nunit
+updateRules.bat
+Tests.nunit

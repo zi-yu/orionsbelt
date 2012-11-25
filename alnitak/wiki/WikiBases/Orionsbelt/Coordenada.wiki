@@ -1,0 +1,5 @@
+Uma coordenada é composta por quatro elementos que correspondem a Galáxia, Sistema, Sector e Planeta. A coordenada '''1:2:3:3''' corresponde a um planeta na Galáxia 1, sistema 2, sector 3 e posição 3.
+
+Existem três galáxias, vinte sistemas e vinte sectores. Cada sector tem  três planetas de coordenadas X.Z.Y.1, X.Z.Y.2 e X.Z.Y.3 em que X.Z.Y.1 é sempre a coordenada de um HomePlanet e é inacessível por parte de jogadores que não o dono do planeta.
+
+:Summary: Como funciona o sistema de Coordenadas

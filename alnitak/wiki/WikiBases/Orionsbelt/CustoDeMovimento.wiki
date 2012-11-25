@@ -1,0 +1,7 @@
+:Display: Custo de Movimento
+:Summary: Informação sobre Custo de Movimento
+:Parent: Orionsbelt.MotorDeCombate
+
+Todas as Unit.[Unit] têm um custo de movimento associado. Os jogadores têm um total de *6* movimentos para usar em cada turno, pelo que só poderão realizar os movimentos que não ultrapassem o limite estabelecido.
+
+Nota que os ataques e as mudanças de direcção apenas necessitam de 1 movimento.

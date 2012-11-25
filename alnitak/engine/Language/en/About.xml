@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<language>
+
+	<label ref="about_intro">
+		This Project was created by two students of &lt;a href="http://www.isel.ipl.pt"&gt;ISEL&lt;/a&gt; as a final project of bachelorship. Nowadays, it is a game with a growing comunity, whose objective is to become a 
+		bigwig in online games in Portugal. We are constanly exploraiting new ideas for the game, that are analised in our development 
+		&lt;a href="http://groups-beta.google.com/group/orionsbelt-dev"&gt;Mailing List&lt;/a&gt;. All the comunity is invited to participate.
+	</label>
+	
+	<label ref="administrators">The Administrators</label>
+		
+	<label ref="about_pyro">
+		A great fan of sports and software development, Nuno is actually finishing the Computer and Informatic Engineering degree at ISEL.
+		In his curriculum appears an 8 month training post at &lt;a ref="http://www.microsoft.pt"&gt;Microsoft Portugal&lt;/a&gt;, 
+		and a speaker participation at the event 
+		&lt;a href="http://www.microsoft.com/portugal/msdn/eventos/TechnicalBriefing/default.aspx"&gt;MSDN Technical Briefing&lt;/a&gt;.
+	He has available a  &lt;a href="http://nunos.zi-yu.com"&gt;blog&lt;/a&gt; were he posts his ideas.
+	</label>
+	
+	<label ref="about_pre">
+		Allways had benn a computer games development fan. Is actually finishing the Computer and Informatic Engineering degree at ISEL. He has professional experience, working in
+		&lt;a href="http://www.vantyx.com/"&gt;Vantyx&lt;/a&gt; and as a freelancer for &lt;a href="http://www.ips.pt/"&gt;IPS&lt;/a&gt;. In his &lt;a href="http://psantos.net"&gt;personal page&lt;/a&gt;
+		we can find his blog and his wiki were he posts his opinions and articles related with Information Technologies.
+	</label>
+	
+	<label ref="about_artists">The Artists</label>
+	
+	<label ref="about_artists_intro">
+		Normally programers aren't very skilled with graphic arts. That is the situation of Pedro Santos and Nuno Silva, so they had the help of several individuals in this area. We are open for contributions so if you are skilled for arts and want to help just contact one of the administrators!
+	</label>
+	
+	<label ref="about_ricard">
+		Ricardo provided important help with the site. He is our handyman, Need a picture for something, he will do it. He created allmost all the icons in the site, and also the visual theme Rocks.
+		You can know more about Ricardo at &lt;a href="http://www.ricardovieira.net/" target="_blank" &gt;ricardovieira.net&lt;/a&gt;.
+	</label>
+	
+	<label ref="about_pedroac">
+		Pedro helped the elaboration of combat unities in our combat unities for our combat game. This is one of the rare cases when the programer is skilled in graphic arts.
+	</label>
+	
+	<label ref="about_zeroshift">
+		Luis is another rare case, he is a programer very skilled for graphic arts too. He is helping us in the creation of the combat unities for our combat game.
+		In his &lt;a href="http://napalmconcept.com.sapo.pt/" target="_blank"&gt;homepage&lt;/a&gt; you can check
+		some of the cool material he has been developing.
+	</label>
+	
+	<label ref="about_nunolac">
+		Nuno is the creator of the visual theme Planetaria. He is a web designer that has done several websites and created a very appelative visual theme. You can go to his 
+		&lt;a href="http://www.novalinedesigns.com/" target="_blank"&gt;personal page&lt;/a&gt;
+		to see other works created by him.
+	</label>
+	
+	<label ref="about_betas">And much much much more...</label>
+	
+	<label ref="about_betas_intro">
+		Several people helped very much too in the devellopment of the game . 
+		These people are our 
+		<i>beta testers</i> and they are the ones who exhaustively  test the game, revealing some bugs
+		and contacting the administrators for it's resolution. Not only that, but they also provide several ideas and analise several aspects of the game. 
+	</label>
+	
+	
+</language>

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<language>
+
+	<!-- General -->
+	<label ref="modifiers">Modificadores</label>
+	<label ref="attributes">Atributos</label>
+	<label ref="onavailable">Quando Disponível</label>
+	<label ref="oncomplete">Quando Completado</label>
+	<label ref="onturn">Na Passagem de Turno</label>
+	<label ref="onremove">Quando Removido</label>
+	<label ref="onCancelDuringBuild">Quando Cancelado em Desenvolvimento</label>
+	<label ref="cost">Custo</label>
+	<label ref="duration">Duração</label>
+	<label ref="attack">Ataque</label>
+	<label ref="defense">Defesa</label>
+	<label ref="Teletransportable">Teletransportável</label>
+	<label ref="TeletransportationCost">Custo de Teletransporte</label>
+
+	<!-- Ships -->
+	<label ref="ColonyShip_description">Permite a colonização de Planetas</label>
+	<label ref="FlagShip_description">Unidade Especial em Certo Tipo de Jogos</label>
+	<label ref="Rain_description">Unidade Versátil</label>
+	<label ref="Toxic_description">Unidade que Possui Armas Nucleares</label>
+	<label ref="Raptor_description">Unidade com armas baseadas em Laser</label>
+	<label ref="Anubis_description">Unidade Versátil com boas Capacidades Defensivas</label>
+	<label ref="Krill_description">Unidade Versátil</label>
+	<label ref="Pretorian_description">Unidade muito poderosa a defender</label>
+	<label ref="Vector_description">Unidade de Ataque</label>
+	<label ref="Kamikaze_description">Ataque Poderoso - Defesa Inexistente</label>
+	<label ref="Kahuna_description">Unidade Terrestre</label>
+	<label ref="Eagle_description">Unidade com bónus de distância</label>
+	<label ref="Scarab_description">Unidade com bónus de ataque</label>
+	<label ref="Crusader_description">Unidade VErsátil</label>
+	<label ref="Nova_description">Poderosa Unidade com Armas Nucleares</label>
+	<label ref="Bozer_description">Poderosa Unidade com Vantagens Anti-Aéreas</label>
+	<label ref="Fenix_description">Unidade Versátil</label>
+	<label ref="Doomer_description">Ataque Poderoso - Defesa Fraca</label>
+	<label ref="Spider_description">Unidade Animal Muito versátil</label>
+	<label ref="BlackWidow_description">Aranha muito poderosa</label>
+	<label ref="Squid_description">Unidade subaquática poderosa</label>
+	<label ref="Taurus_description">Tanque muito poderoso</label>
+	<label ref="Panther_description">Tanque muito versátil e rápido</label>
+	<label ref="Driller_description">Unidáde rápida com pouco alcançe e grande ataque</label>
+	<label ref="Samurai_description">Unidade rápida e com capacidade de replicação</label>
+	<label ref="Turret_description">Edifício leve para defesa terrestre</label>
+	<label ref="IonCannon_description">Edifício médio para defesa terrestre</label>
+	
+	<!-- Buildings -->
+	<label ref="Incinerator_description">Trata Poluição</label>
+	<label ref="RecyclingPlant_description">Transforma Poluição em MP</label>
+	<label ref="Etar_description">Destrói Poluição</label>
+	<label ref="SpaceStation_description">Habitação no Espaço</label>
+	
+	<label ref="StarPort_description">
+		Permite a construção de naves
+	</label>
+	
+	<label ref="TankFacility_description">
+		Permite a construção de tanques
+	</label>
+
+	<label ref="PowerPlant_description">
+		Produz Energia
+	</label>
+
+	<label ref="SolarPanel_description">
+		Produz Energia
+	</label>
+	
+	<label ref="Farm_description">
+		Produz Comida
+	</label>
+	
+	<label ref="GoldMine_description">
+		Produz Dinheiro
+	</label>
+	
+	<label ref="UniversalExplorationMine_description">
+		Produz MP
+	</label>
+	
+	<label ref="House_description">
+		Permite alojar trabalhadores
+	</label>
+		
+	<label ref="WaterHouse_description">
+		Permite alojar trabalhadores
+	</label>
+
+	<label ref="Mine_description">
+		Produz MP
+	</label>
+
+	<label ref="WaterMine_description">
+		Produz MP
+	</label>
+	
+	<label ref="School_description">
+		Permite aumentar a cultura
+	</label>
+	
+	<label ref="University_description">
+		Permite aumentar a cultura
+	</label>
+	
+	<label ref="ResearchCampus_description">
+		Permite aumentar a cultura
+	</label>
+
+	<label ref="WaterSchool_description">
+		Permite aumentar a cultura
+	</label>
+
+	<label ref="WaterUniversity_description">
+		Permite aumentar a cultura
+	</label>
+
+	<label ref="WaterResearchCampus_description">
+		Permite aumentar a cultura
+	</label>
+
+	<label ref="Observatory_description">
+		Permite aumentar a cultura
+	</label>
+
+	<label ref="WaterPower_description">
+		Aumenta a energia produzida por turno
+	</label>
+	
+	<label ref="FishingFacility_description">
+		Aumenta a comida produzida por turno
+	</label>
+	
+	<label ref="CommsSatellite_description">
+		Permite fazer o scan a planetas
+	</label>
+	
+		<label ref="Marketplace_description">
+		Permite o comércio entre os habitantes do planeta
+	</label>
+	
+	<label ref="Hospital_description">
+		Permite aumentar o nível de vida da população
+	</label>
+	
+	<label ref="LeisureCentre_description">
+		Permite aumentar o nível de vida da população libertando o seu stress
+	</label>
+
+	<label ref="StockMarkets_description">
+		Permite aumentar o fluxo de Dinheiro do planeta
+	</label>
+
+	<label ref="MineralExtractor_description">
+		Permite aumentar o fluxo de MP do planeta
+	</label>
+
+	<label ref="LandReclamation_description">
+		Permite aumentar o espaço disponível em Terra para construção
+	</label>
+
+	<label ref="WaterReclamation_description">
+		Permite aumentar o espaço disponível em Água para construção
+	</label>
+	
+	<label ref="Barracks_description">
+		Permite o treino de soldados
+	</label>
+	
+	<label ref="Zoomarine_description">
+		Permite aumentar o nível de vida da população libertando o seu stress
+	</label>
+
+	<label ref="Spa_description">
+		Permite aumentar o nível de vida da população libertando o seu stress
+	</label>
+	
+	<label ref="OilFacility_description">
+		Transforma petróleo em recuros intrínsecos
+	</label>
+
+	<label ref="Gate_description">
+		Permite o teletransporte de recursos intrínsecos
+	</label>
+
+	<label ref="StarGate_description">
+		Permite o teletransporte de armadas
+	</label>
+
+	<label ref="HidroPlant_description">Permite a conversão de Hidrogénio em energia</label>
+	<label ref="ElkFacility_description">Permite a exploração de Elks para gerar comida</label>
+	<label ref="DiamondShop_description">Permite a conversão de Diamantes em Dinheiro</label>
+	<label ref="OilPlant_description">Permite a conversão de Petróleo em MP e Dinheiro</label>
+	<label ref="GasPlant_description">Permite a conversão de Gás em Energia</label>
+	<label ref="SilverShop_description">Permite a conversão de Prata em Energia</label>
+
+	<!-- Research -->
+	<label ref="Cybernetics_description">
+		Permite o avanço da construção de componentes para as naves
+	</label>
+
+	<label ref="Warfare_description">
+		Conhecimento acerca de técnicas de combate
+	</label>
+
+	<label ref="Espionage_description">
+		Técnicas de Espionagem
+	</label>
+	
+	<label ref="AdvancedFlightI_description">
+		Permite a construção de naves
+	</label>
+	
+	<label ref="AdvancedFlightII_description">
+		Permite a construção de naves de médio porte
+	</label>
+	
+	<label ref="AdvancedFlightIII_description">
+		Permite a construção de naves mais poderosas
+	</label>
+	
+	<label ref="ShipShields_description">Permite melhorar as defesas das naves</label>
+	<label ref="ShipFirePower_description">Permite aumentar o poder de ataque das naves</label>
+	
+	<label ref="PlanetExploration_description">
+		Permite a colonização de planetas do teu sector 
+	</label>
+	
+	<label ref="SectorExploration_description">
+		Permite a navegação e colonização de planetas em sectores diferentes daquele em que começas
+	</label>
+	
+	<label ref="SystemExploration_description">
+		Permite a navegação e colonização de planetas em sistemas diferentes daquele em que começas
+	</label>
+	
+	<label ref="GalaxyExploration_description">
+		Permite a navegação e colonização de planetas em galáxias diferentes daquela em que começas
+	</label>
+	
+	<label ref="AdvancedResearchI_description">
+		Avanços tecnológicos
+	</label>
+	
+	<label ref="AdvancedResearchII_description">
+		Avanços tecnológicos
+	</label>
+	
+	<label ref="PlanetLimit5_description">
+		Permite colonizar até 5 planetas
+	</label>
+	
+	<label ref="PlanetLimit10_description">
+		Permite colonizar até 10 planetas
+	</label>
+	
+	<label ref="PlanetLimit15_description">
+		Permite colonizar até 15 planetas
+	</label>
+	
+	<label ref="PlanetLimit20_description">
+		Permite colonizar até 20 planetas
+	</label>
+
+	<label ref="PlanetLimit35_description">
+		Permite colonizar até 35 planetas
+	</label>
+	
+	<label ref="QueueCapacity3_description">
+		Aumenta a capacidade da lista de espera para 3 items
+	</label>
+	
+	<label ref="QueueCapacity5_description">
+		Aumenta a capacidade da lista de espera para 5 items
+	</label>
+	
+	<label ref="WaterExplorationI_description">
+		Permite exploração da água
+	</label>
+	
+	<label ref="WaterExplorationII_description">
+		Permite exploração avançada da água
+	</label>
+
+	<label ref="WaterExplorationIII_description">
+		Permite exploração avançada da água
+	</label>
+	
+	<label ref="OrbitExploration_description">Permite exploração do espaço em órbita</label>
+	<label ref="Scanning_description">Permite fazer um Scan a planetas</label>
+	<label ref="SectorScanning_description">Permite fazer scans a planetas de outros sectores</label>
+	<label ref="SystemScanning_description">Permite fazer scans a planetas de outros sistemas</label>
+	<label ref="GalaxyScanning_description">Permite fazer scans a planetas de outras galáxias</label>
+	<label ref="ScanLevelI_description">Nível 1 de Scan</label>
+	<label ref="ScanLevelII_description">Nível 2 de Scan</label>
+	<label ref="ScanLevelIII_description">Nível 3 de Scan</label>
+	<label ref="ScanShieldLevelI_description">Permite que scans inimigos falhem</label>
+	<label ref="ScanShieldLevelII_description">Permite que scans inimigos falhem</label>
+	<label ref="ScanShieldLevelIII_description">Permite que scans inimigos falhem</label>
+	<label ref="ScanNotificationI_description">Permite uma notificação quando há um scan inimigo</label>
+	<label ref="ScanNotificationII_description">Permite uma notificação quando há um scan inimigo</label>
+	<label ref="ScanNotificationIII_description">Permite uma notificação quando há um scan inimigo</label>
+	
+	<label ref="Medicine_description">Permite melhorar o nível de vida dos trabalhadores</label>
+	<label ref="Commerce_description">Permite explorar comércio</label>
+	<label ref="Economics_description">Permite explorar de forma mais adequada a economia do planeta</label>
+	<label ref="Geology_description">Permite uma melhor compreensão dos planetas</label>
+	<label ref="GeoPlanet_description">Permite uma melhor compreensão do planeta e dos seus seres vivos</label>
+
+	<label ref="TeletransportationI_description">Permite a pesquisa sobre princípios de teletransporte</label>
+	<label ref="TeletransportationII_description">Permite teletransportar recursos intrínsecos</label>
+	<label ref="TeletransportationIII_description">Permite teletransportar armadas</label>
+	
+	<label ref="RareResources_description">Permite a exploração de recursos raros</label>
+	<label ref="Recycling_description">Técnicas de Reciclagem</label>
+	
+	<label ref="PlanetDefenseI_description">Permite construir defesas planetárias básicas</label>
+	<label ref="PlanetDefenseII_description">Permite construir defesas planetárias médias (canhões de iões)</label>
+	
+</language>

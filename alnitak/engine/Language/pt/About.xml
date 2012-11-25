@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<language>
+
+	<label ref="about_intro">
+		Este projecto foi criado por dois estudantes do &lt;a href="http://www.isel.ipl.pt"&gt;ISEL&lt;/a&gt; como 
+		trabalho final de bacherlato. Hoje, é um jogo com uma comunidade em crescimento, que tem como objectivo
+		tornar-se numa mais valia em termos de jogos online em Portugal. Estamos constantemente a explorar novas
+		ideias para o jogo, as quais são discutidas na nossa 
+		&lt;a href="http://groups-beta.google.com/group/orionsbelt-dev"&gt;Mailing List&lt;/a&gt; de desenvolvimento. Toda a
+		comunidade é convidada a participar.
+	</label>
+	
+	<label ref="administrators">Os Responsáveis</label>
+		
+	<label ref="about_pyro">
+		Um grande adepto de desporto e de desenvolvimento de software, o Nuno de
+		momento encontra-se a concluir a licenciatura em Engenharia de Informática e Computadores no ISEL.
+		No seu currículo, consta um estágio de 8 meses na &lt;a href="http://www.microsoft.pt"&gt;Microsoft Portugal&lt;/a&gt;, 
+		e uma participação como orador no evento 
+		&lt;a href="http://www.microsoft.com/portugal/msdn/eventos/TechnicalBriefing/default.aspx"&gt;MSDN Technical Briefing&lt;/a&gt;.
+		Tem disponível um &lt;a href="http://nunos.zi-yu.com"&gt;blog&lt;/a&gt; onde deixa as suas ideias.
+	</label>
+	
+	<label ref="about_pre">
+		Sempre foi um apaixonado pelo desenvolvimento de jogos. De momento encontra-se a concluir a licenciatura
+		em Engenharia de Informática e Computadores no ISEL. Já conta com experiência profissional, tendo trabalhado
+		na &lt;a href="http://www.vantyx.com/"&gt;Vantyx&lt;/a&gt; e como freelancer para o
+		 &lt;a href="http://www.ips.pt/"&gt;IPS&lt;/a&gt;. Na sua &lt;a href="http://psantos.net"&gt;página pessoal&lt;/a&gt; 
+		 pode-se encontrar o seu blog, e o seu wiki,
+		 onde deixa as suas opiniões e artigos relacionados com as Tecnologias de Informação.
+	</label>
+	
+	<label ref="about_artists">Os Artistas</label>
+	
+	<label ref="about_artists_intro">
+		Normalmente os programadores não têm muito jeito para artes gráficas. É esse o caso do Pedro Santos e do
+		Nuno Silva, pelo que temos tido a ajuda preciosa de várias pessoas neste campo. Estamos abertos a
+		contribuições, portanto, se tens jeito para as artes e queres dar uma ajudinha, é só falares
+		com um dos administradores!
+	</label>
+	
+	<label ref="about_ricard">
+		O Ricardo tem dado uma ajuda preciosa com o site. Ele é o nosso polivalente, pede-se uma imagem para 
+		determinado fim, e ele trata disso. Foi ele que fez praticamente todos os ícones do site, e também
+		foi ele que fez o tema visual Rocks. Tem disponível o seu site em &lt;a href="http://www.ricardovieira.net/" target="_blank"&gt;ricardovieira.net&lt;/a&gt;.
+	</label>
+	
+	<label ref="about_pedroac">
+		O Pedro tem dado uma ajuda na elaboração de unidades de combate para o nosso jogo de combate. Este é outro
+		dos raros casos em que um programador tem jeito para artes gráficas. A sua &lt;a href="http://napalmconcept.com.sapo.pt/" target="_blank"&gt;página pessoal&lt;/a&gt; possui
+		algum do bom material que ele faz. Não deixem de ver.
+	</label>
+	
+	<label ref="about_zeroshift">
+		O Luís é um caso raro: é um programador com muito jeito para artes gráficas. Ele está a ajudar-nos na
+		criação de unidades de combate para o nosso jogo de combate.
+	</label>
+	
+	<label ref="about_nunolac">
+		O Nuno é o autor do tema visual Planetaria. Ele é um web designer que já fez vários sites e teve a 
+		consideração de nos criar um tema visual muito apelativo. Podem passar pela sua 
+		&lt;a href="http://www.novalinedesigns.com/" target="_blank"&gt;página pessoal&lt;/a&gt;
+		para ver outros trabalhos dele.
+	</label>
+	
+	<label ref="about_betas">E mais, e mais, e mais...</label>
+	
+	<label ref="about_betas_intro">
+		Várias outras pessoas têm dado uma contribuição muito importante ao desenvolvimento do jogo. 
+		Estas pessoas são os nossos
+		<i>beta testers</i> e são eles que testam exaustivamente o jogo, dando a conhecer bugs do jogo
+		e pressionando os administradores para que sejam resolvidos. Por outro lado, também dão várias
+		ideias e discutem vários aspectos do jogo. 
+	</label>
+	
+</language>

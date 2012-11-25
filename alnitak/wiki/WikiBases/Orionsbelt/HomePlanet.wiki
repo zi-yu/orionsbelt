@@ -1,0 +1,7 @@
+O teu HomePlanet é o planeta com que começas, o berço do teu império. Este planeta tem uma [Coordenada] especial, que faz com que seja inacessível por parte dos outros jogadores.
+
+Dica:Não é necessário ter Unit.[Unit] a proteger o teu HomePlanet!
+
+Por outro lado, este planeta tem CaracteristicasDePlaneta constantes e justas. Todos os HomePlanet's de todos os jogadores têm características e riquezas iguais.
+
+:Summary: Caraterísticas do Home Planet

@@ -1,0 +1,12 @@
+:Display: Batalha Amigável
+:Summary: Informação sobre Batalhas Amigáveis
+:Parent: Orionsbelt.MotorDeCombate
+
+Um combate amigável é um combate que se pode fazer por gozo contra um qualquer adversário. Este combate não conta para nenhum [Ranking] nem se ganha nenhuma pontuação com ele. Este tipo de combates está limitado a 8 por pessoa, mas se for membro [Premium], poderá criar quantos amigáveis quiser estando apenas limitado com os limites do adversário, ou seja, se o adversário que escolher já tiver no limite de amigáveis não poderá criar combates com ele.
+
+Criar um combate amigável:
+	* Ir Secção Batalha;
+	* Procurar o submenu do lado esquerdo que diz *batalha amigável*;
+	* Escolher as unidades que pretende no combate (até um máximo de 8 Unit.[Unit] diferentes);
+	* Escolher o adversário;
+	* Começar o combate.

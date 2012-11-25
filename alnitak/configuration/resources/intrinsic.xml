@@ -1,0 +1,121 @@
+<?xml version="1.0" ?>
+<!DOCTYPE resources SYSTEM "conf.dtd">
+<resources>
+	<!-- planetas -->
+	<resource type="Intrinsic" value="gold">
+		<attributes>
+			<attribute type="DefaultRatio" value="50"/>
+			<attribute type="Teletransportable" value="1"/>
+			<attribute type="TeletransportationCost" value="2"/>
+		</attributes>
+	</resource>
+	
+	<resource type="Intrinsic" value="labor">
+		<cost>
+			<housingAvailable />
+		</cost>
+		<attributes>
+			<attribute type="DefaultRatio" value="20"/>
+			<attribute type="Teletransportable" value="1"/>
+			<attribute type="TeletransportationCost" value="3"/>
+			<mod type="food" value="-1" />
+		</attributes>
+	</resource>
+	
+	<resource type="Intrinsic" value="mp">
+		<attributes>
+			<attribute type="DefaultRatio" value="50"/>
+			<attribute type="MarketResource" value="1"/>
+			<attribute type="Teletransportable" value="1"/>
+			<attribute type="TeletransportationCost" value="2"/>
+		</attributes>
+	</resource>
+	
+	<resource type="Intrinsic" value="culture">
+		<attributes>
+			<attribute type="DefaultRatio" value="100"/>
+		</attributes>
+	</resource>
+	
+	<resource type="Intrinsic" value="energy">
+		<attributes>
+			<attribute type="DefaultRatio" value="50"/>
+			<attribute type="MarketResource" value="1"/>
+			<attribute type="TeletransportationCost" value="2"/>
+		</attributes>
+	</resource>
+	
+	<resource type="Intrinsic" value="polution">
+		<attributes>
+			<attribute type="DefaultRatio" value="20"/>
+		</attributes>
+	</resource>
+	
+	<resource type="Intrinsic" value="housing">
+		<attributes>
+			<attribute type="DefaultRatio" value="0"/>
+		</attributes>
+	</resource>
+	
+	<resource type="Intrinsic" value="food">
+		<attributes>
+			<attribute type="DefaultRatio" value="50"/>
+			<attribute type="MarketResource" value="1"/>
+			<attribute type="Teletransportable" value="1"/>
+			<attribute type="TeletransportationCost" value="1"/>
+		</attributes>
+	</resource>
+
+	<resource type="Intrinsic" value="score">
+		<attributes>
+			<attribute type="DefaultRatio" value="100"/>
+		</attributes>
+	</resource>
+	
+	<resource type="Intrinsic" value="groundSpace">
+		<attributes>
+			<attribute type="DefaultValue" value="20"/>
+		</attributes>
+	</resource>
+
+	<resource type="Intrinsic" value="orbitSpace">
+		<attributes>
+			<attribute type="DefaultValue" value="30"/>
+		</attributes>
+	</resource>
+
+	<resource type="Intrinsic" value="waterSpace">
+		<attributes>
+			<attribute type="DefaultValue" value="30"/>
+		</attributes>
+	</resource>
+
+	
+	<!-- Rulers -->
+	<resource type="Intrinsic" value="score" appliesTo="ruler">
+		</resource>
+	
+	<resource type="Intrinsic" value="culture" appliesTo="ruler">
+		</resource>
+	
+	<resource type="Intrinsic" value="maxPlanets" appliesTo="ruler">
+		<onavailable>
+			<add type="Intrinsic" resource="maxPlanets" value="2" />
+		</onavailable>
+	</resource>
+
+	<resource type="Intrinsic" value="maxFleets" appliesTo="ruler" />
+	
+	<resource type="Intrinsic" value="queueCapacity" appliesTo="ruler">
+		<onavailable>
+			<add type="Intrinsic" resource="queueCapacity" value="2" />
+		</onavailable>
+	</resource>
+
+	<resource type="Intrinsic" value="scanCost" appliesTo="ruler">
+		<onavailable>
+			<add type="Intrinsic" resource="scanCost" value="100" />
+		</onavailable>
+	</resource>
+	
+</resources>

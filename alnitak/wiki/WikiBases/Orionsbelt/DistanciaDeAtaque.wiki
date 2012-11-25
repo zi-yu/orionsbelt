@@ -1,0 +1,5 @@
+:Display: Distância de Ataque
+:Summary: Informação sobre Distância de Ataque
+:Parent: Orionsbelt.MotorDeCombate
+
+Todas as Unit.[Unit] têm uma distância de ataque associada. Esta distância representa o número máximo de quadrículas que uma unidade pode atingir. Há Unit.[Unit] que só conseguem atacar à queima roupa, enquanto há outras como o Unit.[Crusader] que têm um alcance de 6 quadrículas!

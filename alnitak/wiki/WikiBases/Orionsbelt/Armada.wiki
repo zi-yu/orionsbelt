@@ -1,0 +1,3 @@
+Uma [Armada] é um grupo de Unit.[Unit] que podes mover para outras [Coordenadas].
+
+:Summary: Conjunto de Unidades

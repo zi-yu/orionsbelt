@@ -1,0 +1,7 @@
+*.pidb
+*.mdp
+*.csproj
+*.mds
+language.csproj.user
+language.sln
+obj

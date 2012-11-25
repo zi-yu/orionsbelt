@@ -1,0 +1,173 @@
+!Proposta de avanços Tecnológicos
+
++++++
+!Mining
+Descrição
+Permite aumentar as capcidade de mineração nos planetas. Os cientistas descobriram formas de melhorar a eficiência da mineração terrestre usando novas técnicas de escavação e separação dos componentes minerados.
+Foi possível ainda minerar a maiores profundidades abrindo assim novas oportunidades para obter minérios.
+
+Dependencias
+Cybernetics
+
+Melhorias
+	* +15% na mineiração
+
+Novos edifícios
+
+Novas Naves
+
+!Advance Mining
+Descrição
+Melhorias na máquinas que irão desenvolver o trabalho de mimeração. Antes este trabalho era braçal o que trazia diversos riscos, nomeadamente de acidentes. Com as máquinas, esses riscos são mais calculados e deixa de ser  necessário as empresas de mineração pagrem indeministzações às famílias dos trabalhores acidentados.
+Com o advento do Cibernética, não só consegui-se criar melhores máquinas, a produção melhorou signiticativamente.
+
+Dependencias
+	*Mining
+	*Cybernetics
+
+Melhorias
+	* + 40% na mineração
+
+Novos edifícios
+
+Novas Naves
+
+
+!Mining Under Water
+Descrição
+Possibilidade de minerar debaixo de água
+Dependencias
+	*Mining
+	*Water Research 3
+Melhorias
+
+Novos edifícios
+	* Water Gold Mine
+	* Water Mine
+Novas Naves
+
+
+!Basic Exchange
+Descrição
+Criar laços comerciais é importante para os povos, pois, nem sempre conseguimos produzir tudo o que necessitamos para sobreviver, por isso, trocar mecadorias com outros povos ou com o nosso próprio é importante para a sobrevivência do império.
+Com esta tecnologia será possível criar mercados que servirão de ponto de partida para as trocas comerciais. Neste nível só podemos enviar mercadorias para os nossos próprio planetas.
+Antes de ser colocada na nave que irá transportar a mercadoria, deve ser calculado o preço de custo da mesma e pedido ao Ruler que define por quanto pretende vender essa mercadoria. No planeta de destino esse preço de venda tem que ser acveite para que a transacção seja efectuada. 
+Dependencias
+	*Advanced Flight 2
+	*Planet Limit (5)
+Melhorias
+	*+10% de dinheiro por turno
+Novos edifícios
+	*MarketPlace
+Novas Naves
+	*Light Trade Ship
+
+!Economic
+Descrição
+Com o advendo do comércio é necessário criar mecanismos que controlem os mercados para que estes não sejam se devorem a si mesmo. É necessário conhecer a ciência dos números e da poupança.
+Dependencias
+	*Basic Exchange
+Melhorias
+Novos edifícios
+Novas Naves
+
+
+!Advance Exchange
+Descrição
+Depois de termos criado as base para estabelecermos rotas comerciais com outros planetas, é necessário estabelecer rotas comerciais com outros impérios.
+Antes de ser colocada na nave que irá transportar a mercadoria, deve ser calculado o preço de custo da mesma e pedido ao Ruler que define por quanto pretende vender essa mercadoria. No planeta de destino esse preço de venda tem que ser acveite para que a transacção seja efectuada.
+
+Quando um planeta tem deficiência num determinaod produto, é possível aceder à bolsa de valores e comprar por licitação o produto pretendido.
+Um Ruler que tenha um determinado produto em escesso, por claro colocar na bolsa de valores o seu produto também.
+
+Depois de comprado, o Ruler produtor tem 6 turnos para enviar a mercadoria se não é multado em 75% do valor da transacção por incumprimento do contrato.
+Logo que o leilão termine, ao Ruler que compra é logo descontado o dinheiro. Este só terá direito a reclamar se a mercadoria não der início à sua viagem nos proximos 6 Turnos (Reclamação automática). A mercadoria não chega automáticamente ao seu destino, mas, demora o tempo que a viagem demorar numa nave de comércio.
+
+Um Ruler não pode vender o que não tem, e não pode vender uma quantidade que as suas naves de comércio não podem transportar. Um Ruler pode comprar a quantidade que entender.
+ 	
+Dependencias
+	*Economic
+	*Advanced Flight 3
+	*Planet Limit (10)
+Melhorias
+	*+10% de dinheiro por turno
+Novos edifícios
+	*Stoket Market
+Novas Naves
+	*Heavy Trade Ship
+
+
+!Fisica Avançada 1
+Descrição
+Com o aprofundamento da física, é possível entender melhor a Teorias quânticas e com isso melhorar a perfomaçe das partes mecânicas dos motores.
+Dependencias
+	*Advanced Flight 3
+	*Advance Mining
+Melhorias
+	*Melhoria em 40% nas viagens entre galáxias
+	* Melhoria em 30% na mineração
+Novos edifícios
+Novas Naves
+
+
+!Fisica Avançada 2
+Descrição
+Depois de se ter tornado uma lenda viva ao desenvolver teorias na área da Física Avançada 1, Dr. Ryopty, especializou-se na área da Teleportação e na possibilidade de dobrar o universo, fazendo com que as viagens espaciais demorasses 1 turno.
+Dentro da mesma galáxia será possível teleportar Naves de Defesa e Guerra, Naves de comércio com chegada no Turno seguinte.
+
+Infelizmente esta tecnologia ainda é nova e de 10 em 10 utilizações será necessário parar por 40 Turnos para manutenção.
+Dependencias
+	*Fisica Avançada 1
+Melhorias
+Novos edifícios
+	*Edifício de Teleportação
+Novas Naves
+
+!Lasers
+Descrição
+Um desenvolvimento na produção de naves, inserindo tecnologia laser. Esta tecnologia é aplicada no ataque de novas naves, mais preciso e destrutivo.
+Dependências
+	*Voo espacial 2
+	*Cibernética
+Melhorias
+Novos Edifícios
+Novas Naves
+	*Laser ship (uma nave de ataque com menos defesa que a nave pesada, mas mais ataque)
+
+!Shields
+Descrição
+Um desenvolvimento na produção de naves, inserindo um novo tipo de escudos mais resistentes, mas também menos funcionais. Permite a criação de novas naves, menos rápidas e com menos ataque, mas especialistas em missões defensivas.
+Dependências
+	*Voo espacial
+	*Cibernética
+Melhorias
+Novos Edifícios
+Novas Naves
+	*Defender (uma nave mais lenta e com menos ataque que a nave poderosa, mas com mais defesa)
+
+!Acondicionamento de Energia
+Descrição
+Para poder enviar energia de um planeta para outro, os cientistas desenvolveram involcros especiais que de uma forma estável possam acondicionar a energia em contentores próprios.
+Este tipo de tecnologia é também eficaz em viagem longas dos cruzadores, pois, podem percorrer as mesmas distancias usando mais energia, logo, mais rapidamente. Será também possível, nas Heavy Ships e Crusadors ter armas mais potentes tanto para defesa como para ataque.
+Dependencias
+	*Fisica Avançada 2
+	*Advance Exchange
+	*Voo espacial 3
+Melhorias
+	*+15% nos pontos de defesa da Heavy Ship e Crusader
+	*+10% nos pontos de ataque Heavy Ship e Crusader
+	*-20% do tempo de viagem dos Crusaders
+	*Poder vender ou enviar energia a qualquer planeta.
+Novos edifícios
+Novas Naves
+
+
+
+!Templete
+Descrição
+Dependencias
+Melhorias
+Novos edifícios
+Novas Naves
+
+:Summary: Ideias para novas Pesquisas

@@ -1,0 +1,1 @@
+This is the Clover.NET output dir.

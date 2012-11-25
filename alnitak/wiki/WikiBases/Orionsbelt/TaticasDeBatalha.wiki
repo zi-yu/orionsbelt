@@ -1,0 +1,22 @@
+:Display: Tácticas de Batalha
+:Summary: Dicas avançadas para as Batalhas
+
+A estratégia base de vitória consiste simplesmente em eliminar as unidades adversárias, mantendo as nossas intactas. Isto pode ser atingindo simplesmente ameaçando unidades enimigas e protegendo as nossas, esperando que o adversário cometa erros.
+
+Acontece que à medida que o [Ranking] dos adversários vai subindo, cada vez é mais complicado este tipo de jogo simplista, e têm de ser usadas outro tipo de táticas.
+
+!!!The Fork - Ataque Duplo
+
+O ''fork'' é um dos truques mais eficazes para conseguir eliminar unidades adversárias. Basicamente consiste em atacar dois conjuntos distintos de unidades, por forma a que o adversário só consiga defender um dos conjuntos.
+
+!!!Forçar Defesa
+
+Jogadores mais experientes usam muito a técnica de ter unidades leves (baratas, rápidas, com pouco custo de movimento) a proteger unidades mais poderosas. O objectivo consiste em ir eliminando essas unidades, fazendo com que o adversário tenha de gastar movimentos a defender, para que as unidades mais poderosas não fiquem expostas.
+
+Esta táctica é muito importante pois é fundamental forçar o adversário a gastar os seus movimentos a defender. E em quanto ele defende nós podemos continuar a atacar à custa de menos movimentos.
+
+Nota que unidades com Ricochete são mais indicadas para este tipo de táctica, e que é muito complicado defender contra unidades com catapulta.
+
+!!!
+
+

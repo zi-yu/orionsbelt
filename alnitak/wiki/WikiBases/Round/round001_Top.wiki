@@ -1,0 +1,34 @@
+:Display: Top Rulers
+:Parent: Round.HomePage
+
+||{!^}*#* ||{!^}*Ruler*||{!^}*Planetas* ||{!^}*Batalhas* ||{!^}*Classificação* ||{!^}*Pontuação*||
+||1º ||ACSK Anfernius ||26 ||32/1/10 ||Pacífico ||530 338||
+||2º ||IUC funnynovato||25 ||57/0/15 ||Audaz ||433 600||
+||3º ||CUS Shadow Knight ||32 ||74/0/16 ||Destemido ||393 201||
+||4º ||IUC Sky King ||31 ||29/0/12 ||Impotente ||372 917||
+||5º ||CUS MASTER ||34 ||49/0/43 ||Fraco ||360 260||
+||6º ||IUC Pescador ||32 ||44/0/28 ||Impotente ||341 280||
+||7º ||glued ||35 ||5/0/12 ||Fraco ||340 640||
+||8º ||CUS Mimoso||22 ||21/0/14 ||Fraco ||281 827||
+||9º ||gandalf ||35 ||68/0/19 ||Audaz ||252 254||
+||10º ||IUC Ashis BR ||31 ||19/0/8 ||Impotente ||239 607||
+||11º ||Giorkas ||16 ||14/0/18 ||Fraco ||220 610||
+||12º ||CUS Goblin ||34 ||9/1/12 ||Fraco ||210 469||
+||13º ||CUS Solrac ||15 ||16/0/16 ||Fraco ||178 634||
+||14º ||ACSK Pyro ||12 ||29/2/13 ||Impotente ||175 493||
+||15º ||falkirk ||28 ||50/0/18 ||Agressivo ||175 184||
+||16º ||ACSK Shikamaru ||9 ||21/1/3 ||Impotente ||169 999||
+||17º ||super_dragao ||12 ||19/0/5 ||Impotente ||169 060||
+||18º ||wolfie ||14 ||3/0/1 ||Fraco ||141 575||
+||19º ||a Ovelha Negra dos CUS ||13 ||17/0/2 ||Impotente ||131 073||
+||20º ||Fuzo ||7 ||15/0/13 ||Fraco ||106 515||
+||21º ||Frutooso ||9 ||10/0/14 ||Fraco ||105 799||
+||22º ||Ultra Ice ||5 ||2/0/2 ||Fraco ||95 384||
+||23º ||lrz ||22 ||17/0/17 ||Fraco ||89 609||
+||24º ||rhas ||5 ||5/0/9 ||Fraco ||81 554||
+||25º ||Gangster ||4 ||12/0/28 ||Fraco ||80 725||
+||26º ||juanitoraton ||15 ||24/0/35 ||Fraco ||76 346||
+||27º ||CUS rumbafum ||12 ||7/0/0 ||Fraco ||72 331||
+||28º ||marlene ||3 ||16/0/10 ||Fraco ||66 591||
+||29º ||ACSK SF fipas ||8 ||4/1/17 ||Fraco ||63 258||
+||30º ||Miguel18 ||14 ||7/0/12 ||Fraco ||62 647||
